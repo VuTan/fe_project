@@ -1,18 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-}
-
 footer {
   background: #000;
   color: #fff;
   padding: 40px 20px;
   font-size: 14px;
+  margin-top: auto;
 }
 
 .footer-container {
@@ -45,6 +36,7 @@ footer {
 }
 
 .footer-column form {
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
 }
@@ -62,7 +54,7 @@ footer {
   background: none;
   border: none;
   cursor: pointer;
-  margin-left: -30px;
+  margin-left: -40px;
 }
 
 .footer-column button img {

@@ -7,9 +7,11 @@ import Footer from "./component/Footer/Footer";
 
 const App: React.FC = () => {
   return (
-      <div className="App">
+      <div>
           <Header></Header>
-        <VideoSection />
+            <VideoSection />
+          <VideoSection />
+          <VideoSection />
           <Footer></Footer>
       </div>
   );
