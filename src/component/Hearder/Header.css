@@ -29,6 +29,8 @@ header {
 .top-left img {
   vertical-align: middle;
   margin-right: 5px;
+  width: 16px;
+  height: 16px;
 }
 
 .top-right span a {

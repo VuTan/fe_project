@@ -8,17 +8,11 @@ import Footer from "./component/Footer/Footer";
 const App: React.FC = () => {
   return (
       <div className="App">
+          <Header></Header>
         <VideoSection />
+          <Footer></Footer>
       </div>
   );
-
-      <div>
-        <Header></Header>
-        <a href={""}> vla </a>
-        <Footer></Footer>
-      </div>
-
-  )
 }
 
 export default App;

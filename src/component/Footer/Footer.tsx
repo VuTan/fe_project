@@ -1,7 +1,7 @@
 
 import React from "react";
 import "./Footer.scss";
-
+import mail from "../images/mail.png";
 const Footer = () => {
     return(
         <footer>
@@ -39,12 +39,12 @@ const Footer = () => {
                         thông tin. Để chúng tôi có thể hỗ trợ bạn nhanh nhất có thể</p>
                     <form>
                         <input type="email" placeholder="Nhập địa chỉ email"/>
-                        <button type="submit"><img src="images/submit-icon.png" alt="Submit Icon"/></button>
+                        <button type="submit"><img src={mail} alt="Submit Icon"/></button>
                     </form>
                 </div>
             </div>
             <div className="footer-bottom">
-                <p>Viet Nam © 2024 - Design by ConDit.Design</p>
+                <p>Viet Nam © 2024 - Design by team Fe 48</p>
                 <div className="footer-links">
                     <a href="#">Guides</a>
                     <a href="#">Terms of Sale</a>
