@@ -3,7 +3,7 @@ import "./banner.css";
 import Marquee from "react-fast-marquee";
 
 const banner = () => {
-    return (<div className="contain">
+    return (<div className="banner-contain">
         <div className="banner-top">
             <span>2handtroical</span>
             <p>Khám phá bộ sưu tập màu hè tại. <span>@instagram.2handtropical</span></p>
