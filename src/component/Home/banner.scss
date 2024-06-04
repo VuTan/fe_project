@@ -1,0 +1,103 @@
+.banner-top {
+  text-align: center;
+  background-color: #f1f1f1;
+  padding: 0;
+
+  p {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  span {
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+
+  }
+}
+
+.banner {
+  width: 100%;
+  height: 85vh;
+  background-image: url(banner.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+
+  .banner-content {
+    width: 60%;
+    position: absolute;
+    font-size: 15px;
+    line-height: 24px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding-top: 25%;
+    margin-left: 50px;
+
+    .brand {
+      font-weight: 500;
+    }
+
+    .title {
+      font-size: 56px;
+      font-weight: 500;
+      line-height: 60px;
+    }
+
+    .content {
+      font-weight: 400;
+      padding-top: 15px;
+    }
+  }
+
+  .button {
+    display: flex;
+    position: absolute;
+
+    padding-top: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+
+    .store {
+      margin-right: 15px;
+      padding: 10px 20px;
+      border-radius: 20px;
+      border: 2px solid black;
+      background-color: black;
+      color: white;
+    }
+
+    .advise {
+      padding: 10px 20px;
+      border-radius: 20px;
+      border: 2px solid black;
+      background-color: white;
+      color: black;
+    }
+
+  }
+}
+
+.banner-bot {
+  .marque {
+    padding: 5px;
+    background-color: #f1f1f1;
+
+    .li-1 {
+      margin-left: 15px;
+      padding: 0;
+      color: rgba(0, 0, 0, 1);
+    }
+
+    .li-2 {
+      margin-left: 15px;
+      padding: 0;
+      color: rgba(0, 0, 0, 0.4);
+    }
+  }
+}

@@ -3,7 +3,6 @@
     background: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .video-section {
@@ -30,19 +29,22 @@
 
 .text-section {
     margin-top: 20px;
+    text-align: center;
 }
 
-h1 {
+.text-section h1 {
     font-size: 24px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
-p {
+.text-section p {
     font-size: 16px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
-button {
+.text-section button {
     padding: 10px 20px;
     font-size: 16px;
     background-color: #000;
@@ -52,6 +54,6 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.text-section button:hover {
     background-color: #444;
 }
