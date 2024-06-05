@@ -7,30 +7,32 @@ const Footer = () => {
         <footer>
             <div className="footer-container">
                 <div className="footer-column">
-                    <h4>TÌM CỬA HÀNG</h4>
-                    <h4>DANH MỤC SẢN PHẨM</h4>
-                    <h4>BỘ SƯU TẬP MỚI</h4>
-                    <h4>CHÍNH SÁCH ĐỔI TRẢ</h4>
-                    <h4>THU GOM GIÀY CŨ</h4>
+                    <h4><a href="#">TÌM CỬA HÀNG</a></h4>
+                    <ul>
+                    <li><a href="#">Danh Mục Sản Phẩm</a></li>
+                    <li><a href="#">Bộ Sưu Tập Mới</a></li>
+                    <li><a href="#">Chính Sách Đổi Trả</a></li>
+                    <li><a href="#">Thu Gom giày Cũ</a></li>
+                    </ul>
                 </div>
                 <div className="footer-column">
                     <h4>SẢN PHẨM</h4>
                     <ul>
-                        <li>Thời trang nam</li>
-                        <li>Thời trang nữ</li>
-                        <li>Thời trang Unisex</li>
-                        <li>Thời trang có hạn (Limited)</li>
-                        <li>Chương trình khuyến mãi</li>
-                        <li>Sự kiện cùng người nổi tiếng</li>
+                        <li><a href="#">Thời trang nam</a></li>
+                        <li><a href="#">Thời trang nữ</a></li>
+                        <li><a href="#">Thời trang Unisex</a></li>
+                        <li><a href="#">Thời trang có hạn (Limited)</a></li>
+                        <li><a href="#">Chương trình khuyến mãi</a></li>
+                        <li><a href="#">Sự kiện cùng người nổi tiếng</a></li>
                     </ul>
                 </div>
                 <div className="footer-column">
                     <h4>KÊNH TRUYỀN THÔNG</h4>
                     <ul>
-                        <li>Youtube</li>
-                        <li>Facebook</li>
-                        <li>Instagram</li>
-                        <li>TikTok</li>
+                        <li><a href="#">Youtube</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">TikTok</a></li>
                     </ul>
                 </div>
                 <div className="footer-column">

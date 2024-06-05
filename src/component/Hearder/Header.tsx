@@ -9,6 +9,7 @@ import React, { useState } from 'react';
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [searchTerm, setSearchTerm] = useState('');
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
@@ -16,6 +17,17 @@ const Header = () => {
 
     const closeMenu = () => {
         setMenuOpen(false);
+    };
+
+    const handleSearch = () => {
+        // hien thi phan tim kiem co hoat dong hay khong
+        console.log('Search term:', searchTerm);
+    };
+
+    const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
+        if (event.key === 'Enter') {
+            handleSearch();
+        }
     };
 
     return (
@@ -51,12 +63,16 @@ const Header = () => {
                     </ul>
                     <div className="search-icons">
                         <div className="search">
-                            <input type="text" placeholder="Tìm kiếm"/>
-                            <button type="submit"><img src={search} alt="search"/></button>
+                            <input type="text"
+                                   placeholder="Search..."
+                                   value={searchTerm}
+                                   onChange={(event) => setSearchTerm(event.target.value)}
+                                   onKeyDown={handleKeyDown}/>
+                            {/*<button onClick={handleSearch}>Search</button>*/}
                         </div>
                         <div className="icons">
-                            <a href="#"><img src={heart}/></a>
-                            <a href="#"><img src={cart}/></a>
+                            <a href="#"><img src={heart} alt=""/></a>
+                            <a href="#"><img src={cart} alt=""/></a>
                             <a className="login" href="#">Đăng nhập</a>
                         </div>
 
