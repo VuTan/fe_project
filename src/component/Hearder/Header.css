@@ -86,23 +86,10 @@ nav {
 }
 
 .search input {
-  padding: 5px 10px;
   border: 1px solid #ddd;
-  border-radius: 20px;
+  border-radius: 5px;
   outline: none;
   font-size: 14px;
-}
-
-.search button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  margin-left: -45px;
-}
-
-.search img {
-  width: 16px;
-  height: 16px;
 }
 
 .icons {
@@ -169,8 +156,7 @@ nav {
     align-items: flex-start;
     position: absolute;
     top: 60px;
-    left: 0;
-    width: 95%;
+    width: 91%;
     background: #fff;
     padding: 20px;
   }
@@ -193,6 +179,7 @@ nav {
     display: flex;
     flex-direction: column;
     padding: 0;
+    order: 1;
   }
   .menu-bar.open .menu li {
     width: 100%;
@@ -206,7 +193,7 @@ nav {
     background: white;
   }
   .menu-bar.open .search-icons {
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -218,12 +205,12 @@ nav {
     display: flex;
     justify-content: flex-end;
     margin-top: 10px;
-    margin-right: 20px;
+    padding: 10px;
   }
   .menu-bar.open .icons {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     margin-top: 10px;
   }
   .menu-bar.open .icons a {
@@ -234,10 +221,6 @@ nav {
     margin-right: 10px;
     width: 24px;
     height: 24px;
-  }
-  .menu-bar.open .menu {
-    order: 1; /* Ensure menu is below search and icons */
-    margin-top: 20px;
   }
 }
 
