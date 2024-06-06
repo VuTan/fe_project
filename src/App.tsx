@@ -12,13 +12,6 @@ const App: React.FC = () => {
       </div>
   );
 
-      <div>
-        <Header></Header>
-        <a href={""}> vla </a>
-        <Footer></Footer>
-      </div>
-
-  )
 }
 
 export default App;
