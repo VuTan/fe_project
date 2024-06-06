@@ -1,5 +1,6 @@
 import React from "react";
 import "./CardSlide.scss";
+import CardProduct from "./CardProduct";
 
 const ReactCardSlider = () => {
     const slides = [1, 2, 3, 4, 5, 6, 7, 8]
@@ -29,18 +30,7 @@ const ReactCardSlider = () => {
             </div>
             <div id="sliders" className="content">
                 {slides.map((slide, index) => {
-                    return (<div className="slider-card">
-                        <div className="card-img"></div>
-                        <div className="info">
-                            <div className="left">
-                                <p className=" title">Nike Air Max Pulse</p>
-                                <p className=" type">Nike</p>
-                            </div>
-                            <div className="right">
-                                <p className=" price">1.200.000</p>
-                            </div>
-                        </div>
-                    </div>);
+                    return (<CardProduct/>);
                 })}
             </div>
         </div>
