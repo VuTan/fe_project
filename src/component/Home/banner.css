@@ -1,0 +1,87 @@
+.banner-top {
+  text-align: center;
+  background-color: #f1f1f1;
+  padding: 0;
+}
+.banner-top p {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+.banner-top span {
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+}
+
+.banner {
+  width: 100%;
+  height: 85vh;
+  background-image: url(banner.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.banner .banner-content {
+  width: 60%;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  padding-top: 25%;
+  margin-left: 50px;
+}
+.banner .banner-content .brand {
+  font-weight: 500;
+}
+.banner .banner-content .title {
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 60px;
+}
+.banner .banner-content .content {
+  font-weight: 400;
+  padding-top: 15px;
+}
+.banner .button {
+  display: flex;
+  position: absolute;
+  padding-top: 15px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+}
+.banner .button .store {
+  margin-right: 15px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+}
+.banner .button .advise {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+}
+
+.banner-bot .marque {
+  padding: 5px;
+  background-color: #f1f1f1;
+}
+.banner-bot .marque .li-1 {
+  margin-left: 15px;
+  padding: 0;
+  color: rgb(0, 0, 0);
+}
+.banner-bot .marque .li-2 {
+  margin-left: 15px;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/*# sourceMappingURL=banner.css.map */
