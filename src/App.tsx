@@ -5,17 +5,19 @@ import Footer from "./component/Footer/Footer";
 import Banner from "./component/Home/banner";
 import CardSlider from "./component/CardSlider";
 import VideoSection from "./component/Home/VideoSection";
+import NewCollection from "./component/Home/NewCollection";
 
 const App: React.FC = () => {
-    return (
-        <div>
-            <Header></Header>
-            <Banner></Banner>
-            <CardSlider></CardSlider>
-            <VideoSection></VideoSection>
-            <Footer></Footer>
-        </div>
-    );
+  return (
+      <div className="App">
+          <Header></Header>
+          <Banner></Banner>
+          <CardSlider></CardSlider>
+          <VideoSection></VideoSection>
+          <NewCollection></NewCollection>
+          <Footer></Footer>
+      </div>
+  );
 }
 
 export default App;
