@@ -1,7 +1,7 @@
 
 import React from "react";
 import "./Footer.scss";
-import mail from "../images/mail.png";
+import { BiLogoGmail } from "react-icons/bi";
 const Footer = () => {
     return(
         <footer>
@@ -40,8 +40,17 @@ const Footer = () => {
                     <p>Nếu bạn đang có thắc mắc về sản phẩm và cần đến sự hỗ trợ từ đội ngũ tư vấn viên thì hãy để lại
                         thông tin. Để chúng tôi có thể hỗ trợ bạn nhanh nhất có thể</p>
                     <form>
-                        <input type="email" placeholder="Nhập địa chỉ email"/>
-                        <button type="submit"><img src={mail} alt="Submit Icon"/></button>
+                        <div style={{position: 'relative', width: 'max-content'}}>
+                            <input
+                                type="email"
+                                placeholder="Nhập địa chỉ email"
+                            />
+                            <button
+                                type="submit"
+                            >
+                                <BiLogoGmail style={{color: 'white'}}/>
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>

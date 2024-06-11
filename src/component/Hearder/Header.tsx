@@ -1,11 +1,11 @@
 import "./Header.scss";
-import search from "../images/search-icon.png";
-import heart from "../images/heart-icon.png";
-import cart from "../images/cart-icon.png";
-import logoshose from "../images/logoshose.png";
-import hamburger from "../images/hamburger.png";
-import closeIcon from "../images/close-icon.png";
 import React, { useState } from 'react';
+import { IoBasketballOutline } from "react-icons/io5";
+import { IoIosHeartEmpty } from "react-icons/io";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoCloseOutline } from "react-icons/io5";
+import { CiShoppingCart } from "react-icons/ci";
+import { FiSearch } from "react-icons/fi";
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -34,11 +34,14 @@ const Header = () => {
         <header>
             <div className="top-bar">
                 <div className="top-left">
-                    <span><img src={logoshose} alt="Globe Icon"/> VN | ENG</span>
+                    <IoBasketballOutline />
+                    <span  style={{color:"black"}}>VN |<span style={{color:"gray"}}>ENG</span></span>
                 </div>
                 <div className="top-right">
-                    <span>Cửa hàng</span>
+                    <span>Cửa hàng </span>
+                    <span style={{color:"black"}}>|</span>
                     <span>08am - 22pm</span>
+                    <span style={{color:"black"}}>|</span>
                     <span>T2 - CN</span>
                 </div>
             </div>
@@ -47,11 +50,11 @@ const Header = () => {
                     <a href="#">2handtropical</a>
                 </div>
                 <div className="hamburger" onClick={toggleMenu}>
-                    <img src={hamburger} alt="Menu"/>
+                    <GiHamburgerMenu />
                 </div>
                 <div className={`menu-bar ${menuOpen ? 'open' : ''}`}>
                     <div className="close-btn" onClick={closeMenu}>
-                        <img src={closeIcon} alt="Close"/>
+                        <IoCloseOutline/>
                     </div>
                     <ul className="menu">
                         <li><a href="#">Trang chủ</a></li>
@@ -68,11 +71,11 @@ const Header = () => {
                                    value={searchTerm}
                                    onChange={(event) => setSearchTerm(event.target.value)}
                                    onKeyDown={handleKeyDown}/>
-                            {/*<button onClick={handleSearch}>Search</button>*/}
+                            <button onClick={handleSearch}><FiSearch /></button>
                         </div>
                         <div className="icons">
-                            <a href="#"><img src={heart} alt=""/></a>
-                            <a href="#"><img src={cart} alt=""/></a>
+                            <a href="#"><IoIosHeartEmpty /></a>
+                            <a href="#"><CiShoppingCart /></a>
                             <a className="login" href="#">Đăng nhập</a>
                         </div>
 

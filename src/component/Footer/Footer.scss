@@ -1,6 +1,7 @@
+@import "../../base";
 footer {
-  background: #000;
-  color: #fff;
+  background: $color_black;
+  color: $bg-ultralight-gray;
   padding: 40px 20px;
   font-size: 14px;
   margin-top: auto;
@@ -24,7 +25,7 @@ footer {
 
 .footer-column h4 a {
   text-decoration: none;
-  color: white;
+  color: $bg-ultralight-gray;
   font-weight: bold;
 }
 
@@ -39,48 +40,43 @@ footer {
 
 .footer-column ul li a{
   text-decoration: none;
-  color: white;
+  color: $bg-ultralight-gray;
 }
 
 .footer-column p {
   margin-bottom: 20px;
 }
 
-.footer-column form {
-  margin-bottom: 10px;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-}
-
-.footer-column input[type="email"] {
-  padding: 10px;
-  border: 1px solid #555;
+.footer-column input[type=email] {
+  border: 1px solid $bg-gray;
   border-radius: 5px;
   background: #222;
-  color: #fff;
+  color: $bg-ultralight-gray;
   outline: none;
   width: 100%;
   order: 2;
+  padding: 10px 50px 10px 10px;
 }
 
-.footer-column button {
-  background: none;
+.footer-column button[type=submit] {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  bottom: 5px;
   border: none;
+  border-radius: 10px;
+  background: black;
+  color: white;
   cursor: pointer;
+  padding: 0 10px;
   order: 1;
-}
-
-.footer-column button img {
-  width: 35px;
-  height: 37px;
 }
 
 .footer-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid #555;
+  border-top: 1px solid $bg-gray;
   padding-top: 20px;
 }
 
@@ -95,5 +91,5 @@ footer {
 .footer-links a {
   margin-left: 20px;
   text-decoration: none;
-  color: #fff;
+  color: $bg-ultralight-gray;
 }
