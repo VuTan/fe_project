@@ -1,0 +1,29 @@
+@import "../../base";
+
+.container-button {
+  margin: 10px;
+  padding-top: 15px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+
+  .button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid $color_black;
+  }
+
+  .white {
+    background-color: white;
+    color: $color_black;
+  }
+
+  .white:hover{
+    background-color: $bg-light-gray;
+  }
+
+  .black {
+    background-color: $color_black;
+    color: white;;
+  }
+}
