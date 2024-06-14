@@ -1,6 +1,8 @@
+@import "../../base";
+
 .banner-top {
   text-align: center;
-  background-color: #f1f1f1;
+  background-color: $bg-light-gray;
   padding: 0;
 
   p {
@@ -21,7 +23,7 @@
 
 .banner {
   width: 100%;
-  height: 85vh;
+  height: 100vh;
   background-image: url(banner.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -55,38 +57,13 @@
 
   .button {
     display: flex;
-    position: absolute;
-
-    padding-top: 15px;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 24px;
-    text-align: center;
-
-    .store {
-      margin-right: 15px;
-      padding: 10px 20px;
-      border-radius: 20px;
-      border: 2px solid black;
-      background-color: black;
-      color: white;
-    }
-
-    .advise {
-      padding: 10px 20px;
-      border-radius: 20px;
-      border: 2px solid black;
-      background-color: white;
-      color: black;
-    }
-
   }
 }
 
 .banner-bot {
   .marque {
     padding: 5px;
-    background-color: #f1f1f1;
+    background-color: $bg-light-gray;
 
     .li-1 {
       margin-left: 15px;

@@ -2,7 +2,7 @@ import React from "react";
 import "./SliderType.scss"
 import CardSlider from "./CardSlider";
 
-const SilerType = () => {
+const SliderType = () => {
     return (
         <div className="slider2-contain">
             <div className="left">
@@ -14,4 +14,4 @@ const SilerType = () => {
         </div>);
 }
 
-export default SilerType;
+export default SliderType;
