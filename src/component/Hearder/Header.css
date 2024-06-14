@@ -1,6 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: left;
+  font-family: "Helvetica Neue";
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 60px;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 60px;
+}
+
+h3 {
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32.67px;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
 header {
-  background: #f8f8f8;
-  border-bottom: 1px solid #ddd;
+  background: whitesmoke;
+  border-bottom: 1px solid whitesmoke;
   margin-bottom: auto;
   width: 100%;
 }
@@ -9,13 +47,18 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 5px 20px;
-  background: #f1f1f1;
+  background: #F5F5F5;
   font-size: 14px;
 }
 
-.top-left span,
+.top-left span {
+  margin-right: 10px;
+  margin-left: 3px;
+}
+
 .top-right span {
-  margin-right: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .top-left img {
@@ -27,7 +70,7 @@ header {
 
 .top-right span a {
   text-decoration: none;
-  color: #333;
+  color: #444444;
 }
 
 nav {
@@ -35,13 +78,13 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  background: #fff;
+  background: #ffffff;
 }
 
 .logo a {
   font-size: 24px;
   font-weight: bold;
-  color: #333;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -59,7 +102,7 @@ nav {
 
 .menu li a {
   text-decoration: none;
-  color: #333;
+  color: #444444;
   font-weight: bold;
 }
 
@@ -86,10 +129,24 @@ nav {
 }
 
 .search input {
-  border: 1px solid #ddd;
+  border: 1px solid whitesmoke;
   border-radius: 5px;
   outline: none;
-  font-size: 14px;
+  font-size: 20px;
+  padding-left: 30px;
+  order: 2;
+}
+
+.search button {
+  position: relative;
+  right: -25px;
+  height: 100%;
+  border: none;
+  border-radius: 100px;
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  order: 1;
 }
 
 .icons {
@@ -103,16 +160,12 @@ nav {
 .icons a {
   margin-left: 5px;
   margin-bottom: 5px;
-}
-
-.icons img {
-  width: 24px;
-  height: 24px;
-  margin-right: 10px;
+  display: flex;
+  color: #000000;
 }
 
 .login {
-  color: #333;
+  color: #444444;
   font-weight: bold;
   text-decoration: none;
 }
@@ -122,22 +175,12 @@ nav {
   cursor: pointer;
 }
 
-.hamburger img {
-  width: 24px;
-  height: 24px;
-}
-
 .close-btn {
   position: absolute;
   top: 5px;
   right: 10px;
   cursor: pointer;
   display: none;
-}
-
-.close-btn img {
-  width: 14px;
-  height: 14px;
 }
 
 /* Responsive styles */
@@ -163,10 +206,6 @@ nav {
   .menu-bar.open .close-btn {
     display: block;
     margin-bottom: 10px;
-  }
-  .menu-bar.open .close-btn img {
-    display: block;
-    margin-bottom: 15px;
   }
 }
 @media (max-width: 970px) and (min-width: 970px) {
@@ -216,11 +255,8 @@ nav {
   .menu-bar.open .icons a {
     margin-left: 5px;
     margin-bottom: 5px;
-  }
-  .menu-bar.open .icons a img {
-    margin-right: 10px;
-    width: 24px;
-    height: 24px;
+    display: flex;
+    color: #000000;
   }
 }
 
