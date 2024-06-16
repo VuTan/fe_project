@@ -14,6 +14,7 @@ const App: React.FC = () => {
           <Banner></Banner>
           <CardSlider></CardSlider>
           <VideoSection></VideoSection>
+          <CardSlider></CardSlider>
           <NewCollection></NewCollection>
           <Footer></Footer>
       </div>

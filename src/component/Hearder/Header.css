@@ -157,6 +157,11 @@ nav {
   align-items: center;
 }
 
+.icons button {
+  border: none;
+  background-color: #ffffff;
+}
+
 .icons a {
   margin-left: 5px;
   margin-bottom: 5px;
