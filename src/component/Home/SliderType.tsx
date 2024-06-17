@@ -6,10 +6,9 @@ const SliderType = () => {
     return (
         <div className="slider2-contain">
             <div className="left">
-                <CardSlider></CardSlider>
+
             </div>
             <div className="right">
-                <CardSlider></CardSlider>
             </div>
         </div>);
 }

@@ -1,9 +1,13 @@
 import "./CardProduct.scss"
 import React from "react";
 
-const CardProduct = () => {
+type CardProductProps = {
+    sizeCard?: string;
+}
+const CardProduct = (props: CardProductProps) => {
+
     return (<div className="card-product">
-        <div className="card-img"></div>
+        <div className={`card-img-${props.sizeCard}`}></div>
         <div className="info">
             <div className="left">
                 <p className=" title">Nike Air Max Pulse</p>

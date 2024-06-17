@@ -3,10 +3,11 @@
   width: 100%;
   height: 100%;
   margin-top: 20px;
-  
+
   .top {
     height: 10%;
-    padding-right:20px ;
+    padding-right: 20px;
+
     .row {
       display: flex;
       flex-wrap: wrap;
@@ -60,8 +61,6 @@
 
   .content {
     padding: 10px 0px 10px 0px;
-    width: 100%;
-    height: 90%;
     white-space: nowrap;
     overflow-x: scroll;
     scrollbar-width: none;
