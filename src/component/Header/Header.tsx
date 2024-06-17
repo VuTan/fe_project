@@ -58,7 +58,7 @@ const Header = () => {
                         <IoCloseOutline/>
                     </div>
                     <ul className="menu">
-                        <li><NavLink to="#">Trang chủ</NavLink></li>
+                        <li><NavLink to="/">Trang chủ</NavLink></li>
                         <li><NavLink to="#">Giày nam</NavLink></li>
                         <li><NavLink to="#">Giày nữ</NavLink></li>
                         <li><NavLink to="#">Khuyến mãi</NavLink></li>

@@ -39,14 +39,16 @@ p {
 .page-container1 {
   display: flex;
   flex-direction: column;
-  height: 80vh;
+  height: 100vh;
 }
 
 .signup-form {
-  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
   margin: 0 auto;
   padding: 20px;
-  border: 1px solid #ffffff;
+  border: 1px solid #ddd;
   border-radius: 4px;
 }
 
@@ -57,11 +59,7 @@ p {
 .signup-form p {
   text-align: center;
   font-size: 14px;
-}
-
-.signup-form form {
-  display: flex;
-  flex-direction: column;
+  padding-bottom: 3px;
 }
 
 .signup-form input,
@@ -83,6 +81,8 @@ p {
   color: #ffffff;
   border: none;
   cursor: pointer;
+  text-align: center;
+  border-radius: 10px;
 }
 
 .signup-form button:hover {
@@ -94,8 +94,27 @@ p {
   text-decoration: none;
 }
 
-.signup-form a:hover {
-  text-decoration: underline;
+@media (max-width: 768px) {
+  .signup-form {
+    flex-direction: column;
+  }
+  .gender-button {
+    font-size: 14px;
+  }
+}
+.sex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.gender-button {
+  flex: 1;
+  margin: 0 10px 10px 10px;
+}
+
+.gender-button.active {
+  background-color: #444444;
 }
 
 /*# sourceMappingURL=SigUp.css.map */

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './Login.scss';
-import Header from "../Hearder/Header";
+import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-import {BrowserRouter as Router,Route, Routes, NavLink, Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 
 const Login = () => {
@@ -11,7 +11,6 @@ const Login = () => {
 
     const handleSubmit = (event:React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        // Handle form submission logic here
         console.log('Email:', email);
         console.log('Password:', password);
     };
@@ -21,12 +20,12 @@ const Login = () => {
         <Header></Header>
         <div className="login-container">
             <h2>2handtropical</h2>
-            <h3>Đăng nhập</h3>
+            <h3>Log In</h3>
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
                     <input
                         type="email"
-                        placeholder="Địa chỉ email"
+                        placeholder="Email"
                         value={email}
                         onChange={(event) => setEmail(event.target.value)}
                         required
@@ -35,7 +34,7 @@ const Login = () => {
                 <div className="form-group">
                     <input
                         type="password"
-                        placeholder="Mật khẩu"
+                        placeholder="Password"
                         value={password}
                         onChange={(event) => setPassword(event.target.value)}
                         required
@@ -43,13 +42,14 @@ const Login = () => {
                 </div>
                 <div className="form-group">
                     <label>
-                        <input type="checkbox" /> Ghi nhớ tôi
+                        <input type="checkbox" /> Remember me
                     </label>
+                    <NavLink to="#" className="forgot-password">Forgot Pass?</NavLink>
                 </div>
-                <button type="submit" className="login-button">Đăng nhập</button>
-                <NavLink to="#" className="forgot-password">Quên mật khẩu?</NavLink>
-                <p>
-                    bạn chưa có tài khoản? <NavLink to="/SigUp" className="Sigup">2handmembers.</NavLink>
+                <p className={"note"}>By logging into the 2handtropica store you accept our <NavLink to={"#"} className={"user-policy"}> user policy </NavLink> policies</p>
+                <button type="submit" className="login-button">Submit</button>
+                <p className={"note"}>
+                    You don't have account? <NavLink to="/SigUp" className="Sigup">2handmembers.</NavLink>
                 </p>
             </form>
         </div>
