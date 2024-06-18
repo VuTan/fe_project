@@ -6,7 +6,6 @@ import Banner from "./component/Home/banner";
 import CardSlider from "./component/CardSlider";
 import VideoSection from "./component/Home/VideoSection";
 import NewCollection from "./component/Home/NewCollection";
-
 const App: React.FC = () => {
   return (
       <div className="App">
