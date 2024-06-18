@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import './SigUp.scss';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-import { NavLink } from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 interface FormData {
     email: string;
@@ -30,7 +30,7 @@ const SignUp = () => {
     const handleChange = (
         event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
     ) => {
-        const { name, value, type } = event.target;
+        const {name, value, type} = event.target;
         if (type === 'checkbox') {
             setFormData((prevFormData) => ({
                 ...prevFormData,
@@ -56,11 +56,11 @@ const SignUp = () => {
         console.log(formData);
     };
 
-    return (
-        <div className="page-container1">
-            <Header />
-            <form onSubmit={handleSubmit} className="signup-form">
-                {/*<div className="column">*/}
+    return (<>
+            <Header/>
+            <div className="align-SignUp">
+                <form onSubmit={handleSubmit} className="signup-form">
+                    {/*<div className="column">*/}
                     <h3>BECOME A NIKE MEMBER</h3>
                     <p>
                         Create your Nike Member profile and get first access to the very best of Nike products,
@@ -98,8 +98,8 @@ const SignUp = () => {
                         onChange={handleChange}
                         required
                     />
-                {/*</div>*/}
-                {/*<div className="column">*/}
+                    {/*</div>*/}
+                    {/*<div className="column">*/}
                     <p>Get a Nike Member Reward every year on your Birthday.</p>
                     <input
                         type="date"
@@ -114,46 +114,47 @@ const SignUp = () => {
                         <option value="USA">USA</option>
                         <option value="UK">UK</option>
                     </select>
-                <div className="sex">
-                    <button
-                        type={"button"}
-                        className={`gender-button ${formData.gender === 'Male' ? 'active' : ''}`}
-                        onClick={() => handleGenderChange('Male')}
-                    >
-                        Male
-                    </button>
-                    <button
-                        type={"button"}
-                        className={`gender-button ${formData.gender === 'Female' ? 'active' : ''}`}
-                        onClick={() => handleGenderChange('Female')}
-                    >
-                        Female
-                    </button>
-                    <button
-                        type={"button"}
-                        className={`gender-button ${formData.gender === 'other' ? 'active' : ''}`}
-                        onClick={() => handleGenderChange('other')}
-                    >
-                        Other
-                    </button>
-                </div>
-                <label>
-                    <input
-                        type="checkbox"
-                        name="emailUpdates"
-                        checked={formData.emailUpdates}
-                        onChange={handleChange}
-                    />
-                    Sign up for emails to get updates from Nike on products, offers, and your Member benefits
+                    <div className="sex">
+                        <button
+                            type={"button"}
+                            className={`gender-button ${formData.gender === 'Male' ? 'active' : ''}`}
+                            onClick={() => handleGenderChange('Male')}
+                        >
+                            Male
+                        </button>
+                        <button
+                            type={"button"}
+                            className={`gender-button ${formData.gender === 'Female' ? 'active' : ''}`}
+                            onClick={() => handleGenderChange('Female')}
+                        >
+                            Female
+                        </button>
+                        <button
+                            type={"button"}
+                            className={`gender-button ${formData.gender === 'other' ? 'active' : ''}`}
+                            onClick={() => handleGenderChange('other')}
+                        >
+                            Other
+                        </button>
+                    </div>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="emailUpdates"
+                            checked={formData.emailUpdates}
+                            onChange={handleChange}
+                        />
+                        Sign up for emails to get updates from Nike on products, offers, and your Member benefits
                     </label>
                     <button type="submit">JOIN US</button>
                     <p>
                         Already a Member? <NavLink to="/Login">Sign In</NavLink>.
                     </p>
-                {/*</div>*/}
-            </form>
+                    {/*</div>*/}
+                </form>
+            </div>
             <Footer/>
-        </div>
+        </>
     );
 };
 
