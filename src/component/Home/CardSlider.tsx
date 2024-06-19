@@ -8,10 +8,10 @@ import {useRef} from "react";
 
 type CardSliderProps = {
     sizeCard?: string;
+    slideShow?: number;
 }
 
 const CardSlider = (props: CardSliderProps) => {
-
     const sliderRef = useRef<Slider | null>(null);
 
     const next = () => {
@@ -24,9 +24,9 @@ const CardSlider = (props: CardSliderProps) => {
 
     var settings = {
         dots: true,
-        infinite: false,
+        infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: props.slideShow,
         slidesToScroll: 1,
     };
     const slides = [1, 2, 3, 4, 5, 6, 7, 8];
