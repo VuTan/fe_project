@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import {BrowserRouter as Router,Route, Routes} from "react-router-dom";
 import Login from "./component/Login/Login";
 import SigUp from "./component/SigUp/SigUp";
+import ProductDetail from "./component/Product/ProductDetail";
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
@@ -16,6 +17,7 @@ root.render(
           <Route path="/" element={ <App/>} />
           <Route path="/Login" element={<Login/>}/>
           <Route path="/SigUp" element={<SigUp/>}/>
+          <Route path="/Detail" element={<ProductDetail/>}/>
         </Routes >
       </Router>
   </React.StrictMode>

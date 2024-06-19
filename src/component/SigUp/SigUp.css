@@ -36,17 +36,17 @@ p {
   line-height: 24px;
 }
 
-.page-container1 {
+.align-SignUp {
   display: flex;
-  flex-direction: column;
-  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0 100px 0;
 }
 
 .signup-form {
   display: flex;
   flex-direction: column;
   max-width: 900px;
-  margin: 0 auto;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 4px;
