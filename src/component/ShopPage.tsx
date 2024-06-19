@@ -3,12 +3,12 @@ import './ShopPage.scss';
 
 const ShopPage: React.FC = () => {
     const products = [
-        { id: 1, name: "Nike Air Force 1 Mid '07", price: "₹ 10,795.00", image: "path/to/image1.jpg", tag: "Just In" },
-        { id: 2, name: "Nike Court Vision Low Next Nature", price: "₹ 4,995.00", image: "path/to/image2.jpg", tag: "Just In" },
-        { id: 3, name: "Nike Air Force 1 PLT.AF.ORM", price: "₹ 8,695.00", image: "path/to/image3.jpg", tag: "Just In" },
-        { id: 4, name: "Nike Air Force 1 React", price: "₹ 13,295.00", image: "path/to/image4.jpg", tag: "Just In" },
-        { id: 5, name: "Air Jordan 1 Elevate Low", price: "₹ 11,895.00", image: "path/to/image5.jpg", tag: "Promo Exclusion" },
-        { id: 6, name: "Nike Standard Issue", price: "₹ 2,895.00", image: "path/to/image6.jpg", tag: "Just In" },
+        { id: 1, name: "Nike Air Force 1 Mid '07", price: "₹ 10,795.00", image: "", tag: "Just In" },
+        { id: 2, name: "Nike Court Vision Low Next Nature", price: "₹ 4,995.00", image: "", tag: "Just In" },
+        { id: 3, name: "Nike Air Force 1 PLT.AF.ORM", price: "₹ 8,695.00", image: "", tag: "Just In" },
+        { id: 4, name: "Nike Air Force 1 React", price: "₹ 13,295.00", image: "", tag: "Just In" },
+        { id: 5, name: "Air Jordan 1 Elevate Low", price: "₹ 11,895.00", image: "", tag: "Promo Exclusion" },
+        { id: 6, name: "Nike Standard Issue", price: "₹ 2,895.00", image: "", tag: "Just In" },
     ];
 
     const categories = [
