@@ -16,7 +16,10 @@
     "react-icons": "^5.2.1",
     "react-router-dom": "^6.23.1",
     "react-scripts": "^5.0.1",
+    "react-slick": "^0.30.2",
     "sass": "^1.77.2",
+    "slick-carousel": "^1.8.1",
+    "sneakers-quick-task": "^1.1.2",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
@@ -45,6 +48,8 @@
     ]
   },
   "devDependencies": {
-    "file-loader": "^6.2.0"
+    "@types/react-slick": "^0.23.13",
+    "file-loader": "^6.2.0",
+    "sneaks-api": "^1.2.3"
   }
 }
