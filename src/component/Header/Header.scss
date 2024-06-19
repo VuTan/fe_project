@@ -120,6 +120,11 @@ nav{
   align-items: center;
 }
 
+.icons button{
+  border: none;
+  background-color: $bg-light-gray;
+}
+
 .icons a {
   margin-left: 5px;
   margin-bottom: 5px;
@@ -147,7 +152,7 @@ nav{
 }
 
 /* Responsive styles */
-@media (max-width: 970px) {
+@media (max-width: 1000px) {
   .menu-bar {
     display: none;
   }
@@ -175,7 +180,7 @@ nav{
     margin-bottom: 10px;
   }
 
-  @media (min-width: 970px) {
+  @media (min-width: 1000px) {
     .close-btn {
       display: none;
     }

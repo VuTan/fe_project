@@ -15,6 +15,22 @@ const NewCollection: React.FC = () => {
                 <p>Khám phá thêm những sản phẩm chất lượng mà 2handtropical đang cung cấp</p>
                 <Button title={"Đến cửa hàng"} isBlack/>
             </div>
+
+            <h2 className="section-title">Danh mục sản phẩm</h2>
+            <div className="product-categories">
+                <div className="category">
+                    <img src={require('./im1.png')} alt="Nam" className="category-image"/>
+                    <button className="category-button">Nam</button>
+                </div>
+                <div className="category">
+                    <img src={require('./im2.png')} alt="Thời Trang Nữ" className="category-image"/>
+                    <button className="category-button">Thời Trang Nữ</button>
+                </div>
+                <div className="category">
+                    <img src={require('./im3.png')} alt="Unisex" className="category-image"/>
+                    <button className="category-button">Unisex</button>
+                </div>
+            </div>
         </div>
     );
 };
