@@ -6,6 +6,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseOutline } from "react-icons/io5";
 import { CiShoppingCart } from "react-icons/ci";
 import { FiSearch } from "react-icons/fi";
+import {BrowserRouter as Router,Route, Routes, NavLink, Link} from "react-router-dom";
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -47,7 +48,7 @@ const Header = () => {
             </div>
             <nav>
                 <div className="logo">
-                    <a href="#">2handtropical</a>
+                    <NavLink to="/Detail">2handtropical</NavLink>
                 </div>
                 <div className="hamburger" onClick={toggleMenu}>
                     <GiHamburgerMenu />
@@ -57,12 +58,12 @@ const Header = () => {
                         <IoCloseOutline/>
                     </div>
                     <ul className="menu">
-                        <li><a href="#">Trang chủ</a></li>
-                        <li><a href="#">Giày nam</a></li>
-                        <li><a href="#">Giày nữ</a></li>
-                        <li><a href="#">Khuyến mãi</a></li>
-                        <li><a href="#">Bộ sưu tập</a></li>
-                        <li><a href="#">Tin tức</a></li>
+                        <li><NavLink to="/">Trang chủ</NavLink></li>
+                        <li><NavLink to="#">Giày nam</NavLink></li>
+                        <li><NavLink to="#">Giày nữ</NavLink></li>
+                        <li><NavLink to="#">Khuyến mãi</NavLink></li>
+                        <li><NavLink to="#">Bộ sưu tập</NavLink></li>
+                        <li><NavLink to="#">Tin tức</NavLink></li>
                     </ul>
                     <div className="search-icons">
                         <div className="search">
@@ -74,9 +75,9 @@ const Header = () => {
                             <button onClick={handleSearch}><FiSearch /></button>
                         </div>
                         <div className="icons">
-                            <a href="#"><IoIosHeartEmpty /></a>
-                            <a href="#"><CiShoppingCart /></a>
-                            <a className="login" href="#">Đăng nhập</a>
+                            <NavLink to="#"><IoIosHeartEmpty /></NavLink>
+                            <NavLink to="#"><CiShoppingCart /></NavLink>
+                            <button><NavLink className="login" to="/Login">Đăng nhập</NavLink></button>
                         </div>
 
                     </div>

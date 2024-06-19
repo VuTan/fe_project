@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Header from "./component/Hearder/Header";
+import Header from "./component/Header/Header";
 import Footer from "./component/Footer/Footer";
 import Banner from "./component/Home/banner";
 import CardSlider from "./component/CardSlider";
@@ -14,6 +14,7 @@ const App: React.FC = () => {
           <Banner></Banner>
           <CardSlider></CardSlider>
           <VideoSection></VideoSection>
+          <CardSlider></CardSlider>
           <NewCollection></NewCollection>
           <Footer></Footer>
       </div>
