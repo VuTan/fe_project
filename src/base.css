@@ -1,17 +1,9 @@
-$font: "Helvetica Neue";
-
-$color_black: #000000;
-$bg-gray: #444444;
-$bg-ultralight-gray: #F5F5F5FF;
-$bg-ultra-gray: #F5F5F5;
-$bg-light-gray: #ffffff;
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-align: left;
-  font-family: $font;
+  font-family: "Helvetica Neue";
 }
 
 h1 {
@@ -33,7 +25,7 @@ h3 {
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 10px;
   font-weight: 400;
   line-height: 32.67px;
 }
@@ -44,5 +36,4 @@ p {
   line-height: 24px;
 }
 
-
-
+/*# sourceMappingURL=base.css.map */
