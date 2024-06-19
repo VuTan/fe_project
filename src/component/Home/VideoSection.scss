@@ -16,7 +16,6 @@
 
     .main-video {
       width: 100%;
-      max-width: 1200px; /* Max width for larger screens */
       height: auto;
       display: block;
       margin: 0 auto;
@@ -51,20 +50,6 @@
       font-size: 16px;
       margin-bottom: 20px;
       text-align: center;
-    }
-
-    button {
-      padding: 10px 20px;
-      font-size: 16px;
-      background-color: #000;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #444;
     }
   }
 

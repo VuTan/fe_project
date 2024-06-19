@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './VideoSection.css';
+import Button from "../Button/Button";
 
 const VideoSection: React.FC = () => {
     const [isPlaying, setIsPlaying] = useState(false);
@@ -63,9 +64,9 @@ const VideoSection: React.FC = () => {
             </div>
             <div className="text-section">
                 <h1>SỰ LỰA CHỌN HÀNG ĐẦU</h1>
-                <p>Cùng 2handtropical khám phá xem xu hướng thời trang hiện tại đang là gì. Và những nhãn hàng nào đang
+                <p>Cùng 2handtropical khám phá xem xu hướng thời trang hiện tại đang là gì. <br/>Và những nhãn hàng nào đang
                     là sự lựa chọn hàng đầu của những tín đồ thời trang.</p>
-                <button onClick={() => window.location.href = 'https://yourshoplink.com'}>Đến cửa hàng</button>
+                <Button title={"Đến cửa hàng"} isBlack/>
             </div>
         </div>
     );

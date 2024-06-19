@@ -1,5 +1,6 @@
 import React from "react";
 import "./banner.css";
+import Button from "../Button/Button";
 import Marquee from "react-fast-marquee";
 
 const banner = () => {
@@ -17,8 +18,9 @@ const banner = () => {
                     một vùng đất mới
                     <br/>Đều là những trải nghiệm và những bài học mới để trưởng thành hơn</p>
                 <div className="button">
-                    <button className="store">Đến cửa hàng</button>
-                    <button className="advise">Tư vấn</button>
+                    <Button title="Đến của hàng" isBlack/>
+                    <Button title="Tư vấn" isBlack={false}/>
+
                 </div>
             </div>
         </div>
