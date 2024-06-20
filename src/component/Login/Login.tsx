@@ -20,8 +20,11 @@ const Login = () => {
             <Header></Header>
             <div className="align-Login">
                 <div className="login-container">
+
                     <h2 className={"Name-Login"}>2handtropical</h2>
                     <h3 className={"Name-Login"}>Log In</h3>
+                    <h2 className={"name-login"}>2handtropical</h2>
+                    <h3 className={"name-login"}>Log In</h3>
                     <form onSubmit={handleSubmit}>
                         <div className="form-group">
                             <input

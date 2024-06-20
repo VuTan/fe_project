@@ -1,5 +1,5 @@
 import React from "react";
-import "./banner.css";
+import "./banner.scss";
 import Button from "../Button/Button";
 import Marquee from "react-fast-marquee";
 

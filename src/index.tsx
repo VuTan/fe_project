@@ -9,6 +9,7 @@ import SigUp from "./component/SigUp/SigUp";
 import ProductDetail from "./component/Product/ProductDetail";
 import ShopPage from "./component/ShopPage";
 import Cart from "./component/Cart/Cart";
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );

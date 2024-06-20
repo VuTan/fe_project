@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './VideoSection.css';
 import Button from "../Button/Button";
 import {BrowserRouter as Router,Route, Routes, NavLink, Link} from "react-router-dom";
+import './VideoSection.scss';
 
 
 const VideoSection: React.FC = () => {
@@ -70,8 +71,8 @@ const VideoSection: React.FC = () => {
                 <h1>SỰ LỰA CHỌN HÀNG ĐẦU</h1>
                 <p>Cùng 2handtropical khám phá xem xu hướng thời trang hiện tại đang là gì. <br/>Và những nhãn hàng nào đang
                     là sự lựa chọn hàng đầu của những tín đồ thời trang.</p>
-                <NavLink to="/Shop"><Button title={"Đến cửa hàng"} isBlack/></NavLink>
 
+                <NavLink to="/Shop"><Button title={"Đến cửa hàng"} isBlack/></NavLink>
 
             </div>
         </div>

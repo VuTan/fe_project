@@ -6,7 +6,6 @@ import Footer from "./component/Footer/Footer";
 import Banner from "./component/Home/banner";
 import VideoSection from "./component/Home/VideoSection";
 import NewCollection from "./component/Home/NewCollection";
-import ShopPage from './component/ShopPage';
 import SliderNew from "./component/Home/SliderNew";
 import SliderType from "./component/Home/SliderType";
 

@@ -4,6 +4,7 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import CardSlider from '../Home/CardSlider'
 import AsNavFor from "../Home/AsNavFor";
+
 const ProductDetail = () => {
 
     const images = [
@@ -22,10 +23,12 @@ const ProductDetail = () => {
             <Header/>
             <div className="show-detail">
                 <div className="image-grid">
+
                     {images.map((image, index) => (
                         <img key={index} src={image.src} alt={image.alt} />
                     ))}
 
+                    <AsNavFor/>
                     <AsNavFor/>
 
                 </div>
@@ -70,7 +73,6 @@ const ProductDetail = () => {
             <Footer/>
         </>
     )
-
 }
 
 export default ProductDetail;

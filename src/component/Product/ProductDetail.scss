@@ -9,7 +9,6 @@
 }
 
 .image-grid {
-
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
@@ -110,11 +109,11 @@
   margin: 20px;
   text-align: center;
 }
+
 .name-style {
   margin: 20px;
   text-align: center;
 }
-
 
 @media (max-width: 1000px) {
   .show-detail {

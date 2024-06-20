@@ -20,7 +20,6 @@ const NewCollection: React.FC = () => {
                 <p>Khám phá thêm những sản phẩm chất lượng mà 2handtropical đang cung cấp</p>
                 <NavLink to="/Shop"><Button title={"Đến cửa hàng"} isBlack/></NavLink>
 
-
             </div>
 
             <h2 className="section-title">Danh mục sản phẩm</h2>
