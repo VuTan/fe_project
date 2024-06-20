@@ -7,6 +7,8 @@ import {BrowserRouter as Router,Route, Routes} from "react-router-dom";
 import Login from "./component/Login/Login";
 import SigUp from "./component/SigUp/SigUp";
 import ProductDetail from "./component/Product/ProductDetail";
+import ShopPage from "./component/ShopPage";
+import Cart from "./component/Cart/Cart";
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
@@ -18,6 +20,8 @@ root.render(
           <Route path="/Login" element={<Login/>}/>
           <Route path="/SigUp" element={<SigUp/>}/>
           <Route path="/Detail" element={<ProductDetail/>}/>
+            <Route path="/shop" element={<ShopPage/>}/>
+            <Route path="/Cart" element={<Cart/>}/>
         </Routes >
       </Router>
   </React.StrictMode>

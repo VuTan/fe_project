@@ -76,7 +76,7 @@ const Header = () => {
                         </div>
                         <div className="icons">
                             <NavLink to="#"><IoIosHeartEmpty /></NavLink>
-                            <NavLink to="#"><CiShoppingCart /></NavLink>
+                            <NavLink to="/Cart"><CiShoppingCart /></NavLink>
                             <button><NavLink className="login" to="/Login">Đăng nhập</NavLink></button>
                         </div>
 

@@ -2,16 +2,16 @@ import React from "react";
 import "./SliderType.scss"
 import CardSlider from "./CardSlider";
 
-const SilerType = () => {
+const SliderType = () => {
     return (
         <div className="slider2-contain">
             <div className="left">
-                <CardSlider></CardSlider>
+                <CardSlider sizeCard={"medium"} slideShow={3}></CardSlider>
             </div>
             <div className="right">
-                <CardSlider></CardSlider>
+                <CardSlider sizeCard={"medium"} slideShow={3}></CardSlider>
             </div>
         </div>);
 }
 
-export default SilerType;
+export default SliderType;
