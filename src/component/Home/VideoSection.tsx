@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './VideoSection.css';
+import './VideoSection.scss';
 import Button from "../Button/Button";
 
 const VideoSection: React.FC = () => {
