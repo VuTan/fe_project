@@ -7,7 +7,9 @@ type CardProductProps = {
 const CardProduct = (props: CardProductProps) => {
 
     return (<div className="card-product">
-        <div className={`card-img-${props.sizeCard}`}></div>
+        <div className={`card-img-${props.sizeCard}`}>
+            <img src={require("../images/Image.png")} alt="img"/>
+        </div>
         <div className="info">
             <div className="left">
                 <p className=" title">Nike Air Max Pulse</p>

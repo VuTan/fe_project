@@ -2,17 +2,21 @@
   display: inline-block;
 
   .card-img-large {
-    background-image: url("../images/Image.png");
     background-size: 100% 100%;
-    width: 430px;
-    height: 430px;
+
+    img{
+      height: 100%;
+      width: 100%;
+    }
   }
 
   .card-img-medium {
-    background-image: url("../images/Image.png");
     background-size: 100% 100%;
-    width: 200px;
-    height: 200px;
+
+    img{
+      height: 100%;
+      width: 100%;
+    }
   }
 
   .info {

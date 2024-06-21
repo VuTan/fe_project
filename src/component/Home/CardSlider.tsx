@@ -1,5 +1,5 @@
 import "./CardSlide.scss";
-import CardProduct from "./CardProduct";
+import CardProduct from "../Product/CardProduct";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
