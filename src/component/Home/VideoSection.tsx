@@ -1,12 +1,17 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './VideoSection.scss';
+import { useNavigate } from 'react-router-dom';
+import './VideoSection.css';
 import Button from "../Button/Button";
+import {BrowserRouter as Router,Route, Routes, NavLink, Link} from "react-router-dom";
+import './VideoSection.scss';
+
 
 const VideoSection: React.FC = () => {
     const [isPlaying, setIsPlaying] = useState(false);
     const [isEnded, setIsEnded] = useState(false);
     const [showControls, setShowControls] = useState(true);
     const videoRef = useRef<HTMLVideoElement>(null);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const video = videoRef.current;
@@ -44,7 +49,7 @@ const VideoSection: React.FC = () => {
 
     return (
         <div className="container">
-            <h2 className="section-title">2handtropcial tvc</h2>
+            <h2 className="section-title">2handtropical tvc</h2>
             <div className="video-section" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                 <video ref={videoRef} id="video" className="main-video" poster="">
                     <source src="/videos/your_video.mp4" type="video/mp4"/>
@@ -66,7 +71,9 @@ const VideoSection: React.FC = () => {
                 <h1>SỰ LỰA CHỌN HÀNG ĐẦU</h1>
                 <p>Cùng 2handtropical khám phá xem xu hướng thời trang hiện tại đang là gì. <br/>Và những nhãn hàng nào đang
                     là sự lựa chọn hàng đầu của những tín đồ thời trang.</p>
-                <Button title={"Đến cửa hàng"} isBlack/>
+
+                <NavLink to="/Shop"><Button title={"Đến cửa hàng"} isBlack/></NavLink>
+
             </div>
         </div>
     );

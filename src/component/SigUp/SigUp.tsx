@@ -61,7 +61,8 @@ const SignUp = () => {
             <div className="align-SignUp">
                 <form onSubmit={handleSubmit} className="signup-form">
                     {/*<div className="column">*/}
-                    <h3 className={"name-login"}>BECOME A NIKE MEMBER</h3>
+                    <h3>BECOME A NIKE MEMBER</h3>
+  <h3 className={"name-login"}>BECOME A NIKE MEMBER</h3>
                     <p>
                         Create your Nike Member profile and get first access to the very best of Nike products,
                         inspiration, and community.

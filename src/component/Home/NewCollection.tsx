@@ -1,8 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './NewCollection.scss';
 import Button from "../Button/Button";
+import {BrowserRouter as Router,Route, Routes, NavLink, Link} from "react-router-dom";
 
 const NewCollection: React.FC = () => {
+
+    const navigate = useNavigate();
+
     return (
         <div className="new-collection-section">
             <h2 className="section-title">Bộ sưu tập mới</h2>
@@ -13,7 +18,8 @@ const NewCollection: React.FC = () => {
             <div className="explore">
                 <h2>KHÁM PHÁ THÊM</h2>
                 <p>Khám phá thêm những sản phẩm chất lượng mà 2handtropical đang cung cấp</p>
-                <Button title={"Đến cửa hàng"} isBlack/>
+                <NavLink to="/Shop"><Button title={"Đến cửa hàng"} isBlack/></NavLink>
+
             </div>
 
             <h2 className="section-title">Danh mục sản phẩm</h2>

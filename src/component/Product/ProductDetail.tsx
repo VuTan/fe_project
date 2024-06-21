@@ -23,7 +23,14 @@ const ProductDetail = () => {
             <Header/>
             <div className="show-detail">
                 <div className="image-grid">
+
+                    {images.map((image, index) => (
+                        <img key={index} src={image.src} alt={image.alt} />
+                    ))}
+
                     <AsNavFor/>
+                    <AsNavFor/>
+
                 </div>
                 <div className="details">
                     <h1>Nike Air Max 97 SE</h1>
@@ -61,11 +68,11 @@ const ProductDetail = () => {
             </div>
             <h3 className={"name-style"}>Hidden lacing system was a first of its kind and delivers a streamlined
                 look.</h3>
+            <CardSlider></CardSlider>
             <CardSlider sizeCard={"large"} slideShow={3}></CardSlider>
             <Footer/>
         </>
     )
-
 }
 
 export default ProductDetail;
