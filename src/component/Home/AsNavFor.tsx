@@ -4,7 +4,32 @@ import "./AsNavFor.scss"
 
 const images = [
     {
-        src: "#",
+
+        src: "https://zocker.vn/pic/Product/giay-chay-bo-zocker-ultra-light-xanh-den_2880_HasThumb.webp",
+        alt: "Nike Air Max 92 SE"
+    },
+    {
+        src: "https://zocker.vn/pic/Product/giay-chay-bo-zocker-ultra-light-xanh-den_2880_HasThumb.webp",
+        alt: "Nike Air Max 93 SE"
+    },
+    {
+        src: "https://zocker.vn/pic/Product/giay-chay-bo-zocker-ultra-light-xanh-den_2880_HasThumb.webp",
+        alt: "Nike Air Max 94 SE"
+    },
+    {
+        src: "https://zocker.vn/pic/Product/giay-chay-bo-zocker-ultra-light-xanh-den_2880_HasThumb.webp",
+        alt: "Nike Air Max 95 SE"
+    },
+    {
+        src: "https://zocker.vn/pic/Product/giay-chay-bo-zocker-ultra-light-xanh-den_2880_HasThumb.webp",
+        alt: "Nike Air Max 96 SE"
+    },
+    {
+        src: "https://zocker.vn/pic/Product/giay-chay-bo-zocker-ultra-light-xanh-den_2880_HasThumb.webp",
+        alt: "Nike Air Max 97 SE"
+    },
+    {
+        src: "https://zocker.vn/pic/Product/giay-chay-bo-zocker-ultra-light-xanh-den_2880_HasThumb.webp",
         alt: "Nike Air Max 92 SE"
     },
     {
@@ -66,6 +91,7 @@ const AsNavFor = () => {
                     })}
                 </Slider>
             </div>
+
                 <div className={"css-9ubti4"}>
                     <div className={"css-17xce2z"}></div>
                 </div>

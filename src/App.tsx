@@ -1,9 +1,9 @@
 import React from 'react';
+
 import './App.css';
 import Header from "./component/Header/Header";
 import Footer from "./component/Footer/Footer";
 import Banner from "./component/Home/banner";
-
 import VideoSection from "./component/Home/VideoSection";
 import NewCollection from "./component/Home/NewCollection";
 import SliderNew from "./component/Home/SliderNew";

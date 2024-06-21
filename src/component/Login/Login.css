@@ -1,4 +1,40 @@
-@import "../../base";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: left;
+  font-family: "Helvetica Neue";
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 60px;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 60px;
+}
+
+h3 {
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32.67px;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
 
 .page-container {
   display: flex;
@@ -21,17 +57,16 @@
 }
 
 .Sigup {
-  color: $bg-Red;
+  color: #e10808;
   text-decoration: none;
 }
 
 .user-policy {
-  color: $bg-gray;
+  color: #444444;
 }
 
 .name-login {
   margin-bottom: 20px;
-  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -41,8 +76,8 @@
   justify-content: space-between;
 }
 
-.form-group input[type="email"],
-.form-group input[type="password"] {
+.form-group input[type=email],
+.form-group input[type=password] {
   width: calc(100% - 22px);
   padding: 10px;
   border: 1px solid #ddd;
@@ -54,14 +89,14 @@
   align-items: center;
 }
 
-.form-group input[type="checkbox"] {
+.form-group input[type=checkbox] {
   margin-right: 10px;
-  accent-color: $color_black;
+  accent-color: #000000;
 }
 
 .forgot-password {
   margin-left: auto;
-  color: $bg-Blue;
+  color: #0521d7;
   text-decoration: none;
   margin-top: 5px;
   font-size: 15px;
@@ -70,8 +105,8 @@
 .login-button {
   width: 100%;
   padding: 10px;
-  background-color: $color_black;
-  color: $bg-light-gray;
+  background-color: #000000;
+  color: #ffffff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -79,11 +114,13 @@
 }
 
 .login-button:hover {
-  background-color: $bg-gray;
+  background-color: #444444;
 }
 
 .note {
   margin: 10px 50px 10px 50px;
   text-align: center;
-  color: $bg-gray;
+  color: #444444;
 }
+
+/*# sourceMappingURL=Login.css.map */
