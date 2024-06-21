@@ -103,7 +103,6 @@ const ProductDetail = () => {
             <Footer/>
         </>
     )
-
 }
 
 export default ProductDetail;
