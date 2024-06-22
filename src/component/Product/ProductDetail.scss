@@ -3,23 +3,15 @@
 .show-detail {
   display: flex;
   flex-direction: row;
-  margin: 20px auto ;
   margin: 20px auto;
   max-width: 1000px;
 }
 
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 10px;
   flex: 1;
-}
-
-.image-grid img {
-  width: 100%;
-  height: 100%;
-  width: 50%;
-  height: auto;
 }
 
 .details {
@@ -30,12 +22,13 @@
 }
 
 .details h1 {
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 10px;
 }
 
 .details p {
   margin: 5px 0;
+  font-weight: bold;
 }
 
 .size-selector {
@@ -54,39 +47,40 @@
 
 .size {
   padding: 10px 20px;
-  border: 1px solid #000;
-  background-color: #fff;
+  border: 1px solid $color_black;
+  background-color: $bg-light-gray;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .size:hover {
-  background-color: #f0f0f0;
+  background-color: $bg-ultralight-gray;
+}
+
+.size-hold{
+  background-color: $color_black;
+  border: 1px solid $color_black;
+  color: $bg-light-gray;
 }
 
 .add-to-bag, .favourite {
   margin-top: 20px;
   padding: 15px;
-  background-color: #000;
-  color: #fff;
+  background-color: $color_black;
+  color: $bg-light-gray;
   border: none;
+  text-align: center;
+  border-radius: 20px;
   cursor: pointer;
   text-transform: uppercase;
 }
 
-.add-to-bag {
-  margin-bottom: 10px;
-  text-align: center;
-  border-radius: 20px;
-}
-
 .favourite {
   background-color: #ccc;
-  text-align: center;
-  border-radius: 20px;
 }
 
 .favourite:hover {
-  background-color: #aaa;
+  background-color: $bg-gray;
 }
 
 .frame {
@@ -128,10 +122,6 @@
     flex: 1;
   }
 
-  .image-grid img {
-    width: 100%;
-  }
-
   .frame {
     display: flex;
     justify-content: center;
@@ -147,4 +137,78 @@
     height: 800px;
   }
 
+}
+
+@media (max-width: 1000px) {
+  .popup {
+    top: 10%;
+    width: 80%;
+    max-height: 900px;
+    overflow-y: auto;
+  }
+}
+
+.popup {
+  position: fixed;
+  left: 60px;
+  right: 60px;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: $bg-light-gray;
+  padding: 20px;
+  border-radius: 5px;
+  animation: fadeIn 0.5s ease-in-out;
+  margin: 60px 60px 60px 60px;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(30, 28, 28, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.popup-content .close-button{
+  position: absolute;
+  right: 90px;
+  top: 80px;
+  cursor: pointer;
+  font-size: 30px;
+  background: $bg-light-gray;
+  border: none;
+  border-radius: 5px;
+}
+
+.details-show{
+  border: none;
+  background: $bg-light-gray;
+  font-size: 20px;
+  width: 100px;
+  margin-top: 10px;
+}
+
+.details-show:hover{
+  border-bottom: 1px solid $bg-gray;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

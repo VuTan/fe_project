@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './VideoSection.css';
 import Button from "../Button/Button";
 import {BrowserRouter as Router,Route, Routes, NavLink, Link} from "react-router-dom";
 import './VideoSection.scss';
