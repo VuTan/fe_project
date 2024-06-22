@@ -52,7 +52,7 @@ const AsNavFor = () => {
 
     return (
         <div className="slider-container">
-            <div className="left">
+            <div className="left1">
                 <Slider
                     asNavFor={nav1}
                     ref={sliderRef2}

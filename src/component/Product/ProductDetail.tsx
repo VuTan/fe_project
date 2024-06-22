@@ -50,6 +50,7 @@ const ProductDetail = () => {
                     <p>Men's Shoes</p>
                     <p>MRP: $ 16.995.00</p>
                     <p>Incl. of taxes (Also includes all applicable duties)</p>
+                    <button className="details-show" onClick={handleOpenPopup}>More Detail</button>
                     <div className="size-selector">
                         <h3>Select Size</h3>
                         <div className="sizes">
@@ -66,7 +67,6 @@ const ProductDetail = () => {
                     </div>
                     <button className="add-to-bag">Add to Bag</button>
                     <button className="favourite">Favourite</button>
-                    <button className="details-show" onClick={handleOpenPopup}>More Detail</button>
                     {showPopup && (
                         <>
                             <div className="popup-overlay" onClick={handleOverlayClick} ></div>
