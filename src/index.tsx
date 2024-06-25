@@ -7,7 +7,7 @@ import {BrowserRouter as Router,Route, Routes} from "react-router-dom";
 import Login from "./component/Login/Login";
 import SigUp from "./component/SigUp/SigUp";
 import ProductDetail from "./component/Product/ProductDetail";
-import ShopPage from "./component/ShopPage";
+import ShopPage from "./component/Product/ShopPage";
 import Cart from "./component/Cart/Cart";
 
 const root = ReactDOM.createRoot(

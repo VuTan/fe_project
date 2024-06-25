@@ -1,7 +1,6 @@
+@import "../../base";
 .shop-page {
   display: flex;
-  font-family: Arial, sans-serif;
-
   .sidebar {
     width: 250px;
     padding: 20px;
@@ -41,6 +40,7 @@
       margin-bottom: 10px;
       input {
         margin-right: 10px;
+        accent-color: #000000;
       }
     }
   }
