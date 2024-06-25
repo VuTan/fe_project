@@ -4,6 +4,10 @@ import {useParams} from "react-router-dom";
 import {fetchProductById} from "../../service/ProductService";
 import {Product} from "../../models/Product.modal";
 import AsNavFor from "../Home/AsNavFor";
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
+import CardSlider from '../Home/CardSlider'
+import Popup from "../Product/PopupDetailProduct"
 
 const ProductDetail = () => {
     const {id} = useParams();
@@ -20,7 +24,7 @@ const ProductDetail = () => {
     };
 
     const [showPopup, setShowPopup] = useState(false);
-    const [selectedSize, setSelectedSize] = useState('');
+    const [selectedSize, setSelectedSize] = useState<String>('');
 
     const handleSizeClick = (size: string) => {
         if (selectedSize === size) {
@@ -46,12 +50,12 @@ const ProductDetail = () => {
 
         if (event.target !== popupContent && event.target !== closeButton) {
             handleClosePopup();
-
         }
-    }
+    };
 
     return (
         <>
+            <Header/>
             <div className="show-detail">
                 <div className="image-grid">
                     <AsNavFor/>
@@ -61,18 +65,57 @@ const ProductDetail = () => {
                     <p>{product?.Type}</p>
                     <p>{product?.Price}</p>
                     <p>{product?.describe}</p>
+                    <button className="details-show" onClick={handleOpenPopup}>More Detail</button>
                     <div className="size-selector">
                         <h3>Select Size</h3>
                         <div className="sizes">
                             {product?.size.map((size) => (
-                                <button key={size} className="size">EU {size}</button>
+                                <button
+                                    key={size}
+                                    className={`size ${selectedSize === size ? 'size-hold' : ''}`}
+                                    onClick={() => handleSizeClick(size)}
+                                >
+                                    EU {size}
+                                </button>
                             ))}
                         </div>
                     </div>
                     <button className="add-to-bag">Add to Bag</button>
                     <button className="favourite">Favourite</button>
+                    {showPopup && (
+                        <>
+                            <div className="popup-overlay" onClick={handleOverlayClick}></div>
+                            <div className="popup">
+                                <div className="popup-content">
+                                    <button className="close-button" onClick={handleClosePopup}>&times;</button>
+                                    <Popup/>
+                                </div>
+                            </div>
+                        </>
+                    )}
                 </div>
             </div>
+            <h3 className={"name-style"}>Explore the Nike Air Max 97 SE Men's Shoes</h3>
+            <div className="frame">
+                <img src={"https://zocker.vn/pic/Product/giay-chay-bo-zocker-ultra-light-xanh-den_2880_HasThumb.webp"}
+                     alt="Nike Air Max 97 SE worn"/>
+            </div>
+            <h3 className={"name-style"}>Originally designed for performance running, the full-length Max Air unit adds
+                soft cushioning.</h3>
+            <div className="frame">
+                <img src={"https://zocker.vn/pic/Product/giay-chay-bo-zocker-ultra-light-xanh-den_2880_HasThumb.webp"}
+                     alt="Nike Air Max 97 SE worn"/>
+            </div>
+            <h3 className={"name-style"}>The suede and synthetic leather upper with mesh underlays adds breathability
+                and durability.</h3>
+            <div className="frame">
+                <img src={"https://zocker.vn/pic/Product/giay-chay-bo-zocker-ultra-light-xanh-den_2880_HasThumb.webp"}
+                     alt="Nike Air Max 97 SE worn"/>
+            </div>
+            <h3 className={"name-style"}>Hidden lacing system was a first of its kind and delivers a streamlined
+                look.</h3>
+            <CardSlider sizeCard={"large"} slideShow={3}></CardSlider>
+            <Footer/>
         </>
     )
 }
