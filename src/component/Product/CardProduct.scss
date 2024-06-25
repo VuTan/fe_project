@@ -1,26 +1,35 @@
+@import "../../base";
 .card-product {
   display: inline-block;
 
   .card-img-large {
-    background-image: url("../images/Image.png");
     background-size: 100% 100%;
-    width: 430px;
-    height: 430px;
+    background-color: transparent;
+
+    img{
+      height: 100%;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      background-clip: border-box;
+    }
   }
 
   .card-img-medium {
-    background-image: url("../images/Image.png");
     background-size: 100% 100%;
-    width: 200px;
-    height: 200px;
+
+    img{
+      height: 100%;
+      width: 100%;
+    }
   }
 
   .info {
-    height: 20%;
+    padding-top: 20px;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10px;
 
     .left {
       .title {

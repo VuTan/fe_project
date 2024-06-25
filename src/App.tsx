@@ -1,26 +1,46 @@
 import React from 'react';
-import './App.css';
-import Header from "./component/Header/Header";
-import Footer from "./component/Footer/Footer";
-import Banner from "./component/Home/banner";
 
-import VideoSection from "./component/Home/VideoSection";
-import NewCollection from "./component/Home/NewCollection";
-import SliderNew from "./component/Home/SliderNew";
-import SliderType from "./component/Home/SliderType";
+import {createBrowserRouter, Outlet, RouteObject, RouterProvider} from "react-router-dom";
+import './App.css';
+import HomeLayout from "./component/Home/HomeLayout";
+import MainLayout from "./component/MainLayout";
+import ShopPage from "./component/Shop/ShopPage";
+import ProductDetail from "./component/Product/ProductDetail";
+
+const appRouters: RouteObject[] = [
+    {
+        path: "/",
+        element: <MainLayout/>,
+        children: [
+            {
+                index: true,
+                element: <HomeLayout/>
+            },
+            {
+                path: "/shop",
+                element: <ShopPage/>,
+            },
+            {
+                path: "/shop/product/:id",
+                element: <ProductDetail/>
+            }
+        ]
+    }
+];
+
+const router = createBrowserRouter([
+    {
+        element: (
+            <Outlet/>
+        ),
+        children: appRouters,
+    }
+]);
 
 const App: React.FC = () => {
-  return (
-      <div className="App">
-          <Header></Header>
-          <Banner></Banner>
-          <SliderNew></SliderNew>
-          <VideoSection></VideoSection>
-          <NewCollection></NewCollection>
-          <SliderType></SliderType>
-          <Footer></Footer>
-      </div>
-  );
+    return (
+        <RouterProvider router={router}/>
+    );
 }
 
 export default App;

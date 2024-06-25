@@ -48,7 +48,7 @@ const Header = () => {
             </div>
             <nav>
                 <div className="logo">
-                    <NavLink to="/Detail">2handtropical</NavLink>
+                    <NavLink to="/">2handtropical</NavLink>
                 </div>
                 <div className="hamburger" onClick={toggleMenu}>
                     <GiHamburgerMenu />
