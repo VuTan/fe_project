@@ -15,7 +15,7 @@ const Cart = () => {
                     <div className="bag">
                         <div className="free-delivery">
                             <span>Free Delivery</span>
-                            <p>Applies to orders of ₹ 14 000.00 or more. <a href="#">View details</a></p>
+                            <p>Applies to orders of $ 14 000.00 or more. <a href="#">View details</a></p>
                         </div>
                         <h2>Bag</h2>
                         <div className="cart-item">
@@ -26,7 +26,7 @@ const Cart = () => {
                                 <p>Ashen Slate/Cobalt Bliss</p>
                                 <p>Size: L</p>
                                 <p>Quantity: 1</p>
-                                <p>MRP: ₹ 3 895.00</p>
+                                <p>MRP: $ 3 895.00</p>
                             </div>
                             <div className="item-actions">
                                 <button className="favorite"><IoIosHeartEmpty/></button>
@@ -41,7 +41,7 @@ const Cart = () => {
                                 <p>Flat Pewter/Light Bone/Black/White</p>
                                 <p>Size: 8</p>
                                 <p>Quantity: 1</p>
-                                <p>MRP: ₹ 16 995.00</p>
+                                <p>MRP:$ 16 995.00</p>
                             </div>
                             <div className="item-actions">
                                 <button className="favorite"><IoIosHeartEmpty/></button>
@@ -54,7 +54,7 @@ const Cart = () => {
                         <div className="summary-details">
                             <div className="subtotal">
                                 <span>Subtotal</span>
-                                <span>₹ 20 890.00</span>
+                                <span>$ 20 890.00</span>
                             </div>
                             <div className="delivery">
                                 <span>Estimated Delivery & Handling</span>
@@ -62,7 +62,7 @@ const Cart = () => {
                             </div>
                             <div className="total">
                                 <span>Total</span>
-                                <span>₹ 20 890.00</span>
+                                <span>$ 20 890.00</span>
                             </div>
                             <Button title={"Member Checkout"} isBlack/>
                         </div>

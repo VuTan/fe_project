@@ -1,0 +1,96 @@
+@import "../../base";
+.shop-page {
+  display: flex;
+  .sidebar {
+    width: 250px;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    height: 100vh; /* Chiều cao đầy đủ của khung nhìn */
+    overflow-y: auto; /* Cho phép cuộn dọc */
+
+    h3 {
+      margin-top: 0;
+    }
+
+    .category-buttons {
+      display: flex;
+      flex-direction: column;
+
+      .category-item {
+        padding: 10px 0;
+        cursor: pointer;
+        text-align: left;
+        border-bottom: 1px solid transparent;
+        font-size: 14px;
+        color: #000;
+
+        &:hover,
+        &.selected {
+          border-bottom: 1px solid #000;
+        }
+      }
+    }
+
+    h4 {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      input {
+        margin-right: 10px;
+        accent-color: #000000;
+      }
+    }
+  }
+
+  .product-list {
+    flex: 1;
+    padding: 20px;
+
+    .filter-sort {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+
+      .product-card {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+
+        img {
+          max-width: 100%;
+        }
+
+        .product-info {
+          text-align: left;
+
+          .tag {
+            color: orange;
+            font-size: 12px;
+          }
+
+          h2 {
+            font-size: 16px;
+            margin: 10px 0;
+          }
+
+          p {
+            margin: 5px 0;
+          }
+
+          .price {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
