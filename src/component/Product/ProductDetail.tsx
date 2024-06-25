@@ -72,7 +72,7 @@ const ProductDetail = () => {
                             {product?.size.map((size) => (
                                 <button
                                     key={size}
-                                    className={`size ${selectedSize === size ? 'size-hold' : ''}`}
+                                    className={`size ${selectedSize === size  ? 'size-hold' : ''}`}
                                     onClick={() => handleSizeClick(size)}
                                 >
                                     EU {size}
