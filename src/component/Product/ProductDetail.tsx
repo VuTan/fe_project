@@ -4,8 +4,6 @@ import {useParams} from "react-router-dom";
 import {fetchProductById} from "../../service/ProductService";
 import {Product} from "../../models/Product.modal";
 import AsNavFor from "../Home/AsNavFor";
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
 import CardSlider from '../Home/CardSlider'
 import Popup from "../Product/PopupDetailProduct"
 
@@ -24,14 +22,11 @@ const ProductDetail = () => {
     };
 
     const [showPopup, setShowPopup] = useState(false);
-    const [selectedSize, setSelectedSize] = useState<String>('');
+    const [selectedSize, setSelectedSize] = useState<number>();
 
-    const handleSizeClick = (size: string) => {
-        if (selectedSize === size) {
-            setSelectedSize('');
-        } else {
+    const handleSizeClick = (size: number) => {
+        if (selectedSize != size)
             setSelectedSize(size);
-        }
     };
     const handleOpenPopup = () => {
         setShowPopup(true);
@@ -55,7 +50,6 @@ const ProductDetail = () => {
 
     return (
         <>
-            <Header/>
             <div className="show-detail">
                 <div className="image-grid">
                     <AsNavFor/>
@@ -72,7 +66,7 @@ const ProductDetail = () => {
                             {product?.size.map((size) => (
                                 <button
                                     key={size}
-                                    className={`size ${selectedSize === size  ? 'size-hold' : ''}`}
+                                    className={`size ${selectedSize === size ? 'size-hold' : ''}`}
                                     onClick={() => handleSizeClick(size)}
                                 >
                                     EU {size}
@@ -88,7 +82,7 @@ const ProductDetail = () => {
                             <div className="popup">
                                 <div className="popup-content">
                                     <button className="close-button" onClick={handleClosePopup}>&times;</button>
-                                    <Popup/>
+                                    <Popup product={product}/>
                                 </div>
                             </div>
                         </>
@@ -115,7 +109,6 @@ const ProductDetail = () => {
             <h3 className={"name-style"}>Hidden lacing system was a first of its kind and delivers a streamlined
                 look.</h3>
             <CardSlider sizeCard={"large"} slideShow={3}></CardSlider>
-            <Footer/>
         </>
     )
 }
