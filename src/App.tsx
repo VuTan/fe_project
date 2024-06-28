@@ -6,6 +6,7 @@ import HomeLayout from "./component/Home/HomeLayout";
 import MainLayout from "./component/MainLayout";
 import ShopPage from "./component/Shop/ShopPage";
 import ProductDetail from "./component/Product/ProductDetail";
+import NotFound from "./component/404/NotFound";
 
 const appRouters: RouteObject[] = [
     {
@@ -23,6 +24,10 @@ const appRouters: RouteObject[] = [
             {
                 path: "/shop/product/:id",
                 element: <ProductDetail/>
+            },
+            {
+                path: "*",
+                element: <NotFound/>
             }
         ]
     }

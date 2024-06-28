@@ -71,7 +71,7 @@ const VideoSection: React.FC = () => {
                 <p>Cùng 2handtropical khám phá xem xu hướng thời trang hiện tại đang là gì. <br/>Và những nhãn hàng nào đang
                     là sự lựa chọn hàng đầu của những tín đồ thời trang.</p>
 
-                <NavLink to="/Shop"><Button title={"Đến cửa hàng"} isBlack/></NavLink>
+                <NavLink to="/shop"><Button title={"Đến cửa hàng"} isBlack/></NavLink>
 
             </div>
         </div>

@@ -18,7 +18,7 @@ const NewCollection: React.FC = () => {
             <div className="explore">
                 <h2>KHÁM PHÁ THÊM</h2>
                 <p>Khám phá thêm những sản phẩm chất lượng mà 2handtropical đang cung cấp</p>
-                <NavLink to="/Shop"><Button title={"Đến cửa hàng"} isBlack/></NavLink>
+                <NavLink to="/shop"><Button title={"Đến cửa hàng"} isBlack/></NavLink>
 
             </div>
 
