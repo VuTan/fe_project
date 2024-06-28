@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import './ProductDetail.scss';
-import {useParams} from "react-router-dom";
+import {useParams, useNavigate } from "react-router-dom";
 import {fetchProductById} from "../../service/ProductService";
 import {Product} from "../../models/Product.modal";
 import AsNavFor from "../Home/AsNavFor";
@@ -8,6 +8,10 @@ import CardSlider from '../Home/CardSlider'
 import Popup from "../Product/PopupDetailProduct"
 
 const ProductDetail = () => {
+
+    const [showPopup, setShowPopup] = useState(false);
+    const [selectedSize, setSelectedSize] = useState<number>();
+    const navigate = useNavigate();
     const {id} = useParams();
     const [product, setProduct] = useState<Product>()
     useEffect(() => {
@@ -21,11 +25,8 @@ const ProductDetail = () => {
         }
     };
 
-    const [showPopup, setShowPopup] = useState(false);
-    const [selectedSize, setSelectedSize] = useState<number>();
-
     const handleSizeClick = (size: number) => {
-        if (selectedSize != size)
+        if (selectedSize !== size)
             setSelectedSize(size);
     };
     const handleOpenPopup = () => {
@@ -47,6 +48,28 @@ const ProductDetail = () => {
             handleClosePopup();
         }
     };
+
+    useEffect(() => {
+        const onPopState = () => {
+            if (showPopup) {
+                // setShowPopup(false);
+                // window.history.replaceState({}, document.title, window.location.pathname);
+            }
+        };
+
+        return () =>{
+            if (showPopup){
+                setShowPopup(true);
+                navigate(`/shop/product/${id}`);
+                document.body.style.overflow = 'hidden';
+                window.addEventListener('popstate', onPopState);
+            }else{
+                setShowPopup(false);
+                document.body.style.overflow = 'auto';
+                window.removeEventListener('popstate', onPopState);
+            }
+        }
+    }, []);
 
     return (
         <>
@@ -78,12 +101,13 @@ const ProductDetail = () => {
                     <button className="favourite">Favourite</button>
                     {showPopup && (
                         <>
-                            <div className="popup-overlay" onClick={handleOverlayClick}></div>
-                            <div className="popup">
+                            <div className="popup-overlay" onClick={handleOverlayClick}>
+                            <div onClick={(e) => {e.stopPropagation()}} className="popup">
                                 <div className="popup-content">
-                                    <button className="close-button" onClick={handleClosePopup}>&times;</button>
+                                    <p className="close-button" onClick={handleClosePopup}>&times;</p>
                                     <Popup product={product}/>
                                 </div>
+                            </div>
                             </div>
                         </>
                     )}

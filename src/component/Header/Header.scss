@@ -57,6 +57,7 @@ nav{
   flex-grow: 1;
   justify-content: center;
   margin-right: 10px;
+  margin-bottom: 0;
 }
 
 .menu li {
@@ -126,7 +127,7 @@ nav{
 }
 
 .icons a {
-  margin-left: 5px;
+  margin-left: 10px;
   margin-bottom: 5px;
   display: flex;
   color: $color_black;
