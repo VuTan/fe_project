@@ -14,26 +14,25 @@ header {
   font-size: 14px;
 }
 
-.top-left span{
-  margin-right: 10px;
-  margin-left: 3px;
+.top-left{
+  text-align: center;
+}
+
+.language-selector{
+  margin-right: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+  color: $bg-gray;
+}
+
+.language-selector.active{
+  font-weight: bold;
+  color: $color_black;
 }
 
 .top-right span {
   margin-right: 10px;
   margin-left: 10px;
-}
-
-.top-left img {
-  vertical-align: middle;
-  margin-right: 5px;
-  width: 16px;
-  height: 16px;
-}
-
-.top-right span a {
-  text-decoration: none;
-  color: $bg-gray;
 }
 
 nav{

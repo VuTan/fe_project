@@ -7,6 +7,7 @@ import MainLayout from "./component/MainLayout";
 import ShopPage from "./component/Shop/ShopPage";
 import ProductDetail from "./component/Product/ProductDetail";
 import NotFound from "./component/404/NotFound";
+import "../src/i18n/i18n";
 
 const appRouters: RouteObject[] = [
     {
