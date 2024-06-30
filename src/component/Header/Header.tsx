@@ -1,14 +1,19 @@
 import "./Header.scss";
 import React, { useState } from 'react';
-import { IoBasketballOutline } from "react-icons/io5";
+import { SiNike } from "react-icons/si";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseOutline } from "react-icons/io5";
 import { CiShoppingCart } from "react-icons/ci";
 import { FiSearch } from "react-icons/fi";
 import {BrowserRouter as Router,Route, Routes, NavLink, Link} from "react-router-dom";
+import "../../i18n/i18n"
+import {useTranslation} from 'react-i18next'
 
 const Header = () => {
+    const { i18n } = useTranslation()
+    const { t } = useTranslation('header')
+    const [selectedLanguage, setSelectedLanguage] = useState('vi');
     const [menuOpen, setMenuOpen] = useState(false);
     const [searchTerm, setSearchTerm] = useState('');
 
@@ -31,15 +36,29 @@ const Header = () => {
         }
     };
 
+    const changeLanguage = (lng: 'vi'|'en') => {
+        setSelectedLanguage(lng)
+        i18n.changeLanguage(lng)
+    }
+
     return (
         <header>
             <div className="top-bar">
                 <div className="top-left">
-                    <IoBasketballOutline />
-                    <span  style={{color:"black"}}>VN |<span style={{color:"gray"}}>ENG</span></span>
+                    <SiNike />
+                    <span
+                        className={`language-selector ${selectedLanguage === 'vi' ? 'active' : ''}`}
+                        onClick={()=>{changeLanguage('vi')}}>VN
+                    </span>
+                    <span>|</span>
+                    <span
+                        className={`language-selector ${selectedLanguage === 'en' ? 'active' : ''}`}
+                        onClick={()=>{changeLanguage('en')}}>ENG
+                    </span>
+
                 </div>
                 <div className="top-right">
-                    <span>Cửa hàng </span>
+                    <span>{t('shop')} </span>
                     <span style={{color:"black"}}>|</span>
                     <span>08am - 22pm</span>
                     <span style={{color:"black"}}>|</span>
