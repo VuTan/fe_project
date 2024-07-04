@@ -53,14 +53,39 @@
 
         .item-details {
           flex: 1;
+
           h3 {
             font-size: 18px;
             margin-bottom: 5px;
           }
+
           p {
             margin: 2px 0;
             color: #555;
             font-size: 14px;
+          }
+
+          .quantity-control {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+
+            button {
+              background: none;
+              border: 1px solid #ddd;
+              padding: 5px 10px;
+              cursor: pointer;
+              font-size: 16px;
+
+              &:hover {
+                background-color: #f0f0f0;
+              }
+            }
+
+            span {
+              margin: 0 10px;
+              font-size: 14px;
+            }
           }
         }
 
@@ -156,15 +181,15 @@
       }
     }
   }
-}
 
-/* Responsive adjustments */
-@media (max-width: 767px) {
-  .cart-content {
-    flex-direction: column; /* Chuyển sang cột cho màn hình nhỏ */
-  }
 
-  .summary {
-    margin-top: 20px; /* Thêm khoảng cách trên cho màn hình nhỏ */
+  @media (max-width: 767px) {
+    .cart-content {
+      flex-direction: column;
+    }
+
+    .summary {
+      margin-top: 20px;
+    }
   }
 }
