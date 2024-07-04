@@ -94,7 +94,7 @@ const Header = () => {
                             <button onClick={handleSearch}><FiSearch /></button>
                         </div>
                         <div className="icons">
-                            <NavLink to="#"><IoIosHeartEmpty /></NavLink>
+                            <NavLink to="/favouriteProduct"><IoIosHeartEmpty /></NavLink>
                             <NavLink to="/Cart"><CiShoppingCart /></NavLink>
                             <button><NavLink className="login" to="/Login">Đăng nhập</NavLink></button>
                         </div>
