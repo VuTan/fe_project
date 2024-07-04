@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import './ProductDetail.scss';
-import {useParams} from "react-router-dom";
+import {useParams, useNavigate } from "react-router-dom";
 import {fetchProductById} from "../../service/ProductService";
 import {createBuyProduct, Product} from "../../models/Product.modal";
 import AsNavFor from "../Home/AsNavFor";
@@ -10,6 +10,10 @@ import {useDispatch} from "react-redux";
 import {addProduct} from "../../redux/Cart/reducers";
 
 const ProductDetail = () => {
+
+    const [showPopup, setShowPopup] = useState(false);
+    const [selectedSize, setSelectedSize] = useState<number>();
+    const navigate = useNavigate();
     const {id} = useParams();
     const [product, setProduct] = useState<Product>()
 
@@ -24,11 +28,8 @@ const ProductDetail = () => {
         }
     };
 
-    const [showPopup, setShowPopup] = useState(false);
-    const [selectedSize, setSelectedSize] = useState<number>();
-
     const handleSizeClick = (size: number) => {
-        if (selectedSize != size) {
+        if (selectedSize !== size)
             setSelectedSize(size);
         }
     };
@@ -53,12 +54,33 @@ const ProductDetail = () => {
     };
 
 
+
     const dispath = useDispatch()
     const handleAddToCart = (event: React.MouseEvent<HTMLButtonElement>) => {
 
         if (product && selectedSize)
             dispath(addProduct(createBuyProduct(product, selectedSize, 1)))
     }
+
+    useEffect(() => {
+        const onPopState = () => {
+            if (showPopup) {
+                // setShowPopup(false);
+                // window.history.replaceState({}, document.title, window.location.pathname);
+            }
+        };
+
+        return () =>{
+            if (showPopup){
+                navigate(`/shop/product/${id}`);
+                handleOpenPopup();
+                window.addEventListener('popstate', onPopState);
+            }else{
+                handleClosePopup();
+                window.removeEventListener('popstate', onPopState);
+            }
+        }
+    }, []);
 
     return (
         <>
@@ -90,12 +112,13 @@ const ProductDetail = () => {
                     <button className="favourite">Favourite</button>
                     {showPopup && (
                         <>
-                            <div className="popup-overlay" onClick={handleOverlayClick}></div>
-                            <div className="popup">
+                            <div className="popup-overlay" onClick={handleOverlayClick}>
+                            <div onClick={(e) => {e.stopPropagation()}} className="popup">
                                 <div className="popup-content">
-                                    <button className="close-button" onClick={handleClosePopup}>&times;</button>
+                                    <p className="close-button" onClick={handleClosePopup}>&times;</p>
                                     <Popup product={product}/>
                                 </div>
+                            </div>
                             </div>
                         </>
                     )}

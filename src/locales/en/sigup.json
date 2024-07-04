@@ -1,0 +1,25 @@
+{
+  "sign-up": {
+
+    "hello":"BECOME A NIKE MEMBER",
+    "t1":"Create your Nike Member profile and get first access to the very best of Nike products, inspiration, and community.",
+    "address":"Email address",
+    "pass":"Password",
+    "Fname":"First Name",
+    "Lname":"Last Name",
+    "t2":"Get a Nike Member Reward every year on your Birthday.",
+    "DOB":"Date of Birth",
+    "india":"India",
+    "usa":"USA",
+    "uk":"UK",
+    "men":"Male",
+    "woman":"Female",
+    "other":"Other",
+    "t3":"Sign up for emails to get updates from Nike on products, offers, and your Member benefits",
+    "come":"JOIN US",
+    "have a mem":"Already a Member?",
+    "sigin":"Sign In"
+
+  }
+
+}

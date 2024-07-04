@@ -8,6 +8,18 @@ $bg-light-gray: #ffffff;
 $bg-Red: #e10808;
 $bg-Blue: #0521d7;
 
+/* Dark mode variables */
+$bg-dark: #333333;
+
+body.light-mode {
+  background-color: $bg-light-gray;
+  color: $color_black;
+}
+
+body.dark-mode {
+  background-color: $bg-dark;
+  color: $bg-ultra-gray;
+}
 
 * {
   margin: 0;

@@ -1,0 +1,13 @@
+{
+  "sign-in": {
+    "login": "Log In",
+    "email": "email",
+    "pass": "password",
+    "remember": "Remember me",
+    "forgot": "Forgot Pass?",
+    "t1": "By logging into the 2handtropica store you accept our",
+    "li": "user policy",
+    "submit": "Submit",
+    "no account": "You don't have account?"
+  }
+}
