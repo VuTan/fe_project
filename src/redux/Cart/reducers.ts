@@ -44,15 +44,17 @@ const cartSlice = createSlice({
             localStorage.setItem("cartProduct", JSON.stringify(state.cartArr));
         },
         deleteProduct: (state, action: PayloadAction<buyProduct>) => {
-            const resultCart = state.cartArr.filter((product) =>
-                product.id !== action.payload.id && product.sizeBuy !== action.payload.sizeBuy);
-            state.cartArr = resultCart;
+            const updatedCartArr = state.cartArr.filter(
+                (product) => product.id !== action.payload.id || product.sizeBuy !== action.payload.sizeBuy
+            );
+
+            state.cartArr = updatedCartArr;
 
             toast.error(`Remove ${action.payload.Name} to cart`, {
                 position: "bottom-left"
             });
 
-            localStorage.setItem("cartProduct", JSON.stringify(state.cartArr));
+            localStorage.setItem("", JSON.stringify(state.cartArr));
         }
     }
 })
