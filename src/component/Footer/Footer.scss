@@ -34,7 +34,6 @@ footer {
 }
 
 .footer-column ul li a{
-  //font-weight:normal;
   text-decoration: none;
   color: $color_black;
 }
@@ -101,8 +100,6 @@ footer {
   border-top: 1px solid $bg-ultralight-gray;
 }
 
-//.dark-mode .footer-column h4 a,
-//.dark-mode .footer-column h4 a:hover,
 .dark-mode .footer-column ul li a,
 .dark-mode .footer-column ul li a:hover,
 .dark-mode .footer-links a {
@@ -125,8 +122,6 @@ footer {
   border-top: 1px solid $bg-gray;
 }
 
-//.light-mode .footer-column h4 a,
-//.light-mode .footer-column h4 a:hover,
 .light-mode .footer-column ul li a,
 .light-mode .footer-column ul li a:hover,
 .light-mode .footer-links a {

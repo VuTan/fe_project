@@ -1,5 +1,5 @@
 import "./Header.scss";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { SiNike } from "react-icons/si";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -7,7 +7,7 @@ import { IoCloseOutline } from "react-icons/io5";
 import { CiShoppingCart,CiLight } from "react-icons/ci";
 import { FiSearch } from "react-icons/fi";
 import { MdDarkMode } from "react-icons/md";
-import {BrowserRouter as Router,Route, Routes, NavLink, Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import "../../i18n/i18n"
 import {useTranslation} from 'react-i18next'
 
@@ -17,6 +17,17 @@ const Header = () => {
     const [selectedLanguage, setSelectedLanguage] = useState('vi');
     const [menuOpen, setMenuOpen] = useState(false);
     const [searchTerm, setSearchTerm] = useState('');
+    const [isDarkMode, setIsDarkMode] = useState(false);
+
+    useEffect(() => {
+        const savedLanguage = localStorage.getItem('language') || 'vi';
+        setSelectedLanguage(savedLanguage as 'vi' | 'en');
+        i18n.changeLanguage(savedLanguage);
+
+        const savedTheme = localStorage.getItem('theme') || 'light-mode';
+        document.body.classList.add(savedTheme);
+        setIsDarkMode(savedTheme === 'dark-mode');
+    }, [i18n]);
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
@@ -40,19 +51,16 @@ const Header = () => {
     const changeLanguage = (lng: 'vi'|'en') => {
         setSelectedLanguage(lng)
         i18n.changeLanguage(lng)
+
+        localStorage.setItem('language', lng);
     }
 
-    const [isDarkMode, setIsDarkMode] = useState(false);
-
     const toggleDarkMode = () => {
+        const newMode = isDarkMode ? 'light-mode' : 'dark-mode';
         setIsDarkMode(!isDarkMode);
-        if (isDarkMode) {
-            document.body.classList.remove('dark-mode');
-            document.body.classList.add('light-mode');
-        } else {
-            document.body.classList.remove('light-mode');
-            document.body.classList.add('dark-mode');
-        }
+        document.body.classList.remove('dark-mode', 'light-mode');
+        document.body.classList.add(newMode);
+        localStorage.setItem('theme', newMode);
     };
 
     return (
@@ -77,7 +85,6 @@ const Header = () => {
                     <span>{t('header-show.time')}</span>
                     <span>|</span>
                     <span>{t('header-show.open')}</span>
-                    {/*<span id={"iconn"}><CiLight/></span>*/}
                     <span id="iconn" onClick={toggleDarkMode}>
                         {isDarkMode ? <MdDarkMode/> : <CiLight/>}
                     </span>
@@ -96,8 +103,7 @@ const Header = () => {
                     </div>
                     <ul className="menu">
                         <li><NavLink to="/">{t('header-show.home')}</NavLink></li>
-                        <li><NavLink to="#">{t('header-show.men')}</NavLink></li>
-                        <li><NavLink to="#">{t('header-show.women')}</NavLink></li>
+                        <li><NavLink to="/shop">{t('header-show.men')}</NavLink></li>
                         <li><NavLink to="#">{t('header-show.promotion')}</NavLink></li>
                         <li><NavLink to="#">{t('header-show.collection')}</NavLink></li>
                         <li><NavLink to="#">{t('header-show.news')}</NavLink></li>
