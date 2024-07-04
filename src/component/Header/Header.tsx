@@ -82,7 +82,7 @@ const Header = () => {
                         <li><NavLink to="#">Giày nữ</NavLink></li>
                         <li><NavLink to="#">Khuyến mãi</NavLink></li>
                         <li><NavLink to="#">Bộ sưu tập</NavLink></li>
-                        <li><NavLink to="#">Tin tức</NavLink></li>
+                        <li><NavLink to="/news">Tin tức</NavLink></li>
                     </ul>
                     <div className="search-icons">
                         <div className="search">
@@ -95,7 +95,7 @@ const Header = () => {
                         </div>
                         <div className="icons">
                             <NavLink to="/favouriteProduct"><IoIosHeartEmpty /></NavLink>
-                            <NavLink to="/Cart"><CiShoppingCart /></NavLink>
+                            <NavLink to="/cart"><CiShoppingCart /></NavLink>
                             <button><NavLink className="login" to="/Login">Đăng nhập</NavLink></button>
                         </div>
 

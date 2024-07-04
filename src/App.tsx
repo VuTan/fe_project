@@ -9,7 +9,7 @@ import ProductDetail from "./component/Product/ProductDetail";
 import NotFound from "./component/404/NotFound";
 import "../src/i18n/i18n";
 import FavouriteProduct from "./component/Product/FavouriteProduct"; // Import FavouriteProduct component
-
+import News from "./component/News/News";
 const appRouters: RouteObject[] = [
     {
         path: "/",
@@ -34,6 +34,10 @@ const appRouters: RouteObject[] = [
             {
                 path: "/favouriteProduct", // Add FavouriteProduct
                 element: <FavouriteProduct />
+            },
+            {
+                path: "/news",
+                element: <News/>
             }
         ]
     }

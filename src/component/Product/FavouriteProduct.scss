@@ -9,21 +9,21 @@
 
   .favorite-items {
     display: flex;
-    flex-wrap: wrap; // Thêm dòng này để các mục có thể bao gói xuống hàng
-    gap: 10px; // Khoảng cách giữa các mục
-    padding: 20px; // Khoảng cách từ các mục tới viền ngoài
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
   }
 
   .favorite-item {
     position: relative;
-    width: 290px; // Định chiều rộng của mỗi mục
+    width: 290px;
     border: 1px solid #ddd;
     padding: 10px;
     border-radius: 10px;
     background-color: #fff;
 
     img {
-      width: 100%; // Đảm bảo ảnh chiếm toàn bộ chiều rộng của mục
+      width: 100%;
       height: auto;
       border-bottom: 1px solid #ddd;
       padding-bottom: 10px;
@@ -51,7 +51,7 @@
 
       .select-size {
         margin-top: 10px;
-        padding: 8px 16px; // Kích thước nút nhỏ hơn
+        padding: 8px 16px;
         background-color: black;
         color: white;
         border: none;
