@@ -59,13 +59,11 @@ const ProductDetail = () => {
 
         return () =>{
             if (showPopup){
-                setShowPopup(true);
                 navigate(`/shop/product/${id}`);
-                document.body.style.overflow = 'hidden';
+                handleOpenPopup();
                 window.addEventListener('popstate', onPopState);
             }else{
-                setShowPopup(false);
-                document.body.style.overflow = 'auto';
+                handleClosePopup();
                 window.removeEventListener('popstate', onPopState);
             }
         }

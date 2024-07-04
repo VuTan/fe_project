@@ -3,6 +3,7 @@ import './SigUp.scss';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import {NavLink} from 'react-router-dom';
+import {useTranslation} from "react-i18next";
 
 interface FormData {
     email: string;
@@ -16,6 +17,9 @@ interface FormData {
 }
 
 const SignUp = () => {
+
+    const { t } = useTranslation('sigup')
+
     const [formData, setFormData] = useState<FormData>({
         email: '',
         password: '',
@@ -57,19 +61,16 @@ const SignUp = () => {
     };
 
     return (<>
-            <Header/>
             <div className="align-SignUp">
                 <form onSubmit={handleSubmit} className="signup-form">
-                    {/*<div className="column">*/}
-                    <h3 className={"name-login"}>BECOME A NIKE MEMBER</h3>
+                    <h3 className={"name-login"}>{t('sign-up.hello')}</h3>
                     <p>
-                        Create your Nike Member profile and get first access to the very best of Nike products,
-                        inspiration, and community.
+                        {t('sign-up.t1')}
                     </p>
                     <input
                         type="email"
                         name="email"
-                        placeholder="Email address"
+                        placeholder={t('sign-up.address')}
                         value={formData.email}
                         onChange={handleChange}
                         required
@@ -77,7 +78,7 @@ const SignUp = () => {
                     <input
                         type="password"
                         name="password"
-                        placeholder="Password"
+                        placeholder={t('sign-up.pass')}
                         value={formData.password}
                         onChange={handleChange}
                         required
@@ -85,7 +86,7 @@ const SignUp = () => {
                     <input
                         type="text"
                         name="firstName"
-                        placeholder="First Name"
+                        placeholder={t('sign-up.Fname')}
                         value={formData.firstName}
                         onChange={handleChange}
                         required
@@ -93,26 +94,24 @@ const SignUp = () => {
                     <input
                         type="text"
                         name="lastName"
-                        placeholder="Last Name"
+                        placeholder={t('sign-up.Lname')}
                         value={formData.lastName}
                         onChange={handleChange}
                         required
                     />
-                    {/*</div>*/}
-                    {/*<div className="column">*/}
-                    <p>Get a Nike Member Reward every year on your Birthday.</p>
+                    <p>{t('sign-up.t2')}</p>
                     <input
                         type="date"
                         name="dateOfBirth"
-                        placeholder="Date of Birth"
+                        placeholder={t('sign-up.DOB')}
                         value={formData.dateOfBirth}
                         onChange={handleChange}
                         required
                     />
                     <select name="country" value={formData.country} onChange={handleChange}>
-                        <option value="India">India</option>
-                        <option value="USA">USA</option>
-                        <option value="UK">UK</option>
+                        <option value="India">{t('sign-up.india')}</option>
+                        <option value="USA">{t('sign-up.usa')}</option>
+                        <option value="UK">{t('sign-up.uk')}</option>
                     </select>
                     <div className="sex">
                         <button
@@ -120,21 +119,21 @@ const SignUp = () => {
                             className={`gender-button ${formData.gender === 'Male' ? 'active' : ''}`}
                             onClick={() => handleGenderChange('Male')}
                         >
-                            Male
+                            {t('sign-up.men')}
                         </button>
                         <button
                             type={"button"}
                             className={`gender-button ${formData.gender === 'Female' ? 'active' : ''}`}
                             onClick={() => handleGenderChange('Female')}
                         >
-                            Female
+                            {t('sign-up.woman')}
                         </button>
                         <button
                             type={"button"}
                             className={`gender-button ${formData.gender === 'other' ? 'active' : ''}`}
                             onClick={() => handleGenderChange('other')}
                         >
-                            Other
+                            {t('sign-up.other')}
                         </button>
                     </div>
                     <label>
@@ -144,17 +143,15 @@ const SignUp = () => {
                             checked={formData.emailUpdates}
                             onChange={handleChange}
                         />
-                        Sign up for emails to get updates from Nike on products, offers, and your Member benefits
+                        {t('sign-up.t3')}
                     </label>
-                    <button type="submit">JOIN US</button>
+                    <button type="submit">{t('sign-up.come')}</button>
                     <p>
-                        Already a Member? <NavLink to="/Login">Sign In</NavLink>.
+                        {t('sign-up.have a mem')} <NavLink to="/Login">{t('sign-up.sigin')}</NavLink>.
                     </p>
-                    {/*</div>*/}
                 </form>
             </div>
-            <Footer/>
-        </>
+    </>
     );
 };
 

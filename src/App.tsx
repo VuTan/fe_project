@@ -7,8 +7,11 @@ import MainLayout from "./component/MainLayout";
 import ShopPage from "./component/Shop/ShopPage";
 import ProductDetail from "./component/Product/ProductDetail";
 import NotFound from "./component/404/NotFound";
+import Login from "./component/Login/Login";
+import Register from "./component/SigUp/SigUp";
 import "../src/i18n/i18n";
-import FavouriteProduct from "./component/Product/FavouriteProduct"; // Import FavouriteProduct component
+import FavouriteProduct from "./component/Product/FavouriteProduct";
+import Cart from "./component/Cart/Cart";
 
 const appRouters: RouteObject[] = [
     {
@@ -32,8 +35,20 @@ const appRouters: RouteObject[] = [
                 element: <NotFound/>
             },
             {
-                path: "/favouriteProduct", // Add FavouriteProduct
+                path: "/Login",
+                element: <Login/>
+            },
+            {
+                path: "/SigUp",
+                element: <Register/>
+            },
+            {
+                path: "/favouriteProduct",
                 element: <FavouriteProduct />
+            },
+            {
+                path: "/Cart",
+                element: <Cart />
             }
         ]
     }
