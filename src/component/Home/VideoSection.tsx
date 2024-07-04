@@ -3,9 +3,13 @@ import { useNavigate } from 'react-router-dom';
 import Button from "../Button/Button";
 import {BrowserRouter as Router,Route, Routes, NavLink, Link} from "react-router-dom";
 import './VideoSection.scss';
-
+import "../../i18n/i18n"
+import {useTranslation} from 'react-i18next'
 
 const VideoSection: React.FC = () => {
+    const { t } = useTranslation('collectionvideo')
+
+
     const [isPlaying, setIsPlaying] = useState(false);
     const [isEnded, setIsEnded] = useState(false);
     const [showControls, setShowControls] = useState(true);
@@ -52,7 +56,6 @@ const VideoSection: React.FC = () => {
             <div className="video-section" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                 <video ref={videoRef} id="video" className="main-video" poster="">
                     <source src="/videos/your_video.mp4" type="video/mp4"/>
-                    Your browser does not support the video tag.
                 </video>
                 {showControls && (
                     <div className={`play-button ${isPlaying ? 'hidden' : ''}`} onClick={handlePlay}>
@@ -67,11 +70,11 @@ const VideoSection: React.FC = () => {
                 )}
             </div>
             <div className="text-section">
-                <h1>SỰ LỰA CHỌN HÀNG ĐẦU</h1>
-                <p>Cùng 2handtropical khám phá xem xu hướng thời trang hiện tại đang là gì. <br/>Và những nhãn hàng nào đang
-                    là sự lựa chọn hàng đầu của những tín đồ thời trang.</p>
+                <h1>{t('text-section.choices')}</h1>
+                <p>{t("text-section.p")}<br/>
+                    {t("text-section.p2")}</p>
 
-                <NavLink to="/shop"><Button title={"Đến cửa hàng"} isBlack/></NavLink>
+                <NavLink to="/shop"><Button title= {t("text-section.store")} isBlack/></NavLink>
 
             </div>
         </div>

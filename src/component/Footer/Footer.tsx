@@ -2,32 +2,36 @@
 import React from "react";
 import "./Footer.scss";
 import { BiLogoGmail } from "react-icons/bi";
+import "../../i18n/i18n"
+import {useTranslation} from 'react-i18next'
 const Footer = () => {
+    const { t } = useTranslation('footer')
+
     return(
         <footer>
             <div className="footer-container">
                 <div className="footer-column">
-                    <h4><a href="#">TÌM CỬA HÀNG</a></h4>
+                    <h4><a href="#">{t('search')}</a></h4>
                     <ul>
-                    <li><a href="#">Danh Mục Sản Phẩm</a></li>
-                    <li><a href="#">Bộ Sưu Tập Mới</a></li>
-                    <li><a href="#">Chính Sách Đổi Trả</a></li>
-                    <li><a href="#">Thu Gom giày Cũ</a></li>
+                    <li><a href="#">{t('product_portfolio')}</a></li>
+                    <li><a href="#">{t('collection')}</a></li>
+                    <li><a href="#">{t('policy')}</a></li>
+                    <li><a href="#">{t('old shoes')}</a></li>
                     </ul>
                 </div>
                 <div className="footer-column">
-                    <h4>SẢN PHẨM</h4>
+                    <h4>{t('product')}</h4>
                     <ul>
-                        <li><a href="#">Thời trang nam</a></li>
-                        <li><a href="#">Thời trang nữ</a></li>
-                        <li><a href="#">Thời trang Unisex</a></li>
-                        <li><a href="#">Thời trang có hạn (Limited)</a></li>
-                        <li><a href="#">Chương trình khuyến mãi</a></li>
-                        <li><a href="#">Sự kiện cùng người nổi tiếng</a></li>
+                        <li><a href="#">{t("men")}</a></li>
+                        <li><a href="#">{t("women")}</a></li>
+                        <li><a href="#">{t("uni")}</a></li>
+                        <li><a href="#">{t("limited")}</a></li>
+                        <li><a href="#">{t("promotion")}</a></li>
+                        <li><a href="#">{t("event")}</a></li>
                     </ul>
                 </div>
                 <div className="footer-column">
-                    <h4>KÊNH TRUYỀN THÔNG</h4>
+                    <h4>{t("media")}</h4>
                     <ul>
                         <li><a href="#">Youtube</a></li>
                         <li><a href="#">Facebook</a></li>
@@ -36,14 +40,13 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className="footer-column">
-                    <h4>YÊU CẦU HỖ TRỢ</h4>
-                    <p>Nếu bạn đang có thắc mắc về sản phẩm và cần đến sự hỗ trợ từ đội ngũ tư vấn viên thì hãy để lại
-                        thông tin. Để chúng tôi có thể hỗ trợ bạn nhanh nhất có thể</p>
+                    <h4>{t("supported")}</h4>
+                    <p>{t("request")}</p>
                     <form>
                         <div style={{position: 'relative', width: 'max-content'}}>
                             <input
                                 type="email"
-                                placeholder="Nhập địa chỉ email"
+                                placeholder={t("email")}
                             />
                             <button
                                 type="submit"
@@ -57,10 +60,10 @@ const Footer = () => {
             <div className="footer-bottom">
                 <p>Viet Nam © 2024 - Design by team Fe 48</p>
                 <div className="footer-links">
-                    <a href="#">Guides</a>
-                    <a href="#">Terms of Sale</a>
-                    <a href="#">Terms of Use</a>
-                    <a href="#">Nike Privacy Policy</a>
+                    <a href="#">{t("Guides")}</a>
+                    <a href="#">{t("Terms of Sale")}</a>
+                    <a href="#"> {t("Terms of Use")}</a>
+                    <a href="#">{t("Nike Privacy Policy")}</a>
                 </div>
             </div>
         </footer>
