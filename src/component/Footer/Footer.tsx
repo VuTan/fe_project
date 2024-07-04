@@ -4,32 +4,36 @@ import "./Footer.scss";
 import { BiLogoGmail } from "react-icons/bi";
 
 import {BrowserRouter as Router,Route, Routes, NavLink, Link} from "react-router-dom";
+import "../../i18n/i18n"
+import {useTranslation} from 'react-i18next'
 const Footer = () => {
+    const { t } = useTranslation('footer')
+
     return(
         <footer>
             <div className="footer-container">
                 <div className="footer-column">
-                    <h4>TÌM CỬA HÀNG</h4>
+                    <h4>{t('search')}</h4>
                     <ul>
-                    <li><NavLink to="#">Danh Mục Sản Phẩm</NavLink></li>
-                    <li><NavLink to="#">Bộ Sưu Tập Mới</NavLink></li>
-                    <li><NavLink to="#">Chính Sách Đổi Trả</NavLink></li>
-                    <li><NavLink to="#">Địa Chỉ</NavLink></li>
+                    <li><a href="#">{t('product_portfolio')}</a></li>
+                    <li><a href="#">{t('collection')}</a></li>
+                    <li><a href="#">{t('policy')}</a></li>
+                    <li><a href="#">{t('old shoes')}</a></li>
                     </ul>
                 </div>
                 <div className="footer-column">
-                    <h4>SẢN PHẨM</h4>
+                    <h4>{t('product')}</h4>
                     <ul>
-                        <li><NavLink to="#">Thời trang nam</NavLink></li>
-                        <li><NavLink to="#">Thời trang nữ</NavLink></li>
-                        <li><NavLink to="#">Thời trang Unisex</NavLink></li>
-                        <li><NavLink to="#">Thời trang có hạn (Limited)</NavLink></li>
-                        <li><NavLink to="#">Chương trình khuyến mãi</NavLink></li>
-                        <li><NavLink to="#">Sự kiện cùng người nổi tiếng</NavLink></li>
+                        <li><a href="#">{t("men")}</a></li>
+                        <li><a href="#">{t("women")}</a></li>
+                        <li><a href="#">{t("uni")}</a></li>
+                        <li><a href="#">{t("limited")}</a></li>
+                        <li><a href="#">{t("promotion")}</a></li>
+                        <li><a href="#">{t("event")}</a></li>
                     </ul>
                 </div>
                 <div className="footer-column">
-                    <h4>KÊNH TRUYỀN THÔNG</h4>
+                    <h4>{t("media")}</h4>
                     <ul>
                         <li><NavLink to="#">Youtube</NavLink></li>
                         <li><NavLink to="#">Facebook</NavLink></li>
@@ -38,14 +42,13 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className="footer-column">
-                    <h4>YÊU CẦU HỖ TRỢ</h4>
-                    <p>Nếu bạn đang có thắc mắc về sản phẩm và cần đến sự hỗ trợ từ đội ngũ tư vấn viên thì hãy để lại
-                        thông tin. Để chúng tôi có thể hỗ trợ bạn nhanh nhất có thể</p>
+                    <h4>{t("supported")}</h4>
+                    <p>{t("request")}</p>
                     <form>
                         <div style={{position: 'relative', width: 'max-content'}}>
                             <input
                                 type="email"
-                                placeholder="Nhập địa chỉ email"
+                                placeholder={t("email")}
                             />
                             <button
                                 type="submit"
@@ -59,10 +62,10 @@ const Footer = () => {
             <div className="footer-bottom">
                 <p>Viet Nam © 2024 - Design By Fe Team 48</p>
                 <div className="footer-links">
-                    <NavLink to="#">Guides</NavLink>
-                    <NavLink to="#">Terms of Sale</NavLink>
-                    <NavLink to="#">Terms of Use</NavLink>
-                    <NavLink to="#">Nike Privacy Policy</NavLink>
+                    <a href="#">{t("Guides")}</a>
+                    <a href="#">{t("Terms of Sale")}</a>
+                    <a href="#"> {t("Terms of Use")}</a>
+                    <a href="#">{t("Nike Privacy Policy")}</a>
                 </div>
             </div>
         </footer>

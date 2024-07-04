@@ -10,6 +10,7 @@ import NotFound from "./component/404/NotFound";
 import Login from "./component/Login/Login";
 import Register from "./component/SigUp/SigUp";
 import "../src/i18n/i18n";
+import FavouriteProduct from "./component/Product/FavouriteProduct"; // Import FavouriteProduct component
 
 const appRouters: RouteObject[] = [
     {
@@ -39,6 +40,10 @@ const appRouters: RouteObject[] = [
             {
                 path: "/SigUp",
                 element: <Register/>
+            },
+            {
+                path: "/favouriteProduct", // Add FavouriteProduct
+                element: <FavouriteProduct />
             }
         ]
     }
