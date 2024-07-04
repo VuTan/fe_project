@@ -7,7 +7,7 @@ import AsNavFor from "../Home/AsNavFor";
 import CardSlider from '../Home/CardSlider'
 import Popup from "../Product/PopupDetailProduct"
 import {useDispatch} from "react-redux";
-import {addProduct} from "../../redux/Cart/reducers";
+import {addProduct} from "../../redux/cart.reducers";
 
 const ProductDetail = () => {
 
@@ -32,7 +32,7 @@ const ProductDetail = () => {
         if (selectedSize !== size)
             setSelectedSize(size);
         }
-    };
+
     const handleOpenPopup = () => {
         setShowPopup(true);
         document.body.style.overflow = 'hidden';

@@ -1,11 +1,14 @@
-import React, { useState ,useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 
 import './Cart.scss';
 import {IoIosHeartEmpty} from "react-icons/io";
 import {AiOutlineDelete} from "react-icons/ai";
 import Button from "../Button/Button";
 import SliderNew from "../Home/SliderNew";
-
+import {useDispatch, useSelector} from "react-redux";
+import {RootState} from "../../redux/store";
+import {deleteProduct, getTotals} from "../../redux/cart.reducers";
+import {buyProduct} from "../../models/Product.modal";
 
 const Cart = () => {
     const [cartItems, setCartItems] = useState([
@@ -32,11 +35,14 @@ const Cart = () => {
     ]);
 
     const incrementQuantity = ({id}: { id: any }) => {
-        setCartItems(cartItems.map(item => item.id === id ? { ...item, quantity: item.quantity + 1 } : item));
+        setCartItems(cartItems.map(item => item.id === id ? {...item, quantity: item.quantity + 1} : item));
     };
 
     const decrementQuantity = ({id}: { id: any }) => {
-        setCartItems(cartItems.map(item => item.id === id && item.quantity > 1 ? { ...item, quantity: item.quantity - 1 } : item));
+        setCartItems(cartItems.map(item => item.id === id && item.quantity > 1 ? {
+            ...item,
+            quantity: item.quantity - 1
+        } : item));
     };
 
     const removeItem = ({id}: { id: any }) => {
@@ -47,13 +53,6 @@ const Cart = () => {
         return cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0).toFixed(2);
     };
 
-
-import {useDispatch, useSelector} from "react-redux";
-import {RootState} from "../../redux/store";
-import {deleteProduct, getTotals} from "../../redux/cart.reducers";
-import {buyProduct} from "../../models/Product.modal";
-
-const Cart = () => {
     const cart = useSelector((state: RootState) => state.cart)
     const dispath = useDispatch();
     const handleDelete = (product: buyProduct) => {
@@ -87,7 +86,7 @@ const Cart = () => {
 
                         {cartItems.map(item => (
                             <div key={item.id} className="cart-item">
-                                <img src={item.image} alt={item.name} />
+                                <img src={item.image} alt={item.name}/>
                                 <div className="item-details">
                                     <h3>{item.name}</h3>
                                     <p>{item.description}</p>
@@ -101,8 +100,9 @@ const Cart = () => {
                                     <p>MRP: $ {item.price.toFixed(2)}</p>
                                 </div>
                                 <div className="item-actions">
-                                    <button className="favorite"><IoIosHeartEmpty /></button>
-                                    <button className="delete" onClick={() => removeItem({id: item.id})}><AiOutlineDelete /></button>
+                                    <button className="favorite"><IoIosHeartEmpty/></button>
+                                    <button className="delete" onClick={() => removeItem({id: item.id})}>
+                                        <AiOutlineDelete/></button>
                                 </div>
                             </div>
                         ))}
@@ -140,7 +140,7 @@ const Cart = () => {
                         <div className="summary-details">
                             <div className="subtotal">
                                 <span>Subtotal</span>
-                      <span>{formatterVNDSymbol(cart.cartTotalAmount)}</span>
+                                <span>{formatterVNDSymbol(cart.cartTotalAmount)}</span>
 
                             </div>
                             <div className="delivery">
@@ -153,7 +153,7 @@ const Cart = () => {
                                 <span>{formatterVNDSymbol(cart.cartTotalAmount)}</span>
 
                             </div>
-                            <Button title={"Member Checkout"} isBlack />
+                            <Button title={"Member Checkout"} isBlack/>
                         </div>
                     </div>
                 </div>
@@ -163,7 +163,7 @@ const Cart = () => {
                 </div>
             </div>
 
-            <SliderNew />
+            <SliderNew/>
 
         </>
     );
