@@ -1,5 +1,5 @@
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
-import {buyProduct} from "../../models/Product.modal";
+import {buyProduct} from "../models/Product.modal";
 import {toast} from "react-toastify";
 
 export interface CartState {
@@ -16,7 +16,7 @@ const initialState: CartState = {
 
 
 const cartSlice = createSlice({
-    name: "prodcut",
+    name: "product",
     initialState,
     reducers: {
         addProduct: (state, action: PayloadAction<buyProduct>) => {
@@ -54,11 +54,28 @@ const cartSlice = createSlice({
                 position: "bottom-left"
             });
 
-            localStorage.setItem("", JSON.stringify(state.cartArr));
+            localStorage.setItem("cartProduct", JSON.stringify(state.cartArr));
+        },
+        getTotals: (state) => {
+            let {total, quantity} = state.cartArr.reduce((cartTotal, cartProduct) => {
+                const {Price, quantity} = cartProduct;
+                const parsePrice = Price.replace(/,/g, "")
+                const productTotal = +parsePrice * quantity;
+
+                cartTotal.total += productTotal;
+                cartTotal.quantity += quantity;
+
+                return cartTotal;
+            }, {
+                total: 0,
+                quantity: 0,
+            })
+            state.cartTotalQuantity = quantity;
+            state.cartTotalAmount = total;
         }
     }
 })
 
 const cartReducer = cartSlice.reducer
-export const {addProduct, deleteProduct} = cartSlice.actions
+export const {addProduct, deleteProduct, getTotals} = cartSlice.actions
 export default cartReducer;
