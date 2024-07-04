@@ -66,9 +66,9 @@ const AsNavFor = () => {
                     })}
                 </Slider>
             </div>
-                <div className={"css-9ubti4"}>
-                    <div className={"css-17xce2z"}></div>
-                </div>
+                {/*<div className={"css-9ubti4"}>*/}
+                {/*    <div className={"css-17xce2z"}></div>*/}
+                {/*</div>*/}
             <div className="right">
                 <Slider asNavFor={nav2} ref={sliderRef1} arrows={false} vertical={true}>
                     {images.map((img, index) => {
