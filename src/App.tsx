@@ -13,6 +13,7 @@ import "../src/i18n/i18n";
 import FavouriteProduct from "./component/Product/FavouriteProduct";
 import Cart from "./component/Cart/Cart";
 
+
 const appRouters: RouteObject[] = [
     {
         path: "/",
@@ -31,6 +32,7 @@ const appRouters: RouteObject[] = [
                 element: <ProductDetail/>
             },
             {
+
                 path: "*",
                 element: <NotFound/>
             },
@@ -66,6 +68,7 @@ const router = createBrowserRouter([
 const App: React.FC = () => {
     return (
         <RouterProvider router={router}/>
+
     );
 }
 
