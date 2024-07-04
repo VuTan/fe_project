@@ -93,7 +93,7 @@ const ProductDetail = () => {
                     <p>{product?.Type}</p>
                     <p>{product?.Price}</p>
                     <p>{product?.describe}</p>
-                    <button className="details-show" onClick={handleOpenPopup}>More Detail</button>
+                    <h6 className="details-show" onClick={handleOpenPopup}>More Detail</h6>
                     <div className="size-selector">
                         <h3>Select Size</h3>
                         <div className="sizes">
