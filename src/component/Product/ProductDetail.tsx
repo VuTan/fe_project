@@ -2,14 +2,17 @@ import React, {useEffect, useState} from 'react';
 import './ProductDetail.scss';
 import {useParams} from "react-router-dom";
 import {fetchProductById} from "../../service/ProductService";
-import {Product} from "../../models/Product.modal";
+import {createBuyProduct, Product} from "../../models/Product.modal";
 import AsNavFor from "../Home/AsNavFor";
 import CardSlider from '../Home/CardSlider'
 import Popup from "../Product/PopupDetailProduct"
+import {useDispatch} from "react-redux";
+import {addProduct} from "../../redux/Cart/reducers";
 
 const ProductDetail = () => {
     const {id} = useParams();
     const [product, setProduct] = useState<Product>()
+
     useEffect(() => {
         getProduct(id);
     }, []);
@@ -25,8 +28,9 @@ const ProductDetail = () => {
     const [selectedSize, setSelectedSize] = useState<number>();
 
     const handleSizeClick = (size: number) => {
-        if (selectedSize != size)
+        if (selectedSize != size) {
             setSelectedSize(size);
+        }
     };
     const handleOpenPopup = () => {
         setShowPopup(true);
@@ -47,6 +51,14 @@ const ProductDetail = () => {
             handleClosePopup();
         }
     };
+
+
+    const dispath = useDispatch()
+    const handleAddToCart = (event: React.MouseEvent<HTMLButtonElement>) => {
+
+        if (product && selectedSize)
+            dispath(addProduct(createBuyProduct(product, selectedSize, 1)))
+    }
 
     return (
         <>
@@ -74,7 +86,7 @@ const ProductDetail = () => {
                             ))}
                         </div>
                     </div>
-                    <button className="add-to-bag">Add to Bag</button>
+                    <button className="add-to-bag" onClick={handleAddToCart}>Add to Bag</button>
                     <button className="favourite">Favourite</button>
                     {showPopup && (
                         <>

@@ -6,6 +6,8 @@ import HomeLayout from "./component/Home/HomeLayout";
 import MainLayout from "./component/MainLayout";
 import ShopPage from "./component/Shop/ShopPage";
 import ProductDetail from "./component/Product/ProductDetail";
+import Cart from "./component/Cart/Cart";
+
 
 const appRouters: RouteObject[] = [
     {
@@ -23,6 +25,10 @@ const appRouters: RouteObject[] = [
             {
                 path: "/shop/product/:id",
                 element: <ProductDetail/>
+            },
+            {
+                path: "/Cart",
+                element: <Cart/>
             }
         ]
     }
@@ -40,6 +46,7 @@ const router = createBrowserRouter([
 const App: React.FC = () => {
     return (
         <RouterProvider router={router}/>
+
     );
 }
 
