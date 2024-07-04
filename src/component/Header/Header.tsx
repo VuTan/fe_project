@@ -4,8 +4,9 @@ import { SiNike } from "react-icons/si";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseOutline } from "react-icons/io5";
-import { CiShoppingCart } from "react-icons/ci";
+import { CiShoppingCart,CiLight } from "react-icons/ci";
 import { FiSearch } from "react-icons/fi";
+import { MdDarkMode } from "react-icons/md";
 import {BrowserRouter as Router,Route, Routes, NavLink, Link} from "react-router-dom";
 import "../../i18n/i18n"
 import {useTranslation} from 'react-i18next'
@@ -41,6 +42,19 @@ const Header = () => {
         i18n.changeLanguage(lng)
     }
 
+    const [isDarkMode, setIsDarkMode] = useState(false);
+
+    const toggleDarkMode = () => {
+        setIsDarkMode(!isDarkMode);
+        if (isDarkMode) {
+            document.body.classList.remove('dark-mode');
+            document.body.classList.add('light-mode');
+        } else {
+            document.body.classList.remove('light-mode');
+            document.body.classList.add('dark-mode');
+        }
+    };
+
     return (
         <header>
             <div className="top-bar">
@@ -58,11 +72,15 @@ const Header = () => {
 
                 </div>
                 <div className="top-right">
-                    <span>{t('shop')} </span>
-                    <span style={{color:"black"}}>|</span>
-                    <span>08am - 22pm</span>
-                    <span style={{color:"black"}}>|</span>
-                    <span>T2 - CN</span>
+                    <span>{t('header-show.shop')} </span>
+                    <span>|</span>
+                    <span>{t('header-show.time')}</span>
+                    <span>|</span>
+                    <span>{t('header-show.open')}</span>
+                    {/*<span id={"iconn"}><CiLight/></span>*/}
+                    <span id="iconn" onClick={toggleDarkMode}>
+                        {isDarkMode ? <MdDarkMode/> : <CiLight/>}
+                    </span>
                 </div>
             </div>
             <nav>
@@ -77,17 +95,17 @@ const Header = () => {
                         <IoCloseOutline/>
                     </div>
                     <ul className="menu">
-                        <li><NavLink to="/">Trang chủ</NavLink></li>
-                        <li><NavLink to="#">Giày nam</NavLink></li>
-                        <li><NavLink to="#">Giày nữ</NavLink></li>
-                        <li><NavLink to="#">Khuyến mãi</NavLink></li>
-                        <li><NavLink to="#">Bộ sưu tập</NavLink></li>
-                        <li><NavLink to="#">Tin tức</NavLink></li>
+                        <li><NavLink to="/">{t('header-show.home')}</NavLink></li>
+                        <li><NavLink to="#">{t('header-show.men')}</NavLink></li>
+                        <li><NavLink to="#">{t('header-show.women')}</NavLink></li>
+                        <li><NavLink to="#">{t('header-show.promotion')}</NavLink></li>
+                        <li><NavLink to="#">{t('header-show.collection')}</NavLink></li>
+                        <li><NavLink to="#">{t('header-show.news')}</NavLink></li>
                     </ul>
                     <div className="search-icons">
                         <div className="search">
                             <input type="text"
-                                   placeholder="Search..."
+                                   placeholder={t('header-show.search')}
                                    value={searchTerm}
                                    onChange={(event) => setSearchTerm(event.target.value)}
                                    onKeyDown={handleKeyDown}/>
@@ -96,7 +114,7 @@ const Header = () => {
                         <div className="icons">
                             <NavLink to="#"><IoIosHeartEmpty /></NavLink>
                             <NavLink to="/Cart"><CiShoppingCart /></NavLink>
-                            <button><NavLink className="login" to="/Login">Đăng nhập</NavLink></button>
+                            <NavLink className="login" to="/Login">{t('header-show.login')}</NavLink>
                         </div>
 
                     </div>

@@ -7,6 +7,8 @@ import MainLayout from "./component/MainLayout";
 import ShopPage from "./component/Shop/ShopPage";
 import ProductDetail from "./component/Product/ProductDetail";
 import NotFound from "./component/404/NotFound";
+import Login from "./component/Login/Login";
+import Register from "./component/SigUp/SigUp";
 import "../src/i18n/i18n";
 
 const appRouters: RouteObject[] = [
@@ -29,6 +31,14 @@ const appRouters: RouteObject[] = [
             {
                 path: "*",
                 element: <NotFound/>
+            },
+            {
+                path: "/Login",
+                element: <Login/>
+            },
+            {
+                path: "/SigUp",
+                element: <Register/>
             }
         ]
     }

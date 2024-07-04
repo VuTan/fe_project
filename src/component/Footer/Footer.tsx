@@ -2,37 +2,39 @@
 import React from "react";
 import "./Footer.scss";
 import { BiLogoGmail } from "react-icons/bi";
+
+import {BrowserRouter as Router,Route, Routes, NavLink, Link} from "react-router-dom";
 const Footer = () => {
     return(
         <footer>
             <div className="footer-container">
                 <div className="footer-column">
-                    <h4><a href="#">TÌM CỬA HÀNG</a></h4>
+                    <h4>TÌM CỬA HÀNG</h4>
                     <ul>
-                    <li><a href="#">Danh Mục Sản Phẩm</a></li>
-                    <li><a href="#">Bộ Sưu Tập Mới</a></li>
-                    <li><a href="#">Chính Sách Đổi Trả</a></li>
-                    <li><a href="#">Thu Gom giày Cũ</a></li>
+                    <li><NavLink to="#">Danh Mục Sản Phẩm</NavLink></li>
+                    <li><NavLink to="#">Bộ Sưu Tập Mới</NavLink></li>
+                    <li><NavLink to="#">Chính Sách Đổi Trả</NavLink></li>
+                    <li><NavLink to="#">Địa Chỉ</NavLink></li>
                     </ul>
                 </div>
                 <div className="footer-column">
                     <h4>SẢN PHẨM</h4>
                     <ul>
-                        <li><a href="#">Thời trang nam</a></li>
-                        <li><a href="#">Thời trang nữ</a></li>
-                        <li><a href="#">Thời trang Unisex</a></li>
-                        <li><a href="#">Thời trang có hạn (Limited)</a></li>
-                        <li><a href="#">Chương trình khuyến mãi</a></li>
-                        <li><a href="#">Sự kiện cùng người nổi tiếng</a></li>
+                        <li><NavLink to="#">Thời trang nam</NavLink></li>
+                        <li><NavLink to="#">Thời trang nữ</NavLink></li>
+                        <li><NavLink to="#">Thời trang Unisex</NavLink></li>
+                        <li><NavLink to="#">Thời trang có hạn (Limited)</NavLink></li>
+                        <li><NavLink to="#">Chương trình khuyến mãi</NavLink></li>
+                        <li><NavLink to="#">Sự kiện cùng người nổi tiếng</NavLink></li>
                     </ul>
                 </div>
                 <div className="footer-column">
                     <h4>KÊNH TRUYỀN THÔNG</h4>
                     <ul>
-                        <li><a href="#">Youtube</a></li>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">TikTok</a></li>
+                        <li><NavLink to="#">Youtube</NavLink></li>
+                        <li><NavLink to="#">Facebook</NavLink></li>
+                        <li><NavLink to="#">Instagram</NavLink></li>
+                        <li><NavLink to="#">TikTok</NavLink></li>
                     </ul>
                 </div>
                 <div className="footer-column">
@@ -55,12 +57,12 @@ const Footer = () => {
                 </div>
             </div>
             <div className="footer-bottom">
-                <p>Viet Nam © 2024 - Design by team Fe 48</p>
+                <p>Viet Nam © 2024 - Design By Fe Team 48</p>
                 <div className="footer-links">
-                    <a href="#">Guides</a>
-                    <a href="#">Terms of Sale</a>
-                    <a href="#">Terms of Use</a>
-                    <a href="#">Nike Privacy Policy</a>
+                    <NavLink to="#">Guides</NavLink>
+                    <NavLink to="#">Terms of Sale</NavLink>
+                    <NavLink to="#">Terms of Use</NavLink>
+                    <NavLink to="#">Nike Privacy Policy</NavLink>
                 </div>
             </div>
         </footer>

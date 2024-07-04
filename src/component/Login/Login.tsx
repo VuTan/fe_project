@@ -17,7 +17,6 @@ const Login = () => {
 
     return (
         <>
-            <Header></Header>
             <div className="align-Login">
                 <div className="login-container">
                     <h2 className={"name-login"}>2handtropical</h2>
@@ -57,7 +56,6 @@ const Login = () => {
                     </form>
                 </div>
             </div>
-            <Footer></Footer>
         </>
     );
 };

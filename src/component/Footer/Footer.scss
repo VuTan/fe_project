@@ -1,7 +1,6 @@
 @import "../../base";
 footer {
-  background: $color_black;
-  color: $bg-ultralight-gray;
+  border-top: 1px solid $bg-ultralight-gray;
   padding: 40px 20px;
   font-size: 14px;
   margin-top: auto;
@@ -23,11 +22,6 @@ footer {
   font-size: 16px;
 }
 
-.footer-column h4 a {
-  text-decoration: none;
-  color: $bg-ultralight-gray;
-  font-weight: bold;
-}
 
 .footer-column ul {
   list-style: none;
@@ -35,12 +29,19 @@ footer {
 }
 
 .footer-column ul li {
+  font-weight:normal;
   margin-bottom: 10px;
 }
 
 .footer-column ul li a{
+  //font-weight:normal;
   text-decoration: none;
-  color: $bg-ultralight-gray;
+  color: $color_black;
+}
+
+.footer-column ul li a:hover{
+  font-weight: bold;
+  color: $color_black;
 }
 
 .footer-column p {
@@ -50,7 +51,6 @@ footer {
 .footer-column input[type=email] {
   border: 1px solid $bg-gray;
   border-radius: 5px;
-  background: #222;
   color: $bg-ultralight-gray;
   outline: none;
   width: 100%;
@@ -93,3 +93,48 @@ footer {
   text-decoration: none;
   color: $bg-ultralight-gray;
 }
+
+/* Dark mode styles */
+.dark-mode footer {
+  background: $color_black;
+  color: $bg-ultralight-gray;
+  border-top: 1px solid $bg-ultralight-gray;
+}
+
+//.dark-mode .footer-column h4 a,
+//.dark-mode .footer-column h4 a:hover,
+.dark-mode .footer-column ul li a,
+.dark-mode .footer-column ul li a:hover,
+.dark-mode .footer-links a {
+  color: $bg-ultralight-gray;
+}
+
+.dark-mode .footer-column input[type=email] {
+  color: $bg-ultralight-gray;
+}
+
+.dark-mode .footer-column button[type=submit] {
+  background: black;
+  color: white;
+}
+
+/* Light mode styles */
+.light-mode footer {
+  background: $bg-ultralight-gray;
+  color: $color_black;
+  border-top: 1px solid $bg-gray;
+}
+
+//.light-mode .footer-column h4 a,
+//.light-mode .footer-column h4 a:hover,
+.light-mode .footer-column ul li a,
+.light-mode .footer-column ul li a:hover,
+.light-mode .footer-links a {
+  color: $color_black;
+}
+
+.light-mode .footer-column input[type=email] {
+  color: $color_black;
+  border: 1px solid $bg-gray;
+}
+

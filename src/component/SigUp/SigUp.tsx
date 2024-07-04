@@ -57,7 +57,6 @@ const SignUp = () => {
     };
 
     return (<>
-            <Header/>
             <div className="align-SignUp">
                 <form onSubmit={handleSubmit} className="signup-form">
                     {/*<div className="column">*/}
@@ -153,8 +152,7 @@ const SignUp = () => {
                     {/*</div>*/}
                 </form>
             </div>
-            <Footer/>
-        </>
+    </>
     );
 };
 

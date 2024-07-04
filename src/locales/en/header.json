@@ -1,6 +1,16 @@
 {
-
-      "shop": "SHOP"
-
+      "header-show": {
+            "shop": "SHOP",
+            "time": "08AM - 22PM",
+            "open": "MON TO SUN",
+            "home": "Home",
+            "men": "Men's Shoes",
+            "women": "Women's Shoes",
+            "promotion": "Promotion",
+            "collection": "Collection",
+            "news": "News",
+            "search": "Search",
+            "login": "LogIn"
+      }
 
 }
