@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState ,useEffect} from 'react';
+
 import './Cart.scss';
-import { IoIosHeartEmpty } from "react-icons/io";
-import { AiOutlineDelete } from "react-icons/ai";
+import {IoIosHeartEmpty} from "react-icons/io";
+import {AiOutlineDelete} from "react-icons/ai";
 import Button from "../Button/Button";
 import SliderNew from "../Home/SliderNew";
+
 
 const Cart = () => {
     const [cartItems, setCartItems] = useState([
@@ -45,6 +47,33 @@ const Cart = () => {
         return cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0).toFixed(2);
     };
 
+
+import {useDispatch, useSelector} from "react-redux";
+import {RootState} from "../../redux/store";
+import {deleteProduct, getTotals} from "../../redux/cart.reducers";
+import {buyProduct} from "../../models/Product.modal";
+
+const Cart = () => {
+    const cart = useSelector((state: RootState) => state.cart)
+    const dispath = useDispatch();
+    const handleDelete = (product: buyProduct) => {
+        dispath(deleteProduct(product))
+    }
+    useEffect(() => {
+        dispath(getTotals())
+    }, [cart]);
+
+    const formatterVND = new Intl.NumberFormat('vi-VN', {
+        style: 'decimal',
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0,
+
+    });
+
+    const formatterVNDSymbol = (price: number) => {
+        return formatterVND.format(price) + " đ"
+    };
+
     return (
         <>
             <div className="cart-container">
@@ -55,6 +84,7 @@ const Cart = () => {
                             <p>Applies to orders of $ 14 000.00 or more. <a href="#">View details</a></p>
                         </div>
                         <h2>Bag</h2>
+
                         {cartItems.map(item => (
                             <div key={item.id} className="cart-item">
                                 <img src={item.image} alt={item.name} />
@@ -76,13 +106,42 @@ const Cart = () => {
                                 </div>
                             </div>
                         ))}
+
+
+                        {cart.cartArr.length === 0 ?
+                            (<h1>
+                                No product
+                            </h1>)
+                            :
+                            (cart.cartArr.map((product) => (
+                                <div className="cart-item">
+                                    <img
+                                        src={product.main_img_src}
+                                        alt={product.Name}/>
+                                    <div className="item-details">
+                                        <h3>{product.Name}</h3>
+                                        <p>{product.Type}</p>
+                                        <p>Size: {product.sizeBuy}</p>
+                                        <p>Quantity: {product.quantity}</p>
+                                        <br/>
+                                        <p>MRP: {product.Price}</p>
+                                    </div>
+                                    <div className="item-actions">
+                                        <button className="favorite"><IoIosHeartEmpty/></button>
+                                        <button className="delete" onClick={() => handleDelete(product)}>
+                                            <AiOutlineDelete/>
+                                        </button>
+                                    </div>
+                                </div>)))}
+
                     </div>
                     <div className="summary">
                         <h2>Summary</h2>
                         <div className="summary-details">
                             <div className="subtotal">
                                 <span>Subtotal</span>
-                                <span>$ {calculateSubtotal()}</span>
+                      <span>{formatterVNDSymbol(cart.cartTotalAmount)}</span>
+
                             </div>
                             <div className="delivery">
                                 <span>Estimated Delivery & Handling</span>
@@ -90,7 +149,9 @@ const Cart = () => {
                             </div>
                             <div className="total">
                                 <span>Total</span>
-                                <span>$ {calculateSubtotal()}</span>
+
+                                <span>{formatterVNDSymbol(cart.cartTotalAmount)}</span>
+
                             </div>
                             <Button title={"Member Checkout"} isBlack />
                         </div>
@@ -101,7 +162,9 @@ const Cart = () => {
                     <p>There are no items saved to your favourites.</p>
                 </div>
             </div>
+
             <SliderNew />
+
         </>
     );
 };

@@ -1,0 +1,24 @@
+{
+
+  "sign-up": {
+    "hello": "TRỞ THÀNH THÀNH VIÊN CỦA NIKE",
+    "t1": "Tạo hồ sơ thành viên Nike của bạn và có quyền truy cập đầu tiên vào những sản phẩm, cảm hứng và cộng đồng tốt nhất của Nike.",
+    "address": "Địa chỉ Email",
+    "pass": "Mật khẩu",
+    "Fname": "Tên",
+    "Lname": "Họ",
+    "t2":"Nhận phần thưởng thành viên Nike mỗi năm vào ngày sinh nhật của bạn.",
+    "DOB": "Ngày sinh",
+    "india": "Ấn Độ",
+    "usa": "Mỹ",
+    "uk": "Vương quốc Anh",
+    "men": "Nam",
+    "woman": "Nữ",
+    "other": "Khác",
+    "t3": "Đăng ký nhận email để cập nhật từ Nike về sản phẩm, ưu đãi và quyền lợi của thành viên",
+    "come": "THAM GIA CÙNG CHÚNG TÔI",
+    "have a mem": "Đã là thành viên?",
+    "sigin": "Đăng nhập"
+  }
+
+}

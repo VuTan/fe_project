@@ -1,7 +1,15 @@
 {
-
-
-    "shop": "cửa hàng"
-
+    "header-show": {
+        "shop": "CỬA HÀNG",
+        "time": "08am - 22pm",
+        "open": "T2 Đến CN",
+        "home": "Trang Chủ",
+        "men": "Cửa Hàng",
+        "promotion": "Khuyến Mãi",
+        "collection": "Bộ Sưu Tập",
+        "news": "Tin Tức",
+        "search": "Tìm Kiếm",
+        "login": "Đăng Nhập"
+    }
 
 }
