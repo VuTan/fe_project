@@ -5,7 +5,10 @@ import {IoIosHeartEmpty} from "react-icons/io";
 import {AiOutlineDelete} from "react-icons/ai";
 import Button from "../Button/Button";
 import SliderNew from "../Home/SliderNew";
-
+import {useDispatch, useSelector} from "react-redux";
+import {RootState} from "../../redux/store";
+import {deleteProduct, getTotals} from "../../redux/cart.reducers";
+import {buyProduct} from "../../models/Product.modal";
 
 const Cart = () => {
     const [cartItems, setCartItems] = useState([
@@ -47,13 +50,6 @@ const Cart = () => {
         return cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0).toFixed(2);
     };
 
-
-import {useDispatch, useSelector} from "react-redux";
-import {RootState} from "../../redux/store";
-import {deleteProduct, getTotals} from "../../redux/cart.reducers";
-import {buyProduct} from "../../models/Product.modal";
-
-const Cart = () => {
     const cart = useSelector((state: RootState) => state.cart)
     const dispath = useDispatch();
     const handleDelete = (product: buyProduct) => {
