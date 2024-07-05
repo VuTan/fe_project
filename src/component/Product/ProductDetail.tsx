@@ -6,10 +6,12 @@ import {createBuyProduct, Product} from "../../models/Product.modal";
 import AsNavFor from "../Home/AsNavFor";
 import CardSlider from '../Home/CardSlider'
 import Popup from "../Product/PopupDetailProduct"
+
 import {useDispatch, useSelector} from "react-redux";
 import {addProduct} from "../../redux/cart.reducers";
 import {addFavorite, removeFavorite} from "../../redux/favorite.reducers";
 import {RootState} from "../../redux/store";
+
 
 const ProductDetail = () => {
 
@@ -37,7 +39,9 @@ const ProductDetail = () => {
     const handleSizeClick = (size: number) => {
         if (selectedSize !== size)
             setSelectedSize(size);
+
     }
+
 
     const handleOpenPopup = () => {
         setShowPopup(true);
@@ -108,7 +112,7 @@ const ProductDetail = () => {
                     <p>{product?.Type}</p>
                     <p>{product?.Price}</p>
                     <p>{product?.describe}</p>
-                    <button className="details-show" onClick={handleOpenPopup}>More Detail</button>
+                    <h6 className="details-show" onClick={handleOpenPopup}>More Detail</h6>
                     <div className="size-selector">
                         <h3>Select Size</h3>
                         <div className="sizes">

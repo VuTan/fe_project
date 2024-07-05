@@ -6,12 +6,12 @@ import {useTranslation} from 'react-i18next'
 
  function NotFound() {
     const { t } = useTranslation('notfound')
-     // const navigate = useNavigate()
-     // useEffect(() => {
-     //    setTimeout(() => {
-     //        navigate('/')
-     //    }, 10000)
-     // }, []);
+    const navigate = useNavigate()
+    useEffect(() => {
+       setTimeout(() => {
+           navigate('/')
+       }, 10000)
+    }, []);
 
     return (
         <div className="not-found">

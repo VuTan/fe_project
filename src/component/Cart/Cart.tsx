@@ -11,6 +11,7 @@ import {decrementQuantity, deleteProduct, getTotals, incrementQuantity} from "..
 import {buyProduct} from "../../models/Product.modal";
 
 const Cart = () => {
+
     const cart = useSelector((state: RootState) => state.cart)
     const dispath = useDispatch();
 

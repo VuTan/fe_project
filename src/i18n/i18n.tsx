@@ -47,9 +47,9 @@ i18n
     .use(initReactI18next)
     .init({
         resources,
-        lng: "en",
+        lng: "vi",
         ns:['notfound'],
-        fallbackLng:"en",
+        fallbackLng:"vi",
         defaultNS,
         interpolation: {
             escapeValue: false
