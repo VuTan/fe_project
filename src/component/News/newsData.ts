@@ -40,7 +40,7 @@ const newsData = [
         location: 'Icheon, South Korea',
         details: [
             {
-                heading: 'WHO WE ARE LOOKING FOR',
+                heading: 'Without You, We’d Just Be Collectors of Our Own Stuff',
                 content: 'We are looking for an MPO Process Analyst (Market Operations) who will provide consistent and accurate data to internal and external stakeholders within the MPO team and be responsible for highlighting risks risk and opportunity. You will communicate, develop and maintain positive relationships with partners & contact channels as well as internal functional teams through interpretation of reports, tools and emails.'
             },
             {
@@ -53,7 +53,7 @@ const newsData = [
             },
             {
                 heading: 'WHAT DO YOU BRING',
-                content: '• Bachelor\'s degree in Business, Operations, Supply Chain or related field preferred and a minimum of 5 years of related work experience. • Ability to manage Key Performance Indicators (KPIs), Supply Chain Operations, Process Analytics and Data Storytelling • Ability to communicate effectively, proactively and cross-functionally to ensure a thorough understanding of business plans, consumer needs and competitive landscape • Ability to manage and lead through ambiguity by balancing multiple deadlines and priorities • Solve problems and tell stories through critical thinking and facts • Experience with SAP and Advanced knowledge of MS office applications • Fluent in English and Korean with multi-tasking skills'
+                content: '• Bachelors degree in Business, Operations, Supply Chain or related field preferred and a minimum of 5 years of related work experience. • Ability to manage Key Performance Indicators (KPIs), Supply Chain Operations, Process Analytics and Data Storytelling • Ability to communicate effectively, proactively and cross-functionally to ensure a thorough understanding of business plans, consumer needs and competitive landscape • Ability to manage and lead through ambiguity by balancing multiple deadlines and priorities • Solve problems and tell stories through critical thinking and facts • Experience with SAP and Advanced knowledge of MS office applications • Fluent in English and Korean with multi-tasking skills'
             },
             {
                 heading: 'OUR MISSION',
@@ -119,7 +119,7 @@ const newsData = [
             },
             {
                 heading: 'WHAT DO YOU BRING',
-                content: '• Bachelor\'s degree in Business, Operations, Supply Chain or related field preferred and a minimum of 5 years of related work experience. • Ability to manage Key Performance Indicators (KPIs), Supply Chain Operations, Process Analytics and Data Storytelling • Ability to communicate effectively, proactively and cross-functionally to ensure a thorough understanding of business plans, consumer needs and competitive landscape • Ability to manage and lead through ambiguity by balancing multiple deadlines and priorities • Solve problems and tell stories through critical thinking and facts • Experience with SAP and Advanced knowledge of MS office applications • Fluent in English and Korean with multi-tasking skills'
+                content: '• Bachelors degree in Business, Operations, Supply Chain or related field preferred and a minimum of 5 years of related work experience. • Ability to manage Key Performance Indicators (KPIs), Supply Chain Operations, Process Analytics and Data Storytelling • Ability to communicate effectively, proactively and cross-functionally to ensure a thorough understanding of business plans, consumer needs and competitive landscape • Ability to manage and lead through ambiguity by balancing multiple deadlines and priorities • Solve problems and tell stories through critical thinking and facts • Experience with SAP and Advanced knowledge of MS office applications • Fluent in English and Korean with multi-tasking skills'
             },
             {
                 heading: 'OUR MISSION',

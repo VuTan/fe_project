@@ -51,7 +51,6 @@
         }
 
         a {
-          color: #0071eb;
           text-decoration: none;
 
           &:hover {
@@ -96,11 +95,7 @@
     border-radius: 4px;
     cursor: pointer;
     text-decoration: none;
-    transition: background-color 0.3s ease;
 
-    &:hover {
-      background-color: #0056b3;
-    }
   }
 
   .content {
@@ -117,9 +112,5 @@
       color: #333;
     }
 
-    .highlight {
-      font-weight: bold;
-      color: #0071eb;
-    }
   }
 }

@@ -15,6 +15,7 @@ import Cart from "./component/Cart/Cart";
 import News from "./component/News/News";
 import NewsDetail from "./component/News/NewsDetail";
 
+
 const appRouters: RouteObject[] = [
     {
         path: "/",
@@ -31,10 +32,6 @@ const appRouters: RouteObject[] = [
             {
                 path: "/shop/product/:id",
                 element: <ProductDetail/>
-            },
-            {
-                path: "/",
-                element: <News/>
             },
             {
                 path: "/news/:id",
