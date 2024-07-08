@@ -102,6 +102,13 @@ const Header = () => {
                         <IoCloseOutline/>
                     </div>
                     <ul className="menu">
+                        <li><NavLink to="/">Trang chủ</NavLink></li>
+                        <li><NavLink to="#">Giày nam</NavLink></li>
+                        <li><NavLink to="#">Giày nữ</NavLink></li>
+                        <li><NavLink to="#">Khuyến mãi</NavLink></li>
+                        <li><NavLink to="#">Bộ sưu tập</NavLink></li>
+                        <li><NavLink to="/news">Tin tức</NavLink></li>
+
                         <li><NavLink to="/">{t('header-show.home')}</NavLink></li>
                         <li><NavLink to="/shop">{t('header-show.men')}</NavLink></li>
                         <li><NavLink to="#">{t('header-show.promotion')}</NavLink></li>
@@ -119,8 +126,12 @@ const Header = () => {
                         </div>
                         <div className="icons">
                             <NavLink to="/favouriteProduct"><IoIosHeartEmpty /></NavLink>
+                            <NavLink to="/cart"><CiShoppingCart /></NavLink>
+                            <button><NavLink className="login" to="/Login">Đăng nhập</NavLink></button>
+
                             <NavLink to="/Cart"><CiShoppingCart /></NavLink>
                             <NavLink className="login" to="/Login">{t('header-show.login')}</NavLink>
+
                         </div>
 
                     </div>
