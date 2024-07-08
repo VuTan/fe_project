@@ -12,6 +12,9 @@ import Register from "./component/SigUp/SigUp";
 import "../src/i18n/i18n";
 import FavouriteProduct from "./component/Product/FavouriteProduct";
 import Cart from "./component/Cart/Cart";
+import News from "./component/News/News";
+import NewsDetail from "./component/News/NewsDetail";
+
 
 const appRouters: RouteObject[] = [
     {
@@ -29,6 +32,10 @@ const appRouters: RouteObject[] = [
             {
                 path: "/shop/product/:id",
                 element: <ProductDetail/>
+            },
+            {
+                path: "/news/:id",
+                element: <NewsDetail/>
             },
             {
                 path: "*",
@@ -49,6 +56,10 @@ const appRouters: RouteObject[] = [
             {
                 path: "/Cart",
                 element: <Cart />
+            },
+            {
+                path: "/news",
+                element: <News/>
             }
         ]
     }

@@ -1,0 +1,52 @@
+@import "../../base";
+
+.news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.news-article {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 400px;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  &__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  &__details {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  &__department, &__location {
+    margin: 0.5rem 0;
+    color: #555;
+  }
+}
+
+@media (max-width: 768px) {
+  .news-article {
+    width: 100%;
+    max-width: 100%;
+  }
+}
