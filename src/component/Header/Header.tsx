@@ -86,14 +86,14 @@ const Header = () => {
                             }}>ENG
                     </span>
 
-                    </div>
-                    <div className="top-right">
-                        <span>{t('header-show.shop')} </span>
-                        <span>|</span>
-                        <span>{t('header-show.time')}</span>
-                        <span>|</span>
-                        <span>{t('header-show.open')}</span>
-                        <span id="iconn" onClick={toggleDarkMode}>
+                </div>
+                <div className="top-right">
+                    <span>{t('header-show.shop')} </span>
+                    <span>|</span>
+                    <span>{t('header-show.time')}</span>
+                    <span>|</span>
+                    <span>{t('header-show.open')}</span>
+                    <span id="iconn" onClick={toggleDarkMode}>
                         {isDarkMode ? <MdDarkMode/> : <CiLight/>}
                     </span>
                     </div>
