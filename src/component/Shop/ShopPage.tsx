@@ -4,6 +4,8 @@ import {fetchProductPerPage} from "../../service/ProductService";
 import CardProduct from "../Product/CardProduct";
 import ReactPaginate from "react-paginate";
 import {Product} from "../../models/Product.modal";
+import {FilledInput} from "@mui/material";
+import ProductFilter from "./Filter/ProductFilter";
 
 interface Filter {
 
@@ -52,7 +54,7 @@ const ShopPage: React.FC = () => {
     return (
         <>
             <div className="shop-page">
-
+                <ProductFilter/>
                 <div className="product-list">
                     <div className="filter-sort">
                         <span>Bộ lọc nhanh</span>

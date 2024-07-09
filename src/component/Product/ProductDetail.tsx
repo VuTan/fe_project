@@ -11,6 +11,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {addProduct} from "../../redux/cart.reducers";
 import {addFavorite, removeFavorite} from "../../redux/favorite.reducers";
 import {RootState} from "../../redux/store";
+import {toast} from "react-toastify";
 
 
 const ProductDetail = () => {
@@ -66,9 +67,15 @@ const ProductDetail = () => {
 
     const dispath = useDispatch()
     const handleAddToCart = (event: React.MouseEvent<HTMLButtonElement>) => {
+        if (selectedSize) {
+            if (product)
+                dispath(addProduct(createBuyProduct(product, selectedSize, 1)))
+        } else {
+            toast.error(`Please select size`, {
+                position: "bottom-left"
+            });
+        }
 
-        if (product && selectedSize)
-            dispath(addProduct(createBuyProduct(product, selectedSize, 1)))
     }
     const handleAddToFavorite = (event: React.MouseEvent<HTMLButtonElement>) => {
         if (product)

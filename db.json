@@ -1,4 +1,15 @@
 {
+  "user": [
+    {
+      "email": "admin@123",
+      "password": "admin",
+      "firstName": "admin",
+      "lastName": "",
+      "dateOfBirth": "",
+      "country": "",
+      "gender": ""
+    }
+  ],
   "product": [
     {
       "id": 1,
@@ -5420,7 +5431,7 @@
       ]
     },
     {
-      "id": "129",
+      "id": 129,
       "Name": "Nike Waffle Debut",
       "Type": "Women's Shoes",
       "Price": "2,069,000",
@@ -5515,5 +5526,4 @@
       ]
     }
   ]
-
 }
