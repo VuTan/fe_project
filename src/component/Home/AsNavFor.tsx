@@ -4,10 +4,6 @@ import "./AsNavFor.scss"
 
 const images = [
     {
-        src: "#",
-        alt: "Nike Air Max 92 SE"
-    },
-    {
         src: "https://drake.vn/image/catalog/H%C3%ACnh%20content/gia%CC%80y%20Converse%20da%20bo%CC%81ng/giay-converse-da-bong-5.jpg",
         alt: "Nike Air Max 93 SE"
     },

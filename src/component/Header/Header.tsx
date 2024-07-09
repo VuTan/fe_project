@@ -10,6 +10,8 @@ import { MdDarkMode } from "react-icons/md";
 import {NavLink} from "react-router-dom";
 import "../../i18n/i18n"
 import {useTranslation} from 'react-i18next'
+import {useSelector} from "react-redux";
+import {RootState} from "../../redux/store";
 
 const Header = () => {
     const { i18n } = useTranslation()
@@ -18,7 +20,8 @@ const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [searchTerm, setSearchTerm] = useState('');
     const [isDarkMode, setIsDarkMode] = useState(false);
-
+    const [isSticky, setIsSticky] = useState(false);
+    const userStorage = useSelector((state: RootState) => state.user);
     useEffect(() => {
         const savedLanguage = localStorage.getItem('language') || 'vi';
         setSelectedLanguage(savedLanguage as 'vi' | 'en');
@@ -119,9 +122,16 @@ const Header = () => {
                             <button onClick={handleSearch}><FiSearch /></button>
                         </div>
                         <div className="icons">
-                            <NavLink to="/favouriteProduct"><IoIosHeartEmpty size={"30px"}/></NavLink>
-                            <NavLink to="/Cart"><CiShoppingCart size={"30px"}/></NavLink>
-                            <NavLink className="login" to="/Login">{t('header-show.login')}</NavLink>
+                            <NavLink to="/favouriteProduct"><IoIosHeartEmpty size={30}/></NavLink>
+                            <NavLink to="/Cart"><CiShoppingCart size={30}/></NavLink>
+                            {/*thêm css của thẻ p ở dưới
+                                đăng nhập vào
+                                tk:admin@123
+                                pass: admin
+                                để xem chi tiết*/}
+                            {userStorage.user ?
+                                (<p>{userStorage.user.firstName + ' ' + userStorage.user.lastName}</p>) :
+                                (<NavLink className="login" to="/Login">{t('header-show.login')}</NavLink>)}
                         </div>
 
                     </div>
