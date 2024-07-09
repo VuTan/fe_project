@@ -159,6 +159,8 @@ nav{
 
 .menu li .active {
   font-weight: bold;
+  background-color:$bg-gray;
+  border-radius: 1px;
 }
 
 
@@ -209,7 +211,7 @@ nav{
 .icons {
   width: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   margin-top: 10px;
   align-items: center;
 }
@@ -229,6 +231,7 @@ nav{
 
 .login {
   text-decoration: none;
+  font-size: 25px;
 }
 
 .hamburger {
@@ -245,7 +248,7 @@ nav{
 }
 
 // Responsive styles
-@media (max-width: 1500px) {
+@media (max-width: 1340px) {
   .menu-bar {
     display: none;
   }
@@ -319,7 +322,7 @@ nav{
   .menu-bar.open .icons {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     margin-top: 10px;
     margin-left: 5px;
     margin-right: 5px;
@@ -369,6 +372,13 @@ nav{
   .menu-bar.open .search-icons {
     width: 100%;
     align-items: end;
+  }
+
+  .menu-bar.open .search{
+    width: 125%;
+    .search-input{
+      width: 100%;
+    }
   }
 
   .menu-bar.open .menu li {

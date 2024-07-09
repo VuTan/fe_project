@@ -102,13 +102,6 @@ const Header = () => {
                         <IoCloseOutline/>
                     </div>
                     <ul className="menu">
-                        <li><NavLink to="/">Trang chủ</NavLink></li>
-                        <li><NavLink to="#">Giày nam</NavLink></li>
-                        <li><NavLink to="#">Giày nữ</NavLink></li>
-                        <li><NavLink to="#">Khuyến mãi</NavLink></li>
-                        <li><NavLink to="#">Bộ sưu tập</NavLink></li>
-                        <li><NavLink to="/news">Tin tức</NavLink></li>
-
                         <li><NavLink to="/">{t('header-show.home')}</NavLink></li>
                         <li><NavLink to="/shop">{t('header-show.men')}</NavLink></li>
                         <li><NavLink to="#">{t('header-show.promotion')}</NavLink></li>
@@ -117,21 +110,18 @@ const Header = () => {
                     </ul>
                     <div className="search-icons">
                         <div className="search">
-                            <input type="text"
-                                   placeholder={t('header-show.search')}
-                                   value={searchTerm}
-                                   onChange={(event) => setSearchTerm(event.target.value)}
-                                   onKeyDown={handleKeyDown}/>
+                            <input  className={"search-input"}
+                                    type="text"
+                                    placeholder={t('header-show.search')}
+                                    value={searchTerm}
+                                    onChange={(event) => setSearchTerm(event.target.value)}
+                                    onKeyDown={handleKeyDown}/>
                             <button onClick={handleSearch}><FiSearch /></button>
                         </div>
                         <div className="icons">
-                            <NavLink to="/favouriteProduct"><IoIosHeartEmpty /></NavLink>
-                            <NavLink to="/cart"><CiShoppingCart /></NavLink>
-                            <button><NavLink className="login" to="/Login">Đăng nhập</NavLink></button>
-
-                            <NavLink to="/Cart"><CiShoppingCart /></NavLink>
+                            <NavLink to="/favouriteProduct"><IoIosHeartEmpty size={"30px"}/></NavLink>
+                            <NavLink to="/Cart"><CiShoppingCart size={"30px"}/></NavLink>
                             <NavLink className="login" to="/Login">{t('header-show.login')}</NavLink>
-
                         </div>
 
                     </div>
