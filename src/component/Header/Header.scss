@@ -35,7 +35,7 @@
 .light-mode .menu li a,
 .light-mode .search button,
 .light-mode .icons a,
-.light-mode .icons a:hover{
+.light-mode .icons a:hover {
   color: $color_black;
 }
 
@@ -74,6 +74,15 @@ header {
   width: 100%;
 }
 
+.container-header-fix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: $bg-light-gray;
+}
+
 .top-bar {
   display: flex;
   justify-content: space-between;
@@ -82,23 +91,23 @@ header {
   font-size: 14px;
 }
 
-.top-left{
+.top-left {
   text-align: center;
 }
 
-.language-selector{
+.language-selector {
   margin-right: 5px;
   margin-left: 5px;
   cursor: pointer;
   color: $bg-gray;
 }
 
-.language-selector.active{
+.language-selector.active {
   font-weight: bold;
   color: $color_black;
 }
 
-#iconn{
+#iconn {
   cursor: pointer;
   font-size: small;
 }
@@ -108,14 +117,14 @@ header {
   margin-left: 10px;
 }
 
-nav{
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
 }
 
-.logo{
+.logo {
   width: 12%;
 }
 
@@ -126,9 +135,9 @@ nav{
   cursor: pointer;
 }
 
-.logo a:hover{
-    color: $color_black;
-    font-weight:bold;
+.logo a:hover {
+  color: $color_black;
+  font-weight: bold;
 }
 
 
@@ -153,7 +162,7 @@ nav{
   transition: all 0.3s ease;
 }
 
-.menu li a:hover{
+.menu li a:hover {
   font-weight: bold;
 }
 
@@ -162,7 +171,7 @@ nav{
 }
 
 
-.menu-bar{
+.menu-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -191,7 +200,7 @@ nav{
   outline: none;
   font-size: 20px;
   padding-left: 30px;
-  order:2;
+  order: 2;
 }
 
 .search button {
@@ -222,9 +231,9 @@ nav{
   cursor: pointer;
 }
 
-.icons a:hover{
+.icons a:hover {
   color: $color_black;
-  font-weight:bold;
+  font-weight: bold;
 }
 
 .login {
@@ -245,7 +254,7 @@ nav{
 }
 
 // Responsive styles
-@media (max-width: 1500px) {
+@media (max-width: 1000px) {
   .menu-bar {
     display: none;
   }
@@ -333,7 +342,7 @@ nav{
     font-weight: normal;
   }
 
-  .menu-bar.open .icons a:hover{
+  .menu-bar.open .icons a:hover {
     font-weight: bold;
   }
 }
@@ -380,4 +389,3 @@ nav{
     width: 100%;
   }
 }
-

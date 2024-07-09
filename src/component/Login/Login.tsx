@@ -1,19 +1,50 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './Login.scss';
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
 import {NavLink} from "react-router-dom";
 import {useTranslation} from "react-i18next";
+import {getUserByEmail} from "../../service/UserService";
+import {toast} from "react-toastify";
+import {useDispatch} from "react-redux";
+import {login} from "../../redux/user.reducer";
 
 
 const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const { t } = useTranslation('sigin')
+    const [showLogin, setShowLogin] = useState(false);
+    const {t} = useTranslation('sigin')
+    const dispath = useDispatch()
+    useEffect(() => {
+        let result: boolean = true;
+        if (email === "" || email === null) {
+            result = false;
+        }
+        if (password === "" || password === null) {
+            result = false;
+        }
+        setShowLogin(result)
+        console.log(showLogin)
+    }, [email, password]);
+
+
+    const checkLogin = async (email: string, password: string) => {
+        let userAPI;
+        let res = await getUserByEmail(email);
+        if (res && res.data.length > 0)
+            userAPI = res.data[0]
+        if (userAPI === undefined) {
+            toast.warning("Email không tồn tại", {position: "bottom-left"})
+        } else if (userAPI.password !== password) {
+            toast.warning("Sai mật khẩu", {position: "bottom-left"})
+        } else if (userAPI.email === email && userAPI.password === password) {
+            toast.success("Đăng nhập thành công", {position: "bottom-left"})
+            dispath(login(userAPI))
+        }
+    }
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        console.log('Email:', email);
-        console.log('Password:', password);
+        checkLogin(email, password)
+
     };
 
     return (
@@ -47,8 +78,11 @@ const Login = () => {
                             </label>
                             <NavLink to="#" className="forgot-password">{t('sign-in.forgot')}</NavLink>
                         </div>
-                        <p className={"note"}>{t('sign-in.t1')} <NavLink to={"#"} className={"user-policy"}> {t('sign-in.li')}</NavLink></p>
-                        <button type="submit" className="login-button">{t('sign-in.submit')}</button>
+                        <p className={"note"}>{t('sign-in.t1')} <NavLink to={"#"}
+                                                                         className={"user-policy"}> {t('sign-in.li')}</NavLink>
+                        </p>
+                        <button type="submit"
+                                className={`login-button${showLogin ? "" : "-disable"}`}>{t('sign-in.submit')}</button>
                         <p className={"note"}>
                             {t('sign-in.no account')} <NavLink to="/SigUp" className="Sigup">2handmembers.</NavLink>
                         </p>
