@@ -13,12 +13,12 @@ const NewsDetail: React.FC = () => {
 
     return (
         <div className="news-detail">
-            <header>
+            <div className={"header"}>
                 <span className="date">July 6, 2024</span>
                 <span className="share">
           <span>Share</span>
         </span>
-            </header>
+            </div>
             <main>
                 <img src={news.image} alt={news.title} className="news-detail__image" />
                 <h1 className="news-detail__title">{news.title}</h1>

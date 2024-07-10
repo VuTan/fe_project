@@ -30,6 +30,16 @@
   color: $color_black;
 }
 
+.light-mode .dropdown-content {
+  font-size: 15px;
+  display: none;
+  position: absolute;
+  background-color: $bg-light-gray;
+  min-width: 160px;
+  z-index: 1;
+  left: -50px;
+}
+
 .light-mode .logo a,
 .light-mode .logo a:hover,
 .light-mode .menu li a,
@@ -56,6 +66,22 @@
 
 .dark-mode .language-selector.active {
   color: $bg-ultra-gray;
+}
+
+.dark-mode .menu li .active {
+  font-weight: bold;
+  background-color:$bg-gray;
+  border-radius: 1px;
+}
+
+.dark-mode .dropdown-content {
+  font-size: 15px;
+  display: none;
+  position: absolute;
+  background-color: $bg-gray;
+  min-width: 160px;
+  z-index: 1;
+  left: -50px;
 }
 
 .dark-mode .logo a,
@@ -168,7 +194,6 @@ nav{
 
 .menu li .active {
   font-weight: bold;
-  background-color:$bg-gray;
   border-radius: 1px;
 }
 
@@ -194,6 +219,7 @@ nav{
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  position: relative;
 }
 
 .search input {
@@ -220,7 +246,7 @@ nav{
 .icons {
   width: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   margin-top: 10px;
   align-items: center;
 }
@@ -231,6 +257,7 @@ nav{
   display: flex;
   color: $color_black;
   cursor: pointer;
+  font-weight: normal;
 }
 
 .icons a:hover{
@@ -241,6 +268,31 @@ nav{
 .login {
   text-decoration: none;
   font-size: 25px;
+}
+
+.accset{
+  font-size: 25px;
+  margin: 10px 0 15px 10px ;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: normal;
+}
+
+.dropdown-content a:hover {
+  font-weight: bold;
+}
+
+.accset:hover .dropdown-content {
+  display: block;
+  font-weight: bold;
 }
 
 .hamburger {
@@ -257,7 +309,7 @@ nav{
 }
 
 // Responsive styles
-@media (max-width: 1000px) {
+@media (max-width: 1350px) {
   .menu-bar {
     display: none;
   }

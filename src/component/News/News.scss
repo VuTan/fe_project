@@ -1,5 +1,23 @@
 @import "../../base";
 
+.dark-mode .news {
+  background: $bg-gray;
+}
+
+.light-mode .news {
+  background: $bg-light-gray;
+}
+
+.dark-mode .news-article, .dark-mode .news-article__details {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: $bg-ultra-gray;
+}
+
+.light-mode .news-article, .light-mode .news-article__details {
+  border-color: rgba(255, 255, 255, 0.8);
+  color: $bg-dark;
+}
+
 .news {
   display: flex;
   flex-wrap: wrap;
@@ -15,6 +33,7 @@
   border-radius: 8px;
   overflow: hidden;
   width: 400px;
+  text-decoration: none;
 
   &:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -40,7 +59,6 @@
 
   &__department, &__location {
     margin: 0.5rem 0;
-    color: #555;
   }
 }
 
