@@ -65,7 +65,7 @@
   color: $bg-light-gray;
 }
 
-.add-to-bag, .favourite {
+.add-to-bag, .favourite, .no-favourite {
   margin-top: 20px;
   padding: 15px;
   background-color: $color_black;
@@ -78,11 +78,11 @@
 }
 
 .favourite {
-  background-color: #ccc;
+  background-color: $bg-Red;
 }
 
-.favourite:hover {
-  background-color: $bg-gray;
+.no-favourite {
+  background-color: $bg-gray ;
 }
 
 .frame {

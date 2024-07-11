@@ -1,10 +1,10 @@
 import "./Header.scss";
-import React, {useEffect, useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {SiNike} from "react-icons/si";
 import {IoIosHeartEmpty} from "react-icons/io";
 import {GiHamburgerMenu} from "react-icons/gi";
-import {IoCloseOutline} from "react-icons/io5";
-import {CiLight, CiShoppingCart} from "react-icons/ci";
+import {IoCartOutline, IoCloseOutline} from "react-icons/io5";
+import {CiLight} from "react-icons/ci";
 import {FiSearch} from "react-icons/fi";
 import {MdDarkMode} from "react-icons/md";
 import {NavLink} from "react-router-dom";
@@ -12,16 +12,20 @@ import "../../i18n/i18n"
 import {useTranslation} from 'react-i18next'
 import {useSelector} from "react-redux";
 import {RootState} from "../../redux/store";
+import Search from "./Search";
 
 const Header = () => {
     const {i18n} = useTranslation()
     const {t} = useTranslation('header')
     const [selectedLanguage, setSelectedLanguage] = useState('vi');
     const [menuOpen, setMenuOpen] = useState(false);
-    const [searchTerm, setSearchTerm] = useState('');
+    // const [searchTerm, setSearchTerm] = useState('');
     const [isDarkMode, setIsDarkMode] = useState(false);
     const [isSticky, setIsSticky] = useState(false);
     const userStorage = useSelector((state: RootState) => state.user);
+    const [showHeader, setShowHeader] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
+
     useEffect(() => {
         const savedLanguage = localStorage.getItem('language') || 'vi';
         setSelectedLanguage(savedLanguage as 'vi' | 'en');
@@ -40,16 +44,16 @@ const Header = () => {
         setMenuOpen(false);
     };
 
-    const handleSearch = () => {
-        // hien thi phan tim kiem co hoat dong hay khong
-        console.log('Search term:', searchTerm);
-    };
-
-    const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
-        if (event.key === 'Enter') {
-            handleSearch();
-        }
-    };
+    // const handleSearch = () => {
+    //     // hien thi phan tim kiem co hoat dong hay khong
+    //     console.log('Search term:', searchTerm);
+    // };
+    //
+    // const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    //     if (event.key === 'Enter') {
+    //         handleSearch();
+    //     }
+    // };
 
     const changeLanguage = (lng: 'vi' | 'en') => {
         setSelectedLanguage(lng)
@@ -66,82 +70,112 @@ const Header = () => {
         localStorage.setItem('theme', newMode);
     };
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+
+            if (currentScrollY < lastScrollY) {
+                setShowHeader(true);
+            } else {
+                setShowHeader(false);
+            }
+
+            setLastScrollY(currentScrollY);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [lastScrollY]);
+
     return (
-        <header>
-            <div className={`container-header${isSticky ? "-fix" : ""}`}>
-                <div className="top-bar">
-                    <div className="top-left">
-                        <SiNike/>
-                        <span
-                            className={`language-selector ${selectedLanguage === 'vi' ? 'active' : ''}`}
-                            onClick={() => {
-                                changeLanguage('vi')
-                            }}> VN
-        </span>
-                        <span>|</span>
-                        <span
-                            className={`language-selector ${selectedLanguage === 'en' ? 'active' : ''}`}
-                            onClick={() => {
-                                changeLanguage('en')
-                            }}>ENG
+        <header className={`container-header${showHeader ? "-fix" : ""}`}>
+            <div className="top-bar">
+                <div className="top-left">
+                    <SiNike/>
+                    <span
+                        className={`language-selector ${selectedLanguage === 'vi' ? 'active' : ''}`}
+                        onClick={() => {
+                            changeLanguage('vi')
+                        }}>VN
+                    </span>
+                    <span>|</span>
+                    <span
+                        className={`language-selector ${selectedLanguage === 'en' ? 'active' : ''}`}
+                        onClick={() => {
+                            changeLanguage('en')
+                        }}>ENG
                     </span>
 
                 </div>
                 <div className="top-right">
                     <span>{t('header-show.shop')} </span>
                     <span>|</span>
-                    <span>{t('header-show.time')}</span>
-                    <span>|</span>
                     <span>{t('header-show.open')}</span>
+                    <span>|</span>
+                    <span>{t('header-show.time')}</span>
                     <span id="iconn" onClick={toggleDarkMode}>
                         {isDarkMode ? <MdDarkMode/> : <CiLight/>}
                     </span>
-                    </div>
                 </div>
-                <nav>
-                    <div className="logo">
-                        <NavLink to="/">2handtropical</NavLink>
+            </div>
+            <nav>
+                <div className="logo">
+                    <NavLink to="/">2handtropical</NavLink>
+                </div>
+                <div className="hamburger" onClick={toggleMenu}>
+                    <GiHamburgerMenu/>
+                </div>
+                <div className={`menu-bar ${menuOpen ? 'open' : ''}`}>
+                    <div className="close-btn" onClick={closeMenu}>
+                        <IoCloseOutline/>
                     </div>
-                    <div className="hamburger" onClick={toggleMenu}>
-                        <GiHamburgerMenu/>
-                    </div>
-                    <div className={`menu-bar ${menuOpen ? 'open' : ''}`}>
-                        <div className="close-btn" onClick={closeMenu}>
-                            <IoCloseOutline/>
-                        </div>
-                        <ul className="menu">
-                            <li><NavLink to="/">{t('header-show.home')}</NavLink></li>
-                            <li><NavLink to="/shop">{t('header-show.men')}</NavLink></li>
-                            <li><NavLink to="#">{t('header-show.promotion')}</NavLink></li>
-                            <li><NavLink to="#">{t('header-show.collection')}</NavLink></li>
-                            <li><NavLink to="#">{t('header-show.news')}</NavLink></li>
-                        </ul>
-                        <div className="search-icons">
-                            <div className="search">
-                                <input type="text"
-                                       placeholder={t('header-show.search')}
-                                       value={searchTerm}
-                                       onChange={(event) => setSearchTerm(event.target.value)}
-                                       onKeyDown={handleKeyDown}/>
-                                <button onClick={handleSearch}><FiSearch/></button>
-                            </div>
-                            <div className="icons">
-                                <NavLink to="/favouriteProduct"><IoIosHeartEmpty size={30}/></NavLink>
-                                <NavLink to="/Cart"><CiShoppingCart size={30}/></NavLink>
-                                {/*thêm css của thẻ p ở dưới
+                    <ul className="menu">
+                        <li><NavLink to="/">{t('header-show.home')}</NavLink></li>
+                        <li><NavLink to="/shop">{t('header-show.men')}</NavLink></li>
+                        <li><NavLink to="#">{t('header-show.promotion')}</NavLink></li>
+                        <li><NavLink to="#">{t('header-show.collection')}</NavLink></li>
+                        <li><NavLink to="/news">{t('header-show.news')}</NavLink></li>
+                    </ul>
+                        {/*<div className="search">*/}
+                        {/*    <input className={"search-input"}*/}
+                        {/*           type="text"*/}
+                        {/*           placeholder={t('header-show.search')}*/}
+                        {/*           value={searchTerm}*/}
+                        {/*           onChange={(event) => setSearchTerm(event.target.value)}*/}
+                        {/*           onKeyDown={handleKeyDown}/>*/}
+                        {/*    <button onClick={handleSearch}><FiSearch/></button>*/}
+                        {/*</div>*/}
+                    <div className="search-icons">
+                        <Search/>
+                        <div className="icons">
+                            <NavLink to="/favouriteProduct"><IoIosHeartEmpty size={25}/></NavLink>
+                            <NavLink to="/Cart"><IoCartOutline size={25}/></NavLink>
+                            {/*thêm css của thẻ p ở dưới
                                 đăng nhập vào
                                 tk:admin@123
                                 pass: admin
                                 để xem chi tiết*/}
-                                {userStorage.user ?
-                                    (<p>{userStorage.user.firstName + ' ' + userStorage.user.lastName}</p>) :
-                                    (<NavLink className="login" to="/Login">{t('header-show.login')}</NavLink>)}
-                            </div>
+                            {userStorage.user ?
+                                (
+                                    <p className="accset">{userStorage.user.firstName + ' ' + userStorage.user.lastName}
 
+                                        <div className="dropdown-content">
+                                            <NavLink
+                                                to={"#"}>Hello {userStorage.user.firstName + ' ' + userStorage.user.lastName}</NavLink>
+                                            <NavLink to={"#"}>Profile</NavLink>
+                                            <NavLink to={"#"}>Log Out</NavLink>
+                                        </div>
+
+                                    </p>) :
+                                (<NavLink className="login" to="/Login">{t('header-show.login')}</NavLink>)}
                         </div>
+
                     </div>
-                </nav>
-            </div>
+                </div>
+            </nav>
         </header>
     )
 }

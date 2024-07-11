@@ -1,0 +1,15 @@
+{
+  "product filter": {
+    "existing products": "Sản phẩm hiện có",
+    "gender": "Giới tính",
+    "male": "Nam",
+    "female": "Nữ",
+    "Unisex": "Cả Nam Nữ",
+    "attributers": "Đặc tính",
+    "in stock": "Sẵn hàng",
+    "Pre order": "Đặt hàng trước",
+    "Price Range": "Khoảng giá",
+    "Brand": "Thương hiệu",
+    "Nike": "Nike"
+  }
+}

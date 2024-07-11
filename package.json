@@ -59,6 +59,7 @@
     ]
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.2",
     "@types/react-slick": "^0.23.13",
     "file-loader": "^6.2.0",
     "sneaks-api": "^1.2.3"

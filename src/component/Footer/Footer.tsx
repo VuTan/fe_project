@@ -19,10 +19,10 @@ const Footer = () => {
                 <div className="footer-column">
                     <h4>{t('search')}</h4>
                     <ul>
-                    <li><NavLink to="#">{t('product_portfolio')}</NavLink></li>
+                    <li><NavLink to="/shop">{t('product_portfolio')}</NavLink></li>
                     <li><NavLink to="#">{t('collection')}</NavLink></li>
                     <li><NavLink to="#">{t('policy')}</NavLink></li>
-                    <li><NavLink to="#">{t('old shoes')}</NavLink></li>
+                    <li><NavLink to="/news">{t('old shoes')}</NavLink></li>
                     </ul>
                 </div>
                 <div className="footer-column">
@@ -33,16 +33,15 @@ const Footer = () => {
                         <li><NavLink to="#">{t("uni")}</NavLink></li>
                         <li><NavLink to="#">{t("limited")}</NavLink></li>
                         <li><NavLink to="#">{t("promotion")}</NavLink></li>
-                        <li><NavLink to="#">{t("event")}</NavLink></li>
                     </ul>
                 </div>
                 <div className="footer-column">
                     <h4>{t("media")}</h4>
                     <ul>
-                        <li><NavLink to="#">Youtube</NavLink></li>
-                        <li><NavLink to="#">Facebook</NavLink></li>
-                        <li><NavLink to="#">Instagram</NavLink></li>
-                        <li><NavLink to="#">TikTok</NavLink></li>
+                        <li><NavLink to="https://www.youtube.com/">Youtube</NavLink></li>
+                        <li><NavLink to="https://www.facebook.com/">Facebook</NavLink></li>
+                        <li><NavLink to="https://www.instagram.com/">Instagram</NavLink></li>
+                        <li><NavLink to="https://www.tiktok.com/">TikTok</NavLink></li>
                     </ul>
                 </div>
                 <div className="footer-column">

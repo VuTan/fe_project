@@ -1,5 +1,29 @@
 @import "../../base";
 
+.dark-mode .news-detail {
+  background: $bg-gray;
+}
+
+.light-mode .news-detail {
+  background: $bg-light-gray;
+}
+
+.dark-mode .header {
+  color: $bg-ultra-gray;
+}
+
+.light-mode .header {
+  color: $bg-dark;
+}
+
+.dark-mode main {
+  color: $bg-ultra-gray;
+}
+
+.light-mode main{
+  color: $bg-dark;
+}
+
 .news-detail {
   padding: 2rem;
   max-width: 800px;
@@ -7,7 +31,7 @@
   background-color: #fff;
   color: #000;
 
-  header {
+  .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,12 +39,10 @@
 
     .date {
       font-size: 14px;
-      color: #666;
     }
 
     .share {
       font-size: 14px;
-      color: #666;
 
       span {
         cursor: pointer;
@@ -76,7 +98,6 @@
   &__department,
   &__location {
     font-size: 1rem;
-    color: #555;
     margin: 0.5rem 0;
   }
 
