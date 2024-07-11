@@ -2,6 +2,8 @@ import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import newsData from './newsData';
 import './NewDetail.scss';
+import { IoMdArrowRoundBack } from "react-icons/io";
+
 const NewsDetail: React.FC = () => {
     const { id } = useParams<{ id: string }>();
     const navigate = useNavigate();
@@ -13,12 +15,12 @@ const NewsDetail: React.FC = () => {
 
     return (
         <div className="news-detail">
-            <header>
+            <div className={"header"}>
                 <span className="date">July 6, 2024</span>
                 <span className="share">
           <span>Share</span>
         </span>
-            </header>
+            </div>
             <main>
                 <img src={news.image} alt={news.title} className="news-detail__image" />
                 <h1 className="news-detail__title">{news.title}</h1>
@@ -32,7 +34,7 @@ const NewsDetail: React.FC = () => {
                         </div>
                     ))}
                 </div>
-                <button className="news-detail__back-button" onClick={() => navigate(-1)}>Back</button>
+                <button className="news-detail__back-button" onClick={() => navigate(-1)}><IoMdArrowRoundBack/></button>
             </main>
         </div>
     );

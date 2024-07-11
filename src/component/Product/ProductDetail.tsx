@@ -25,6 +25,10 @@ const ProductDetail = () => {
     const favorite = useSelector((state: RootState) => state.favorite)
 
     useEffect(() => {
+        window.scrollTo(0 , 0)
+    }, []);
+
+    useEffect(() => {
         getProduct(id);
         const isFavorite = favorite.favArr.some(product => product.id === id);
         setIsFavorite(isFavorite);

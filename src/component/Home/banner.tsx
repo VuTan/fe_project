@@ -7,7 +7,8 @@ import {useTranslation} from 'react-i18next'
 const Banner = () => {
     const { t } = useTranslation('banner')
 
-    return <div className="banner-contain">
+    return (
+    <>
         <div className="banner-top">
             <span>2handtroical</span>
             <p>{t('ex')} <span> @instagram.2handtropical</span></p>
@@ -35,7 +36,8 @@ const Banner = () => {
                 </div>
             </Marquee>
         </div>
-    </div>
+    </>
+    )
 }
 
 export default Banner;

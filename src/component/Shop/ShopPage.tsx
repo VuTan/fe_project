@@ -6,6 +6,8 @@ import ReactPaginate from "react-paginate";
 import {Product} from "../../models/Product.modal";
 import {FilledInput} from "@mui/material";
 import ProductFilter from "./Filter/ProductFilter";
+import {useTranslation} from "react-i18next";
+import {NavLink} from "react-router-dom";
 
 interface Filter {
 
@@ -32,6 +34,7 @@ const ShopPage: React.FC = () => {
     const [totalProduct, setTotalProduct] = useState();
     const [totalPage, setTotalPage] = useState(0);
     const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+    const {t} = useTranslation('shoppage')
 
     useEffect(() => {
         getProduct(1);
@@ -57,8 +60,17 @@ const ShopPage: React.FC = () => {
                 <ProductFilter/>
                 <div className="product-list">
                     <div className="filter-sort">
-                        <span>Bộ lọc nhanh</span>
-                        <span>Xếp theo</span>
+                        <span>{t('shoppage.fast filter')}</span>
+                        <p className={"sort-by"}>
+                                {t('shoppage.rank')}
+
+                            <div className="dropdown-sort-by">
+                                <NavLink to={"#"}>Gia</NavLink>
+                                <NavLink to={"#"}>Kieu</NavLink>
+                                <NavLink to={"#"}>Id</NavLink>
+                            </div>
+
+                        </p>
                     </div>
                     <div className="products">
                         {listProduct && listProduct.length > 0

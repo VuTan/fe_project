@@ -8,7 +8,8 @@ import banner_EN from "../locales/en/banner.json"
 import collectionvideo_EN from "../locales/en/collectionvideo.json"
 import sigin_EN from "../locales/en/sigin.json"
 import sigup_EN from "../locales/en/sigup.json"
-
+import shopPage_EN from "../locales/en/ShopPage.json";
+import productFilter_EN from "../locales/en/productfilter.json";
 
 import notfound_VI from "../locales/vi/notfound.json";
 import header_VI from "../locales/vi/header.json";
@@ -17,8 +18,8 @@ import banner_VI from "../locales/vi/banner.json";
 import collectionvideo_VI from "../locales/vi/collectionvideo.json";
 import sigin_VI from "../locales/vi/sigin.json"
 import sigup_VI from "../locales/vi/sigup.json"
-
-
+import shopPage_VI from "../locales/vi/ShopPage.json";
+import productFilter_VI from "../locales/vi/productfilter.json";
 
 export const resources = {
     en: {
@@ -28,7 +29,9 @@ export const resources = {
         banner: banner_EN,
         collectionvideo: collectionvideo_EN,
         sigin: sigin_EN,
-        sigup: sigup_EN
+        sigup: sigup_EN,
+        shoppage: shopPage_EN,
+        productfitler:productFilter_EN
     },
     vi: {
         notfound: notfound_VI,
@@ -38,6 +41,8 @@ export const resources = {
         collectionvideo: collectionvideo_VI,
         sigin: sigin_VI,
         sigup: sigup_VI,
+        shoppage: shopPage_VI,
+        productfitler:productFilter_VI
     }
 }
 
