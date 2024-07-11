@@ -47,7 +47,7 @@ const Search: React.FC = () => {
             <button onClick={() => handleSearch(searchTerm)}>
                 <FiSearch />
             </button>
-            <div className={`search-results ${searchResults.length > 0 ? '-open' : ''}`}>
+            <div className={`search-results${searchResults.length > 0 ? '-open' : ''}`}>
                 {searchResults.length > 0 ? (
                     searchResults.map((result) => (
                         <div className="search-result-item" key={result.id}>
