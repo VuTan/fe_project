@@ -15,8 +15,8 @@
   display: none;
 }
 
-.search-results.open {
-  display: block; /* Hiển thị khung kết quả khi có kết quả tìm kiếm */
+.search-results-open {
+  display: block;
 }
 
 .search-result-item {
@@ -51,6 +51,7 @@
   text-align: center;
   color: $bg-gray;
 }
+
 @media (max-width: 1350px) {
   .search-results {
     position: absolute;
@@ -61,10 +62,6 @@
   }
 }
 
-@media (max-width: 1090px) {
+@media (max-width: 1090px) {}
 
-}
-
-@media (max-width: 790px) {
-
-}
+@media (max-width: 790px) {}

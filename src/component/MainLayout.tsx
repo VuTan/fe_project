@@ -6,7 +6,7 @@ import React from "react";
 const MainLayout = () => {
     return (<>
         <Header/>
-        <Outlet/>
+        <div className="banner-contain"><Outlet/></div>
         <Footer/>
     </>);
 }
