@@ -310,7 +310,26 @@ nav{
   position: relative;
   top: 110px;
 }
-
+.scroll-up__container{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  .scroll-up__btn{
+    border: none;
+    padding: 10px 15px 10px 15px;
+    box-shadow: 0 0 4px -2px;
+    margin: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    &:hover{
+      transform: scale(1.04);
+    }
+    &:active{
+      transform: scale(0.95);
+    }
+  }
+}
 // Responsive styles
 @media (max-width: 1350px) {
   .menu-bar {
