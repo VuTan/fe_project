@@ -1,9 +1,15 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import newsData from './newsData';
 import './NewDetail.scss';
 const NewsDetail: React.FC = () => {
     const { id } = useParams<{ id: string }>();
     const navigate = useNavigate();
+    const news = newsData.find(n => n.id === parseInt(id as string, 10));
+
+    if (!news) {
+        return <div>News item not found</div>;
+    }
 
     return (
         <div className="news-detail">

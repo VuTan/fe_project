@@ -1,12 +1,32 @@
-.sidebar {
-  width: 250px;
-  padding: 20px;
-  border-right: 1px solid #ccc;
-  height: 100vh; /* Chiều cao đầy đủ của khung nhìn */
-  overflow-y: auto; /* Cho phép cuộn dọc */
+@import "../../../base";
 
-  h3 {
+.sidebar {
+  left: 0;
+  transition: top 0.3s ease-in-out;
+  width: 300px;
+  padding: 20px;
+  height: calc(160vh - 80px);
+  position: sticky;
+  top: 0;
+
+  .sidebar-h3 {
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
     margin-top: 0;
+  }
+
+  .sidebar-h4 {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .check {
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .check input[type="checkbox"]{
+    accent-color: $color_black;
   }
 
   .category-buttons {

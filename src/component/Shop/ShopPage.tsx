@@ -1,9 +1,12 @@
 import React, {useEffect, useState} from 'react';
 import './ShopPage.scss';
-import {fetchAllProduct, fetchProductPerPage} from "../../service/ProductService";
+import {fetchProductPerPage} from "../../service/ProductService";
+import CardProduct from "../Product/CardProduct";
 import ReactPaginate from "react-paginate";
 import {Product} from "../../models/Product.modal";
 import ProductFilter from "./Filter/ProductFilter";
+import {useTranslation} from "react-i18next";
+import {NavLink} from "react-router-dom";
 import {Card, Placeholder} from "react-bootstrap";
 import CardProduct from "../Product/CardProduct";
 
@@ -32,18 +35,11 @@ const ShopPage: React.FC = () => {
     const [totalProduct, setTotalProduct] = useState();
     const [totalPage, setTotalPage] = useState(0);
     const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+    const {t} = useTranslation('shoppage')
 
     useEffect(() => {
         getProduct(1);
-        getTotalProduct()
     }, []);
-    const getTotalProduct = async () => {
-        let res = await fetchAllProduct();
-        if (res && res.data.length > 0) {
-            setTotalProduct(res.data.length);
-            setTotalPage(Math.ceil(res.data.length / productPerPage));
-        }
-    };
 
     const getProduct = async (page: number) => {
         let res = await fetchProductPerPage(page, productPerPage);
@@ -63,8 +59,17 @@ const ShopPage: React.FC = () => {
                 <ProductFilter/>
                 <div className="product-list">
                     <div className="filter-sort">
-                        <span>Bộ lọc nhanh</span>
-                        <span>Xếp theo</span>
+                        <span>{t('shoppage.fast filter')}</span>
+                        <p className={"sort-by"}>
+                                {t('shoppage.rank')}
+
+                            <div className="dropdown-sort-by">
+                                <NavLink to={"#"}>Gia</NavLink>
+                                <NavLink to={"#"}>Kieu</NavLink>
+                                <NavLink to={"#"}>Id</NavLink>
+                            </div>
+
+                        </p>
                     </div>
                     <div className="products">
                         {listProduct && listProduct.length > 0
