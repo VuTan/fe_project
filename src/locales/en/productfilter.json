@@ -1,0 +1,15 @@
+{
+  "product filter": {
+    "existing products": "Existing Products",
+    "gender": "Gender",
+    "male": "Male",
+    "female": "Female",
+    "Unisex": "Unisex",
+    "attributers": "Attributers",
+    "in stock": "In stock",
+    "Pre order": "Pre Order",
+    "Price Range": "Price Range",
+    "Brand": "Brand",
+    "Nike": "Nike"
+  }
+}
