@@ -8,6 +8,7 @@ import {FilledInput} from "@mui/material";
 import ProductFilter from "./Filter/ProductFilter";
 import {useTranslation} from "react-i18next";
 import {NavLink} from "react-router-dom";
+import AddProductPopup from "./AddProductPopup";
 
 interface Filter {
 
@@ -29,7 +30,7 @@ const ShopPage: React.FC = () => {
         "Socks",
         "Accessories & Equipment"
     ];
-    const productPerPage = 12;
+    const productPerPage = 18;
     const [listProduct, setListProduct] = useState<Product[]>();
     const [totalProduct, setTotalProduct] = useState();
     const [totalPage, setTotalPage] = useState(0);
@@ -38,6 +39,10 @@ const ShopPage: React.FC = () => {
 
     useEffect(() => {
         getProduct(1);
+    }, []);
+
+    useEffect(() => {
+        window.scrollTo(0 , 0)
     }, []);
 
     const getProduct = async (page: number) => {
@@ -53,6 +58,15 @@ const ShopPage: React.FC = () => {
         getProduct(event.selected + 1);
     };
 
+    const [showPopup, setShowPopup] = useState(false);
+
+    const handleAddProductClick = () => {
+        setShowPopup(true);
+    };
+
+    const handleClosePopup = () => {
+        setShowPopup(false);
+    };
 
     return (
         <>
@@ -61,16 +75,22 @@ const ShopPage: React.FC = () => {
                 <div className="product-list">
                     <div className="filter-sort">
                         <span>{t('shoppage.fast filter')}</span>
-                        <p className={"sort-by"}>
+                        <div className={"filter-sort-right"}>
+                            <p className={"sort-by"} onClick={handleAddProductClick}>Add</p>
+                            <AddProductPopup show={showPopup} onClose={handleClosePopup} />
+
+                            <p className={"sort-by"}>
                                 {t('shoppage.rank')}
 
-                            <div className="dropdown-sort-by">
-                                <NavLink to={"#"}>Gia</NavLink>
-                                <NavLink to={"#"}>Kieu</NavLink>
-                                <NavLink to={"#"}>Id</NavLink>
-                            </div>
+                                <div className="dropdown-sort-by">
+                                    <NavLink to={"#"}>Gia</NavLink>
+                                    <NavLink to={"#"}>Kieu</NavLink>
+                                    <NavLink to={"#"}>Id</NavLink>
+                                </div>
 
-                        </p>
+                            </p>
+
+                        </div>
                     </div>
                     <div className="products">
                         {listProduct && listProduct.length > 0
