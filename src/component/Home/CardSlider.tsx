@@ -42,7 +42,7 @@ const CardSlider = (props: CardSliderProps) => {
                     <button onClick={next}>&gt;</button>
                 </div>
             </div>
-            <Slider {...settings} ref={sliderRef}>
+            <Slider {...settings} ref={sliderRef} >
                 {slides.map((slider, index) => {
                     return (<></>);
                 })}

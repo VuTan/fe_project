@@ -114,7 +114,7 @@ const Header = () => {
                             <li><NavLink to="/shop">{t('header-show.men')}</NavLink></li>
                             <li><NavLink to="#">{t('header-show.promotion')}</NavLink></li>
                             <li><NavLink to="#">{t('header-show.collection')}</NavLink></li>
-                            <li><NavLink to="#">{t('header-show.news')}</NavLink></li>
+                            <li><NavLink to="/news">{t('header-show.news')}</NavLink></li>
                         </ul>
                         <div className="search-icons">
                             <div className="search">

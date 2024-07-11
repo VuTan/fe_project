@@ -11,11 +11,13 @@ const fetchProductById = (id: string | undefined) => {
 
 
 const fetchProductPerPage = (page: number, perPage: number) => {
-    return axios.get(`/product?_page=${page}&_per_page=${perPage}`);
+    return axios.get(`/product?_page=${page}&_limit=${perPage}`);
 }
 
-const fetchProductSortByPrice = () => {
-    return axios.get(`/product?product?_sort=Price  `);
+const fetchProductSortByPrice = (lowToHigh: boolean) => {
+    return axios.get(`/product?product?_sort=Price&_order=${lowToHigh ? "asc" : "desc"}`);
 }
+
+
 
 export {fetchAllProduct, fetchProductPerPage, fetchProductById};

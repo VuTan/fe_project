@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import './ShopPage.scss';
-import {fetchProductPerPage} from "../../service/ProductService";
-import CardProduct from "../Product/CardProduct";
+import {fetchAllProduct, fetchProductPerPage} from "../../service/ProductService";
 import ReactPaginate from "react-paginate";
 import {Product} from "../../models/Product.modal";
-import {FilledInput} from "@mui/material";
 import ProductFilter from "./Filter/ProductFilter";
+import {Card, Placeholder} from "react-bootstrap";
+import CardProduct from "../Product/CardProduct";
 
 interface Filter {
 
@@ -35,14 +35,20 @@ const ShopPage: React.FC = () => {
 
     useEffect(() => {
         getProduct(1);
+        getTotalProduct()
     }, []);
+    const getTotalProduct = async () => {
+        let res = await fetchAllProduct();
+        if (res && res.data.length > 0) {
+            setTotalProduct(res.data.length);
+            setTotalPage(Math.ceil(res.data.length / productPerPage));
+        }
+    };
 
     const getProduct = async (page: number) => {
         let res = await fetchProductPerPage(page, productPerPage);
-        if (res && res.data.data.length > 0) {
-            setListProduct(res.data.data);
-            setTotalProduct(res.data.items);
-            setTotalPage(res.data.pages);
+        if (res && res.data.length > 0) {
+            setListProduct(res.data);
         }
     };
 
@@ -63,7 +69,21 @@ const ShopPage: React.FC = () => {
                     <div className="products">
                         {listProduct && listProduct.length > 0
                             && listProduct.map((product) => {
-                                return (<CardProduct key={product.id} product={product} sizeCard={"medium"}/>);
+                                return (<Card style={{width: '100%'}}>
+                                    <Card.Img style={{height:"80%"}} variant="top" src={require("../images/holder.jpg")}/>
+                                    <Card.Body>
+                                        <Placeholder as={Card.Title} animation="glow">
+                                            <Placeholder xs={6}/>
+                                        </Placeholder>
+                                        <Placeholder as={Card.Text} animation="glow">
+                                            <Placeholder xs={7}/> <Placeholder xs={4}/> <Placeholder xs={4}/>
+                                        </Placeholder>
+                                    </Card.Body>
+                                </Card>);
+                            })}
+                        {listProduct && listProduct.length > 0
+                            && listProduct.map((product) => {
+                                return (<CardProduct product={product} sizeCard={"medium"}/>);
                             })}
                     </div>
                     <div className="paginate">
