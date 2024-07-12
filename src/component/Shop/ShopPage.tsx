@@ -1,4 +1,4 @@
-import React, {Fragment, useState} from 'react';
+import React, {Fragment, useEffect , useState} from 'react';
 import './ShopPage.scss';
 import {useGetProductPerPageQuery, useGetProductSortByQuery} from "../../service/ProductService";
 import CardProduct from "../Product/CardProduct";
@@ -6,11 +6,11 @@ import ReactPaginate from "react-paginate";
 import ProductFilter from "./Filter/ProductFilter";
 import SkeletonProduct from "../Product/SkeletonProduct";
 import {useTranslation} from "react-i18next";
+import AddProductPopup from "./AddProductPopup";
 
 interface Filter {
 
 }
-
 
 const ShopPage: React.FC = () => {
 
@@ -38,6 +38,10 @@ const ShopPage: React.FC = () => {
     const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
     const [selectedSort, setSelectedSort] = useState<boolean>(true);
 
+    useEffect(() => {
+        window.scrollTo(0 , 0)
+    }, []);
+
     const {data: sortedData, isLoading: isSortingLoading} = useGetProductSortByQuery({
         sort: sort,
         lowToHigh: selectedSort,
@@ -51,6 +55,15 @@ const ShopPage: React.FC = () => {
 
     const handleChangePage = (event: { selected: number }) => {
         setCurrentPage(event.selected + 1);
+    };
+    const [showPopup, setShowPopup] = useState(false);
+
+    const handleAddProductClick = () => {
+        setShowPopup(true);
+    };
+
+    const handleClosePopup = () => {
+        setShowPopup(false);
     };
 
     const handleSortBy = (event: React.MouseEvent<HTMLUListElement>) => {
@@ -90,6 +103,7 @@ const ShopPage: React.FC = () => {
                 <div className="product-list">
                     <div className="filter-sort">
                         <span>{t('shoppage.fast filter')}</span>
+                        <div className={"filter-sort-right"}>
                         <p className={"sort-by"}>
                             {t('shoppage.rank')}
 
@@ -101,6 +115,9 @@ const ShopPage: React.FC = () => {
                             </ul>
 
                         </p>
+                            <p className={"sort-by"} onClick={handleAddProductClick}>Add</p>
+                            <AddProductPopup show={showPopup} onClose={handleClosePopup}/>
+                        </div>
                     </div>
                     <div className="products">
                         {isSortingLoading || isPaginatingLoading && (
