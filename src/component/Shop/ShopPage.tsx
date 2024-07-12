@@ -6,6 +6,7 @@ import ReactPaginate from "react-paginate";
 import ProductFilter from "./Filter/ProductFilter";
 import SkeletonProduct from "../Product/SkeletonProduct";
 import {useTranslation} from "react-i18next";
+import AddProductPopup from "./AddProductPopup";
 
 interface Filter {
 
@@ -38,19 +39,32 @@ const ShopPage: React.FC = () => {
     const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
     const [selectedSort, setSelectedSort] = useState<boolean>(true);
 
-    const {data: sortedData, isLoading: isSortingLoading, isFetching:isSortingFetching } = useGetProductSortByQuery({
+    useEffect(() => {
+        window.scrollTo(0 , 0)
+    }, []);
+
+    const {data: sortedData, isLoading: isSortingLoading} = useGetProductSortByQuery({
         sort: sort,
         lowToHigh: selectedSort,
         page: currentPage,
         perPage: productPerPage,
     });
-    const {data: paginatedData, isLoading: isPaginatingLoading,isFetching:isPaginatingFetching} = useGetProductPerPageQuery({
+    const {data: paginatedData, isLoading: isPaginatingLoading} = useGetProductPerPageQuery({
         page: currentPage,
         perPage: productPerPage
     });
 
     const handleChangePage = (event: { selected: number }) => {
         setCurrentPage(event.selected + 1);
+    };
+    const [showPopup, setShowPopup] = useState(false);
+
+    const handleAddProductClick = () => {
+        setShowPopup(true);
+    };
+
+    const handleClosePopup = () => {
+        setShowPopup(false);
     };
 
     const handleSortBy = (event: React.MouseEvent<HTMLUListElement>) => {
@@ -90,6 +104,7 @@ const ShopPage: React.FC = () => {
                 <div className="product-list">
                     <div className="filter-sort">
                         <span>{t('shoppage.fast filter')}</span>
+                        <div className={"filter-sort-right"}>
                         <p className={"sort-by"}>
                             {t('shoppage.rank')}
 
@@ -101,6 +116,9 @@ const ShopPage: React.FC = () => {
                             </ul>
 
                         </p>
+                            <p className={"sort-by"} onClick={handleAddProductClick}>Add</p>
+                            <AddProductPopup show={showPopup} onClose={handleClosePopup}/>
+                        </div>
                     </div>
                     <div className="products">
                         {isSortingFetching || isPaginatingFetching && (

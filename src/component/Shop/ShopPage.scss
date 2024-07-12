@@ -30,40 +30,51 @@
     justify-content: space-between;
     margin-bottom: 20px;
 
-    .sort-by{
-      margin: 10px 0 15px 10px ;
-      position: relative;
-      display: inline-block;
-      cursor: pointer;
-      font-weight: normal;
-    }
+    .filter-sort-right {
+      display: flex;
+      justify-content: end;
 
-    .dropdown-sort-by {
-      background-color: $bg-light-gray;
-      font-size: 15px;
-      display: none;
-      position: absolute;
-      z-index: 1;
-      width: 80px;
-      left: -20px;
-      border: 1px solid #ccc;
-    }
+      .sort-by {
+        margin: 10px 0 15px 10px;
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        font-weight: normal;
 
-    .dropdown-sort-by a {
-      text-align: start;
-      color: $color_black;
-      text-decoration: none;
-      display: block;
-      font-weight: normal;
-    }
+        &:hover {
+          font-weight: bold;
+        }
+      }
 
-    .dropdown-sort-by a:hover {
-      font-weight: bold;
-    }
 
-    .sort-by:hover .dropdown-sort-by{
-      display: block;
-      font-weight: bold;
+      .dropdown-sort-by {
+        padding: 6px;
+        background-color: $bg-light-gray;
+        font-size: 15px;
+        display: none;
+        position: absolute;
+        z-index: 1;
+        width: 100px;
+        //left: -45px;
+        border: 1px solid #ccc;
+      }
+
+      .dropdown-sort-by li {
+        text-align: start;
+        color: $color_black;
+        text-decoration: none;
+        display: block;
+        font-weight: normal;
+      }
+
+      .dropdown-sort-by li:hover {
+        font-weight: bold;
+      }
+
+      .sort-by:hover .dropdown-sort-by {
+        display: block;
+        font-weight: bold;
+      }
     }
   }
 

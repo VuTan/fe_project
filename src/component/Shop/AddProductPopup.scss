@@ -1,0 +1,77 @@
+@import "../../base";
+
+.popup-overlayy {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(30, 28, 28, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  .popup-contentt {
+    padding: 15px;
+    border-radius: 5px;
+    animation: fadeIn 0.5s ease-in-out;
+    width: 700px;
+    height: 730px;
+    background: $bg-light-gray;
+
+    .popup-form {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      top: 0;
+      bottom: 0;
+
+      .popup-title {
+        font-size: 20px;
+        margin: 0;
+      }
+
+      .popup-label {
+        color: #555;
+
+        .popup-input,
+        .popup-select,
+        .popup-textarea {
+          width: 100%;
+          padding: 8px;
+          margin-top: 5px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+      }
+
+      .popup-textarea {
+        resize: vertical;
+      }
+
+      .popup-buttons {
+        display: flex;
+        justify-content: space-between;
+
+        .popup-button {
+          padding: 10px 15px;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+
+        .add-btn {
+          background: #6a1b9a;
+          color: #fff;
+          border: none;
+        }
+
+        .save-btn {
+          background: #fff;
+          color: #6a1b9a;
+          border: 1px solid #6a1b9a;
+        }
+      }
+    }
+  }
+}
