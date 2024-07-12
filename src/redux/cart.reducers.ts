@@ -81,8 +81,7 @@ const cartSlice = createSlice({
         getTotals: (state) => {
             let {total, quantity} = state.cartArr.reduce((cartTotal, cartProduct) => {
                 const {Price, quantity} = cartProduct;
-                const parsePrice = Price.replace(/,/g, "")
-                const productTotal = +parsePrice * quantity;
+                const productTotal = +Price * quantity;
 
                 cartTotal.total += productTotal;
                 cartTotal.quantity += quantity;

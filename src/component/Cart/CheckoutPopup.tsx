@@ -1,5 +1,5 @@
 import React from 'react';
-import './CustomerInfoPopup.scss';
+import './CheckoutPopup.scss';
 import Button from '../Button/Button';
 
 interface CustomerInfoPopupProps {
@@ -19,7 +19,7 @@ interface CustomerInfoPopupProps {
     handleClosePopup: () => void;
 }
 
-const CustomerInfoPopup: React.FC<CustomerInfoPopupProps> = ({ customerInfo, setCustomerInfo, handleSubmit, handleClosePopup }) => {
+const CheckoutPopup: React.FC<CustomerInfoPopupProps> = ({ customerInfo, setCustomerInfo, handleSubmit, handleClosePopup }) => {
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
@@ -39,7 +39,7 @@ const CustomerInfoPopup: React.FC<CustomerInfoPopupProps> = ({ customerInfo, set
                     handleSubmit();
                 }}>
                     <div>
-                        <label>Họ tên</label>
+                        <label>Full Name</label>
                         <input
                             type="text"
                             name="name"
@@ -49,7 +49,7 @@ const CustomerInfoPopup: React.FC<CustomerInfoPopupProps> = ({ customerInfo, set
                         />
                     </div>
                     <div>
-                        <label>Số điện thoại</label>
+                        <label>Phone Number</label>
                         <input
                             type="text"
                             name="phone"
@@ -69,7 +69,7 @@ const CustomerInfoPopup: React.FC<CustomerInfoPopupProps> = ({ customerInfo, set
                         />
                     </div>
                     <div>
-                        <label>Địa chỉ</label>
+                        <label>Address</label>
                         <input
                             type="text"
                             name="address"
@@ -85,4 +85,4 @@ const CustomerInfoPopup: React.FC<CustomerInfoPopupProps> = ({ customerInfo, set
     );
 };
 
-export default CustomerInfoPopup;
+export default CheckoutPopup;
