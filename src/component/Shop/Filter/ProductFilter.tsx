@@ -1,5 +1,4 @@
-import React from "react";
-import FilterByCategory from "./FilterByCategory";
+import {useTranslation} from "react-i18next";
 
 interface Filter {
 
@@ -12,11 +11,11 @@ const ProductFilter = (filter?: Filter) => {
     return (
         <div className="sidebar">
             <h3 className={"sidebar-h3"}>{t('product filter.existing products')} ()</h3>
-                <div className="category-buttons">
-                        <label className={"check"}><input type="checkbox"/>{t('product filter.male')}</label>
-                </div>
-                <h4 className={"sidebar-h4"}>{t('product filter.gender')}</h4>
+            <div className="category-buttons">
                 <label className={"check"}><input type="checkbox"/>{t('product filter.male')}</label>
+            </div>
+            <h4 className={"sidebar-h4"}>{t('product filter.gender')}</h4>
+            <label className={"check"}><input type="checkbox"/>{t('product filter.male')}</label>
             <label className={"check"}><input type="checkbox"/>{t('product filter.female')}</label>
             <label className={"check"}><input type="checkbox"/>{t('product filter.Unisex')}</label>
             <h4 className={"sidebar-h4"}>{t('product filter.attributers')}</h4>
@@ -39,7 +38,3 @@ const ProductFilter = (filter?: Filter) => {
 }
 
 export default ProductFilter;
-
-const FilterTest = () => {
-
-}

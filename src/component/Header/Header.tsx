@@ -1,11 +1,10 @@
 import "./Header.scss";
-import React, {useState, useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import {SiNike} from "react-icons/si";
 import {IoIosHeartEmpty} from "react-icons/io";
 import {GiHamburgerMenu} from "react-icons/gi";
 import {IoCartOutline, IoCloseOutline} from "react-icons/io5";
 import {CiLight} from "react-icons/ci";
-import {FiSearch} from "react-icons/fi";
 import {MdDarkMode} from "react-icons/md";
 import {NavLink} from "react-router-dom";
 import "../../i18n/i18n"
@@ -19,7 +18,7 @@ const Header = () => {
     const {t} = useTranslation('header')
     const [selectedLanguage, setSelectedLanguage] = useState('vi');
     const [menuOpen, setMenuOpen] = useState(false);
-    // const [searchTerm, setSearchTerm] = useState('');
+    const [searchTerm, setSearchTerm] = useState('');
     const [isDarkMode, setIsDarkMode] = useState(false);
     const [isSticky, setIsSticky] = useState(false);
     const userStorage = useSelector((state: RootState) => state.user);
@@ -139,15 +138,15 @@ const Header = () => {
                         <li><NavLink to="#">{t('header-show.collection')}</NavLink></li>
                         <li><NavLink to="/news">{t('header-show.news')}</NavLink></li>
                     </ul>
-                        {/*<div className="search">*/}
-                        {/*    <input className={"search-input"}*/}
-                        {/*           type="text"*/}
-                        {/*           placeholder={t('header-show.search')}*/}
-                        {/*           value={searchTerm}*/}
-                        {/*           onChange={(event) => setSearchTerm(event.target.value)}*/}
-                        {/*           onKeyDown={handleKeyDown}/>*/}
-                        {/*    <button onClick={handleSearch}><FiSearch/></button>*/}
-                        {/*</div>*/}
+                    {/*<div className="search">*/}
+                    {/*    <input className={"search-input"}*/}
+                    {/*           type="text"*/}
+                    {/*           placeholder={t('header-show.search')}*/}
+                    {/*           value={searchTerm}*/}
+                    {/*           onChange={(event) => setSearchTerm(event.target.value)}*/}
+                    {/*           onKeyDown={handleKeyDown}/>*/}
+                    {/*    <button onClick={handleSearch}><FiSearch/></button>*/}
+                    {/*</div>*/}
                     <div className="search-icons">
                         <Search/>
                         <div className="icons">

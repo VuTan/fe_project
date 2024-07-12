@@ -1,8 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './ProductDetail.scss';
 import {useNavigate, useParams} from "react-router-dom";
-import {fetchProductById} from "../../service/ProductService";
-import {createBuyProduct, Product} from "../../models/Product.modal";
+import {createBuyProduct} from "../../models/Product.modal";
 import AsNavFor from "../Home/AsNavFor";
 import CardSlider from '../Home/CardSlider'
 import Popup from "../Product/PopupDetailProduct"
@@ -12,6 +11,7 @@ import {addProduct} from "../../redux/cart.reducers";
 import {addFavorite, removeFavorite} from "../../redux/favorite.reducers";
 import {RootState} from "../../redux/store";
 import {toast} from "react-toastify";
+import {useGetProductByIdQuery} from "../../service/ProductService";
 
 
 const ProductDetail = () => {
@@ -19,27 +19,19 @@ const ProductDetail = () => {
     const [showPopup, setShowPopup] = useState(false);
     const [selectedSize, setSelectedSize] = useState<number>();
     const navigate = useNavigate();
-    const {id} = useParams();
-    const [product, setProduct] = useState<Product>()
+
     const [isFavorite, setIsFavorite] = useState(false);
     const favorite = useSelector((state: RootState) => state.favorite)
 
-    useEffect(() => {
-        window.scrollTo(0 , 0)
-    }, []);
+    const {id} = useParams();
+    const {data} = useGetProductByIdQuery({id: id})
 
     useEffect(() => {
-        getProduct(id);
+        window.scrollTo(0, 0)
+
         const isFavorite = favorite.favArr.some(product => product.id === id);
         setIsFavorite(isFavorite);
     }, []);
-
-    const getProduct = async (id: string | undefined) => {
-        let res = await fetchProductById(id);
-        if (res && res.data[0]) {
-            setProduct(res.data[0]);
-        }
-    };
 
     const handleSizeClick = (size: number) => {
         if (selectedSize !== size)
@@ -72,8 +64,8 @@ const ProductDetail = () => {
     const dispath = useDispatch()
     const handleAddToCart = (event: React.MouseEvent<HTMLButtonElement>) => {
         if (selectedSize) {
-            if (product)
-                dispath(addProduct(createBuyProduct(product, selectedSize, 1)))
+            if (data)
+                dispath(addProduct(createBuyProduct(data, selectedSize, 1)))
         } else {
             toast.error(`Please select size`, {
                 position: "bottom-left"
@@ -82,13 +74,13 @@ const ProductDetail = () => {
 
     }
     const handleAddToFavorite = (event: React.MouseEvent<HTMLButtonElement>) => {
-        if (product)
-            dispath(addFavorite(product))
+        if (data)
+            dispath(addFavorite(data))
         setIsFavorite(true)
     }
     const handleRemoveFavorite = (event: React.MouseEvent<HTMLButtonElement>) => {
-        if (product)
-            dispath(removeFavorite(product))
+        if (data)
+            dispath(removeFavorite(data))
         setIsFavorite(false)
     }
 
@@ -119,15 +111,15 @@ const ProductDetail = () => {
                     <AsNavFor/>
                 </div>
                 <div className="details">
-                    <h1>{product?.Name}</h1>
-                    <p>{product?.Type}</p>
-                    <p>{product?.Price}</p>
-                    <p>{product?.describe}</p>
+                    <h1>{data?.Name}</h1>
+                    <p>{data?.Type}</p>
+                    <p>{data?.Price}</p>
+                    <p>{data?.describe}</p>
                     <h6 className="details-show" onClick={handleOpenPopup}>More Detail</h6>
                     <div className="size-selector">
                         <h3>Select Size</h3>
                         <div className="sizes">
-                            {product?.size.map((size) => (
+                            {data?.size.map((size) => (
                                 <button
                                     key={size}
                                     className={`size ${selectedSize === size ? 'size-hold' : ''}`}
@@ -154,7 +146,7 @@ const ProductDetail = () => {
                                 }} className="popup">
                                     <div className="popup-content">
                                         <p className="close-button" onClick={handleClosePopup}>&times;</p>
-                                        <Popup product={product}/>
+                                        <Popup product={data}/>
                                     </div>
                                 </div>
                             </div>
