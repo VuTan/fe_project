@@ -12,7 +12,7 @@ import Register from "./component/SigUp/SigUp";
 import "../src/i18n/i18n";
 import FavouriteProduct from "./component/Product/FavouriteProduct";
 import Cart from "./component/Cart/Cart";
-import News from "./component/News/News";
+import New from "./component/News/New";
 import NewsDetail from "./component/News/NewsDetail";
 
 
@@ -59,7 +59,7 @@ const appRouters: RouteObject[] = [
             },
             {
                 path: "/news",
-                element: <News/>
+                element: <New/>
             }
         ]
     }
