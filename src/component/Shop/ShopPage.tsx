@@ -38,13 +38,13 @@ const ShopPage: React.FC = () => {
     const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
     const [selectedSort, setSelectedSort] = useState<boolean>(true);
 
-    const {data: sortedData, isLoading: isSortingLoading} = useGetProductSortByQuery({
+    const {data: sortedData, isLoading: isSortingLoading, isFetching:isSortingFetching } = useGetProductSortByQuery({
         sort: sort,
         lowToHigh: selectedSort,
         page: currentPage,
         perPage: productPerPage,
     });
-    const {data: paginatedData, isLoading: isPaginatingLoading} = useGetProductPerPageQuery({
+    const {data: paginatedData, isLoading: isPaginatingLoading,isFetching:isPaginatingFetching} = useGetProductPerPageQuery({
         page: currentPage,
         perPage: productPerPage
     });
@@ -103,7 +103,7 @@ const ShopPage: React.FC = () => {
                         </p>
                     </div>
                     <div className="products">
-                        {isSortingLoading || isPaginatingLoading && (
+                        {isSortingFetching || isPaginatingFetching && (
                             <Fragment>
                                 <SkeletonProduct/>
                                 <SkeletonProduct/>
