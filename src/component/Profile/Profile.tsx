@@ -51,7 +51,7 @@ const Profile: React.FC = () => {
                             <div className="password-field">
                                 <p className={"show-pass"}>{showPassword ? user.password : '***'}</p>
                                 <button onClick={togglePasswordVisibility} className="password-toggle">
-                                    {showPassword ? <FaEyeSlash/> : <FaEye/>}
+                                    {showPassword ? <FaEyeSlash size={"18px"}/> : <FaEye size={"18px"}/>}
                                 </button>
                             </div>
                         </div>
