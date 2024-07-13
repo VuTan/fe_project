@@ -10,6 +10,659 @@
       "gender": ""
     }
   ],
+  "news": [
+    {
+      "position": 1,
+      "title": "Nike’s new chief runs into trouble as turnaround efforts falter",
+      "source": {
+        "name": "Financial Times",
+        "icon": "https://lh3.googleusercontent.com/281oPpXmEcGU9cV4N2LudyLEG2aBqbqG2iDoMoXUXKl-SWD4AUdO5652KVTGNmcduSWZB_7j",
+        "authors": [
+          "Sara Germano"
+        ]
+      },
+      "link": "https://www.ft.com/content/4fdc1b22-246c-402b-abaf-f56e5d591cdc",
+      "thumbnail": "https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fd0fcc92c-aabb-4543-a889-88a72575c295.jpg?source=next-article&fit=scale-down&quality=highest&width=700&dpr=1",
+      "date": "07/09/2024, 04:00 AM, +0000 UTC"
+    },
+    {
+      "position": 2,
+      "title": "40 percent of recent Nike layoffs impacted top positions",
+      "source": {
+        "name": "NBC Sports",
+        "icon": "https://lh3.googleusercontent.com/eqEb3Sxj8WKU9ptSPVDd7O0EBopH2FTVVwxNU6kKJ8m12dw6cSFuXWdQBD_5t4qUG5Jqbgfh",
+        "authors": [
+          "Mike Florio"
+        ]
+      },
+      "link": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/40-percent-of-recent-nike-layoffs-impacted-top-positions",
+      "thumbnail": "https://nbcsports.brightspotcdn.com/dims4/default/3500a34/2147483647/strip/false/crop/4000x2250+0+209/resize/1200x675!/quality/90/?url=https%3A%2F%2Fnbc-sports-production-nbc-sports.s3.us-east-1.amazonaws.com%2Fbrightspot%2F83%2F1d%2Ffec00e594646bf026a7c4be665fc%2Fhttps-delivery-gettyimages.com%2Fdownloads%2F2159012237",
+      "date": "07/08/2024, 11:34 PM, +0000 UTC"
+    },
+    {
+      "position": 4,
+      "title": "“Immensely disappointing”: Nike killing app for $350 self-tying sneakers",
+      "source": {
+        "name": "Ars Technica",
+        "icon": "https://lh3.googleusercontent.com/t89qA3oVmcG5tw7DpfL2R_ktr0DRPMKNmd_J1NWKwaKbS01moWCbiJyex5XpLUBY1Pi78O61",
+        "authors": [
+          "Scharon Harding"
+        ]
+      },
+      "link": "https://arstechnica.com/gadgets/2024/07/immensely-disappointing-nike-killing-app-for-350-self-tying-sneakers/",
+      "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2024/07/Sneaker-800x533.webp",
+      "date": "07/08/2024, 06:47 PM, +0000 UTC"
+    },
+    {
+      "position": 5,
+      "title": "Struggling Nike Widely Cut Executives in Last Layoff",
+      "source": {
+        "name": "Front Office Sports",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://frontofficesports.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Dennis Young"
+        ]
+      },
+      "link": "https://frontofficesports.com/nike-layoffs-executives-stock-earnings/",
+      "thumbnail": "https://frontofficesports.com/wp-content/uploads/2022/09/FOS-PM-22-9.30-Nike.jpg?quality=100",
+      "date": "07/09/2024, 01:44 PM, +0000 UTC"
+    },
+    {
+      "position": 6,
+      "title": "Nike Brings Back Retired Executive to Fix Slumping Retail Sales",
+      "source": {
+        "name": "Bloomberg",
+        "icon": "https://lh3.googleusercontent.com/NGEszdY4BPKjXpMWL2fgAHQasyKjNgr-yPt6p2ELILT6x6SV6gjNxJgplAAFTRD6-UhwMebPlA",
+        "authors": [
+          "Lily Meier",
+          "Kim Bhasin"
+        ]
+      },
+      "link": "https://www.bloomberg.com/news/articles/2024-07-08/nike-brings-back-retired-executive-tom-peddie-to-mend-retail-relationships",
+      "thumbnail": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ieqxjW.4JNJQ/v1/-1x-1.jpg",
+      "date": "07/08/2024, 10:23 PM, +0000 UTC"
+    },
+    {
+      "position": 7,
+      "title": "Stüssy x Nike Preview Surfwear Capsule",
+      "source": {
+        "name": "HYPEBEAST",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://hypebeast.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Elaina Bernstein"
+        ]
+      },
+      "link": "https://hypebeast.com/2024/7/stussy-x-nike-summer-2024-swim-collab-capsule-preview-release-info",
+      "thumbnail": "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2024%2F07%2F08%2Fstussy-x-nike-summer-2024-swim-collab-capsule-preview-release-info-1.jpg?cbr=1&q=90",
+      "date": "07/08/2024, 05:41 PM, +0000 UTC"
+    },
+    {
+      "position": 8,
+      "title": "Adidas set to benefit as Nike struggles",
+      "source": {
+        "name": "Reuters",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.reuters.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Linda Pasquini"
+        ]
+      },
+      "link": "https://www.reuters.com/business/retail-consumer/adidas-set-benefit-nike-struggles-2024-07-09/",
+      "thumbnail": "https://www.reuters.com/resizer/v2/2JLHYRYM7FJJNGSWCDEMVLDXFM.jpg?auth=6d66e5ccd43acd6a646a85fbdb0483fa10a93363a5620a2a5f3e00d393de46fa&height=1005&width=1920&quality=80&smart=true",
+      "date": "07/09/2024, 02:42 PM, +0000 UTC"
+    },
+    {
+      "position": 9,
+      "title": "Nike’s Jordan Brand designed the French Olympic basketball uniforms",
+      "source": {
+        "name": "Fast Company",
+        "icon": "https://lh3.googleusercontent.com/-e7e5mZOqWu-vrXLumST-06HPO9lPxaw16x6Bq2Nr_2tYSdyrHeA5mX_NzSC4x-Z3cadlQBnuA",
+        "authors": [
+          "Hunter Schwarz"
+        ]
+      },
+      "link": "https://www.fastcompany.com/91151392/nikes-jordan-brand-designed-the-french-olympic-basketball-uniforms",
+      "thumbnail": "https://images.fastcompany.com/image/upload/f_auto,c_fit,w_1920,q_auto/wp-cms-2/2024/07/p-91151392-nike-jordan-brand-french-uniforms.webp",
+      "date": "07/08/2024, 03:15 PM, +0000 UTC"
+    },
+    {
+      "position": 1,
+      "title": "Here’s Why Clearbridge Large Cap Growth Strategy Exited Nike (NKE)",
+      "source": {
+        "name": "Yahoo Finance",
+        "icon": "https://lh3.googleusercontent.com/L57n4HUzUS8lNXBPYNGQScsyxaqqx42Nym3-tUk8NzkTvMsa95NhzEqC8KMqVPFpAFpCuPFdlA",
+        "authors": [
+          "Soumya Eswaran"
+        ]
+      },
+      "link": "https://finance.yahoo.com/news/why-clearbridge-large-cap-growth-133527569.html",
+      "thumbnail": "https://s.yimg.com/ny/api/res/1.2/d8KZjComr0H9blpYhzHGYg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTM1OA--/https://media.zenfs.com/en/insidermonkey.com/598305e2db86ece0a28948efcd6ca28d",
+      "date": "07/08/2024, 01:35 PM, +0000 UTC"
+    },
+    {
+      "position": 2,
+      "title": "5 Reasons to Buy Nike Stock Like There's No Tomorrow",
+      "source": {
+        "name": "The Motley Fool",
+        "icon": "https://lh3.googleusercontent.com/u___MImBqnU9wKX2S8izNzezTr5Mo8dtlLQmQZD2Z7NCzdolU7N-WCRETVow4DmQUy-squNXug",
+        "authors": [
+          "Justin Pope"
+        ]
+      },
+      "link": "https://www.fool.com/investing/2024/07/06/5-reasons-to-buy-nike-stock-like-theres-no-tomorro/",
+      "thumbnail": "https://g.foolcdn.com/editorial/images/782512/nike-air-max-2021-collection.jpg",
+      "date": "07/06/2024, 07:55 AM, +0000 UTC"
+    },
+    {
+      "position": 11,
+      "title": "Nike's trying to pivot. It's not working just yet.",
+      "source": {
+        "name": "Business Insider",
+        "icon": "https://lh3.googleusercontent.com/MD0yHuvt1mX8YyHUcdTCsQqMKGubFCwbWmpxzkT1xnE5wZ4aDRmb2zvkgfgG_b0mHNhaSxqO2A",
+        "authors": [
+          "Alex Bitter"
+        ]
+      },
+      "link": "https://www.businessinsider.com/nikes-sales-to-fall-this-year-as-turnaround-plan-continues-2024-6",
+      "thumbnail": "https://i.insider.com/667ecdb4d1c84a0eaca8b2ae?width=1136&format=jpeg",
+      "date": "07/09/2024, 03:25 PM, +0000 UTC"
+    },
+    {
+      "position": 12,
+      "title": "An On-Foot Look at G-Dragon's PEACEMINUSONE x Nike Air Force 1 \"Para-Noise 3.0\" Sneaker",
+      "source": {
+        "name": "HYPEBEAST",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://hypebeast.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Elaina Bernstein"
+        ]
+      },
+      "link": "https://hypebeast.com/2024/7/g-dragon-peaceminusone-nike-air-force-1-para-noise-3-0-aq3692-004-release-info",
+      "thumbnail": "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2024%2F06%2F26%2Fg-dragons-peaceminusone-x-nike-air-force-1-para-noise-3-0-releases-fall-001.jpg?cbr=1&q=90",
+      "date": "07/09/2024, 02:07 PM, +0000 UTC"
+    },
+    {
+      "position": 13,
+      "title": "Nike's New Compelling Skate Shoe Seeks to Solve Your Problems",
+      "source": {
+        "name": "Highsnobiety",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.highsnobiety.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Morgan Smith"
+        ]
+      },
+      "link": "https://www.highsnobiety.com/p/nike-sb-ps8-sneakers-2024/",
+      "thumbnail": "https://www.highsnobiety.com/static-assets/dato/1720368798-nike-sb-ps8-sneakers-2024.jpg",
+      "date": "07/09/2024, 07:15 AM, +0000 UTC"
+    },
+    {
+      "position": 14,
+      "title": "Nike Is Killing the App That Controls Its App-Controlled Self-Lacing Sneakers",
+      "source": {
+        "name": "Futurism",
+        "icon": "https://lh3.googleusercontent.com/hzlUzfDbTeGscWdYY9aNLhqJd8mWb4iKXYcmibqisfmlOdECgslwc5MZkyyxLDeex1N-WVKHLh4",
+        "authors": [
+          "Maggie Harrison Dupre"
+        ]
+      },
+      "link": "https://futurism.com/the-byte/nike-killing-app-self-lacing-sneakers",
+      "thumbnail": "https://wordpress-assets.futurism.com/2024/07/nike-killing-app-self-lacing-sneakers.jpg",
+      "date": "07/09/2024, 12:55 PM, +0000 UTC"
+    },
+    {
+      "position": 15,
+      "title": "Nike (NKE) Rehires Tom Peddie to Fortify Wholesale Strategy",
+      "source": {
+        "name": "TipRanks",
+        "icon": "https://lh3.googleusercontent.com/Axm_cclYqidrRF4uihhDZm3zkB_dr5XuCgT9BwDfVypjc15LYQJzuErc1mQNJImaM5FdyTnpg9I",
+        "authors": [
+          "Amit Singh"
+        ]
+      },
+      "link": "https://www.tipranks.com/news/nike-nke-rehires-tom-peddie-to-fortify-wholesale-strategy",
+      "thumbnail": "https://blog.tipranks.com/wp-content/uploads/2024/07/shutterstock_219841084-750x406.jpg",
+      "date": "07/09/2024, 06:57 AM, +0000 UTC"
+    },
+    {
+      "position": 16,
+      "title": "A Complete Guide to This Weekend's Sneaker Releases",
+      "source": {
+        "name": "Complex",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.complex.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Victor Deng"
+        ]
+      },
+      "link": "https://www.complex.com/sneakers/a/victor-deng/sneaker-release-guide-7-9-24",
+      "thumbnail": "https://img.buzzfeed.com/buzzfeed-static/static/2024-07/9/14/asset/8ebe1c215e4a/sub-buzz-508-1720536101-1.png?resize=625:379&output-format=jpg&output-quality=auto",
+      "date": "07/09/2024, 03:12 PM, +0000 UTC"
+    },
+    {
+      "position": 17,
+      "title": "The Nike Air Max 90 Notebook Doodles Releases Fall 2024",
+      "source": {
+        "name": "Sole Retriever",
+        "icon": "https://lh3.googleusercontent.com/JLpDzI8-Tbwrrs8CYzQSmzTU0fPHU3Sz80rG2y1Ub-hgXU5usSteysohrK0xejAKBMUqbv3-JQ"
+      },
+      "link": "https://www.soleretriever.com/news/articles/nike-air-max-90-notebook-doodles-release-date-2024",
+      "thumbnail": "https://cdn.sanity.io/images/d6wcctii/production/85ff565b32a288b447524ee039eca0a7fc68b573-1070x760.jpg?w=1600&q=95&fit=clip&auto=format",
+      "date": "07/09/2024, 03:30 PM, +0000 UTC"
+    },
+    {
+      "position": 18,
+      "title": "Tekken 8 x Nike Air Foamposite One Premium \"Fist\" Releases September 2024",
+      "source": {
+        "name": "Sneaker Bar Detroit",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://sneakerbardetroit.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Mario Briguglio"
+        ]
+      },
+      "link": "https://sneakerbardetroit.com/tekken-8-nike-air-foamposite-one-premium-fist/",
+      "thumbnail": "https://sneakerbardetroit.com/wp-content/uploads/2024/07/Tekken-8-Nike-Air-Foamposite-One-Premium-Fist-FQ9050-400-Release-Date-1068x764.jpg",
+      "date": "07/08/2024, 09:09 PM, +0000 UTC"
+    },
+    {
+      "position": 19,
+      "title": "Nike’s self-lacing Adapt BB sneakers are losing their remote control mobile app",
+      "source": {
+        "name": "The Verge",
+        "icon": "https://lh3.googleusercontent.com/vkRH5gyHtLcKAoRSFHK1ATEgKtHDXoi9iRKKOdVhOng8g7qF2_QCVT1f11q_y_4y95_PY5VzWQ",
+        "authors": [
+          "Andrew Liszewski"
+        ]
+      },
+      "link": "https://www.theverge.com/2024/7/4/24192184/nike-adapt-bb-shoes-sneakers-apple-android-app",
+      "thumbnail": "https://cdn.vox-cdn.com/thumbor/6c9_nZlH3_B9QE2xx9qdtpPkFQw=/251x111:1835x1146/1200x628/filters:focal(1020x680:1021x681)/cdn.vox-cdn.com/uploads/chorus_asset/file/13681399/fshivakumar_181109_3078_0026.jpg",
+      "date": "07/04/2024, 03:29 PM, +0000 UTC"
+    },
+    {
+      "position": 20,
+      "title": "Nike Reportedly Rehired a Retired Exec to Help Boost Wholesale Relationships",
+      "source": {
+        "name": "Footwear News",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://footwearnews.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Shoshy Ciment"
+        ]
+      },
+      "link": "https://footwearnews.com/business/executive-moves/nike-report-rehired-retired-exec-wholesale-1203662705/",
+      "thumbnail": "https://footwearnews.com/wp-content/uploads/2021/03/nike-hq.jpg?w=700&h=437&crop=1",
+      "date": "07/09/2024, 03:24 PM, +0000 UTC"
+    },
+    {
+      "position": 21,
+      "title": "Fact Check: Headline saying Butker rejected Nike deal stems from satire",
+      "source": {
+        "name": "Reuters",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.reuters.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.reuters.com/fact-check/headline-saying-butker-rejected-nike-deal-stems-satire-2024-07-09/",
+      "thumbnail": "https://cloudfront-us-east-2.images.arcpublishing.com/reuters/M5MQ53LSXVA6TLSJ4FAGLEHXSU.jpg",
+      "date": "07/09/2024, 03:28 PM, +0000 UTC"
+    },
+    {
+      "position": 22,
+      "title": "The Tekken 8 x Nike Air Foamposite One Fist Releases September 2024",
+      "source": {
+        "name": "Sole Retriever",
+        "icon": "https://lh3.googleusercontent.com/JLpDzI8-Tbwrrs8CYzQSmzTU0fPHU3Sz80rG2y1Ub-hgXU5usSteysohrK0xejAKBMUqbv3-JQ",
+        "authors": [
+          "Steve Jaconetta"
+        ]
+      },
+      "link": "https://www.soleretriever.com/news/articles/tekken-8-nike-air-foamposite-one-premium-fist-release-date-2024",
+      "thumbnail": "https://cdn.sanity.io/images/d6wcctii/production/8a992f45b54fa0608c0fd5a4d8a6438c708cebfe-1070x760.png?w=1600&q=95&fit=clip&auto=format",
+      "date": "07/08/2024, 08:32 PM, +0000 UTC"
+    },
+    {
+      "position": 23,
+      "title": "The Nike Dunk Low Khaki Denim Turquoise Releases Fall 2024",
+      "source": {
+        "name": "Sole Retriever",
+        "icon": "https://lh3.googleusercontent.com/JLpDzI8-Tbwrrs8CYzQSmzTU0fPHU3Sz80rG2y1Ub-hgXU5usSteysohrK0xejAKBMUqbv3-JQ"
+      },
+      "link": "https://www.soleretriever.com/news/articles/nike-dunk-low-khaki-denim-turquoise-release-date-2024",
+      "thumbnail": "https://cdn.sanity.io/images/d6wcctii/production/126e4cb185104e18464b7076a0a9a2205af5b997-620x380.jpg?w=1600&q=95&fit=clip&auto=format",
+      "date": "07/09/2024, 03:45 PM, +0000 UTC"
+    },
+    {
+      "position": 24,
+      "title": "Tekken and Nike Team Up for Surprising Collaboration",
+      "source": {
+        "name": "GameRant",
+        "icon": "https://lh3.googleusercontent.com/LPcNnK07B53-qr2zUpdZ6c_l5xHpauwVQXtMnvIHKFRIdapZEmpOLLTQo8rtPbHGfIkeoOIaylg",
+        "authors": [
+          "Brodie Shirey"
+        ]
+      },
+      "link": "https://gamerant.com/tekken-nike-anniversary-collab-shoes/",
+      "thumbnail": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/07/tekken-nike-crossover-shoes-kazuya.jpg",
+      "date": "07/09/2024, 02:16 PM, +0000 UTC"
+    },
+    {
+      "position": 25,
+      "title": "First Look At The Tekken 8 x Nike Air Foamposite One",
+      "source": {
+        "name": "Sneaker News",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://sneakernews.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://sneakernews.com/2024/07/08/nike-air-foamposite-one-tekken-8-fist-fq9050-400/",
+      "thumbnail": "https://sneakernews.com/wp-content/uploads/2024/07/nike-air-foamposite-one-tekken-8-fist-fq9050-400.jpg",
+      "date": "07/08/2024, 08:48 PM, +0000 UTC"
+    },
+    {
+      "position": 26,
+      "title": "Nike drops sharply to become worst-performing stock in the Dow",
+      "source": {
+        "name": "MarketWatch",
+        "icon": "https://lh3.googleusercontent.com/e3C-RTkUb0bknSDp54jrHU5WhmbMFt7PMIWDT4B-2XaK0xwo64ed8bQ64bSxfteh-skLrkffJQ",
+        "authors": [
+          "Christine Idzelis"
+        ]
+      },
+      "link": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-futures-narrowly-higher-as-investors-eye-inflation-data-earnings/card/nike-drops-sharply-to-become-worst-performing-stock-in-the-dow-CdFIhEIstzKGBSkGRYE3",
+      "thumbnail": "https://images.mktw.net/im-28004595/social",
+      "date": "07/08/2024, 05:57 PM, +0000 UTC"
+    },
+    {
+      "position": 27,
+      "title": "Nike and ‘Tekken 8’ Made a Limited-Edition Air Foamposite One Sneaker Commemorating Kazuya Mishima",
+      "source": {
+        "name": "Footwear News",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://footwearnews.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "ian servantes"
+        ]
+      },
+      "link": "https://footwearnews.com/shoes/sneaker-news/tekken-8-nike-foamposite-fist-release-date-september-2024-1203662686/",
+      "thumbnail": "https://footwearnews.com/wp-content/uploads/2024/07/tekken-8-nike-air-foamposite-one-fist-007.jpg",
+      "date": "07/09/2024, 03:01 PM, +0000 UTC"
+    },
+    {
+      "position": 28,
+      "title": "Nike LeBron 21 Prime 96 “Varsity Red” Releases Summer 2025",
+      "source": {
+        "name": "Sneaker Bar Detroit",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://sneakerbardetroit.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Mario Briguglio"
+        ]
+      },
+      "link": "https://sneakerbardetroit.com/nike-lebron-21-prime-96-varsity-red/",
+      "thumbnail": "https://sneakerbardetroit.com/wp-content/uploads/2024/07/Nike-LeBron-21-Prime-96-Varsity-Red-HV1221-100.jpg",
+      "date": "07/09/2024, 01:03 PM, +0000 UTC"
+    },
+    {
+      "position": 29,
+      "title": "NKE INVESTOR ALERT: Bronstein, Gewirtz and Grossman, LLC Reminds NIKE, Inc. Shareholders to Contact the Firm!",
+      "source": {
+        "name": "AccessWire",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.accesswire.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.accesswire.com/viewarticle.aspx?id=884057&lang=en",
+      "thumbnail": "https://storage.googleapis.com/accesswire/logos/1736.jpg?v=0",
+      "date": "07/09/2024, 02:53 PM, +0000 UTC"
+    },
+    {
+      "position": 30,
+      "title": "What's Going On With Sneaker Giant Nike's Shares Today?",
+      "source": {
+        "name": "Benzinga",
+        "icon": "https://lh3.googleusercontent.com/Kg5slaOP_n3XLEhwNqmLpBqIZY9zUkY7E0xUuY5H3fbWPa-1O_XlBM5vTUy9OcAVhCa2uDolOg",
+        "authors": [
+          "Shivani Kumaresan"
+        ]
+      },
+      "link": "https://www.benzinga.com/markets/equities/24/07/39683071/whats-going-on-with-sneaker-giant-nikes-shares-today",
+      "thumbnail": "https://cdn.benzinga.com/files/images/story/2024/07/09/Minimizes-Heat-Absorption.jpeg?width=1200&height=800&fit=crop",
+      "date": "07/09/2024, 10:42 AM, +0000 UTC"
+    },
+    {
+      "position": 31,
+      "title": "Best Nordstrom Rack deals under $100: Shop men’s, women’s, kids’ clothing",
+      "source": {
+        "name": "New York Post ",
+        "icon": "https://lh3.googleusercontent.com/FBmNEg55AyjS01UGglfHSug5fD4qJyNNZ6QXqwDhQczAmw6zPz5fUoWm9AfOtz7Ty70Gg41A",
+        "authors": [
+          "Miska Salemann"
+        ]
+      },
+      "link": "https://nypost.com/2024/07/09/shopping/best-nordstrom-rack-deals-under-100-nike-to-free-people/",
+      "thumbnail": "https://nypost.com/wp-content/uploads/sites/2/2024/07/rack.jpg?quality=75&strip=all&w=744",
+      "date": "07/09/2024, 02:00 PM, +0000 UTC"
+    },
+    {
+      "position": 32,
+      "title": "Why Nike Stock Lost 21% Last Month",
+      "source": {
+        "name": "The Motley Fool",
+        "icon": "https://lh3.googleusercontent.com/u___MImBqnU9wKX2S8izNzezTr5Mo8dtlLQmQZD2Z7NCzdolU7N-WCRETVow4DmQUy-squNXug",
+        "authors": [
+          "Anders Bylund"
+        ]
+      },
+      "link": "https://www.fool.com/investing/2024/07/07/why-nike-stock-lost-21-last-month/",
+      "thumbnail": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F782700%2Fperson-wearing-mask-in-shoe-store.jpg&op=resize&w=400&h=400",
+      "date": "07/07/2024, 07:29 AM, +0000 UTC"
+    },
+    {
+      "position": 33,
+      "title": "The Travis Scott x Nike Shark-A-Don Combines Two Very Good Sneakers",
+      "source": {
+        "name": "GQ",
+        "icon": "https://lh3.googleusercontent.com/m3_6ncTBeAYk5IyRoL0tVKvo-YgjLE49po7IicHeeZ8H6oSE6fmxmMMiC6YGdAhwN6e11h1t",
+        "authors": [
+          "Adam Cheung"
+        ]
+      },
+      "link": "https://www.gq.com/story/nike-travis-scott-shark-a-don-release-info",
+      "thumbnail": "http://media.gq.com/photos/6687f965315d51f78ffade1a/master/pass/Travis-Scott-x-Nike.jpg",
+      "date": "07/07/2024, 01:00 PM, +0000 UTC"
+    },
+    {
+      "position": 34,
+      "title": "Tekken 8 & Nike are teaming up to release a special edition sneaker in September 2024",
+      "source": {
+        "name": "Shacknews",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.shacknews.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Tj Denzer"
+        ]
+      },
+      "link": "https://www.shacknews.com/article/140529/tekken-8-nike-collaboration",
+      "thumbnail": "https://d1lss44hh2trtw.cloudfront.net/assets/article/2024/07/09/tekken-8-nike-are-teaming-up-to-release-a-special-edition-sneaker-in-september-2024_feature.jpg",
+      "date": "07/09/2024, 03:45 PM, +0000 UTC"
+    },
+    {
+      "position": 35,
+      "title": "Nike Is Having a Huge Sale With an Extra 25% Off Running Shoes, Shorts and More Summer Activewear",
+      "source": {
+        "name": "Entertainment Tonight",
+        "icon": "https://lh3.googleusercontent.com/a2-bA6jYpB8_Hh6_fFgVTHlE4HRKJhkSYSFxkewWjF48BhoY-jgO6c_ZGkvPv5lb7ysy1SjxbAg"
+      },
+      "link": "https://www.etonline.com/nike-is-having-a-huge-sale-with-an-extra-25-off-running-shoes-shorts-and-more-summer-activewear",
+      "thumbnail": "https://www.etonline.com/sites/default/files/styles/1280x720/public/images/2024-03/nike.jpeg?h=ae1ec002&crop=1125:633$&width=1125",
+      "date": "07/09/2024, 12:27 AM, +0000 UTC"
+    },
+    {
+      "position": 36,
+      "title": "What's Going On With Nike's Stock Monday?",
+      "source": {
+        "name": "Benzinga",
+        "icon": "https://lh3.googleusercontent.com/Kg5slaOP_n3XLEhwNqmLpBqIZY9zUkY7E0xUuY5H3fbWPa-1O_XlBM5vTUy9OcAVhCa2uDolOg"
+      },
+      "link": "https://www.benzinga.com/news/24/07/39673736/whats-going-on-with-nikes-stock-monday",
+      "thumbnail": "https://cdn.benzinga.com/files/images/story/2024/07/08/nike-shutter.jpeg?width=1200&height=800&fit=crop",
+      "date": "07/08/2024, 06:45 PM, +0000 UTC"
+    },
+    {
+      "position": 37,
+      "title": "Carlos Alcaraz’s Nike Wimbledon Shoes Signify Major Marketing Step",
+      "source": {
+        "name": "Forbes",
+        "icon": "https://lh3.googleusercontent.com/NIjzR9QHtZJllEvJIVkODXFQ7_rbx1BMBXx2rNUbttjuu9YWLIp2_juQaI9jJ2rDtzi6snbZ",
+        "authors": [
+          "Tim Newcomb"
+        ]
+      },
+      "link": "https://www.forbes.com/sites/timnewcomb/2024/07/05/carlos-alcarazs-nike-wimbledon-shoes-signify-major-marketing-step/",
+      "thumbnail": "https://imageio.forbes.com/specials-images/imageserve/668810508f2d9d8ba0cf1df6/Carlos-Alcaraz-Nike-Shoes/960x0.jpg?format=jpg&width=960",
+      "date": "07/05/2024, 03:29 PM, +0000 UTC"
+    },
+    {
+      "position": 38,
+      "title": "Nike Turns to Retired Executive to Fix Retail Slump",
+      "source": {
+        "name": "Bloomberg",
+        "icon": "https://lh3.googleusercontent.com/NGEszdY4BPKjXpMWL2fgAHQasyKjNgr-yPt6p2ELILT6x6SV6gjNxJgplAAFTRD6-UhwMebPlA"
+      },
+      "link": "https://www.bloomberg.com/news/videos/2024-07-09/nike-turns-to-retired-executive-to-fix-retail-slump-video",
+      "thumbnail": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ic3fvhHyn3YQ/v3/400x225.jpg",
+      "date": "07/09/2024, 09:51 AM, +0000 UTC"
+    },
+    {
+      "position": 40,
+      "title": "Nike Makes Massive Cuts As Reports Of Phil Knight's 'Unlimited' NIL Budget At Oregon Circulate",
+      "source": {
+        "name": "BroBible",
+        "icon": "https://lh3.googleusercontent.com/rIJqhviaE9VbZF339Sc0XbpfAgqfgNt3lTvgehSnWVU4GiG3vUhxEbkWc7F2lVVhxAy6UEsSW4A",
+        "authors": [
+          "Jacob Elsey"
+        ]
+      },
+      "link": "https://brobible.com/sports/article/nike-cuts-phil-knight-nil/",
+      "thumbnail": "https://brobible.com/wp-content/uploads/2024/07/Phil-Knight.jpg",
+      "date": "07/09/2024, 01:01 AM, +0000 UTC"
+    },
+    {
+      "position": 41,
+      "title": "Nike, Inc. Investors: Class action lawsuit filed on behalf of investors; the Portnoy Law Firm",
+      "source": {
+        "name": "GlobeNewswire",
+        "icon": "https://lh3.googleusercontent.com/bAvtMR8HuT8953AWtAJzPM5zo9rdrPHSj2qkDem47iwG1yDv2aXdA5ToBHbe8OsQhSJWz9zzblk"
+      },
+      "link": "https://www.globenewswire.com/news-release/2024/07/09/2910411/0/en/Nike-Inc-Investors-Class-action-lawsuit-filed-on-behalf-of-investors-the-Portnoy-Law-Firm.html",
+      "thumbnail": "https://ml.globenewswire.com/Resource/Download/ea0dd9c0-6e41-4d5a-ad27-b277677af6df?size=2",
+      "date": "07/09/2024, 01:14 PM, +0000 UTC"
+    },
+    {
+      "position": 42,
+      "title": "EXEC: Tom Peddie Returns to Nike as VP of Marketplace Partners",
+      "source": {
+        "name": "SGB Media",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://sgbonline.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://sgbonline.com/exec-tom-peddie-returns-to-nike-as-vp-of-marketplace-partners/",
+      "thumbnail": "https://sgbonline.com/wp-content/uploads/2024/07/layoutnike.jpg",
+      "date": "07/09/2024, 12:46 PM, +0000 UTC"
+    },
+    {
+      "position": 43,
+      "title": "Nike SB Dunk Low “City of Cinema” Slated For This Holiday: First Look",
+      "source": {
+        "name": "HotNewHipHop",
+        "icon": "https://lh3.googleusercontent.com/7B8I4F2YBEIWHffhxMMTHTpHIJBy8j4ZlmECEgPV-FRDZeOL1QWDKQJH6nARMaiqaKTBKy7P",
+        "authors": [
+          "Ben Atkinson"
+        ]
+      },
+      "link": "https://www.hotnewhiphop.com/821679-nike-sb-dunk-low-city-of-cinema-slated-for-this-holiday-first-look-sneaker-news",
+      "thumbnail": "https://www.hotnewhiphop.com/imgprst/390x273-cover-81-auto/2024/07/GettyImages-1247257269-copy-scaled.jpg",
+      "date": "07/09/2024, 01:06 PM, +0000 UTC"
+    },
+    {
+      "position": 44,
+      "title": "Uruguay and Nike’s strange sponsorship deal",
+      "source": {
+        "name": "Bolavip US",
+        "icon": "https://lh3.googleusercontent.com/Pt-R7xwXHwgFt5QkfBQSk1Qh5gQOX9hBlOFkDiYAons_NmyRT71YJrkxfU70GsT2cDZNWfFJ",
+        "authors": [
+          "Kelvin Loyola"
+        ]
+      },
+      "link": "https://bolavip.com/en/copa-america/uruguay-and-nikes-strange-sponsorship-deal",
+      "thumbnail": "https://ds-images.bolavip.com/news/image/800/800/?src=https://images.bolavip.com/webp/en/full/BUS_20240709_BUS_142863_Nike-and-Uruguay-only-for-the-Copa-America.webp",
+      "date": "07/09/2024, 01:44 PM, +0000 UTC"
+    },
+    {
+      "position": 45,
+      "title": "Nike’s Stock Has Faced Tough Times Lately, But Should You Buy the Dip?",
+      "source": {
+        "name": "The Tokenist",
+        "icon": "https://lh3.googleusercontent.com/0gI_jlB8Ev4DNR2ox1fg9ev-8J3bCwWkTpWNP9jDbRB-1ZmVcPkglOrEul78fNVj3E6myjuizg",
+        "authors": [
+          "Tim Fries"
+        ]
+      },
+      "link": "https://tokenist.com/nikes-stock-has-faced-tough-times-lately-but-should-you-buy-the-dip/",
+      "thumbnail": "https://tokenist.com/wp-content/uploads/2024/07/147835625_m_normal_none-646x360.jpg",
+      "date": "07/08/2024, 06:31 PM, +0000 UTC"
+    },
+    {
+      "position": 46,
+      "title": "Nike Wmns Free Metcon 6 Pale Ivory / Guava Ice - Jul 2024 - FJ7126100",
+      "source": {
+        "name": "KicksOnFire.com",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.kicksonfire.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.kicksonfire.com/nike-wmns-free-metcon-6-pale-ivory-guava-ice",
+      "thumbnail": "https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-wmns-free-metcon-6-pale-ivory-guava-ice.png",
+      "date": "07/09/2024, 10:01 AM, +0000 UTC"
+    },
+    {
+      "position": 47,
+      "title": "Nike And Tekken 8 Are Tag-Teaming Up For Foamposite One Shoe Collaboration",
+      "source": {
+        "name": "Game Informer",
+        "icon": "https://lh3.googleusercontent.com/uS0aZNqKRPMWTmLgf59YSeZPrpv1e7Wc468dRlyJygqC7O9o1PMl8QnWUe0s1LBPo2He3jnk",
+        "authors": [
+          "Wesley Leblanc"
+        ]
+      },
+      "link": "https://www.gameinformer.com/news/2024/07/09/nike-and-tekken-8-are-tag-teaming-up-for-foamposite-one-shoe-collaboration",
+      "thumbnail": "https://www.gameinformer.com/sites/default/files/styles/full/public/2024/07/09/b4fcb0ca/nike_x_tekken_header.jpg",
+      "date": "07/09/2024, 12:14 PM, +0000 UTC"
+    },
+    {
+      "position": 48,
+      "title": "Tekken 8's Kazuya And Jin Are Getting Their Own Nike Air Foamposite Ones",
+      "source": {
+        "name": "TheGamer",
+        "icon": "https://lh3.googleusercontent.com/nsnSbjykFgd-_A8ZNm4ZoUJscAnFEMTX0yXjV5nP7ZMffv-bdftCpdTG8plPwKIN3MblfAfbKw",
+        "authors": [
+          "Josh Coulson"
+        ]
+      },
+      "link": "https://www.thegamer.com/tekken-8-nike-air-foamposite-one-kazuya-jin-anniversary-sneakers-september-2024/",
+      "thumbnail": "https://static1.thegamerimages.com/wordpress/wp-content/uploads/wm/2024/07/new-project-45.jpg",
+      "date": "07/09/2024, 11:45 AM, +0000 UTC"
+    },
+    {
+      "position": 49,
+      "title": "Nike Air Max 90 “Armory Navy” Gets Official Images",
+      "source": {
+        "name": "HotNewHipHop",
+        "icon": "https://lh3.googleusercontent.com/7B8I4F2YBEIWHffhxMMTHTpHIJBy8j4ZlmECEgPV-FRDZeOL1QWDKQJH6nARMaiqaKTBKy7P",
+        "authors": [
+          "Ben Atkinson"
+        ]
+      },
+      "link": "https://www.hotnewhiphop.com/822783-nike-air-max-90-armory-navy-gets-official-images-sneaker-news",
+      "thumbnail": "https://www.hotnewhiphop.com/imgprst/390x273-cover-81-auto/2024/07/SneakerHeader.001-16.jpeg",
+      "date": "07/09/2024, 02:06 PM, +0000 UTC"
+    },
+    {
+      "position": 50,
+      "title": "NKE Investors Have the Opportunity to Lead NIKE, Inc. Securities Fraud Lawsuit with the Schall Law Firm",
+      "source": {
+        "name": "PR Newswire",
+        "icon": "https://lh3.googleusercontent.com/kd4boDIAMrfLacAtxrTqjqFkNwWWXvjlUXvGopbygXrEd8tqNFDDupdS_U-aXg9Cs2UvIR2O_g"
+      },
+      "link": "https://www.prnewswire.com/news-releases/nke-investors-have-the-opportunity-to-lead-nike-inc-securities-fraud-lawsuit-with-the-schall-law-firm-302191672.html",
+      "thumbnail": "https://mma.prnewswire.com/media/1396534/Schall_Firm_Logo.jpg?w=200",
+      "date": "07/09/2024, 04:00 PM, +0000 UTC"
+    }
+  ],
   "product": [
     {
       "id": 1,

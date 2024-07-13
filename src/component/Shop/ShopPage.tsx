@@ -1,13 +1,12 @@
-import React, {useEffect, useState} from 'react';
+import React, {Fragment, useEffect , useState} from 'react';
 import './ShopPage.scss';
-import {fetchProductPerPage} from "../../service/ProductService";
+import {useGetProductPerPageQuery, useGetProductSortByQuery} from "../../service/ProductService";
 import CardProduct from "../Product/CardProduct";
 import ReactPaginate from "react-paginate";
-import {Product} from "../../models/Product.modal";
-import {FilledInput} from "@mui/material";
 import ProductFilter from "./Filter/ProductFilter";
+import SkeletonProduct from "../Product/SkeletonProduct";
 import {useTranslation} from "react-i18next";
-import {NavLink} from "react-router-dom";
+import AddProductPopup from "./AddProductPopup";
 
 interface Filter {
 
@@ -29,30 +28,73 @@ const ShopPage: React.FC = () => {
         "Socks",
         "Accessories & Equipment"
     ];
-    const productPerPage = 12;
-    const [listProduct, setListProduct] = useState<Product[]>();
-    const [totalProduct, setTotalProduct] = useState();
-    const [totalPage, setTotalPage] = useState(0);
-    const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
     const {t} = useTranslation('shoppage')
 
+    const productPerPage = 12;
+    const [totalPage, setTotalPage] = useState(12);
+    const [currentPage, setCurrentPage] = useState(1);
+    const [sort, setSort] = useState("");
+    const [totalProduct, setTotalProduct] = useState();
+    const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+    const [selectedSort, setSelectedSort] = useState<boolean>(true);
+
     useEffect(() => {
-        getProduct(1);
+        window.scrollTo(0 , 0)
     }, []);
 
-    const getProduct = async (page: number) => {
-        let res = await fetchProductPerPage(page, productPerPage);
-        if (res && res.data.data.length > 0) {
-            setListProduct(res.data.data);
-            setTotalProduct(res.data.items);
-            setTotalPage(res.data.pages);
-        }
-    };
+    const {data: sortedData, isLoading: isSortingLoading} = useGetProductSortByQuery({
+        sort: sort,
+        lowToHigh: selectedSort,
+        page: currentPage,
+        perPage: productPerPage,
+    });
+    const {data: paginatedData, isLoading: isPaginatingLoading} = useGetProductPerPageQuery({
+        page: currentPage,
+        perPage: productPerPage
+    });
 
     const handleChangePage = (event: { selected: number }) => {
-        getProduct(event.selected + 1);
+        setCurrentPage(event.selected + 1);
+    };
+    const [showPopup, setShowPopup] = useState(false);
+
+    const handleAddProductClick = () => {
+        setShowPopup(true);
     };
 
+    const handleClosePopup = () => {
+        setShowPopup(false);
+    };
+
+    const handleSortBy = (event: React.MouseEvent<HTMLUListElement>) => {
+        const clickedElement = event.target as HTMLLIElement; // Cast to HTMLLIElement for type safety
+        const id = clickedElement.id;
+
+        switch (id) {
+            case 'low-high':
+                setSelectedSort(true);
+                setSort("Price");
+                setCurrentPage(1)
+                break;
+            case 'high-low':
+                setSelectedSort(false);
+                setSort("Price");
+                setCurrentPage(1)
+                break;
+            case 'a-z':
+                setSelectedSort(true);
+                setSort("Name");
+                setCurrentPage(1)
+                break;
+            case 'z-a':
+                setSelectedSort(false);
+                setSort("Name");
+                setCurrentPage(1)
+                break;
+            default:
+                break; // Handle invalid IDs (optional)
+        }
+    };
 
     return (
         <>
@@ -61,22 +103,33 @@ const ShopPage: React.FC = () => {
                 <div className="product-list">
                     <div className="filter-sort">
                         <span>{t('shoppage.fast filter')}</span>
+                        <div className={"filter-sort-right"}>
                         <p className={"sort-by"}>
-                                {t('shoppage.rank')}
+                            {t('shoppage.rank')}
 
-                            <div className="dropdown-sort-by">
-                                <NavLink to={"#"}>Gia</NavLink>
-                                <NavLink to={"#"}>Kieu</NavLink>
-                                <NavLink to={"#"}>Id</NavLink>
-                            </div>
+                            <ul className="dropdown-sort-by" onClick={handleSortBy}>
+                                <li id={"high-low"}>Giá cao - thấp</li>
+                                <li id={"low-high"}>Giá thấp - cao</li>
+                                <li id={"a-z"}>Tên A - Z</li>
+                                <li id={"z-a"}>Tên Z - A</li>
+                            </ul>
 
                         </p>
+                            <p className={"sort-by"} onClick={handleAddProductClick}>Add</p>
+                            <AddProductPopup show={showPopup} onClose={handleClosePopup}/>
+                        </div>
                     </div>
                     <div className="products">
-                        {listProduct && listProduct.length > 0
-                            && listProduct.map((product) => {
-                                return (<CardProduct key={product.id} product={product} sizeCard={"medium"}/>);
-                            })}
+                        {isSortingLoading || isPaginatingLoading && (
+                            <Fragment>
+                                <SkeletonProduct/>
+                                <SkeletonProduct/>
+                                <SkeletonProduct/>
+                            </Fragment>)
+                        }
+                        {(sortedData || paginatedData)?.map((product) => {
+                            return (<CardProduct key={product.id} product={product} sizeCard={"medium"}/>);
+                        })}
                     </div>
                     <div className="paginate">
                         <ReactPaginate
