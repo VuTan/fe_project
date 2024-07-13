@@ -1,6 +1,8 @@
 import React from 'react';
 import './CheckoutPopup.scss';
 import Button from '../Button/Button';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 interface CustomerInfoPopupProps {
     customerInfo: {
@@ -17,9 +19,10 @@ interface CustomerInfoPopupProps {
     }>>;
     handleSubmit: () => void;
     handleClosePopup: () => void;
+    clearCart: () => void; // Thêm clearCart vào đây
 }
 
-const CheckoutPopup: React.FC<CustomerInfoPopupProps> = ({ customerInfo, setCustomerInfo, handleSubmit, handleClosePopup }) => {
+const CheckoutPopup: React.FC<CustomerInfoPopupProps> = ({ customerInfo, setCustomerInfo, handleSubmit, handleClosePopup, clearCart }) => {
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
@@ -29,6 +32,15 @@ const CheckoutPopup: React.FC<CustomerInfoPopupProps> = ({ customerInfo, setCust
         }));
     }
 
+    const handleFormSubmit = () => {
+        handleSubmit();
+        toast.success("Order placed successfully!", {
+            position: "bottom-left"
+        });
+        clearCart(); // Xóa giỏ hàng
+        handleClosePopup();
+    }
+
     return (
         <div className="popup-overlay" onClick={handleClosePopup}>
             <div className="popup-content" onClick={(e) => e.stopPropagation()}>
@@ -36,7 +48,7 @@ const CheckoutPopup: React.FC<CustomerInfoPopupProps> = ({ customerInfo, setCust
                 <h2>Billing Information</h2>
                 <form onSubmit={(e) => {
                     e.preventDefault();
-                    handleSubmit();
+                    handleFormSubmit();
                 }}>
                     <div>
                         <label>Full Name</label>

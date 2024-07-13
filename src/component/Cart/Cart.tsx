@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-
 import './Cart.scss';
 import { IoIosHeartEmpty } from "react-icons/io";
 import { AiOutlineDelete } from "react-icons/ai";
@@ -7,7 +6,7 @@ import Button from "../Button/Button";
 import SliderNew from "../Home/SliderNew";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../redux/store";
-import { decrementQuantity, deleteProduct, getTotals, incrementQuantity } from "../../redux/cart.reducers";
+import { decrementQuantity, deleteProduct, getTotals, incrementQuantity, clearCart } from "../../redux/cart.reducers";
 import { buyProduct } from "../../models/Product.modal";
 import CheckoutPopup from './CheckoutPopup';
 
@@ -25,19 +24,19 @@ const Cart = () => {
 
     const handleDelete = (product: buyProduct) => {
         dispatch(deleteProduct(product));
-    }
+    };
 
     const decrement = (product: buyProduct) => {
         dispatch(decrementQuantity(product));
-    }
+    };
 
     const increment = (product: buyProduct) => {
         dispatch(incrementQuantity(product));
-    }
+    };
 
     useEffect(() => {
         dispatch(getTotals());
-    }, [cart]);
+    }, [cart, dispatch]);
 
     const formatterVND = new Intl.NumberFormat('vi-VN', {
         style: 'decimal',
@@ -51,17 +50,18 @@ const Cart = () => {
 
     const handleCheckout = () => {
         setShowPopup(true);
-    }
+    };
 
     const handleClosePopup = () => {
         setShowPopup(false);
-    }
+    };
 
     const handleSubmit = () => {
         // Xử lý logic thanh toán ở đây
         console.log('Thông tin khách hàng:', customerInfo);
+        dispatch(clearCart()); // Gọi action clearCart để xóa giỏ hàng
         setShowPopup(false);
-    }
+    };
 
     return (
         <>
@@ -136,7 +136,7 @@ const Cart = () => {
                     setCustomerInfo={setCustomerInfo}
                     handleSubmit={handleSubmit}
                     handleClosePopup={handleClosePopup}
-                />
+                    clearCart={clearCart}/>
             )}
         </>
     );
