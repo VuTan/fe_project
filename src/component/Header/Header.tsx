@@ -164,7 +164,7 @@ const Header = () => {
                                         <div className="dropdown-content">
                                             <NavLink
                                                 to={"#"}>Hello {userStorage.user.firstName + ' ' + userStorage.user.lastName}</NavLink>
-                                            <NavLink to={"#"}>Profile</NavLink>
+                                            <NavLink to={"/profile"}>Profile</NavLink>
                                             <NavLink to={"#"}>Log Out</NavLink>
                                         </div>
 
