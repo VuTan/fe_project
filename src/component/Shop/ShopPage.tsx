@@ -1,4 +1,4 @@
-import React, {Fragment, useEffect , useState} from 'react';
+import React, {Fragment, useState} from 'react';
 import './ShopPage.scss';
 import {useGetProductPerPageQuery, useGetProductSortByQuery} from "../../service/ProductService";
 import CardProduct from "../Product/CardProduct";
@@ -11,6 +11,7 @@ import AddProductPopup from "./AddProductPopup";
 interface Filter {
 
 }
+
 
 const ShopPage: React.FC = () => {
 
@@ -120,7 +121,7 @@ const ShopPage: React.FC = () => {
                         </div>
                     </div>
                     <div className="products">
-                        {isSortingLoading || isPaginatingLoading && (
+                        {isSortingFetching || isPaginatingFetching && (
                             <Fragment>
                                 <SkeletonProduct/>
                                 <SkeletonProduct/>

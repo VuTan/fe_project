@@ -700,7 +700,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/afe1af10-af14-4de8-8376-3d4931b3cf07/infinityrn-4-road-running-shoes-VKhgV0.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/5e0a9f08-7b5c-49f7-a85f-36dfe7c2b3c7/infinityrn-4-road-running-shoes-VKhgV0.png",
         "https://static.nike.com/a/images/t_default/68905d25-ac25-49d2-86bd-8371b5863e1a/infinityrn-4-road-running-shoes-VKhgV0.png",
         "https://static.nike.com/a/images/t_default/2f63f181-f5ab-40ed-88da-005eb6d88d2e/infinityrn-4-road-running-shoes-VKhgV0.png",
@@ -755,7 +755,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9dcdc903-2860-4efa-81bd-ffffeb788e47/invincible-3-road-running-shoes-QWRmLj.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/2c7ec36b-06e3-4734-820b-a78f30bc298a/invincible-3-road-running-shoes-QWRmLj.png",
         "https://static.nike.com/a/videos/so_1.38/ebcbd375-f202-4a4e-843d-f6b06b02db2e/invincible-3-road-running-shoes-QWRmLj.jpg','https://static.nike.com/a/images/t_default/3cf0f783-8a92-40fd-a3df-ac8bee3373a2/invincible-3-road-running-shoes-QWRmLj.png",
         "https://static.nike.com/a/images/t_default/1968bc10-5e29-4d12-b37c-d9759144a395/invincible-3-road-running-shoes-QWRmLj.png",
@@ -781,7 +781,7 @@
       "id": 3,
       "Name": "Nike Air Zoom Infinity Tour NRG",
       "Type": "Golf Shoes (Wide)",
-      "Price": "5,589,000",
+      "Price": 5589000,
       "describe": "There's just something about the crack of an old-school wood club or the smell of a fresh pour after 18 holes. This special-edition Infinity Tour has barrel-aged bourbon browns and smoked streaks of razor-sharp oranges that nod to Kentucky. A wood-grain graphic on the Swoosh logo and a tree-trunk-inspired outsole highlight a design rooted in tradition and timber. And you still get the updates from the previous Infinity Tour: increased overall volume, added energy transfer through your swing and traction in key areas to help reduce slipping.",
       "size": [
         40,
@@ -805,7 +805,7 @@
         "Country/Region of Origin: China"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/83e3fdcc-6545-49c1-a4b4-034adc82577a/air-zoom-infinity-tour-nrg-golf-shoes-Cm8s6r.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/df5ff3e8-a7b2-457e-a048-e4acf4f552ff/air-zoom-infinity-tour-nrg-golf-shoes-Cm8s6r.png",
         "https://static.nike.com/a/images/t_default/a231a7b7-c749-4ee0-89d5-e07b94f22a09/air-zoom-infinity-tour-nrg-golf-shoes-Cm8s6r.png",
         "https://static.nike.com/a/images/t_default/6e73d255-cf9a-4abc-a4b3-95cc404c1732/air-zoom-infinity-tour-nrg-golf-shoes-Cm8s6r.png",
@@ -849,7 +849,7 @@
         "Country/Region of Origin: Indonesia"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/75a40aac-a2aa-489d-bc44-b7b264b57aa3/air-max-plus-og-shoes-zN9XDM.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/0cc0fa4b-ade3-4ab5-a376-3499bf7f5e14/air-max-plus-og-shoes-zN9XDM.png",
         "https://static.nike.com/a/images/t_default/ca51b200-6f5f-4218-ae06-446ffad00257/air-max-plus-og-shoes-zN9XDM.png",
         "https://static.nike.com/a/images/t_default/d56a0521-bcc6-4c06-b191-460446feaaf5/air-max-plus-og-shoes-zN9XDM.png",
@@ -887,7 +887,7 @@
       ],
       "benefit": [],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/30d7afaa-343b-4439-b65d-bb544c65420e/revolution-7-road-running-shoes-dC34tK.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/8d7e9e0b-7100-4a95-82ae-130c4076df64/revolution-7-road-running-shoes-dC34tK.png",
         "https://static.nike.com/a/videos/so_0.73/7accd8b7-c1f9-4870-b313-3f52decebc53/revolution-7-road-running-shoes-dC34tK.jpg','https://static.nike.com/a/images/t_default/c79425e8-7efc-4c74-a1df-a93ae0c1a02b/revolution-7-road-running-shoes-dC34tK.png",
         "https://static.nike.com/a/images/t_default/20771872-1406-4553-9c97-44047fd8f308/revolution-7-road-running-shoes-dC34tK.png",
@@ -931,7 +931,7 @@
       ],
       "benefit": [],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6eb361fd-b7d8-496d-9e44-ed48c94afd8a/lebron-xxi-ep-basketball-shoes-BrtQSn.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/942b7c56-c452-4b2f-a3b8-227efebfb259/lebron-xxi-ep-basketball-shoes-BrtQSn.png",
         "https://static.nike.com/a/videos/so_0.4/662e2e22-1bd1-49dc-bce1-410e3bfc2747/lebron-xxi-ep-basketball-shoes-BrtQSn.jpg','https://static.nike.com/a/images/t_default/13101390-a0d1-4c50-b48f-c777abce1f12/lebron-xxi-ep-basketball-shoes-BrtQSn.png",
         "https://static.nike.com/a/images/t_default/417977e6-7ae7-4453-b063-ecd14ce162a5/lebron-xxi-ep-basketball-shoes-BrtQSn.png",
@@ -989,7 +989,7 @@
         "Country/Region of Origin: China"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e29bbb1f-8fd2-4cc7-bf62-7ed94d37966f/gt-cut-3-ep-basketball-shoes-DGJp2L.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/95c4642b-ee25-4c5f-9711-573e686b2ece/gt-cut-3-ep-basketball-shoes-DGJp2L.png",
         "https://static.nike.com/a/videos/so_0.65/0845fdc8-6430-4802-946a-72db67c75b0f/gt-cut-3-ep-basketball-shoes-DGJp2L.jpg','https://static.nike.com/a/images/t_default/c7378f73-6736-449d-9532-394562da0fe8/gt-cut-3-ep-basketball-shoes-DGJp2L.png",
         "https://static.nike.com/a/images/t_default/0a991b29-c644-4286-98ca-fd2c9b88299b/gt-cut-3-ep-basketball-shoes-DGJp2L.png",
@@ -1039,7 +1039,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/72d360f5-1baf-44cd-bd11-15f5c7544dbf/air-jordan-xxxviii-low-pf-basketball-shoes-2lBnKn.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/72338731-8962-440b-91b0-1579388443d5/air-jordan-xxxviii-low-pf-basketball-shoes-2lBnKn.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8bfe2f4e-47b5-4440-80a9-416bbcc6a74f/air-jordan-xxxviii-low-pf-basketball-shoes-2lBnKn.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/50c33843-286c-400a-8a87-4f991e6028bf/air-jordan-xxxviii-low-pf-basketball-shoes-2lBnKn.png",
@@ -1075,7 +1075,7 @@
         "Country/Region of Origin: Indonesia"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b92bd6f1-e520-4caf-bc86-974a2d232444/phantom-gx-2-academy-tf-low-top-football-shoes-5HD8QT.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/c9257a7b-2dc7-4244-91f3-2125415baac9/phantom-gx-2-academy-tf-low-top-football-shoes-5HD8QT.png",
         "https://static.nike.com/a/images/t_default/5b99d65c-1519-455d-8571-903b4db4f3fc/phantom-gx-2-academy-tf-low-top-football-shoes-5HD8QT.png",
         "https://static.nike.com/a/images/t_default/bcda2086-9872-4cd9-b486-5346abe424a1/phantom-gx-2-academy-tf-low-top-football-shoes-5HD8QT.png",
@@ -1111,7 +1111,7 @@
         "Country/Region of Origin: Indonesia"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/1e245eca-e54b-4a60-b548-c85b4c66af57/mercurial-superfly-9-academy-high-top-football-shoes-6NvfmT.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/3af961c5-5038-41fb-a011-fc4d81a6e3db/mercurial-superfly-9-academy-high-top-football-shoes-6NvfmT.png",
         "https://static.nike.com/a/videos/so_1/2e1956a6-6651-45d7-98af-d69edb389fe8/mercurial-superfly-9-academy-high-top-football-shoes-6NvfmT.jpg','https://static.nike.com/a/images/t_default/031a9fb3-d0f7-4934-86bb-53e31b338f73/mercurial-superfly-9-academy-high-top-football-shoes-6NvfmT.png",
         "https://static.nike.com/a/images/t_default/582c75fc-f30c-4d68-aa74-6a3ea1f453fe/mercurial-superfly-9-academy-high-top-football-shoes-6NvfmT.png",
@@ -1147,7 +1147,7 @@
         "Country/Region of Origin: Indonesia"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/533d4c64-9b48-4f2d-8b6e-c831a18184c5/mercurial-vapor-15-academy-low-top-football-shoes-L8JgP4.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/0c3dd316-2048-4308-8985-df902c41ffe2/mercurial-vapor-15-academy-low-top-football-shoes-L8JgP4.png",
         "https://static.nike.com/a/videos/so_6.31/f526aa5c-4043-4a8b-9c10-07a4c2ceb5f3/mercurial-vapor-15-academy-low-top-football-shoes-L8JgP4.jpg','https://static.nike.com/a/images/t_default/9e2ccd96-7d7f-444a-8493-1fdc901d11c0/mercurial-vapor-15-academy-low-top-football-shoes-L8JgP4.png",
         "https://static.nike.com/a/images/t_default/c42ce2ba-9e67-4f85-90b9-2bb147a72c61/mercurial-vapor-15-academy-low-top-football-shoes-L8JgP4.png",
@@ -1190,7 +1190,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a0fab3c0-04bc-4059-916a-839bcb60c17a/tiempo-legend-10-academy-mg-low-top-football-boot-gthDNJ.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/75319ff1-e875-4391-9ccb-62517be3963d/tiempo-legend-10-academy-mg-low-top-football-boot-gthDNJ.png",
         "https://static.nike.com/a/images/t_default/4d01a88e-3690-4fb1-afe7-e24089649960/tiempo-legend-10-academy-mg-low-top-football-boot-gthDNJ.png",
         "https://static.nike.com/a/images/t_default/b1834d1c-3ef2-4167-8491-538b2256cd53/tiempo-legend-10-academy-mg-low-top-football-boot-gthDNJ.png",
@@ -1228,7 +1228,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e358a28b-b1f3-4ec5-ad2c-17de0e7472ed/tiempo-emerald-legend-10-academy-tf-low-top-football-shoes-2l8VCz.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/ab88b180-988e-4701-ae7c-8cdee123e7a6/tiempo-emerald-legend-10-academy-tf-low-top-football-shoes-2l8VCz.png",
         "https://static.nike.com/a/images/t_default/5ae537b4-3106-4549-ab93-e62044f23d74/tiempo-emerald-legend-10-academy-tf-low-top-football-shoes-2l8VCz.png",
         "https://static.nike.com/a/images/t_default/fc46774e-3ebc-4fa8-b4ca-7dd6e6d241b7/tiempo-emerald-legend-10-academy-tf-low-top-football-shoes-2l8VCz.png",
@@ -1258,7 +1258,7 @@
       ],
       "benefit": [],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6f073017-473a-4302-be9c-77740d900f4a/kd17-alchemist-ep-basketball-shoes-QHFz5W.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/c8707e1d-2af4-4791-a9b0-4450fdbac621/kd17-alchemist-ep-basketball-shoes-QHFz5W.png",
         "https://static.nike.com/a/images/t_default/b9ea132d-9925-4f11-9a62-a5059b1b6ab4/kd17-alchemist-ep-basketball-shoes-QHFz5W.png",
         "https://static.nike.com/a/images/t_default/28407c7e-f50e-4722-b40a-cc8cbe80cb2f/kd17-alchemist-ep-basketball-shoes-QHFz5W.png",
@@ -1301,7 +1301,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ecbc252e-8a22-4308-9b2a-80622a660e1f/tiempo-legend-10-club-multi-ground-low-top-football-boot-PNdvpg.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/35157dfa-f068-47c4-b79b-e8ee0b310b2e/tiempo-legend-10-club-multi-ground-low-top-football-boot-PNdvpg.png",
         "https://static.nike.com/a/videos/so_0.33/933e955a-92da-4c54-b6b1-b8632ab46128/tiempo-legend-10-club-multi-ground-low-top-football-boot-PNdvpg.jpg','https://static.nike.com/a/images/t_default/823be0bc-1e63-447d-aaa6-ba6f70f8716f/tiempo-legend-10-club-multi-ground-low-top-football-boot-PNdvpg.png",
         "https://static.nike.com/a/images/t_default/b78fb85d-0326-464b-ac2f-c2fe92a052cb/tiempo-legend-10-club-multi-ground-low-top-football-boot-PNdvpg.png",
@@ -1342,7 +1342,7 @@
         "Country/Region of Origin: Indonesia"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0e090330-252a-4125-a86b-3637a60d6ac4/gp-challenge-pro-hard-court-tennis-shoes-hRsnMn.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/700a11d5-90af-4c1d-bc9f-cffb74bd4746/gp-challenge-pro-hard-court-tennis-shoes-hRsnMn.png",
         "https://static.nike.com/a/images/t_default/60929773-aa95-4b0a-8132-c7e1ef9cd90e/gp-challenge-pro-hard-court-tennis-shoes-hRsnMn.png",
         "https://static.nike.com/a/images/t_default/258a1149-79cb-471a-93ab-805fce72b691/gp-challenge-pro-hard-court-tennis-shoes-hRsnMn.png",
@@ -1378,7 +1378,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/c2a2424b-4d35-490d-9d67-55c2c929e405/jordan-jumpman-slides-2C5ffD.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ac0e312f-e1c6-42a9-96a7-8ba11c0cd67a/jordan-jumpman-slides-2C5ffD.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/c99543eb-2582-48c0-a084-26273fb4a2fe/jordan-jumpman-slides-2C5ffD.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/30123138-abdf-43a2-b003-81f5ac1fe9cf/jordan-jumpman-slides-2C5ffD.png",
@@ -1402,7 +1402,7 @@
         "Country/Region of Origin: China"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/0e6648ed-4722-4085-8fcb-882cc674454f/air-jordan-i-high-g-golf-shoes-qKzTBg.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7867a4b9-4091-44d2-843a-c7563c60810a/air-jordan-i-high-g-golf-shoes-qKzTBg.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/653d6f7b-23a8-4214-ae92-35c7f68e4525/air-jordan-i-high-g-golf-shoes-qKzTBg.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e120df48-7d02-492f-b63b-7e99ef4a87d9/air-jordan-i-high-g-golf-shoes-qKzTBg.png",
@@ -1450,7 +1450,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/64d54bbd-0fa3-4201-bf8e-0bb302e83f76/vista-sandals-1rGmxQ.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/fa52cda4-2179-4f0d-a17b-83d3e8fe81b0/vista-sandals-1rGmxQ.png",
         "https://static.nike.com/a/videos/so_0.73/1924988d-12c4-4a19-b208-16ed542f89c9/vista-sandals-1rGmxQ.jpg','https://static.nike.com/a/images/t_default/01362271-9fa2-4705-9ddb-cd82e1c24e7c/vista-sandals-1rGmxQ.png",
         "https://static.nike.com/a/images/t_default/1f54d19e-6bc4-4e20-8d98-c8df22348510/vista-sandals-1rGmxQ.png",
@@ -1489,7 +1489,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b95033d3-2b18-4e8e-b386-56e4209b3352/air-jordan-1-low-shoes-zTWr01.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/4693a962-0ea1-4677-b5fd-eeed550ab4d3/air-jordan-1-low-shoes-zTWr01.png",
         "https://static.nike.com/a/videos/so_0.97/ixyee6ht3iln5mjxk8fu/air-jordan-1-low-shoes-zTWr01.jpg','https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/6a920c92-269f-4496-9221-382fd69961cc/air-jordan-1-low-shoes-zTWr01.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/65937a90-2128-4bf1-ac66-a954fb398a38/air-jordan-1-low-shoes-zTWr01.png",
@@ -1547,7 +1547,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/451b4531-1090-4044-ad0f-fa9e2b6cd902/streakfly-road-racing-shoes-V17qZm.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/84c1e0d5-ac53-4d7b-8991-f5d9a9cb3465/streakfly-road-racing-shoes-V17qZm.png",
         "https://static.nike.com/a/videos/so_1/e25c6bbc-4627-42a2-a94f-a86652126773/streakfly-road-racing-shoes-V17qZm.jpg','https://static.nike.com/a/images/t_default/b4b36229-4543-4115-86a4-b89ece6d80df/streakfly-road-racing-shoes-V17qZm.png",
         "https://static.nike.com/a/images/t_default/11e43b6c-2046-4e65-b17a-49e7252ed427/streakfly-road-racing-shoes-V17qZm.png",
@@ -1590,7 +1590,7 @@
         "Country/Region of Origin: China"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/07ae589b-0c51-4e2d-8fc5-473973e678f1/nikecourt-vapor-11-hard-court-tennis-shoes-Q8LDq4.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/47d6c482-07be-42c5-b180-57e4d9fbf6db/nikecourt-vapor-11-hard-court-tennis-shoes-Q8LDq4.png",
         "https://static.nike.com/a/images/t_default/b1665239-816e-451f-9879-64147696c423/nikecourt-vapor-11-hard-court-tennis-shoes-Q8LDq4.png",
         "https://static.nike.com/a/images/t_default/1ac11a8f-f352-47bc-9d52-b897e21a8823/nikecourt-vapor-11-hard-court-tennis-shoes-Q8LDq4.png",
@@ -1633,7 +1633,7 @@
         "Country/Region of Origin: Vietnam,Indonesia,China"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/77874acd-bf25-4037-bf21-9b442d1b28eb/victori-one-slides-QTTJHP.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/6a5b3755-fca5-4fbf-af97-a0a5f9ff028d/victori-one-slides-QTTJHP.png",
         "https://static.nike.com/a/videos/so_0/5f4c0050-a98a-4517-ae5f-c7ec21b8171f/victori-one-slides-QTTJHP.jpg','https://static.nike.com/a/images/t_default/cef0674f-16f8-434b-bbeb-7983c0c724bd/victori-one-slides-QTTJHP.png",
         "https://static.nike.com/a/images/t_default/cbcb6a81-31b5-4d9d-98b8-16d857ac720c/victori-one-slides-QTTJHP.png",
@@ -1660,7 +1660,7 @@
         "Country/Region of Origin: China"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8e2656f4-79b6-4d37-93c1-ea558a1c6a6d/air-jordan-1-low-g-nrg-golf-shoes-bf4r0T.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/87fa4258-e8d3-4754-bddb-87397dc83f71/air-jordan-1-low-g-nrg-golf-shoes-bf4r0T.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e565281a-43e2-40a6-838f-886084ed2b5a/air-jordan-1-low-g-nrg-golf-shoes-bf4r0T.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/db968684-cf05-48bc-9935-886b434bfcb6/air-jordan-1-low-g-nrg-golf-shoes-bf4r0T.png",
@@ -1699,7 +1699,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/6f29432a-e469-47f0-ac54-28cd0e6a7909/tatum-2-pf-basketball-shoes-8fp79D.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/30648388-71e0-4cd0-b2b3-72e5c458ec58/tatum-2-pf-basketball-shoes-8fp79D.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e3dd4dd1-f224-4463-9388-f830ae0b9dd7/tatum-2-pf-basketball-shoes-8fp79D.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e88ee079-c346-4c1b-abf8-e38bb66b3e18/tatum-2-pf-basketball-shoes-8fp79D.png",
@@ -1743,7 +1743,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c960a73e-8565-4cc6-9329-d2449c1944df/dunk-low-shoes-kKHp1z.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/1419ed34-7762-420a-9f2a-2e2a65d5aba9/dunk-low-shoes-kKHp1z.png",
         "https://static.nike.com/a/images/t_default/4a476c7c-2928-478e-b4c5-3455a2bc84ac/dunk-low-shoes-kKHp1z.png",
         "https://static.nike.com/a/images/t_default/891ced2d-ace8-4e80-95d6-628e5a0c7de6/dunk-low-shoes-kKHp1z.png",
@@ -1792,7 +1792,7 @@
         "Country/Region of Origin: Indonesia"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/aff63355-b2e9-47fb-adae-4b60ba1f602e/air-jordan-1-mid-shoes-SQf7DM.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/64689f96-72e6-46c7-817a-55087e2a1fe4/air-jordan-1-mid-shoes-SQf7DM.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/bceb6859-5a00-4e80-8fb9-2677fec7cf06/air-jordan-1-mid-shoes-SQf7DM.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8f89518d-895e-4994-8736-1c14f216a9e3/air-jordan-1-mid-shoes-SQf7DM.png",
@@ -1834,7 +1834,7 @@
         "Country/Region of Origin: India"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/15e81bcd-0521-4fec-ae39-dde5462b8737/blazer-low-77-vintage-shoes-5Gw9TZ.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/48ecc1bb-e63f-4341-b13b-c8a915e11169/blazer-low-77-vintage-shoes-5Gw9TZ.png",
         "https://static.nike.com/a/videos/so_1.2/3e9d7df8-e7ba-472f-a488-c25ffe15d027/blazer-low-77-vintage-shoes-5Gw9TZ.jpg','https://static.nike.com/a/images/t_default/7743703b-24e9-421d-8793-53c7e586a29a/blazer-low-77-vintage-shoes-5Gw9TZ.png",
         "https://static.nike.com/a/images/t_default/51324ed7-3155-40aa-8bf8-f8b41be817d5/blazer-low-77-vintage-shoes-5Gw9TZ.png",
@@ -1879,7 +1879,7 @@
         "Country/Region of Origin: Indonesia"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8397fa2b-f6b8-414f-b84b-c1f420f07f28/calm-slides-K7mr3W.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/d3bbbc21-03a4-46c6-adc1-3066a1ea7e96/calm-slides-K7mr3W.png",
         "https://static.nike.com/a/videos/so_1.19/a90f9483-419b-4259-859f-e203887679d1/calm-slides-K7mr3W.jpg','https://static.nike.com/a/images/t_default/4898b598-226c-41c6-8ad9-c7a8c9daa42b/calm-slides-K7mr3W.png",
         "https://static.nike.com/a/images/t_default/15f3b5bd-df67-4e02-9c52-fece0252b7d7/calm-slides-K7mr3W.png",
@@ -1920,7 +1920,7 @@
       ],
       "benefit": [],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6e26708e-6a50-40d8-bfe5-5aee668ce2b9/giannis-immortality-3-ep-basketball-shoes-0dTCk5.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/e62f40ca-7b7f-4987-89bb-8cc8e97148e4/giannis-immortality-3-ep-basketball-shoes-0dTCk5.png",
         "https://static.nike.com/a/images/t_default/dd481f9f-4d96-4831-949d-eb1a17a48163/giannis-immortality-3-ep-basketball-shoes-0dTCk5.png",
         "https://static.nike.com/a/images/t_default/28a9f86e-8156-4b05-8139-89bd2b114c19/giannis-immortality-3-ep-basketball-shoes-0dTCk5.png",
@@ -1958,7 +1958,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e38a8d82-8598-468c-8e46-0cadc1c8433a/offcourt-adjust-slides-6L2C07.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/90775fcc-e2a0-46f6-9bc1-bc27391eef33/offcourt-adjust-slides-6L2C07.png",
         "https://static.nike.com/a/videos/so_1.3/536c5621-edfc-427c-b96d-e09a3ad66e77/offcourt-adjust-slides-6L2C07.jpg','https://static.nike.com/a/images/t_default/e3f6b33c-d729-42f3-b1fe-223225104f67/offcourt-adjust-slides-6L2C07.png",
         "https://static.nike.com/a/images/t_default/f7090912-8098-4a50-abde-e09adff80419/offcourt-adjust-slides-6L2C07.png",
@@ -2006,7 +2006,7 @@
         "Country/Region of Origin: Indonesia"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4acc1449-bda9-47b3-8927-98a41433ed5e/air-force-1-low-evo-shoes-QcbnHZ.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/842700c8-51c8-4a4a-86fe-9f1ecb7b0984/air-force-1-low-evo-shoes-QcbnHZ.png",
         "https://static.nike.com/a/videos/so_0.8/07e9087c-010c-40be-87af-689fb27cc753/air-force-1-low-evo-shoes-QcbnHZ.jpg','https://static.nike.com/a/images/t_default/c45f4866-8651-4547-9829-bdd0407869c2/air-force-1-low-evo-shoes-QcbnHZ.png",
         "https://static.nike.com/a/images/t_default/0f31b09c-a99f-49a4-8b03-08b4dc5a54c2/air-force-1-low-evo-shoes-QcbnHZ.png",
@@ -2052,7 +2052,7 @@
         "Country/Region of Origin: India"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/14847b1b-df79-4160-9a84-4c2ed6cfd0a3/air-force-1-07-shoes-7d5sHw.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/76f704e4-7607-4b73-ae4c-dbebae643553/air-force-1-07-shoes-7d5sHw.png",
         "https://static.nike.com/a/images/t_default/3ff0286d-98bc-4a3e-a842-96dc644cc5c6/air-force-1-07-shoes-7d5sHw.png",
         "https://static.nike.com/a/images/t_default/d4ec3519-a386-4ae2-ac67-2daa08adae30/air-force-1-07-shoes-7d5sHw.png",
@@ -2131,7 +2131,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/30b450db-5953-41f5-bbc5-c35929ff18f2/jordan-spizike-low-shoes-P07hCP.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/75d7d56d-b7f7-4336-884e-b63b6eb11349/jordan-spizike-low-shoes-P07hCP.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/cc03a03e-c439-4374-8c91-a460523cfd57/jordan-spizike-low-shoes-P07hCP.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/56c401f4-97bb-4897-8830-199b212c86e8/jordan-spizike-low-shoes-P07hCP.png",
@@ -2181,7 +2181,7 @@
         "Country/Region of Origin: China"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7ef34ecc-c492-47e0-92ec-f6d0ff78c65c/pegasus-trail-5-trail-running-shoes-2jxMFQ.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/d47818f0-af41-4cd2-91e4-85252871a321/pegasus-trail-5-trail-running-shoes-2jxMFQ.png",
         "https://static.nike.com/a/images/t_default/64e9f76e-4ba4-453a-b80d-4e32240a6634/pegasus-trail-5-trail-running-shoes-2jxMFQ.png",
         "https://static.nike.com/a/images/t_default/d5480307-b32d-4031-a553-490aa2115134/pegasus-trail-5-trail-running-shoes-2jxMFQ.png",
@@ -2226,7 +2226,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d9aeda4d-8928-4495-91bd-bef61255eb8b/jordan-stay-loyal-3-shoes-GNHN2X.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e90fa2e0-3a2b-45d1-ba10-9dcc0d68cdd2/jordan-stay-loyal-3-shoes-GNHN2X.png",
         "https://static.nike.com/a/videos/so_3.35/9c705eb5-8570-486d-9228-8591722de376/jordan-stay-loyal-3-shoes-GNHN2X.jpg','https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/3827a804-7087-43f4-ba2e-76fcd6f712d7/jordan-stay-loyal-3-shoes-GNHN2X.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/49ddcf57-c092-4a7c-813d-471c0d93e59e/jordan-stay-loyal-3-shoes-GNHN2X.png",
@@ -2274,7 +2274,7 @@
         "Country/Region of Origin: Indonesia"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8e8a2bf2-96be-4a06-b7ae-b682f5e66a97/killshot-2-leather-shoes-1DJNnt.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/82ebffbc-7ba5-4ebb-85d7-03d47d802bd9/killshot-2-leather-shoes-1DJNnt.png",
         "https://static.nike.com/a/images/t_default/6d3e8454-fe16-4e1c-9d53-f9ec30529632/killshot-2-leather-shoes-1DJNnt.png",
         "https://static.nike.com/a/images/t_default/07a0067a-59f9-4113-a2ea-23a4ae2ba2bd/killshot-2-leather-shoes-1DJNnt.png",
@@ -2322,7 +2322,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f686b8f3-6267-43b1-bb0e-58d1a67a35cf/free-rn-nn-road-running-shoes-D64TzS.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/373719cc-a34f-46fd-99b9-cf4d73458f6a/free-rn-nn-road-running-shoes-D64TzS.png",
         "https://static.nike.com/a/videos/so_7.33/6fea3527-8cc4-4d2e-9220-779d1491d9e2/free-rn-nn-road-running-shoes-D64TzS.jpg','https://static.nike.com/a/images/t_default/8f0c9cbe-3417-4ca9-8c1f-e9a9d9dc6f8e/free-rn-nn-road-running-shoes-D64TzS.png",
         "https://static.nike.com/a/images/t_default/a7693c87-1d44-47ee-bbf1-28f049b66328/free-rn-nn-road-running-shoes-D64TzS.png",
@@ -2366,7 +2366,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7f4f0b02-147f-44dd-bac5-4f7e34a4d838/air-force-1-07-easyon-shoes-LKXPhZ.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/16c6402f-aeb5-4d73-98e2-5b614871a370/air-force-1-07-easyon-shoes-LKXPhZ.png",
         "https://static.nike.com/a/videos/so_1.44/476d28cd-731a-41fc-9bb5-0d2877aae7bd/air-force-1-07-easyon-shoes-LKXPhZ.jpg','https://static.nike.com/a/images/t_default/36a35673-df42-43ac-8a67-b219d3edbf31/air-force-1-07-easyon-shoes-LKXPhZ.png",
         "https://static.nike.com/a/images/t_default/17056aea-23e2-4f4f-ad98-0bb3b6156bbe/air-force-1-07-easyon-shoes-LKXPhZ.png",
@@ -2412,7 +2412,7 @@
         "Country/Region of Origin: China"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/1af9c87c-6e11-4bc6-ad66-648558bc49b7/vaporfly-3-road-racing-shoes-xsDgvM.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/6a588034-2960-4631-b425-c94c665175d5/vaporfly-3-road-racing-shoes-xsDgvM.png",
         "https://static.nike.com/a/videos/so_0/5cc40654-404e-46f8-85eb-6f90d99860aa/vaporfly-3-road-racing-shoes-xsDgvM.jpg','https://static.nike.com/a/images/t_default/f6b81a8d-9c98-4a68-a993-daee370fc5d6/vaporfly-3-road-racing-shoes-xsDgvM.png",
         "https://static.nike.com/a/images/t_default/3a561631-d0ff-4387-ad13-b608dd0164fb/vaporfly-3-road-racing-shoes-xsDgvM.png",
@@ -2452,7 +2452,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/977ffe89-a1e5-42dc-b5ea-01460956302e/interact-run-se-road-running-shoes-NCWZfT.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/05ebf414-e671-41d3-9698-705cc5b5ec2c/interact-run-se-road-running-shoes-NCWZfT.png",
         "https://static.nike.com/a/videos/so_0.32/065e0640-5334-4cc6-b0a9-ab8e03b2623a/interact-run-se-road-running-shoes-NCWZfT.jpg','https://static.nike.com/a/images/t_default/b4801aea-1174-4406-bdbf-627b706dd1b1/interact-run-se-road-running-shoes-NCWZfT.png",
         "https://static.nike.com/a/images/t_default/c4528c2f-f687-44ec-9959-dfeb7e75f283/interact-run-se-road-running-shoes-NCWZfT.png",
@@ -2497,7 +2497,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/432e60d3-724d-4b03-9063-fe712c21704b/jumpman-mvp-shoes-JV1HCs.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/1113dbbf-2d4f-412e-b4d7-6a7a86c36cda/jumpman-mvp-shoes-JV1HCs.png",
         "https://static.nike.com/a/videos/so_0.1/4a7ca2f0-a3b3-40b9-a7b0-f375348a750f/jumpman-mvp-shoes-JV1HCs.jpg','https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/90569bf3-4bcb-4808-960d-38169d114784/jumpman-mvp-shoes-JV1HCs.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2c3ae82c-dd63-46cd-9d04-8cff60dd8766/jumpman-mvp-shoes-JV1HCs.png",
@@ -2559,7 +2559,7 @@
         "Country/Region of Origin: China"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/4dcd9f93-1594-48b7-9c5d-d4bebee011ed/air-jordan-1-low-g-golf-shoes-8bKbqs.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e8a5d47e-1ba6-4242-97dd-ab878357a1ce/air-jordan-1-low-g-golf-shoes-8bKbqs.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/812772f8-4901-4bbd-9b0e-6b99c3155371/air-jordan-1-low-g-golf-shoes-8bKbqs.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/483d44ab-87d6-41a6-ba22-36c457faede2/air-jordan-1-low-g-golf-shoes-8bKbqs.png",
@@ -2602,7 +2602,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0b2553d3-6d28-46d6-9b7c-408e8a2cb006/air-max-90-shoes-98F148.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/fb3b8a7c-f830-4f78-a529-291bd316f880/air-max-90-shoes-98F148.png",
         "https://static.nike.com/a/videos/so_0.9/48d79e03-5837-4fca-a526-7f146125b8c1/air-max-90-shoes-98F148.jpg','https://static.nike.com/a/images/t_default/db223d82-1127-421e-90ff-d8fe37d3a901/air-max-90-shoes-98F148.png",
         "https://static.nike.com/a/images/t_default/14d7b8b0-f601-4355-ae9a-374cdad5c513/air-max-90-shoes-98F148.png",
@@ -2659,7 +2659,7 @@
         "Country/Region of Origin: China"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e5b1fb1f-c9f1-420e-8a9b-efc4dbadd44b/air-jordan-1-low-se-shoes-L9LvW5.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/305096a2-fc0a-4664-9837-63b81a0700e7/air-jordan-1-low-se-shoes-L9LvW5.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2e149809-42c9-4635-848b-c28a7f07b04d/air-jordan-1-low-se-shoes-L9LvW5.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/bea59753-e012-4f1f-a7e3-358b74df6716/air-jordan-1-low-se-shoes-L9LvW5.png",
@@ -2718,7 +2718,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a7f07bf7-7896-48c7-b53d-ab5daf86f84e/air-max-excee-shoes-Zvl8cs.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/4763b078-c16f-44bd-a5d0-2fcad00b653c/air-max-excee-shoes-Zvl8cs.png",
         "https://static.nike.com/a/images/t_default/23dbd4b9-f4ba-4edf-b40c-1dfc5403b677/air-max-excee-shoes-Zvl8cs.png",
         "https://static.nike.com/a/images/t_default/f8a6834d-8da6-43ab-9ba3-9778837227e4/air-max-excee-shoes-Zvl8cs.png",
@@ -2760,7 +2760,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/63e0cf2c-a805-401e-bd8f-cbe1e28115ab/air-max-dn-shoes-FtLNfm.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/cc87d541-1023-4c86-bd45-d6d3dc9e6cfd/air-max-dn-shoes-FtLNfm.png",
         "https://static.nike.com/a/videos/so_1.2/345fbe81-1c33-4c80-9d05-2da830d1b97c/air-max-dn-shoes-FtLNfm.jpg','https://static.nike.com/a/images/t_default/578b7ef9-9d95-480d-868a-b13d1092d996/air-max-dn-shoes-FtLNfm.png",
         "https://static.nike.com/a/images/t_default/85939068-b0de-4cc0-93a0-029052c6d01c/air-max-dn-shoes-FtLNfm.png",
@@ -2805,7 +2805,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2599bc05-e25a-4f30-9ac2-faa15c3c482e/precision-7-basketball-shoes-6FvJHX.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/e6cad6b9-b122-49d4-b15b-a504180b5a6c/precision-7-basketball-shoes-6FvJHX.png",
         "https://static.nike.com/a/videos/so_1.1/0a3f3658-6f7d-41c3-99f0-a86d240637fb/precision-7-basketball-shoes-6FvJHX.jpg','https://static.nike.com/a/images/t_default/bd4ebe58-7ed1-474c-af62-86e61b347218/precision-7-basketball-shoes-6FvJHX.png",
         "https://static.nike.com/a/images/t_default/f47fd7b5-992b-43c6-a4d8-e4a9f9ca95b5/precision-7-basketball-shoes-6FvJHX.png",
@@ -2849,7 +2849,7 @@
         "Country/Region of Origin: China"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b32fcad3-8b1a-4a0c-876a-b32c02c3a5ac/zoom-vomero-5-se-shoes-WWDBV1.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/de5192d6-02e8-44ba-ad40-33fdb2c738e7/zoom-vomero-5-se-shoes-WWDBV1.png",
         "https://static.nike.com/a/images/t_default/2bcf1b10-ea64-42c3-b65e-60c9545a3b69/zoom-vomero-5-se-shoes-WWDBV1.png",
         "https://static.nike.com/a/images/t_default/64e257b3-804a-4587-bf63-ee4f7deb5bca/zoom-vomero-5-se-shoes-WWDBV1.png",
@@ -2898,7 +2898,7 @@
         "Country/Region of Origin: Indonesia"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/cb2e3b21-ac8e-47a1-80ca-65790687a5a3/air-force-1-07-lv8-shoes-Smph4G.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/c7ee8117-5e90-49cb-8207-f722a838f2eb/air-force-1-07-lv8-shoes-Smph4G.png",
         "https://static.nike.com/a/videos/so_0.58/fe4d6bda-1b60-4ac0-8e87-60e889bf54c7/air-force-1-07-lv8-shoes-Smph4G.jpg','https://static.nike.com/a/images/t_default/d9f77476-5964-4bf5-b119-e979c6945a4d/air-force-1-07-lv8-shoes-Smph4G.png",
         "https://static.nike.com/a/images/t_default/9970a373-c07a-4b99-abb9-6c7b242de1cb/air-force-1-07-lv8-shoes-Smph4G.png",
@@ -2941,7 +2941,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4f323c12-a7a6-4ff3-bea2-50c26ca2ca86/v2k-run-shoes-zJV8TV.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/6b902d4d-e794-450c-9c34-c225b0f889bc/v2k-run-shoes-zJV8TV.png",
         "https://static.nike.com/a/videos/so_0/7dabcaa9-3589-443b-922c-acca03f51157/v2k-run-shoes-zJV8TV.jpg','https://static.nike.com/a/images/t_default/388ee3a0-076c-41dc-9c06-109423bf26c8/v2k-run-shoes-zJV8TV.png",
         "https://static.nike.com/a/images/t_default/e0ea554e-4aa2-4eb5-b4bc-2a7372c8adca/v2k-run-shoes-zJV8TV.png",
@@ -2985,7 +2985,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7d0916c6-4a3e-4502-9368-5033c48c4eef/sb-chron-2-canvas-skate-shoe-zdBtfH.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/f71a136b-2566-469b-b777-afd9e2bcc777/sb-chron-2-canvas-skate-shoe-zdBtfH.png",
         "https://static.nike.com/a/videos/so_6.3/e50048f4-14f2-4cf3-a5eb-f9c0aa4e11c5/sb-chron-2-canvas-skate-shoe-zdBtfH.jpg','https://static.nike.com/a/images/t_default/1e9e25cd-cdb8-4978-823b-d84bfd25e237/sb-chron-2-canvas-skate-shoe-zdBtfH.png",
         "https://static.nike.com/a/images/t_default/abafb8be-b8c5-47b8-a764-ee225adcb55f/sb-chron-2-canvas-skate-shoe-zdBtfH.png",
@@ -3029,7 +3029,7 @@
         "Country/Region of Origin: India"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/cf43fd2a-f2c3-4d7e-ae24-65bd6e0c41c1/court-vision-low-shoes-ZwjLXN.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/64c495ca-4b36-407b-ade5-67b08b2178ac/court-vision-low-shoes-ZwjLXN.png",
         "https://static.nike.com/a/images/t_default/2669d4cc-a047-4f2a-89a1-aad4d9a80789/court-vision-low-shoes-ZwjLXN.png",
         "https://static.nike.com/a/images/t_default/9b41a860-ae4a-4560-b523-10dde89230c9/court-vision-low-shoes-ZwjLXN.png",
@@ -3090,7 +3090,7 @@
         "Country/Region of Origin: Vietnam,Indonesia"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/767687a0-142e-4d66-b437-998dee9a0a4f/nikecourt-royale-2-next-nature-shoes-RRcr20.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/9e0c69fc-89df-474a-b5e5-e68126cbb94e/nikecourt-royale-2-next-nature-shoes-RRcr20.png",
         "https://static.nike.com/a/images/t_default/1d7e52ac-7bf8-49af-abbf-d6eec8ef5160/nikecourt-royale-2-next-nature-shoes-RRcr20.png",
         "https://static.nike.com/a/images/t_default/6f28fd33-ae58-44b7-a2f9-a21f013f9fb5/nikecourt-royale-2-next-nature-shoes-RRcr20.png",
@@ -3134,7 +3134,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c76e2119-acb7-4944-9085-d4f5ae2bda4a/go-flyease-easy-on-off-shoes-3svRCL.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/247616b5-1d3b-4777-abbb-d5e08a924b78/go-flyease-easy-on-off-shoes-3svRCL.png",
         "https://static.nike.com/a/videos/so_0.48/8751dcb1-864b-4ab0-bdd3-9b873780f7e7/go-flyease-easy-on-off-shoes-3svRCL.jpg','https://static.nike.com/a/images/t_default/8c89f1db-e4f6-4f01-9f88-c5af2fc7ae8a/go-flyease-easy-on-off-shoes-3svRCL.png",
         "https://static.nike.com/a/images/t_default/5f18a6fc-5dca-49d9-a08e-8bffd809e206/go-flyease-easy-on-off-shoes-3svRCL.png",
@@ -3182,7 +3182,7 @@
         "Country/Region of Origin: Indonesia"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1156119-7b9f-4d44-a307-417bea74b0ff/air-jordan-1-low-se-craft-shoes-8SsDw6.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b2e8f89f-7725-40e8-8616-4e35415f66e8/air-jordan-1-low-se-craft-shoes-8SsDw6.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/00d38a82-7099-4fae-bdc6-720c8974d3c0/air-jordan-1-low-se-craft-shoes-8SsDw6.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/695a74b7-3ff8-4938-9b6f-46a07b8b0074/air-jordan-1-low-se-craft-shoes-8SsDw6.png",
@@ -3230,7 +3230,7 @@
         "Country/Region of Origin: Vietnam,India"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0084df47-cf15-41d5-aab6-984460364e41/court-vision-low-next-nature-shoes-N2fFHb.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/706e54b6-9360-4760-817d-86bba495f2e5/court-vision-low-next-nature-shoes-N2fFHb.png",
         "https://static.nike.com/a/videos/so_9.4/e8a517cb-4c2e-4db9-af32-66199ebfc62a/court-vision-low-next-nature-shoes-N2fFHb.jpg','https://static.nike.com/a/images/t_default/df18ee4b-68cb-47f6-9168-a0fd69521812/court-vision-low-next-nature-shoes-N2fFHb.png",
         "https://static.nike.com/a/images/t_default/1e7f258e-7b28-4ee6-aeea-b4f07720adf3/court-vision-low-next-nature-shoes-N2fFHb.png",
@@ -3267,7 +3267,7 @@
       ],
       "benefit": [],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ca929f7e-f433-46b7-8d83-1a6171c172ce/revolution-7-easyon-road-running-shoes-nNqdwt.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/b14aba9a-f828-45d3-9607-b687b884aa7d/revolution-7-easyon-road-running-shoes-nNqdwt.png",
         "https://static.nike.com/a/videos/so_2.12/0677e9a9-ec48-41e5-827b-642e3f014cbf/revolution-7-easyon-road-running-shoes-nNqdwt.jpg','https://static.nike.com/a/images/t_default/f85bc352-6ecc-4701-b0c0-ed4237cca17d/revolution-7-easyon-road-running-shoes-nNqdwt.png",
         "https://static.nike.com/a/images/t_default/39ab7e46-2657-4a29-9b58-577b12764b33/revolution-7-easyon-road-running-shoes-nNqdwt.png",
@@ -3304,7 +3304,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/63c4596a-ca9a-4a56-82f3-0387903ed5f1/pegasus-41-road-running-shoes-RZm89S.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/927d3fef-0657-4b82-8b3a-b34f07ffdd28/pegasus-41-road-running-shoes-RZm89S.png",
         "https://static.nike.com/a/images/t_default/3238b7d4-8adc-45b0-8302-2002b1315467/pegasus-41-road-running-shoes-RZm89S.png",
         "https://static.nike.com/a/images/t_default/74a83c4a-1a8c-4ef1-be7a-b05aa77bcd36/pegasus-41-road-running-shoes-RZm89S.png",
@@ -3359,7 +3359,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/89963238-7a6a-48cc-a2fe-4e95dd03fd89/downshifter-13-road-running-shoes-4Gw85J.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/f33f1c05-2f08-42f7-8843-33796d32c4e4/downshifter-13-road-running-shoes-4Gw85J.png",
         "https://static.nike.com/a/videos/so_0/75e1a279-84da-4010-8e24-d442b27a71f6/downshifter-13-road-running-shoes-4Gw85J.jpg','https://static.nike.com/a/images/t_default/aa77472e-d6d8-4fb2-be91-5dded7547a53/downshifter-13-road-running-shoes-4Gw85J.png",
         "https://static.nike.com/a/images/t_default/fa81a3f6-2499-46e7-b3d2-348aa8d6681d/downshifter-13-road-running-shoes-4Gw85J.png",
@@ -3405,7 +3405,7 @@
         "Country/Region of Origin: Indonesia"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/23da5e9b-6bee-47eb-8b1d-259ac3b13cfd/court-royale-2-low-shoe-fjdwrF.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/e9c21b76-ad34-40c6-9338-8d910c8cc30d/court-royale-2-low-shoe-fjdwrF.png",
         "https://static.nike.com/a/images/t_default/ddc462b5-be81-4032-96fa-d3fb299b868f/court-royale-2-low-shoe-fjdwrF.png",
         "https://static.nike.com/a/images/t_default/d36532ff-0a14-4093-89b6-c3f914e523ee/court-royale-2-low-shoe-fjdwrF.png",
@@ -3439,7 +3439,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7dd5d00b-b588-485b-9e30-147cd30ade3a/jordan-roam-slides-XsQbqX.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/35362810-0bd2-4e49-8be9-972f0ff06b5b/jordan-roam-slides-XsQbqX.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/a014df03-7318-44e1-a81d-140782f24769/jordan-roam-slides-XsQbqX.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/129915e5-8761-40ab-94e6-48e9e376eddf/jordan-roam-slides-XsQbqX.png",
@@ -3480,7 +3480,7 @@
         "Country/Region of Origin: Indonesia"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0422fada-73e7-40a5-98a3-ae034a74a0ba/sb-vertebrae-shoes-Zlnwhs.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/d8cd2c58-2766-4141-a210-29906d8bafd4/sb-vertebrae-shoes-Zlnwhs.png",
         "https://static.nike.com/a/images/t_default/478ba32c-51ff-4993-92d3-8e0ed9c70bf2/sb-vertebrae-shoes-Zlnwhs.png",
         "https://static.nike.com/a/images/t_default/b9ee7380-10fe-4a93-931a-03ded7dbbe3d/sb-vertebrae-shoes-Zlnwhs.png",
@@ -3523,7 +3523,7 @@
         "Country/Region of Origin: Indonesia"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c79654db-d568-4e5e-b0d7-90b6df387d7e/air-max-270-shoes-2V5C4p.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/517bbda1-6761-4ad2-8c98-698cc77b52e4/air-max-270-shoes-2V5C4p.png",
         "https://static.nike.com/a/videos/so_1.71/snit4pxfutyjg2siqrbs/air-max-270-shoes-2V5C4p.jpg','https://static.nike.com/a/images/t_default/e8eb784e-b9a2-40ea-816c-ed570d8f79fe/air-max-270-shoes-2V5C4p.png",
         "https://static.nike.com/a/images/t_default/b837fc41-d912-4eb4-8450-8a3c83ed7f18/air-max-270-shoes-2V5C4p.png",
@@ -3566,7 +3566,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a4ca0cdc-6d51-4d6d-93d8-43a74ff848d8/air-max-2013-shoes-f1zqsx.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/fe09b20d-cdbb-43f6-ae5a-25b834c9a866/air-max-2013-shoes-f1zqsx.png",
         "https://static.nike.com/a/images/t_default/ded8333f-e1c7-4a51-aec1-059ae1d5471c/air-max-2013-shoes-f1zqsx.png",
         "https://static.nike.com/a/images/t_default/0849ed78-f60d-478b-a867-aa16b0228646/air-max-2013-shoes-f1zqsx.png",
@@ -3596,7 +3596,7 @@
       ],
       "benefit": [],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8636f9b6-6557-4065-8ebd-59e6d1673573/offcourt-slides-ZBxx9j.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/1513eb06-b0d6-4956-a6bd-a8150ee300de/offcourt-slides-ZBxx9j.png",
         "https://static.nike.com/a/images/t_default/0429b97e-98ce-4434-867e-5b48a50b998e/offcourt-slides-ZBxx9j.png",
         "https://static.nike.com/a/images/t_default/3d04eed5-ee48-44be-8146-78aafdb41a1f/offcourt-slides-ZBxx9j.png",
@@ -3632,7 +3632,7 @@
         "Country/Region of Origin: Indonesia"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7941ab99-6eca-48b4-bdb6-002d8c862a41/nikecourt-vapor-lite-2-hard-court-tennis-shoes-8dGHWK.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/e88eedee-9724-47b2-aa25-3340f1138cdb/nikecourt-vapor-lite-2-hard-court-tennis-shoes-8dGHWK.png",
         "https://static.nike.com/a/videos/so_3.45/d1c99053-38fd-4bc8-aa9b-746e5bdac5e9/nikecourt-vapor-lite-2-hard-court-tennis-shoes-8dGHWK.jpg','https://static.nike.com/a/images/t_default/2f8e2458-7e5f-4fc8-898c-dd4ad82c94c4/nikecourt-vapor-lite-2-hard-court-tennis-shoes-8dGHWK.png",
         "https://static.nike.com/a/images/t_default/0068630a-6e90-4d2f-ad30-983ebde73fa0/nikecourt-vapor-lite-2-hard-court-tennis-shoes-8dGHWK.png",
@@ -3666,7 +3666,7 @@
       ],
       "benefit": [],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/cf304853-7303-4bc7-9231-78d184cc740f/nikecourt-lite-4-tennis-shoes-5B5NWb.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/ceabe604-e072-44ab-b294-b9db5ab2c09a/nikecourt-lite-4-tennis-shoes-5B5NWb.png",
         "https://static.nike.com/a/images/t_default/6bf92a60-635a-4587-b3ce-5cda1990f5d0/nikecourt-lite-4-tennis-shoes-5B5NWb.png",
         "https://static.nike.com/a/images/t_default/03b58c09-4a2f-45ee-ae57-a50e160e377c/nikecourt-lite-4-tennis-shoes-5B5NWb.png",
@@ -3705,7 +3705,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/147a3038-1da0-4578-94e0-3216414a6cdd/p-6000-shoes-QcQbpx.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/24677ace-081d-4ae4-9ec7-6887c682a40e/p-6000-shoes-QcQbpx.png",
         "https://static.nike.com/a/videos/so_0/8af580bc-9954-4326-aa1f-2115e1180ace/p-6000-shoes-QcQbpx.jpg','https://static.nike.com/a/images/t_default/34600968-88f8-4d18-a7be-dbf5f38be811/p-6000-shoes-QcQbpx.png",
         "https://static.nike.com/a/images/t_default/d39c8a5e-f9c7-4363-a343-f5a5c81fe63a/p-6000-shoes-QcQbpx.png",

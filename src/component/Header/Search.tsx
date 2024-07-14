@@ -23,14 +23,18 @@ const Search: React.FC = () => {
     };
     return (
         <div className="search">
-            <Tippy placement={"bottom"} visible={data && data.length > 0} onClickOutside={handleHideResult} interactive
+            <Tippy placement={"bottom"} visible={showResult && data && data.length > 0}
+                   onClickOutside={handleHideResult} interactive
                    render={attrs => (
                        <div className={`search-results-open`}>
                            {!!searchTerm && data && data.length > 0 ? (
                                <div>
                                    {data.slice(0, 4).map((result) => (
                                        <div className="search-result-item" key={result.id}
-                                            onClick={() => navigate(`/shop/product/${result.id}`)}>
+                                            onClick={() => {
+                                                navigate(`/shop/product/${result.id}`)
+                                                setShowResult(false)
+                                            }}>
                                            <img src={result.main_img_src} alt=""/>
                                            <div>
                                                <h3>{result.Name}</h3>
@@ -61,16 +65,15 @@ const Search: React.FC = () => {
                     onFocus={() => setShowResult(true)}
                 />
             </Tippy>
-            <button onClick={() => {
-                setSearchTerm("");
-                inputRef.current?.focus();
-            }}>
-                {/*  Thêm icon xóa  */}
-            </button>
-
             <button>
                 <FiSearch/>
             </button>
+            <span className="right-button" onClick={() => {
+                setSearchTerm("");
+                inputRef.current?.focus();
+            }}>
+                <FiSearch/>
+            </span>
         </div>
     );
 };
