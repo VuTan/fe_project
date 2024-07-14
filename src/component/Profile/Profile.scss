@@ -1,0 +1,119 @@
+@import "../../base";
+
+.dark-mode .profile {
+  background: $bg-gray;
+  color: $color_black;
+}
+
+.light-mode .profile {
+  background: $bg-light-gray;
+  color: $bg-light-gray;
+}
+
+//-------------------------------------------
+.profile {
+  height: 700px;
+
+  .profile-containerr {
+    position: relative;
+    top: 90px;
+    padding: 20px;
+    max-width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: $bg-light-gray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+    .profile-h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      position: relative;
+      top: 175px;
+
+      a {
+        text-decoration: none;
+        color: $bg-Red;
+      }
+    }
+  }
+
+
+  .profile-container {
+    position: relative;
+    top: 90px;
+    padding: 20px;
+    max-width: 1000px;
+    height: 520px;
+    margin: 0 auto;
+    background-color: $bg-light-gray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+    .profilee-h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .profile-content {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+
+      .profile-image {
+        height: 200px;
+        flex: 0 0 200px;
+
+        img {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+
+      .profile-details {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .profile-details-item {
+          display: flex;
+          justify-content: space-between;
+          padding: 10px 0;
+          border-bottom: 1px solid #ccc;
+
+          .password-field {
+            display: flex;
+            align-items: center;
+
+            .show-pass {
+              margin: 0;
+              padding-right: 10px;
+            }
+
+            .password-toggle {
+              background: none;
+              border: none;
+              cursor: pointer;
+              padding: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 1.2rem;
+            }
+          }
+
+          label {
+            font-weight: bold;
+          }
+
+          p {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

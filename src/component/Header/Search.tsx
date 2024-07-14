@@ -21,8 +21,10 @@ const Search: React.FC = () => {
     const handleHideResult = () => {
         setShowResult(false)
     };
+
     return (
         <div className="search">
+
             <Tippy placement={"bottom"} visible={showResult && data && data.length > 0}
                    onClickOutside={handleHideResult} interactive
                    render={attrs => (

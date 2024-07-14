@@ -31,8 +31,8 @@ const ShopPage: React.FC = () => {
     ];
     const {t} = useTranslation('shoppage')
 
-    const productPerPage = 12;
-    const [totalPage, setTotalPage] = useState(12);
+    const productPerPage = 18;
+    const [totalPage, setTotalPage] = useState(8);
     const [currentPage, setCurrentPage] = useState(1);
     const [sort, setSort] = useState("");
     const [totalProduct, setTotalProduct] = useState();

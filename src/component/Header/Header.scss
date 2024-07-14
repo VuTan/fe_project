@@ -43,7 +43,6 @@
 .light-mode .logo a,
 .light-mode .logo a:hover,
 .light-mode .menu li a,
-.light-mode .search button,
 .light-mode .icons a,
 .light-mode .icons a:hover{
   color: $color_black;
@@ -264,7 +263,7 @@ nav{
 
 .login {
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .accset{
@@ -307,7 +306,7 @@ nav{
 
 .banner-contain {
   position: relative;
-  top: 110px;
+  top: 100px;
 }
 .scroll-up__container{
   position: fixed;
