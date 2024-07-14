@@ -24,37 +24,38 @@ const Search: React.FC = () => {
 
     return (
         <div className="search">
-            <Tippy
-                placement={"bottom"}
-                visible={showResult && searchTerm.length > 0}
-                onClickOutside={handleHideResult}
-                interactive
-                render={attrs => (
-                    <div className={`search-results-open`}>
-                        {!!searchTerm && data && data.length > 0 ? (
-                            <>
-                                {data.slice(0, 4).map((result) => (
-                                    <div className="search-result-item" key={result.id}
-                                         onClick={() => navigate(`/shop/product/${result.id}`)}>
-                                        <img src={result.main_img_src} alt=""/>
-                                        <div className={"item-text"}>
-                                            <h3>{result.Name}</h3>
-                                            <p>{result.Type}</p>
-                                            <p>{result.Price}</p>
-                                        </div>
-                                    </div>
-                                ))}
-                                {4 < data.length && (
-                                    <a>
-                                        Load More
-                                    </a>
-                                )}
-                            </>
-                        ) : (
-                            <div className="no-results">No results found.</div>
-                        )}
-                    </div>
-                )}
+
+            <Tippy placement={"bottom"} visible={showResult && data && data.length > 0}
+                   onClickOutside={handleHideResult} interactive
+                   render={attrs => (
+                       <div className={`search-results-open`}>
+                           {!!searchTerm && data && data.length > 0 ? (
+                               <div>
+                                   {data.slice(0, 4).map((result) => (
+                                       <div className="search-result-item" key={result.id}
+                                            onClick={() => {
+                                                navigate(`/shop/product/${result.id}`)
+                                                setShowResult(false)
+                                            }}>
+                                           <img src={result.main_img_src} alt=""/>
+                                           <div>
+                                               <h3>{result.Name}</h3>
+                                               <p>{result.Type}</p>
+                                               <p>{result.Price}</p>
+                                           </div>
+                                       </div>
+                                   ))}
+                                   {4 < data.length && (
+                                       <a>
+                                           Load More
+                                       </a>
+                                   )}
+                               </div>
+                           ) : (
+                               <div className="no-results">No results found.</div>
+                           )}
+                       </div>
+                   )}
             >
                 <input
                     ref={inputRef}
@@ -66,16 +67,15 @@ const Search: React.FC = () => {
                     onFocus={() => setShowResult(true)}
                 />
             </Tippy>
-            <button onClick={() => {
-                setSearchTerm("");
-                inputRef.current?.focus();
-            }}>
-                {/*  Thêm icon xóa  */}
-            </button>
-
             <button>
                 <FiSearch/>
             </button>
+            <span className="right-button" onClick={() => {
+                setSearchTerm("");
+                inputRef.current?.focus();
+            }}>
+                <FiSearch/>
+            </span>
         </div>
     );
 };

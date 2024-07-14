@@ -96,6 +96,7 @@ footer {
 
 /* Dark mode styles */
 .dark-mode footer {
+  margin-top: 3em;
   background: $color_black;
   color: $bg-ultralight-gray;
   border-top: 1px solid $bg-ultralight-gray;
@@ -118,6 +119,7 @@ footer {
 
 /* Light mode styles */
 .light-mode footer {
+  margin-top: 3em;
   background: $bg-ultralight-gray;
   color: $color_black;
   border-top: 1px solid $bg-gray;

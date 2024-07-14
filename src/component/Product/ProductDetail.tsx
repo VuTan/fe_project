@@ -23,13 +23,15 @@ const ProductDetail = () => {
     const [isFavorite, setIsFavorite] = useState(false);
     const favorite = useSelector((state: RootState) => state.favorite)
 
-    const {id} = useParams();
+    const {id} = useParams()
+
     const {data} = useGetProductByIdQuery({id: id})
 
     useEffect(() => {
         window.scrollTo(0, 0)
 
-        const isFavorite = favorite.favArr.some(product => product.id === id);
+        const isFavorite = favorite.favArr.some(product => product.id == id);
+        console.log(isFavorite)
         setIsFavorite(isFavorite);
     }, []);
 
@@ -108,7 +110,7 @@ const ProductDetail = () => {
         <>
             <div className="show-detail">
                 <div className="image-grid">
-                    <AsNavFor/>
+                    <AsNavFor product={data}/>
                 </div>
                 <div className="details">
                     <h1>{data?.Name}</h1>

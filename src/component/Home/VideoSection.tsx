@@ -55,7 +55,7 @@ const VideoSection: React.FC = () => {
             <h2 className="section-title">2handtropical tvc</h2>
             <div className="video-section" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                 <video ref={videoRef} id="video" className="main-video" poster="">
-                    <source src="/videos/your_video.mp4" type="video/mp4"/>
+                    <source src="/videos/tvc2.mp4" type="video/mp4"/>
                 </video>
                 {showControls && (
                     <div className={`play-button ${isPlaying ? 'hidden' : ''}`} onClick={handlePlay}>

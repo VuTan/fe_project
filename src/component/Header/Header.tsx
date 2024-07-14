@@ -122,7 +122,7 @@ const Header = () => {
             </div>
             <nav>
                 <div className="logo">
-                    <NavLink to="/">2handtropical</NavLink>
+                    <NavLink to="/"><img src= "/logo.png" alt="2handtropical"/></NavLink>
                 </div>
                 <div className="hamburger" onClick={toggleMenu}>
                     <GiHamburgerMenu/>
@@ -137,6 +137,7 @@ const Header = () => {
                         <li><NavLink to="#">{t('header-show.promotion')}</NavLink></li>
                         <li><NavLink to="#">{t('header-show.collection')}</NavLink></li>
                         <li><NavLink to="/news">{t('header-show.news')}</NavLink></li>
+                        <li><NavLink to="/contact">{t('header-show.contact')}</NavLink></li>
                     </ul>
                     {/*<div className="search">*/}
                     {/*    <input className={"search-input"}*/}

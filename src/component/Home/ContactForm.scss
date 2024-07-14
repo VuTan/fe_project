@@ -1,0 +1,26 @@
+@import "../../base";
+
+.contact-form-container {
+  max-width: 600px;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    text-align: center;
+  }
+
+  .form-control {
+    border-radius: 5px;
+  }
+
+  .btn-warning {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #ffc107;
+    border: none;
+  }
+}

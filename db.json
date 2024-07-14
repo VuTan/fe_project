@@ -700,7 +700,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/afe1af10-af14-4de8-8376-3d4931b3cf07/infinityrn-4-road-running-shoes-VKhgV0.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/5e0a9f08-7b5c-49f7-a85f-36dfe7c2b3c7/infinityrn-4-road-running-shoes-VKhgV0.png",
         "https://static.nike.com/a/images/t_default/68905d25-ac25-49d2-86bd-8371b5863e1a/infinityrn-4-road-running-shoes-VKhgV0.png",
         "https://static.nike.com/a/images/t_default/2f63f181-f5ab-40ed-88da-005eb6d88d2e/infinityrn-4-road-running-shoes-VKhgV0.png",
@@ -755,7 +755,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9dcdc903-2860-4efa-81bd-ffffeb788e47/invincible-3-road-running-shoes-QWRmLj.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/2c7ec36b-06e3-4734-820b-a78f30bc298a/invincible-3-road-running-shoes-QWRmLj.png",
         "https://static.nike.com/a/videos/so_1.38/ebcbd375-f202-4a4e-843d-f6b06b02db2e/invincible-3-road-running-shoes-QWRmLj.jpg','https://static.nike.com/a/images/t_default/3cf0f783-8a92-40fd-a3df-ac8bee3373a2/invincible-3-road-running-shoes-QWRmLj.png",
         "https://static.nike.com/a/images/t_default/1968bc10-5e29-4d12-b37c-d9759144a395/invincible-3-road-running-shoes-QWRmLj.png",
@@ -781,7 +781,7 @@
       "id": 3,
       "Name": "Nike Air Zoom Infinity Tour NRG",
       "Type": "Golf Shoes (Wide)",
-      "Price": "5,589,000",
+      "Price": 5589000,
       "describe": "There's just something about the crack of an old-school wood club or the smell of a fresh pour after 18 holes. This special-edition Infinity Tour has barrel-aged bourbon browns and smoked streaks of razor-sharp oranges that nod to Kentucky. A wood-grain graphic on the Swoosh logo and a tree-trunk-inspired outsole highlight a design rooted in tradition and timber. And you still get the updates from the previous Infinity Tour: increased overall volume, added energy transfer through your swing and traction in key areas to help reduce slipping.",
       "size": [
         40,
@@ -805,7 +805,7 @@
         "Country/Region of Origin: China"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/83e3fdcc-6545-49c1-a4b4-034adc82577a/air-zoom-infinity-tour-nrg-golf-shoes-Cm8s6r.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/df5ff3e8-a7b2-457e-a048-e4acf4f552ff/air-zoom-infinity-tour-nrg-golf-shoes-Cm8s6r.png",
         "https://static.nike.com/a/images/t_default/a231a7b7-c749-4ee0-89d5-e07b94f22a09/air-zoom-infinity-tour-nrg-golf-shoes-Cm8s6r.png",
         "https://static.nike.com/a/images/t_default/6e73d255-cf9a-4abc-a4b3-95cc404c1732/air-zoom-infinity-tour-nrg-golf-shoes-Cm8s6r.png",
@@ -822,7 +822,7 @@
       "id": 4,
       "Name": "Nike Air Max Plus OG",
       "Type": "Men's Shoes",
-      "Price": "4,999,000",
+      "Price": 4999000,
       "describe": "Hot, hot, hot! Better than gold and more sensory-stimulating than grandma's raspberry pie, this fiery take on the Air Max Plus delivers head-turning gradient glory. Its tuned Nike Air experience offers unbelievable cushioning. For extra splash, the prominent arch on the midsole draws inspiration from a whale's tail and the plastic cage on the upper nods to palm trees and ocean waves. But don't be fooled—this sneaker is all fire.",
       "size": [
         40,
@@ -849,7 +849,7 @@
         "Country/Region of Origin: Indonesia"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/75a40aac-a2aa-489d-bc44-b7b264b57aa3/air-max-plus-og-shoes-zN9XDM.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/0cc0fa4b-ade3-4ab5-a376-3499bf7f5e14/air-max-plus-og-shoes-zN9XDM.png",
         "https://static.nike.com/a/images/t_default/ca51b200-6f5f-4218-ae06-446ffad00257/air-max-plus-og-shoes-zN9XDM.png",
         "https://static.nike.com/a/images/t_default/d56a0521-bcc6-4c06-b191-460446feaaf5/air-max-plus-og-shoes-zN9XDM.png",
@@ -865,7 +865,7 @@
       "id": 5,
       "Name": "Nike Revolution 7",
       "Type": "Men's Road Running Shoes",
-      "Price": "1,789,000",
+      "Price": 1789000,
       "describe": "We loaded the Revolution 7 with the sort of soft cushioning and support that might change your running world. Stylish as ever, comfortable when the rubber meets the road and performance-driven for your desired pace, it's an evolution of a fan favourite that offers a soft, smooth ride.",
       "size": [
         38.5,
@@ -887,7 +887,7 @@
       ],
       "benefit": [],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/30d7afaa-343b-4439-b65d-bb544c65420e/revolution-7-road-running-shoes-dC34tK.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/8d7e9e0b-7100-4a95-82ae-130c4076df64/revolution-7-road-running-shoes-dC34tK.png",
         "https://static.nike.com/a/videos/so_0.73/7accd8b7-c1f9-4870-b313-3f52decebc53/revolution-7-road-running-shoes-dC34tK.jpg','https://static.nike.com/a/images/t_default/c79425e8-7efc-4c74-a1df-a93ae0c1a02b/revolution-7-road-running-shoes-dC34tK.png",
         "https://static.nike.com/a/images/t_default/20771872-1406-4553-9c97-44047fd8f308/revolution-7-road-running-shoes-dC34tK.png",
@@ -914,7 +914,7 @@
       "id": 6,
       "Name": "LeBron XXI EP",
       "Type": "Basketball Shoes",
-      "Price": "5,869,000",
+      "Price": 5869000,
       "describe": "Last time around, LeBron flipped the script on his shoe game as only the King can. The encore is even better. The LeBron XXI has a cabling system that works with an Air Zoom unit and a light, low-to-the-ground design, giving you agile fluidity and explosiveness without excess weight. Created for your ascent and the next generation of hoopers, it's ideal for Bron-like open-floor attacks and rising towards the rim when the game's pace turns up. This rugged design encourages you to keep going even when things get difficult. With its extra-durable rubber outsole, this version gives you traction for outdoor courts.",
       "size": [
         40,
@@ -931,7 +931,7 @@
       ],
       "benefit": [],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6eb361fd-b7d8-496d-9e44-ed48c94afd8a/lebron-xxi-ep-basketball-shoes-BrtQSn.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/942b7c56-c452-4b2f-a3b8-227efebfb259/lebron-xxi-ep-basketball-shoes-BrtQSn.png",
         "https://static.nike.com/a/videos/so_0.4/662e2e22-1bd1-49dc-bce1-410e3bfc2747/lebron-xxi-ep-basketball-shoes-BrtQSn.jpg','https://static.nike.com/a/images/t_default/13101390-a0d1-4c50-b48f-c777abce1f12/lebron-xxi-ep-basketball-shoes-BrtQSn.png",
         "https://static.nike.com/a/images/t_default/417977e6-7ae7-4453-b063-ecd14ce162a5/lebron-xxi-ep-basketball-shoes-BrtQSn.png",
@@ -966,7 +966,7 @@
       "id": 7,
       "Name": "Nike G.T. Cut 3 EP",
       "Type": "Basketball Shoes",
-      "Price": "5,589,000",
+      "Price": 5589000,
       "describe": "How can you separate your game when it's winning time? Start by lacing up in the G.T. Cut 3. Designed to help you create space for stepback jumpers and backdoor cuts, its sticky multi-court traction helps you stop in an instant and shift gears at will. And when you're making all those game-changing plays, the newly added, ultra-responsive ZoomX foam helps keep you fresh for all four quarters. With its extra-durable rubber outsole, this version gives you traction for outdoor courts.",
       "size": [
         40,
@@ -989,7 +989,7 @@
         "Country/Region of Origin: China"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e29bbb1f-8fd2-4cc7-bf62-7ed94d37966f/gt-cut-3-ep-basketball-shoes-DGJp2L.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/95c4642b-ee25-4c5f-9711-573e686b2ece/gt-cut-3-ep-basketball-shoes-DGJp2L.png",
         "https://static.nike.com/a/videos/so_0.65/0845fdc8-6430-4802-946a-72db67c75b0f/gt-cut-3-ep-basketball-shoes-DGJp2L.jpg','https://static.nike.com/a/images/t_default/c7378f73-6736-449d-9532-394562da0fe8/gt-cut-3-ep-basketball-shoes-DGJp2L.png",
         "https://static.nike.com/a/images/t_default/0a991b29-c644-4286-98ca-fd2c9b88299b/gt-cut-3-ep-basketball-shoes-DGJp2L.png",
@@ -1016,7 +1016,7 @@
       "id": 8,
       "Name": "Air Jordan XXXVIII Low PF",
       "Type": "Basketball Shoes",
-      "Price": "5,439,000",
+      "Price": 5439000,
       "describe": "Get grounded, stay grounded. The AJ XXXVIII is all about groundwork—we're talking about your running, your cutting, your turn-around jumpers—with low-to-the-court cushioning and a secure upper that helps support every move. It's also designed with sustainability in mind, with at least 20% recycled content by weight. So you can hit 'em with that windscreen-wiper fake and feel good about more than just sinking a bucket for your team.",
       "size": [
         40,
@@ -1039,7 +1039,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/72d360f5-1baf-44cd-bd11-15f5c7544dbf/air-jordan-xxxviii-low-pf-basketball-shoes-2lBnKn.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/72338731-8962-440b-91b0-1579388443d5/air-jordan-xxxviii-low-pf-basketball-shoes-2lBnKn.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8bfe2f4e-47b5-4440-80a9-416bbcc6a74f/air-jordan-xxxviii-low-pf-basketball-shoes-2lBnKn.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/50c33843-286c-400a-8a87-4f991e6028bf/air-jordan-xxxviii-low-pf-basketball-shoes-2lBnKn.png",
@@ -1054,7 +1054,7 @@
       "id": 9,
       "Name": "Nike Phantom GX 2 Academy",
       "Type": "TF Low-Top Football Shoes",
-      "Price": "2,479,000",
+      "Price": 2479000,
       "describe": "Looking to take your game to the next level? The Phantom GX 2 Academy helps put you in prime position of the goal, whether you're the playmaker, assister or finisher. The rest is up to you. Created with goals in mind, NikeSkin covers the striking area of the shoe, while Nike Cyclone 360 traction helps guide your unscripted agility.",
       "size": [
         40,
@@ -1075,7 +1075,7 @@
         "Country/Region of Origin: Indonesia"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b92bd6f1-e520-4caf-bc86-974a2d232444/phantom-gx-2-academy-tf-low-top-football-shoes-5HD8QT.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/c9257a7b-2dc7-4244-91f3-2125415baac9/phantom-gx-2-academy-tf-low-top-football-shoes-5HD8QT.png",
         "https://static.nike.com/a/images/t_default/5b99d65c-1519-455d-8571-903b4db4f3fc/phantom-gx-2-academy-tf-low-top-football-shoes-5HD8QT.png",
         "https://static.nike.com/a/images/t_default/bcda2086-9872-4cd9-b486-5346abe424a1/phantom-gx-2-academy-tf-low-top-football-shoes-5HD8QT.png",
@@ -1090,7 +1090,7 @@
       "id": 10,
       "Name": "Nike Mercurial Superfly 9 Academy",
       "Type": "Turf High-Top Football Shoes",
-      "Price": "2,779,000",
+      "Price": 2779000,
       "describe": "Instantly tilt the pitch in the bold design of the Superfly 9 Academy TF. It's loaded with a Zoom Air unit and flexible NikeSkin at the top for exceptional touch, so you can dominate in the waning minutes of a match—when it matters most. Fast is in the Air.",
       "size": [
         40,
@@ -1111,7 +1111,7 @@
         "Country/Region of Origin: Indonesia"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/1e245eca-e54b-4a60-b548-c85b4c66af57/mercurial-superfly-9-academy-high-top-football-shoes-6NvfmT.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/3af961c5-5038-41fb-a011-fc4d81a6e3db/mercurial-superfly-9-academy-high-top-football-shoes-6NvfmT.png",
         "https://static.nike.com/a/videos/so_1/2e1956a6-6651-45d7-98af-d69edb389fe8/mercurial-superfly-9-academy-high-top-football-shoes-6NvfmT.jpg','https://static.nike.com/a/images/t_default/031a9fb3-d0f7-4934-86bb-53e31b338f73/mercurial-superfly-9-academy-high-top-football-shoes-6NvfmT.png",
         "https://static.nike.com/a/images/t_default/582c75fc-f30c-4d68-aa74-6a3ea1f453fe/mercurial-superfly-9-academy-high-top-football-shoes-6NvfmT.png",
@@ -1126,7 +1126,7 @@
       "id": 11,
       "Name": "Nike Mercurial Vapor 15 Academy",
       "Type": "Turf Low-Top Football Shoes",
-      "Price": "2,479,000",
+      "Price": 2479000,
       "describe": "The pitch is yours when you lace up in the Vapor 15 Academy TF. It's loaded with a Zoom Air unit and flexible NikeSkin at the top for exceptional touch, so you can dominate in the waning minutes of a match—when it matters most. Fast is in the Air.",
       "size": [
         40,
@@ -1147,7 +1147,7 @@
         "Country/Region of Origin: Indonesia"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/533d4c64-9b48-4f2d-8b6e-c831a18184c5/mercurial-vapor-15-academy-low-top-football-shoes-L8JgP4.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/0c3dd316-2048-4308-8985-df902c41ffe2/mercurial-vapor-15-academy-low-top-football-shoes-L8JgP4.png",
         "https://static.nike.com/a/videos/so_6.31/f526aa5c-4043-4a8b-9c10-07a4c2ceb5f3/mercurial-vapor-15-academy-low-top-football-shoes-L8JgP4.jpg','https://static.nike.com/a/images/t_default/9e2ccd96-7d7f-444a-8493-1fdc901d11c0/mercurial-vapor-15-academy-low-top-football-shoes-L8JgP4.png",
         "https://static.nike.com/a/images/t_default/c42ce2ba-9e67-4f85-90b9-2bb147a72c61/mercurial-vapor-15-academy-low-top-football-shoes-L8JgP4.png",
@@ -1162,7 +1162,7 @@
       "id": 12,
       "Name": "Nike Tiempo Legend 10 Academy",
       "Type": "MG Low-Top Football Boot",
-      "Price": "2,349,000",
+      "Price": 2349000,
       "describe": "We make Academy boots for those looking to take their game to the next level. Injected with pastel pinks, this special edition of the Legend 10 is inspired by what the pros wear for the world's biggest tournaments, where their brilliance takes centre stage. Add in FlyTouch Lite for amplified touch, and you have a boot ready for personal brilliance.",
       "size": [
         37.5,
@@ -1190,7 +1190,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a0fab3c0-04bc-4059-916a-839bcb60c17a/tiempo-legend-10-academy-mg-low-top-football-boot-gthDNJ.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/75319ff1-e875-4391-9ccb-62517be3963d/tiempo-legend-10-academy-mg-low-top-football-boot-gthDNJ.png",
         "https://static.nike.com/a/images/t_default/4d01a88e-3690-4fb1-afe7-e24089649960/tiempo-legend-10-academy-mg-low-top-football-boot-gthDNJ.png",
         "https://static.nike.com/a/images/t_default/b1834d1c-3ef2-4167-8491-538b2256cd53/tiempo-legend-10-academy-mg-low-top-football-boot-gthDNJ.png",
@@ -1206,7 +1206,7 @@
       "id": 13,
       "Name": "Nike Tiempo Emerald Legend 10 Academy",
       "Type": "TF Low-Top Football Shoes",
-      "Price": "2,479,000",
+      "Price": 2479000,
       "describe": "We make Academy shoes for those looking to take their game to the next level. Celebrating 30 years of Tiempo, this Legend 10 references old Tiempo elements that are part of Nike's DNA, along with futuristic textures and graphics. Add in FlyTouch Lite for amplified touch and you're ready to leave your mark over the next three decades.",
       "size": [
         40,
@@ -1228,7 +1228,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e358a28b-b1f3-4ec5-ad2c-17de0e7472ed/tiempo-emerald-legend-10-academy-tf-low-top-football-shoes-2l8VCz.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/ab88b180-988e-4701-ae7c-8cdee123e7a6/tiempo-emerald-legend-10-academy-tf-low-top-football-shoes-2l8VCz.png",
         "https://static.nike.com/a/images/t_default/5ae537b4-3106-4549-ab93-e62044f23d74/tiempo-emerald-legend-10-academy-tf-low-top-football-shoes-2l8VCz.png",
         "https://static.nike.com/a/images/t_default/fc46774e-3ebc-4fa8-b4ca-7dd6e6d241b7/tiempo-emerald-legend-10-academy-tf-low-top-football-shoes-2l8VCz.png",
@@ -1243,7 +1243,7 @@
       "id": 14,
       "Name": "KD17 x Alchemist EP",
       "Type": "Basketball Shoes",
-      "Price": "4,699,000",
+      "Price": 4699000,
       "describe": "While Kevin Durant's all-timer status is already cemented, his hooper soul can't be soothed unless he's on the court, perfecting his craft. Put in the work to be great in the KD17, a shoe for gym rats and those who insist on running it back. A forefoot Air Zoom unit enhances your first step. We combined it with Nike Air cushioning to fuel full-court sprints and defensive stops that can decide games. With its extra-durable rubber outsole, this version gives you traction for outdoor courts.",
       "size": [
         41,
@@ -1258,7 +1258,7 @@
       ],
       "benefit": [],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6f073017-473a-4302-be9c-77740d900f4a/kd17-alchemist-ep-basketball-shoes-QHFz5W.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/c8707e1d-2af4-4791-a9b0-4450fdbac621/kd17-alchemist-ep-basketball-shoes-QHFz5W.png",
         "https://static.nike.com/a/images/t_default/b9ea132d-9925-4f11-9a62-a5059b1b6ab4/kd17-alchemist-ep-basketball-shoes-QHFz5W.png",
         "https://static.nike.com/a/images/t_default/28407c7e-f50e-4722-b40a-cc8cbe80cb2f/kd17-alchemist-ep-basketball-shoes-QHFz5W.png",
@@ -1273,7 +1273,7 @@
       "id": 15,
       "Name": "Nike Tiempo Legend 10 Club",
       "Type": "Multi-Ground Low-Top Football Boot",
-      "Price": "1,609,000",
+      "Price": 1609000,
       "describe": "Even Legends find ways to evolve. Whether you're starting out or just playing for fun, the latest iteration of this Club boot gets you on the pitch without compromising on quality. The synthetic leather contours to your foot and doesn't overstretch, giving you better control. Lighter and sleeker than any other Tiempo to date, the Legend 10 is for any position on the pitch, whether you're sending a pinpoint pass through the defence or tracking back to stop a break-away.",
       "size": [
         37.5,
@@ -1301,7 +1301,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ecbc252e-8a22-4308-9b2a-80622a660e1f/tiempo-legend-10-club-multi-ground-low-top-football-boot-PNdvpg.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/35157dfa-f068-47c4-b79b-e8ee0b310b2e/tiempo-legend-10-club-multi-ground-low-top-football-boot-PNdvpg.png",
         "https://static.nike.com/a/videos/so_0.33/933e955a-92da-4c54-b6b1-b8632ab46128/tiempo-legend-10-club-multi-ground-low-top-football-boot-PNdvpg.jpg','https://static.nike.com/a/images/t_default/823be0bc-1e63-447d-aaa6-ba6f70f8716f/tiempo-legend-10-club-multi-ground-low-top-football-boot-PNdvpg.png",
         "https://static.nike.com/a/images/t_default/b78fb85d-0326-464b-ac2f-c2fe92a052cb/tiempo-legend-10-club-multi-ground-low-top-football-boot-PNdvpg.png",
@@ -1317,7 +1317,7 @@
       "id": 16,
       "Name": "Nike GP Challenge Pro Premium",
       "Type": "Men's Hard Court Tennis Shoes",
-      "Price": "3,519,000",
+      "Price": 3519000,
       "describe": "On the red clay, it's all about who can withstand the grind. In the stands? A gala of glamour, a who's who that stretches from row to row. This special design pays tribute to the second slam, with inspiration drawn directly from the tournament's iconic playing surface. Designed for baseline back-and-forth bolts and daring dashes to the net, it has the needed speed and stability to help your game go the distance.",
       "size": [
         40,
@@ -1342,7 +1342,7 @@
         "Country/Region of Origin: Indonesia"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0e090330-252a-4125-a86b-3637a60d6ac4/gp-challenge-pro-hard-court-tennis-shoes-hRsnMn.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/700a11d5-90af-4c1d-bc9f-cffb74bd4746/gp-challenge-pro-hard-court-tennis-shoes-hRsnMn.png",
         "https://static.nike.com/a/images/t_default/60929773-aa95-4b0a-8132-c7e1ef9cd90e/gp-challenge-pro-hard-court-tennis-shoes-hRsnMn.png",
         "https://static.nike.com/a/images/t_default/258a1149-79cb-471a-93ab-805fce72b691/gp-challenge-pro-hard-court-tennis-shoes-hRsnMn.png",
@@ -1358,7 +1358,7 @@
       "id": 17,
       "Name": "Jordan Jumpman",
       "Type": "Men's Slides",
-      "Price": "1,329,000",
+      "Price": 1329000,
       "describe": "Slide in and go. Enjoy the cushioning of thick, lightweight foam for beach days or post-game hangouts.",
       "size": [
         40,
@@ -1378,7 +1378,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/c2a2424b-4d35-490d-9d67-55c2c929e405/jordan-jumpman-slides-2C5ffD.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ac0e312f-e1c6-42a9-96a7-8ba11c0cd67a/jordan-jumpman-slides-2C5ffD.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/c99543eb-2582-48c0-a084-26273fb4a2fe/jordan-jumpman-slides-2C5ffD.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/30123138-abdf-43a2-b003-81f5ac1fe9cf/jordan-jumpman-slides-2C5ffD.png",
@@ -1391,7 +1391,7 @@
       "id": 18,
       "Name": "Air Jordan I High G",
       "Type": "Men's Golf Shoes",
-      "Price": "5,279,000",
+      "Price": 5279000,
       "describe": "Feel unbeatable, from the tee box to the final putt. Inspired by one of the most iconic sneakers of all time, the Air Jordan 1 G is an instant classic on the course. With Air cushioning underfoot, a Wings logo on the heel and an integrated traction pattern to help you power through your swing, it delivers all the clubhouse cool of the original AJ1—plus everything you need to play 18 holes in comfort.",
       "size": [],
       "benefit": [
@@ -1402,7 +1402,7 @@
         "Country/Region of Origin: China"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/0e6648ed-4722-4085-8fcb-882cc674454f/air-jordan-i-high-g-golf-shoes-qKzTBg.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7867a4b9-4091-44d2-843a-c7563c60810a/air-jordan-i-high-g-golf-shoes-qKzTBg.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/653d6f7b-23a8-4214-ae92-35c7f68e4525/air-jordan-i-high-g-golf-shoes-qKzTBg.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e120df48-7d02-492f-b63b-7e99ef4a87d9/air-jordan-i-high-g-golf-shoes-qKzTBg.png",
@@ -1427,7 +1427,7 @@
       "id": 19,
       "Name": "Nike Vista",
       "Type": "Men's Sandals",
-      "Price": "1,609,000",
+      "Price": 1609000,
       "describe": "With all of the necessary elements you need for a day out (like plush padding and easy-to-style colours), the Nike Vista delivers on less is more. Lightweight, airy and supportive, it lets you bridge city living and nature with the pull of a strap.",
       "size": [
         38.5,
@@ -1450,7 +1450,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/64d54bbd-0fa3-4201-bf8e-0bb302e83f76/vista-sandals-1rGmxQ.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/fa52cda4-2179-4f0d-a17b-83d3e8fe81b0/vista-sandals-1rGmxQ.png",
         "https://static.nike.com/a/videos/so_0.73/1924988d-12c4-4a19-b208-16ed542f89c9/vista-sandals-1rGmxQ.jpg','https://static.nike.com/a/images/t_default/01362271-9fa2-4705-9ddb-cd82e1c24e7c/vista-sandals-1rGmxQ.png",
         "https://static.nike.com/a/images/t_default/1f54d19e-6bc4-4e20-8d98-c8df22348510/vista-sandals-1rGmxQ.png",
@@ -1463,7 +1463,7 @@
       "id": 20,
       "Name": "Air Jordan 1 Low",
       "Type": "Men's Shoes",
-      "Price": "3,239,000",
+      "Price": 3239000,
       "describe": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low offers a clean, classic look that's familiar yet always fresh. With an iconic design that pairs perfectly with any 'fit, these kicks ensure you'll always be on point.",
       "size": [
         40,
@@ -1489,7 +1489,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b95033d3-2b18-4e8e-b386-56e4209b3352/air-jordan-1-low-shoes-zTWr01.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/4693a962-0ea1-4677-b5fd-eeed550ab4d3/air-jordan-1-low-shoes-zTWr01.png",
         "https://static.nike.com/a/videos/so_0.97/ixyee6ht3iln5mjxk8fu/air-jordan-1-low-shoes-zTWr01.jpg','https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/6a920c92-269f-4496-9221-382fd69961cc/air-jordan-1-low-shoes-zTWr01.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/65937a90-2128-4bf1-ac66-a954fb398a38/air-jordan-1-low-shoes-zTWr01.png",
@@ -1520,7 +1520,7 @@
       "id": 21,
       "Name": "Nike Streakfly",
       "Type": "Road Racing Shoes",
-      "Price": "4,699,000",
+      "Price": 4699000,
       "describe": "Our lightest racing shoe, the Nike Streakfly is all about the speed you need to take on the competition in a mile, 5K or 10K race. Low profile with sleek details, it feels like it disappears on your foot to help you better connect with the road on the way to your personal best.",
       "size": [
         40,
@@ -1547,7 +1547,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/451b4531-1090-4044-ad0f-fa9e2b6cd902/streakfly-road-racing-shoes-V17qZm.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/84c1e0d5-ac53-4d7b-8991-f5d9a9cb3465/streakfly-road-racing-shoes-V17qZm.png",
         "https://static.nike.com/a/videos/so_1/e25c6bbc-4627-42a2-a94f-a86652126773/streakfly-road-racing-shoes-V17qZm.jpg','https://static.nike.com/a/images/t_default/b4b36229-4543-4115-86a4-b89ece6d80df/streakfly-road-racing-shoes-V17qZm.png",
         "https://static.nike.com/a/images/t_default/11e43b6c-2046-4e65-b17a-49e7252ed427/streakfly-road-racing-shoes-V17qZm.png",
@@ -1562,7 +1562,7 @@
       "id": 22,
       "Name": "NikeCourt Vapor 11 Premium",
       "Type": "Men's Hard Court Tennis Shoes",
-      "Price": "4,999,000",
+      "Price": 4999000,
       "describe": "On the red clay, it's all about who can withstand the grind. In the stands? A gala of glamour, a who's who that stretches from row to row. This special design pays tribute to the second slam, with inspiration drawn directly from the tournament's iconic playing surface. Loaded with speed components, it helps you play at a fast pace with enough support to help keep you bobbing and weaving for sets on end.",
       "size": [
         40,
@@ -1590,7 +1590,7 @@
         "Country/Region of Origin: China"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/07ae589b-0c51-4e2d-8fc5-473973e678f1/nikecourt-vapor-11-hard-court-tennis-shoes-Q8LDq4.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/47d6c482-07be-42c5-b180-57e4d9fbf6db/nikecourt-vapor-11-hard-court-tennis-shoes-Q8LDq4.png",
         "https://static.nike.com/a/images/t_default/b1665239-816e-451f-9879-64147696c423/nikecourt-vapor-11-hard-court-tennis-shoes-Q8LDq4.png",
         "https://static.nike.com/a/images/t_default/1ac11a8f-f352-47bc-9d52-b897e21a8823/nikecourt-vapor-11-hard-court-tennis-shoes-Q8LDq4.png",
@@ -1603,7 +1603,7 @@
       ]
     },
     {
-      "id": 23.0,
+      "id": 23,
       "Name": "Nike Victori One",
       "Type": "Men's Slides",
       "Price": 889,
@@ -1633,7 +1633,7 @@
         "Country/Region of Origin: Vietnam,Indonesia,China"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/77874acd-bf25-4037-bf21-9b442d1b28eb/victori-one-slides-QTTJHP.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/6a5b3755-fca5-4fbf-af97-a0a5f9ff028d/victori-one-slides-QTTJHP.png",
         "https://static.nike.com/a/videos/so_0/5f4c0050-a98a-4517-ae5f-c7ec21b8171f/victori-one-slides-QTTJHP.jpg','https://static.nike.com/a/images/t_default/cef0674f-16f8-434b-bbeb-7983c0c724bd/victori-one-slides-QTTJHP.png",
         "https://static.nike.com/a/images/t_default/cbcb6a81-31b5-4d9d-98b8-16d857ac720c/victori-one-slides-QTTJHP.png",
@@ -1646,7 +1646,7 @@
       "id": 24,
       "Name": "Air Jordan 1 Low G NRG",
       "Type": "Golf Shoes",
-      "Price": "4,699,000",
+      "Price": 4699000,
       "describe": "Where do you envision the game going years from now? The oncoming evolution is today, in this special AJ1 Low. An iridescent double Swoosh design and the metallic finishes are a nod to golf's future through a luxe lens, as the game continues to evolve and the links start to stir once again. You still get all the clubhouse cool of the original AJ1—Nike Air cushioning, the Wings logo and genuine leather—plus a traction pattern that's ready for 18 holes.",
       "size": [],
       "benefit": [
@@ -1660,7 +1660,7 @@
         "Country/Region of Origin: China"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8e2656f4-79b6-4d37-93c1-ea558a1c6a6d/air-jordan-1-low-g-nrg-golf-shoes-bf4r0T.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/87fa4258-e8d3-4754-bddb-87397dc83f71/air-jordan-1-low-g-nrg-golf-shoes-bf4r0T.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e565281a-43e2-40a6-838f-886084ed2b5a/air-jordan-1-low-g-nrg-golf-shoes-bf4r0T.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/db968684-cf05-48bc-9935-886b434bfcb6/air-jordan-1-low-g-nrg-golf-shoes-bf4r0T.png",
@@ -1676,7 +1676,7 @@
       "id": 25,
       "Name": "Tatum 2 PF",
       "Type": "Basketball Shoes",
-      "Price": "3,519,000",
+      "Price": 3519000,
       "describe": "It's not over until you hear that buzzer. Fly through your game with energy to spare in the Tatum 2. It helps you stay light on your feet by limiting the use of heavy rubber. A full-length Nike Air Strobel unit helps support your quick shifts, and the frame pairs with supportive foam that moulds to your feet for a contained feel.",
       "size": [
         40,
@@ -1699,7 +1699,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/6f29432a-e469-47f0-ac54-28cd0e6a7909/tatum-2-pf-basketball-shoes-8fp79D.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/30648388-71e0-4cd0-b2b3-72e5c458ec58/tatum-2-pf-basketball-shoes-8fp79D.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e3dd4dd1-f224-4463-9388-f830ae0b9dd7/tatum-2-pf-basketball-shoes-8fp79D.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e88ee079-c346-4c1b-abf8-e38bb66b3e18/tatum-2-pf-basketball-shoes-8fp79D.png",
@@ -1716,7 +1716,7 @@
       "id": 26,
       "Name": "Nike Dunk Low",
       "Type": "Men's Shoes",
-      "Price": "3,239,000",
+      "Price": 3239000,
       "describe": "This '80s basketball icon returns with classic details and throwback hoops flair. Channelling vintage style, its padded, low-cut collar lets you take your game anywhere—in comfort.",
       "size": [
         40,
@@ -1743,7 +1743,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c960a73e-8565-4cc6-9329-d2449c1944df/dunk-low-shoes-kKHp1z.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/1419ed34-7762-420a-9f2a-2e2a65d5aba9/dunk-low-shoes-kKHp1z.png",
         "https://static.nike.com/a/images/t_default/4a476c7c-2928-478e-b4c5-3455a2bc84ac/dunk-low-shoes-kKHp1z.png",
         "https://static.nike.com/a/images/t_default/891ced2d-ace8-4e80-95d6-628e5a0c7de6/dunk-low-shoes-kKHp1z.png",
@@ -1766,7 +1766,7 @@
       "id": 27,
       "Name": "Air Jordan 1 Mid",
       "Type": "Men's Shoes",
-      "Price": "3,669,000",
+      "Price": 3669000,
       "describe": "Inspired by the original AJ1, this mid-top edition maintains the iconic look you love while choice colours and crisp leather give it a distinct identity.",
       "size": [
         40,
@@ -1792,7 +1792,7 @@
         "Country/Region of Origin: Indonesia"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/aff63355-b2e9-47fb-adae-4b60ba1f602e/air-jordan-1-mid-shoes-SQf7DM.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/64689f96-72e6-46c7-817a-55087e2a1fe4/air-jordan-1-mid-shoes-SQf7DM.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/bceb6859-5a00-4e80-8fb9-2677fec7cf06/air-jordan-1-mid-shoes-SQf7DM.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8f89518d-895e-4994-8736-1c14f216a9e3/air-jordan-1-mid-shoes-SQf7DM.png",
@@ -1807,7 +1807,7 @@
       "id": 28,
       "Name": "Nike Blazer Low '77 Vintage",
       "Type": "Men's Shoes",
-      "Price": "2,499,000",
+      "Price": 2499000,
       "describe": "Praised by the streets for its classic simplicity and comfort, the Nike Blazer Low '77 Vintage returns with its low-profile style and heritage b-ball looks. Featuring luscious suede details, a retro Swoosh design and a super-soft collar, it's the must-have wardrobe staple that will take you everywhere.",
       "size": [
         40,
@@ -1834,7 +1834,7 @@
         "Country/Region of Origin: India"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/15e81bcd-0521-4fec-ae39-dde5462b8737/blazer-low-77-vintage-shoes-5Gw9TZ.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/48ecc1bb-e63f-4341-b13b-c8a915e11169/blazer-low-77-vintage-shoes-5Gw9TZ.png",
         "https://static.nike.com/a/videos/so_1.2/3e9d7df8-e7ba-472f-a488-c25ffe15d027/blazer-low-77-vintage-shoes-5Gw9TZ.jpg','https://static.nike.com/a/images/t_default/7743703b-24e9-421d-8793-53c7e586a29a/blazer-low-77-vintage-shoes-5Gw9TZ.png",
         "https://static.nike.com/a/images/t_default/51324ed7-3155-40aa-8bf8-f8b41be817d5/blazer-low-77-vintage-shoes-5Gw9TZ.png",
@@ -1857,7 +1857,7 @@
       "id": 29,
       "Name": "Nike Calm",
       "Type": "Men's Slides",
-      "Price": "1,479,000",
+      "Price": 1479000,
       "describe": "Enjoy a calm, comfortable experience—wherever your day off takes you. Made from soft yet responsive foam, these lightweight slides are easy to style and easy to pack. While the water-friendly design makes them ideal for the beach or pool, the minimalist look is elevated enough to wear around the city. Time to slide in and check out.",
       "size": [
         38.5,
@@ -1879,7 +1879,7 @@
         "Country/Region of Origin: Indonesia"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8397fa2b-f6b8-414f-b84b-c1f420f07f28/calm-slides-K7mr3W.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/d3bbbc21-03a4-46c6-adc1-3066a1ea7e96/calm-slides-K7mr3W.png",
         "https://static.nike.com/a/videos/so_1.19/a90f9483-419b-4259-859f-e203887679d1/calm-slides-K7mr3W.jpg','https://static.nike.com/a/images/t_default/4898b598-226c-41c6-8ad9-c7a8c9daa42b/calm-slides-K7mr3W.png",
         "https://static.nike.com/a/images/t_default/15f3b5bd-df67-4e02-9c52-fece0252b7d7/calm-slides-K7mr3W.png",
@@ -1903,7 +1903,7 @@
       "id": 30,
       "Name": "Giannis Immortality 3 EP",
       "Type": "Basketball Shoes",
-      "Price": "2,349,000",
+      "Price": 2349000,
       "describe": "How do you want your game to be remembered? Preserve your place among the greats, like Giannis, in the Giannis Immortality 3. Mindfully made for today's high-paced, position-less game, it's softer than the previous iteration with a specific traction pattern that's perfect for pulling off the perfect Euro step en route to glory. With its extra-durable rubber outsole, this version gives you traction for outdoor courts.",
       "size": [
         40,
@@ -1920,7 +1920,7 @@
       ],
       "benefit": [],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6e26708e-6a50-40d8-bfe5-5aee668ce2b9/giannis-immortality-3-ep-basketball-shoes-0dTCk5.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/e62f40ca-7b7f-4987-89bb-8cc8e97148e4/giannis-immortality-3-ep-basketball-shoes-0dTCk5.png",
         "https://static.nike.com/a/images/t_default/dd481f9f-4d96-4831-949d-eb1a17a48163/giannis-immortality-3-ep-basketball-shoes-0dTCk5.png",
         "https://static.nike.com/a/images/t_default/28a9f86e-8156-4b05-8139-89bd2b114c19/giannis-immortality-3-ep-basketball-shoes-0dTCk5.png",
@@ -1935,7 +1935,7 @@
       "id": 31,
       "Name": "Nike Offcourt Adjust",
       "Type": "Men's Slides",
-      "Price": "1,329,000",
+      "Price": 1329000,
       "describe": "Post game, errands and more—adjust your comfort on the go. The adjustable, padded strap lets you perfect your fit, while the lightweight foam midsole brings first-class comfort to your feet.",
       "size": [
         38.5,
@@ -1958,7 +1958,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e38a8d82-8598-468c-8e46-0cadc1c8433a/offcourt-adjust-slides-6L2C07.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/90775fcc-e2a0-46f6-9bc1-bc27391eef33/offcourt-adjust-slides-6L2C07.png",
         "https://static.nike.com/a/videos/so_1.3/536c5621-edfc-427c-b96d-e09a3ad66e77/offcourt-adjust-slides-6L2C07.jpg','https://static.nike.com/a/images/t_default/e3f6b33c-d729-42f3-b1fe-223225104f67/offcourt-adjust-slides-6L2C07.png",
         "https://static.nike.com/a/images/t_default/f7090912-8098-4a50-abde-e09adff80419/offcourt-adjust-slides-6L2C07.png",
@@ -1979,7 +1979,7 @@
       "id": 32,
       "Name": "Nike Air Force 1 Low EVO",
       "Type": "Men's Shoes",
-      "Price": "4,109,000",
+      "Price": 4109000,
       "describe": "Comfortable, durable and timeless—it's number 1 for a reason. Cutaway details expose a premium textile Swoosh logo and full-length Air units in the outsole, revealing the Air Force 1 in a new way. The classic '80s construction pairs with bold details for style that tracks whether you're on court or on the go.",
       "size": [
         40,
@@ -2006,7 +2006,7 @@
         "Country/Region of Origin: Indonesia"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4acc1449-bda9-47b3-8927-98a41433ed5e/air-force-1-low-evo-shoes-QcbnHZ.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/842700c8-51c8-4a4a-86fe-9f1ecb7b0984/air-force-1-low-evo-shoes-QcbnHZ.png",
         "https://static.nike.com/a/videos/so_0.8/07e9087c-010c-40be-87af-689fb27cc753/air-force-1-low-evo-shoes-QcbnHZ.jpg','https://static.nike.com/a/images/t_default/c45f4866-8651-4547-9829-bdd0407869c2/air-force-1-low-evo-shoes-QcbnHZ.png",
         "https://static.nike.com/a/images/t_default/0f31b09c-a99f-49a4-8b03-08b4dc5a54c2/air-force-1-low-evo-shoes-QcbnHZ.png",
@@ -2023,7 +2023,7 @@
       "id": 33,
       "Name": "Nike Air Force 1 '07",
       "Type": "Men's Shoes",
-      "Price": "3,829,000",
+      "Price": 3829000,
       "describe": "Comfortable, durable and timeless—it's number 1 for a reason. This AF-1's classic '80s construction pairs with bold details for style that tracks whether you're on the court or on the go.",
       "size": [
         40,
@@ -2052,7 +2052,7 @@
         "Country/Region of Origin: India"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/14847b1b-df79-4160-9a84-4c2ed6cfd0a3/air-force-1-07-shoes-7d5sHw.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/76f704e4-7607-4b73-ae4c-dbebae643553/air-force-1-07-shoes-7d5sHw.png",
         "https://static.nike.com/a/images/t_default/3ff0286d-98bc-4a3e-a842-96dc644cc5c6/air-force-1-07-shoes-7d5sHw.png",
         "https://static.nike.com/a/images/t_default/d4ec3519-a386-4ae2-ac67-2daa08adae30/air-force-1-07-shoes-7d5sHw.png",
@@ -2106,7 +2106,7 @@
       "id": 34,
       "Name": "Jordan Spizike Low",
       "Type": "Men's Shoes",
-      "Price": "4,999,000",
+      "Price": 4999000,
       "describe": "Drawing from the iconic colourway of the 2006 AJ4 release, this Varsity Maize edition of the Spizike Low brings a radiant burst of colour to the hoops-infused classic. It combines signature elements from past Jordan models such as Varsity Maize leather, elephant print trim and a translucent outsole. The result is a mash-up of layers, textures and nostalgia. To finish off your look, a Jumpman logo and branded lace locks seal the deal.",
       "size": [
         40,
@@ -2131,7 +2131,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/30b450db-5953-41f5-bbc5-c35929ff18f2/jordan-spizike-low-shoes-P07hCP.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/75d7d56d-b7f7-4336-884e-b63b6eb11349/jordan-spizike-low-shoes-P07hCP.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/cc03a03e-c439-4374-8c91-a460523cfd57/jordan-spizike-low-shoes-P07hCP.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/56c401f4-97bb-4897-8830-199b212c86e8/jordan-spizike-low-shoes-P07hCP.png",
@@ -2157,7 +2157,7 @@
       "id": 35,
       "Name": "Nike Pegasus Trail 5",
       "Type": "Men's Trail-Running Shoes",
-      "Price": "4,109,000",
+      "Price": "4109000",
       "describe": "Spread your wings and see what nature brings as you chase earthy paths in the Peg Trail 5. Now equipped with an ultra-responsive ReactX foam midsole, this shoe is a true dual threat raring to cross the divide between dirt and drives.",
       "size": [
         40,
@@ -2181,7 +2181,7 @@
         "Country/Region of Origin: China"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7ef34ecc-c492-47e0-92ec-f6d0ff78c65c/pegasus-trail-5-trail-running-shoes-2jxMFQ.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/d47818f0-af41-4cd2-91e4-85252871a321/pegasus-trail-5-trail-running-shoes-2jxMFQ.png",
         "https://static.nike.com/a/images/t_default/64e9f76e-4ba4-453a-b80d-4e32240a6634/pegasus-trail-5-trail-running-shoes-2jxMFQ.png",
         "https://static.nike.com/a/images/t_default/d5480307-b32d-4031-a553-490aa2115134/pegasus-trail-5-trail-running-shoes-2jxMFQ.png",
@@ -2198,7 +2198,7 @@
       "id": 36,
       "Name": "Jordan Stay Loyal 3",
       "Type": "Men's shoes",
-      "Price": "3,369,000",
+      "Price": 3369000,
       "describe": "You gotta know where you've been to know where you're going. We took that to heart when creating the Stay Loyal 3, a modern shoe built on the Air Jordan legacy. Inside and out, they're made for versatility, with minimalist looks, cloud-like cushioning and design elements that echo the AJ4. In other words, style with proven lasting power.",
       "size": [
         40,
@@ -2226,7 +2226,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d9aeda4d-8928-4495-91bd-bef61255eb8b/jordan-stay-loyal-3-shoes-GNHN2X.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e90fa2e0-3a2b-45d1-ba10-9dcc0d68cdd2/jordan-stay-loyal-3-shoes-GNHN2X.png",
         "https://static.nike.com/a/videos/so_3.35/9c705eb5-8570-486d-9228-8591722de376/jordan-stay-loyal-3-shoes-GNHN2X.jpg','https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/3827a804-7087-43f4-ba2e-76fcd6f712d7/jordan-stay-loyal-3-shoes-GNHN2X.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/49ddcf57-c092-4a7c-813d-471c0d93e59e/jordan-stay-loyal-3-shoes-GNHN2X.png",
@@ -2249,7 +2249,7 @@
       "id": 37,
       "Name": "Nike Killshot 2 Leather",
       "Type": "Men's Shoes",
-      "Price": "3,239,000",
+      "Price": 3239000,
       "describe": "Inspired by the original low-profile tennis shoes, the Nike Killshot 2 updates the upper with premium textured leathers to create a fresh take on an old-school look. And it wouldn't be a \"tennis\" shoe without the gum-rubber sole's reliable traction. From soft suedes to smooth leathers with the perfect sheen, it's classic courtside attitude with a modern touch.",
       "size": [
         40,
@@ -2274,7 +2274,7 @@
         "Country/Region of Origin: Indonesia"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8e8a2bf2-96be-4a06-b7ae-b682f5e66a97/killshot-2-leather-shoes-1DJNnt.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/82ebffbc-7ba5-4ebb-85d7-03d47d802bd9/killshot-2-leather-shoes-1DJNnt.png",
         "https://static.nike.com/a/images/t_default/6d3e8454-fe16-4e1c-9d53-f9ec30529632/killshot-2-leather-shoes-1DJNnt.png",
         "https://static.nike.com/a/images/t_default/07a0067a-59f9-4113-a2ea-23a4ae2ba2bd/killshot-2-leather-shoes-1DJNnt.png",
@@ -2297,7 +2297,7 @@
       "id": 38,
       "Name": "Nike Free RN NN",
       "Type": "Men's Road Running Shoes",
-      "Price": "2,929,000",
+      "Price": 2929000,
       "describe": "If it's freedom you crave, this road runner can help turn you loose. Feathery and flexible, its barefoot feel and Flyknit upper will have you freewheeling with joy, ready to go a few more strides.",
       "size": [
         39,
@@ -2322,7 +2322,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f686b8f3-6267-43b1-bb0e-58d1a67a35cf/free-rn-nn-road-running-shoes-D64TzS.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/373719cc-a34f-46fd-99b9-cf4d73458f6a/free-rn-nn-road-running-shoes-D64TzS.png",
         "https://static.nike.com/a/videos/so_7.33/6fea3527-8cc4-4d2e-9220-779d1491d9e2/free-rn-nn-road-running-shoes-D64TzS.jpg','https://static.nike.com/a/images/t_default/8f0c9cbe-3417-4ca9-8c1f-e9a9d9dc6f8e/free-rn-nn-road-running-shoes-D64TzS.png",
         "https://static.nike.com/a/images/t_default/a7693c87-1d44-47ee-bbf1-28f049b66328/free-rn-nn-road-running-shoes-D64TzS.png",
@@ -2338,7 +2338,7 @@
       "id": 39,
       "Name": "Nike Air Force 1 '07 EasyOn",
       "Type": "Shoes",
-      "Price": "3,239,000",
+      "Price": 3239000,
       "describe": "Quicker than 1, 2, 3—the original hoops shoe lets you get going. This version of the AF-1 features Nike EasyOn technology for a hands-free experience. The flexible heel collapses when you step in then snaps back into place, making it easy to slip the shoe on and off. Add that to its clean, crisp leather and you've got ultimate wearability. Yeah, it's everything you love and then some.",
       "size": [
         40,
@@ -2366,7 +2366,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7f4f0b02-147f-44dd-bac5-4f7e34a4d838/air-force-1-07-easyon-shoes-LKXPhZ.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/16c6402f-aeb5-4d73-98e2-5b614871a370/air-force-1-07-easyon-shoes-LKXPhZ.png",
         "https://static.nike.com/a/videos/so_1.44/476d28cd-731a-41fc-9bb5-0d2877aae7bd/air-force-1-07-easyon-shoes-LKXPhZ.jpg','https://static.nike.com/a/images/t_default/36a35673-df42-43ac-8a67-b219d3edbf31/air-force-1-07-easyon-shoes-LKXPhZ.png",
         "https://static.nike.com/a/images/t_default/17056aea-23e2-4f4f-ad98-0bb3b6156bbe/air-force-1-07-easyon-shoes-LKXPhZ.png",
@@ -2382,7 +2382,7 @@
       "id": 40,
       "Name": "Nike Vaporfly 3",
       "Type": "Men's Road Racing Shoes",
-      "Price": "6,609,000",
+      "Price": 6609000,
       "describe": "Catch 'em if you can. Giving you race-day speed to conquer any distance, the Nike Vaporfly 3 is made for the chasers, the racers and the elevated pacers who can't turn down the thrill of the pursuit. We reworked the leader of the super shoe pack and tuned the engine underneath to help you chase personal bests from a 10K to marathon. From elite runners to those new to racing, this versatile road-racing workhorse is for those who see speed as a gateway to more miles and more seemingly uncatchable highs.",
       "size": [
         40,
@@ -2412,7 +2412,7 @@
         "Country/Region of Origin: China"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/1af9c87c-6e11-4bc6-ad66-648558bc49b7/vaporfly-3-road-racing-shoes-xsDgvM.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/6a588034-2960-4631-b425-c94c665175d5/vaporfly-3-road-racing-shoes-xsDgvM.png",
         "https://static.nike.com/a/videos/so_0/5cc40654-404e-46f8-85eb-6f90d99860aa/vaporfly-3-road-racing-shoes-xsDgvM.jpg','https://static.nike.com/a/images/t_default/f6b81a8d-9c98-4a68-a993-daee370fc5d6/vaporfly-3-road-racing-shoes-xsDgvM.png",
         "https://static.nike.com/a/images/t_default/3a561631-d0ff-4387-ad13-b608dd0164fb/vaporfly-3-road-racing-shoes-xsDgvM.png",
@@ -2427,7 +2427,7 @@
       "id": 41,
       "Name": "Nike Interact Run SE",
       "Type": "Men's Road Running Shoes",
-      "Price": "2,349,000",
+      "Price": 2349000,
       "describe": "Can you see the future? Fast-forward your footsteps in the cutting-edge Nike Interact Run. It's set up with all the running goodness you need: a lightweight Flyknit upper, soft foam midsole and comfort where it counts. Scan the QR code on the tongue with your phone, and check out our online introduction to the Nike Interact Run's ins and outs. For this special edition, we swapped the lateral Swoosh design to the big-toe side of the shoe.",
       "size": [
         40,
@@ -2452,7 +2452,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/977ffe89-a1e5-42dc-b5ea-01460956302e/interact-run-se-road-running-shoes-NCWZfT.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/05ebf414-e671-41d3-9698-705cc5b5ec2c/interact-run-se-road-running-shoes-NCWZfT.png",
         "https://static.nike.com/a/videos/so_0.32/065e0640-5334-4cc6-b0a9-ab8e03b2623a/interact-run-se-road-running-shoes-NCWZfT.jpg','https://static.nike.com/a/images/t_default/b4801aea-1174-4406-bdbf-627b706dd1b1/interact-run-se-road-running-shoes-NCWZfT.png",
         "https://static.nike.com/a/images/t_default/c4528c2f-f687-44ec-9959-dfeb7e75f283/interact-run-se-road-running-shoes-NCWZfT.png",
@@ -2470,7 +2470,7 @@
       "id": 42,
       "Name": "Jumpman MVP",
       "Type": "Men's Shoes",
-      "Price": "4,849,000",
+      "Price": 4849000,
       "describe": "We didn't invent the remix—but considering the material we get to sample, this one's a no-brainer. We took elements from the AJ6, 7 and 8, making them into a completely new shoe that celebrates MJ's first 3-peat championship run. With leather, textile and nubuck details, these sneakers honour one legacy while encouraging you to cement your own.",
       "size": [
         40,
@@ -2497,7 +2497,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/432e60d3-724d-4b03-9063-fe712c21704b/jumpman-mvp-shoes-JV1HCs.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/1113dbbf-2d4f-412e-b4d7-6a7a86c36cda/jumpman-mvp-shoes-JV1HCs.png",
         "https://static.nike.com/a/videos/so_0.1/4a7ca2f0-a3b3-40b9-a7b0-f375348a750f/jumpman-mvp-shoes-JV1HCs.jpg','https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/90569bf3-4bcb-4808-960d-38169d114784/jumpman-mvp-shoes-JV1HCs.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2c3ae82c-dd63-46cd-9d04-8cff60dd8766/jumpman-mvp-shoes-JV1HCs.png",
@@ -2529,7 +2529,7 @@
       "id": 43,
       "Name": "Air Jordan 1 Low G",
       "Type": "Golf Shoes",
-      "Price": "4,109,000",
+      "Price": 4109000,
       "describe": "Feel unbeatable, from the tee box to the final putt. Inspired by one of the most iconic sneakers of all time, the Air Jordan 1 G is an instant classic on the course. With Air cushioning underfoot, a Wings logo on the heel and an integrated traction pattern to help you power through your swing, it delivers all the clubhouse cool of the original AJ1—plus everything you need to play 18 holes in comfort.",
       "size": [
         36,
@@ -2559,7 +2559,7 @@
         "Country/Region of Origin: China"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/4dcd9f93-1594-48b7-9c5d-d4bebee011ed/air-jordan-1-low-g-golf-shoes-8bKbqs.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e8a5d47e-1ba6-4242-97dd-ab878357a1ce/air-jordan-1-low-g-golf-shoes-8bKbqs.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/812772f8-4901-4bbd-9b0e-6b99c3155371/air-jordan-1-low-g-golf-shoes-8bKbqs.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/483d44ab-87d6-41a6-ba22-36c457faede2/air-jordan-1-low-g-golf-shoes-8bKbqs.png",
@@ -2575,7 +2575,7 @@
       "id": 44,
       "Name": "Nike Air Max 90",
       "Type": "Men's Shoes",
-      "Price": "3,519,000",
+      "Price": 3519000,
       "describe": "Lace up and feel the legacy in a champion running shoe that helped define the '90s. Worn by presidents, revolutionised through collabs and celebrated through rare colourways, its striking visuals, Waffle outsole and exposed Air cushioning keep the Air Max 90 alive and well.",
       "size": [
         40,
@@ -2602,7 +2602,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0b2553d3-6d28-46d6-9b7c-408e8a2cb006/air-max-90-shoes-98F148.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/fb3b8a7c-f830-4f78-a529-291bd316f880/air-max-90-shoes-98F148.png",
         "https://static.nike.com/a/videos/so_0.9/48d79e03-5837-4fca-a526-7f146125b8c1/air-max-90-shoes-98F148.jpg','https://static.nike.com/a/images/t_default/db223d82-1127-421e-90ff-d8fe37d3a901/air-max-90-shoes-98F148.png",
         "https://static.nike.com/a/images/t_default/14d7b8b0-f601-4355-ae9a-374cdad5c513/air-max-90-shoes-98F148.png",
@@ -2627,7 +2627,7 @@
       "id": 45,
       "Name": "Air Jordan 1 Low SE",
       "Type": "Men's Shoes",
-      "Price": "3,519,000",
+      "Price": 3519000,
       "describe": "Here are some straightforward, good-looking AJ1s. Were you expecting anything less? Crafted from crisp leather, they feature comfortable Nike Air cushioning in the heel. A leather Swoosh logo puts the finishing touch on this all-time favourite.",
       "size": [
         37.5,
@@ -2659,7 +2659,7 @@
         "Country/Region of Origin: China"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e5b1fb1f-c9f1-420e-8a9b-efc4dbadd44b/air-jordan-1-low-se-shoes-L9LvW5.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/305096a2-fc0a-4664-9837-63b81a0700e7/air-jordan-1-low-se-shoes-L9LvW5.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2e149809-42c9-4635-848b-c28a7f07b04d/air-jordan-1-low-se-shoes-L9LvW5.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/bea59753-e012-4f1f-a7e3-358b74df6716/air-jordan-1-low-se-shoes-L9LvW5.png",
@@ -2690,7 +2690,7 @@
       "id": 46,
       "Name": "Nike Air Max Excee",
       "Type": "Men's shoes",
-      "Price": "2,929,000",
+      "Price": 2929000,
       "describe": "Get into the groove with the Nike Air Max Excee and subtle pops of fresh colour for style that defies time. Inspired by the Nike Air Max 90, these kicks deliver a modern twist on a legendary icon through elongated design lines and distorted proportions.",
       "size": [
         40,
@@ -2718,7 +2718,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a7f07bf7-7896-48c7-b53d-ab5daf86f84e/air-max-excee-shoes-Zvl8cs.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/4763b078-c16f-44bd-a5d0-2fcad00b653c/air-max-excee-shoes-Zvl8cs.png",
         "https://static.nike.com/a/images/t_default/23dbd4b9-f4ba-4edf-b40c-1dfc5403b677/air-max-excee-shoes-Zvl8cs.png",
         "https://static.nike.com/a/images/t_default/f8a6834d-8da6-43ab-9ba3-9778837227e4/air-max-excee-shoes-Zvl8cs.png",
@@ -2733,7 +2733,7 @@
       "id": 47,
       "Name": "Nike Air Max Dn",
       "Type": "Shoes",
-      "Price": "4,409,000",
+      "Price": 4409000,
       "describe": "Say hello to the next generation of Air technology. The Air Max Dn features our Dynamic Air unit system of dual-pressure tubes, creating a reactive sensation with every step. This results in a futuristic design that's comfortable enough to wear from day to night. Go ahead—Feel The Unreal.",
       "size": [
         40,
@@ -2760,7 +2760,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/63e0cf2c-a805-401e-bd8f-cbe1e28115ab/air-max-dn-shoes-FtLNfm.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/cc87d541-1023-4c86-bd45-d6d3dc9e6cfd/air-max-dn-shoes-FtLNfm.png",
         "https://static.nike.com/a/videos/so_1.2/345fbe81-1c33-4c80-9d05-2da830d1b97c/air-max-dn-shoes-FtLNfm.jpg','https://static.nike.com/a/images/t_default/578b7ef9-9d95-480d-868a-b13d1092d996/air-max-dn-shoes-FtLNfm.png",
         "https://static.nike.com/a/images/t_default/85939068-b0de-4cc0-93a0-029052c6d01c/air-max-dn-shoes-FtLNfm.png",
@@ -2778,7 +2778,7 @@
       "id": 48,
       "Name": "Nike Precision 7",
       "Type": "Men's Basketball Shoes",
-      "Price": "2,069,000",
+      "Price": 2069000,
       "describe": "Score at will at the rim or from deep in the Nike Precision 7. Crafted with a combination of ground control, comfort and on-court traction, it's perfect for instant impact plays when your name is called for the next casual game. Check in and make the plays that swing the outcome in your favour.",
       "size": [
         40,
@@ -2805,7 +2805,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2599bc05-e25a-4f30-9ac2-faa15c3c482e/precision-7-basketball-shoes-6FvJHX.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/e6cad6b9-b122-49d4-b15b-a504180b5a6c/precision-7-basketball-shoes-6FvJHX.png",
         "https://static.nike.com/a/videos/so_1.1/0a3f3658-6f7d-41c3-99f0-a86d240637fb/precision-7-basketball-shoes-6FvJHX.jpg','https://static.nike.com/a/images/t_default/bd4ebe58-7ed1-474c-af62-86e61b347218/precision-7-basketball-shoes-6FvJHX.png",
         "https://static.nike.com/a/images/t_default/f47fd7b5-992b-43c6-a4d8-e4a9f9ca95b5/precision-7-basketball-shoes-6FvJHX.png",
@@ -2822,7 +2822,7 @@
       "id": 49,
       "Name": "Nike Zoom Vomero 5 SE",
       "Type": "Men's Shoes",
-      "Price": "4,699,000",
+      "Price": 4699000,
       "describe": "The Zoom Vomero 5 SE takes early-2000s running to modern heights. A combination of breathable and durable materials stands ready for the rigours of your day, while Zoom Air cushioning delivers a smooth ride.",
       "size": [
         40,
@@ -2849,7 +2849,7 @@
         "Country/Region of Origin: China"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b32fcad3-8b1a-4a0c-876a-b32c02c3a5ac/zoom-vomero-5-se-shoes-WWDBV1.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/de5192d6-02e8-44ba-ad40-33fdb2c738e7/zoom-vomero-5-se-shoes-WWDBV1.png",
         "https://static.nike.com/a/images/t_default/2bcf1b10-ea64-42c3-b65e-60c9545a3b69/zoom-vomero-5-se-shoes-WWDBV1.png",
         "https://static.nike.com/a/images/t_default/64e257b3-804a-4587-bf63-ee4f7deb5bca/zoom-vomero-5-se-shoes-WWDBV1.png",
@@ -2868,7 +2868,7 @@
       "id": 50,
       "Name": "Nike Air Force 1 '07 LV8",
       "Type": "Men's Shoes",
-      "Price": "3,519,000",
+      "Price": 3519000,
       "describe": "Comfortable, durable and timeless—it's number 1 for a reason. The classic '80s construction pairs with neutral tones for style that tracks whether you're on court or on the go.",
       "size": [
         40,
@@ -2898,7 +2898,7 @@
         "Country/Region of Origin: Indonesia"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/cb2e3b21-ac8e-47a1-80ca-65790687a5a3/air-force-1-07-lv8-shoes-Smph4G.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/c7ee8117-5e90-49cb-8207-f722a838f2eb/air-force-1-07-lv8-shoes-Smph4G.png",
         "https://static.nike.com/a/videos/so_0.58/fe4d6bda-1b60-4ac0-8e87-60e889bf54c7/air-force-1-07-lv8-shoes-Smph4G.jpg','https://static.nike.com/a/images/t_default/d9f77476-5964-4bf5-b119-e979c6945a4d/air-force-1-07-lv8-shoes-Smph4G.png",
         "https://static.nike.com/a/images/t_default/9970a373-c07a-4b99-abb9-6c7b242de1cb/air-force-1-07-lv8-shoes-Smph4G.png",
@@ -2915,7 +2915,7 @@
       "id": 51,
       "Name": "Nike V2K Run",
       "Type": "Shoes",
-      "Price": "3,519,000",
+      "Price": 3519000,
       "describe": "Fast forward. Rewind. Doesn't matter—this shoe takes retro into the future. The V2K remasters everything you love about the Vomero in a look pulled straight from an early '00s running catalogue. Layer up in a mixture of flashy metallics, referential plastic details and a midsole with a perfectly vintage aesthetic. And the chunky heel makes sure wherever you go, it's in comfort.",
       "size": [
         35.5,
@@ -2941,7 +2941,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4f323c12-a7a6-4ff3-bea2-50c26ca2ca86/v2k-run-shoes-zJV8TV.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/6b902d4d-e794-450c-9c34-c225b0f889bc/v2k-run-shoes-zJV8TV.png",
         "https://static.nike.com/a/videos/so_0/7dabcaa9-3589-443b-922c-acca03f51157/v2k-run-shoes-zJV8TV.jpg','https://static.nike.com/a/images/t_default/388ee3a0-076c-41dc-9c06-109423bf26c8/v2k-run-shoes-zJV8TV.png",
         "https://static.nike.com/a/images/t_default/e0ea554e-4aa2-4eb5-b4bc-2a7372c8adca/v2k-run-shoes-zJV8TV.png",
@@ -2958,7 +2958,7 @@
       "id": 52,
       "Name": "Nike SB Chron 2 Canvas",
       "Type": "Skate Shoe",
-      "Price": "1,759,000",
+      "Price": 1759000,
       "describe": "The Nike SB Chron 2 Canvas is the newest member of the Chron family.The revamped design includes a reshaped collar and heel for an improved fit—all while maintaining the comfort and performance you expect from Nike SB.",
       "size": [
         40,
@@ -2985,7 +2985,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7d0916c6-4a3e-4502-9368-5033c48c4eef/sb-chron-2-canvas-skate-shoe-zdBtfH.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/f71a136b-2566-469b-b777-afd9e2bcc777/sb-chron-2-canvas-skate-shoe-zdBtfH.png",
         "https://static.nike.com/a/videos/so_6.3/e50048f4-14f2-4cf3-a5eb-f9c0aa4e11c5/sb-chron-2-canvas-skate-shoe-zdBtfH.jpg','https://static.nike.com/a/images/t_default/1e9e25cd-cdb8-4978-823b-d84bfd25e237/sb-chron-2-canvas-skate-shoe-zdBtfH.png",
         "https://static.nike.com/a/images/t_default/abafb8be-b8c5-47b8-a764-ee225adcb55f/sb-chron-2-canvas-skate-shoe-zdBtfH.png",
@@ -3002,7 +3002,7 @@
       "id": 53,
       "Name": "Nike Court Vision Low",
       "Type": "Men's Shoes",
-      "Price": "2,069,000",
+      "Price": 2069000,
       "describe": "In love with the classic look of '80s basketball but have a thing for the fast-paced style of today's game? Meet the Nike Court Vision. Crisp leather and suede overlays create an old-school look, while a plush collar keeps the shoe sleek, modern and comfortable.",
       "size": [
         40,
@@ -3029,7 +3029,7 @@
         "Country/Region of Origin: India"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/cf43fd2a-f2c3-4d7e-ae24-65bd6e0c41c1/court-vision-low-shoes-ZwjLXN.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/64c495ca-4b36-407b-ade5-67b08b2178ac/court-vision-low-shoes-ZwjLXN.png",
         "https://static.nike.com/a/images/t_default/2669d4cc-a047-4f2a-89a1-aad4d9a80789/court-vision-low-shoes-ZwjLXN.png",
         "https://static.nike.com/a/images/t_default/9b41a860-ae4a-4560-b523-10dde89230c9/court-vision-low-shoes-ZwjLXN.png",
@@ -3060,7 +3060,7 @@
       "id": 54,
       "Name": "NikeCourt Royale 2 Next Nature",
       "Type": "Men's Shoes",
-      "Price": "1,609,000",
+      "Price": 1609000,
       "describe": "A flash from the past meets modern times. The NikeCourt Royale 2 Next Nature is made from at least 20% recycled content by weight. We intentionally replaced high-impact leather with synthetic leather for a crisp look that's smooth and is easy to wear. The large, retro Swoosh adds throwback appeal.",
       "size": [
         38.5,
@@ -3090,7 +3090,7 @@
         "Country/Region of Origin: Vietnam,Indonesia"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/767687a0-142e-4d66-b437-998dee9a0a4f/nikecourt-royale-2-next-nature-shoes-RRcr20.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/9e0c69fc-89df-474a-b5e5-e68126cbb94e/nikecourt-royale-2-next-nature-shoes-RRcr20.png",
         "https://static.nike.com/a/images/t_default/1d7e52ac-7bf8-49af-abbf-d6eec8ef5160/nikecourt-royale-2-next-nature-shoes-RRcr20.png",
         "https://static.nike.com/a/images/t_default/6f28fd33-ae58-44b7-a2f9-a21f013f9fb5/nikecourt-royale-2-next-nature-shoes-RRcr20.png",
@@ -3105,7 +3105,7 @@
       "id": 55,
       "Name": "Nike Go FlyEase",
       "Type": "Easy On/Off Shoes",
-      "Price": "3,829,000",
+      "Price": 3829000,
       "describe": "Ditch the laces and get outside. These kicks feature Nike's revolutionary FlyEase technology, making on-and-off a breeze. With a heel that pivots open for a totally hands-free entry, they're great for people with limited mobility—or anyone who wants a quicker way to get going.",
       "size": [
         35.5,
@@ -3134,7 +3134,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c76e2119-acb7-4944-9085-d4f5ae2bda4a/go-flyease-easy-on-off-shoes-3svRCL.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/247616b5-1d3b-4777-abbb-d5e08a924b78/go-flyease-easy-on-off-shoes-3svRCL.png",
         "https://static.nike.com/a/videos/so_0.48/8751dcb1-864b-4ab0-bdd3-9b873780f7e7/go-flyease-easy-on-off-shoes-3svRCL.jpg','https://static.nike.com/a/images/t_default/8c89f1db-e4f6-4f01-9f88-c5af2fc7ae8a/go-flyease-easy-on-off-shoes-3svRCL.png",
         "https://static.nike.com/a/images/t_default/5f18a6fc-5dca-49d9-a08e-8bffd809e206/go-flyease-easy-on-off-shoes-3svRCL.png",
@@ -3154,7 +3154,7 @@
       "id": 56,
       "Name": "Air Jordan 1 Low SE Craft",
       "Type": "Men's Shoes",
-      "Price": "3,519,000",
+      "Price": 3519000,
       "describe": "Each Craft released puts a handmade feel on the AJ1 and these low-cut sneakers are no exception. Sandy neutrals come together in kicks that beg to be a part of every outfit. Premium suede adds texture while a lightly speckled outsole grounds your look with subtle detail.",
       "size": [
         40,
@@ -3182,7 +3182,7 @@
         "Country/Region of Origin: Indonesia"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1156119-7b9f-4d44-a307-417bea74b0ff/air-jordan-1-low-se-craft-shoes-8SsDw6.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b2e8f89f-7725-40e8-8616-4e35415f66e8/air-jordan-1-low-se-craft-shoes-8SsDw6.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/00d38a82-7099-4fae-bdc6-720c8974d3c0/air-jordan-1-low-se-craft-shoes-8SsDw6.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/695a74b7-3ff8-4938-9b6f-46a07b8b0074/air-jordan-1-low-se-craft-shoes-8SsDw6.png",
@@ -3197,7 +3197,7 @@
       "id": 57,
       "Name": "Nike Court Vision Low Next Nature",
       "Type": "Men's Shoes",
-      "Price": "1,909,000",
+      "Price": 1909000,
       "describe": "In love with the classic look of '80s basketball but have a thing for the fast-paced culture of today's game? Meet the Nike Court Vision Low. A classic remixed with at least 20% recycled materials by weight, its crisp upper and stitched overlays keep the soul of the original style. The plush, low-cut collar keeps it sleek and comfortable for your world.",
       "size": [
         38.5,
@@ -3230,7 +3230,7 @@
         "Country/Region of Origin: Vietnam,India"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0084df47-cf15-41d5-aab6-984460364e41/court-vision-low-next-nature-shoes-N2fFHb.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/706e54b6-9360-4760-817d-86bba495f2e5/court-vision-low-next-nature-shoes-N2fFHb.png",
         "https://static.nike.com/a/videos/so_9.4/e8a517cb-4c2e-4db9-af32-66199ebfc62a/court-vision-low-next-nature-shoes-N2fFHb.jpg','https://static.nike.com/a/images/t_default/df18ee4b-68cb-47f6-9168-a0fd69521812/court-vision-low-next-nature-shoes-N2fFHb.png",
         "https://static.nike.com/a/images/t_default/1e7f258e-7b28-4ee6-aeea-b4f07720adf3/court-vision-low-next-nature-shoes-N2fFHb.png",
@@ -3245,7 +3245,7 @@
       "id": 58,
       "Name": "Nike Revolution 7 EasyOn",
       "Type": "Men's Road Running Shoes",
-      "Price": "1,789,000",
+      "Price": 1789000,
       "describe": "We loaded the Revolution 7 with the sort of soft cushioning and support that might change your running world. Stylish as ever, comfortable when the rubber meets the road and performance-driven for your desired pace, it's an evolution of a fan favourite that offers a soft, smooth ride. We added the quick-and-easy toggle system that makes putting these shoes on and taking them off a breeze.",
       "size": [
         39,
@@ -3267,7 +3267,7 @@
       ],
       "benefit": [],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ca929f7e-f433-46b7-8d83-1a6171c172ce/revolution-7-easyon-road-running-shoes-nNqdwt.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/b14aba9a-f828-45d3-9607-b687b884aa7d/revolution-7-easyon-road-running-shoes-nNqdwt.png",
         "https://static.nike.com/a/videos/so_2.12/0677e9a9-ec48-41e5-827b-642e3f014cbf/revolution-7-easyon-road-running-shoes-nNqdwt.jpg','https://static.nike.com/a/images/t_default/f85bc352-6ecc-4701-b0c0-ed4237cca17d/revolution-7-easyon-road-running-shoes-nNqdwt.png",
         "https://static.nike.com/a/images/t_default/39ab7e46-2657-4a29-9b58-577b12764b33/revolution-7-easyon-road-running-shoes-nNqdwt.png",
@@ -3285,7 +3285,7 @@
       "id": 59,
       "Name": "Nike Pegasus 41",
       "Type": "Men's Road Running Shoes",
-      "Price": "3,829,000",
+      "Price": 3829000,
       "describe": "Responsive cushioning in the Pegasus provides an energised ride for everyday road running. Experience lighter-weight energy return with dual Air Zoom units and a ReactX foam midsole. Plus, improved engineered mesh on the upper decreases weight and increases breathability.",
       "size": [],
       "benefit": [
@@ -3304,7 +3304,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/63c4596a-ca9a-4a56-82f3-0387903ed5f1/pegasus-41-road-running-shoes-RZm89S.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/927d3fef-0657-4b82-8b3a-b34f07ffdd28/pegasus-41-road-running-shoes-RZm89S.png",
         "https://static.nike.com/a/images/t_default/3238b7d4-8adc-45b0-8302-2002b1315467/pegasus-41-road-running-shoes-RZm89S.png",
         "https://static.nike.com/a/images/t_default/74a83c4a-1a8c-4ef1-be7a-b05aa77bcd36/pegasus-41-road-running-shoes-RZm89S.png",
@@ -3334,7 +3334,7 @@
       "id": 60,
       "Name": "Nike Downshifter 13",
       "Type": "Men's Road Running Shoes",
-      "Price": "2,069,000",
+      "Price": 2069000,
       "describe": "Whether you're starting your running journey or an expert eager to switch up your pace, the Downshifter 13 is down for the ride. With a revamped upper, cushioning and durability, it helps you find that extra gear or take that first stride towards chasing down your goals.",
       "size": [
         40,
@@ -3359,7 +3359,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/89963238-7a6a-48cc-a2fe-4e95dd03fd89/downshifter-13-road-running-shoes-4Gw85J.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/f33f1c05-2f08-42f7-8843-33796d32c4e4/downshifter-13-road-running-shoes-4Gw85J.png",
         "https://static.nike.com/a/videos/so_0/75e1a279-84da-4010-8e24-d442b27a71f6/downshifter-13-road-running-shoes-4Gw85J.jpg','https://static.nike.com/a/images/t_default/aa77472e-d6d8-4fb2-be91-5dded7547a53/downshifter-13-road-running-shoes-4Gw85J.png",
         "https://static.nike.com/a/images/t_default/fa81a3f6-2499-46e7-b3d2-348aa8d6681d/downshifter-13-road-running-shoes-4Gw85J.png",
@@ -3377,7 +3377,7 @@
       "id": 61,
       "Name": "Nike Court Royale 2 Low",
       "Type": "Men's Shoe",
-      "Price": "1,609,000",
+      "Price": 1609000,
       "describe": "A flash from the past, the Nike Court Royale 2 features the same design that has rocked the streets since the late '70s. Leather on the upper looks crisp and is easy to wear, while the large retro Swoosh design adds throwback appeal. To top it off, the modernised herringbone sole puts a twist on the classic look.",
       "size": [
         40,
@@ -3405,7 +3405,7 @@
         "Country/Region of Origin: Indonesia"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/23da5e9b-6bee-47eb-8b1d-259ac3b13cfd/court-royale-2-low-shoe-fjdwrF.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/e9c21b76-ad34-40c6-9338-8d910c8cc30d/court-royale-2-low-shoe-fjdwrF.png",
         "https://static.nike.com/a/images/t_default/ddc462b5-be81-4032-96fa-d3fb299b868f/court-royale-2-low-shoe-fjdwrF.png",
         "https://static.nike.com/a/images/t_default/d36532ff-0a14-4093-89b6-c3f914e523ee/court-royale-2-low-shoe-fjdwrF.png",
@@ -3420,7 +3420,7 @@
       "id": 62,
       "Name": "Jordan Roam",
       "Type": "Slides",
-      "Price": "1,609,000",
+      "Price": 1609000,
       "describe": "Slip in and be on your way in seconds with the Jordan Roam. Made from one solid piece of flexible yet sturdy foam, these slides offer cushioned comfort with every step. The rubber on the forefoot and heel gives you traction where you need it most, while vents on the upper help keep things airy and breathable. An elephant print moulded into the footbed helps provide grip and Jordan DNA.",
       "size": [
         40,
@@ -3439,7 +3439,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7dd5d00b-b588-485b-9e30-147cd30ade3a/jordan-roam-slides-XsQbqX.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/35362810-0bd2-4e49-8be9-972f0ff06b5b/jordan-roam-slides-XsQbqX.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/a014df03-7318-44e1-a81d-140782f24769/jordan-roam-slides-XsQbqX.png",
         "https://static.nike.com/a/images/t_default/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/129915e5-8761-40ab-94e6-48e9e376eddf/jordan-roam-slides-XsQbqX.png",
@@ -3453,7 +3453,7 @@
       "id": 63,
       "Name": "Nike SB Vertebrae",
       "Type": "Men's Shoes",
-      "Price": "2,499,000",
+      "Price": 2499000,
       "describe": "The Vertebrae breaks in fast and breaks down slow, creating a consistent fit straight out of the box. A Nike heritage colour palette gives this modern shoe the perfect touch of retro.",
       "size": [
         40,
@@ -3480,7 +3480,7 @@
         "Country/Region of Origin: Indonesia"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0422fada-73e7-40a5-98a3-ae034a74a0ba/sb-vertebrae-shoes-Zlnwhs.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/d8cd2c58-2766-4141-a210-29906d8bafd4/sb-vertebrae-shoes-Zlnwhs.png",
         "https://static.nike.com/a/images/t_default/478ba32c-51ff-4993-92d3-8e0ed9c70bf2/sb-vertebrae-shoes-Zlnwhs.png",
         "https://static.nike.com/a/images/t_default/b9ee7380-10fe-4a93-931a-03ded7dbbe3d/sb-vertebrae-shoes-Zlnwhs.png",
@@ -3495,7 +3495,7 @@
       "id": 64,
       "Name": "Nike Air Max 270",
       "Type": "Men's Shoes",
-      "Price": "4,409,000",
+      "Price": 4409000,
       "describe": "Nike's first lifestyle Air Max brings you style, comfort and big attitude in the Nike Air Max 270. The design draws inspiration from Air Max icons, showcasing Nike's greatest innovation with its large window and fresh array of colours.",
       "size": [
         40.5,
@@ -3523,7 +3523,7 @@
         "Country/Region of Origin: Indonesia"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c79654db-d568-4e5e-b0d7-90b6df387d7e/air-max-270-shoes-2V5C4p.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/517bbda1-6761-4ad2-8c98-698cc77b52e4/air-max-270-shoes-2V5C4p.png",
         "https://static.nike.com/a/videos/so_1.71/snit4pxfutyjg2siqrbs/air-max-270-shoes-2V5C4p.jpg','https://static.nike.com/a/images/t_default/e8eb784e-b9a2-40ea-816c-ed570d8f79fe/air-max-270-shoes-2V5C4p.png",
         "https://static.nike.com/a/images/t_default/b837fc41-d912-4eb4-8450-8a3c83ed7f18/air-max-270-shoes-2V5C4p.png",
@@ -3538,7 +3538,7 @@
       "id": 65,
       "Name": "Nike Air Max 2013",
       "Type": "Men's Shoes",
-      "Price": "5,279,000",
+      "Price": 5279000,
       "describe": "Back and just as stylish as ever. The Air Max 2013 returns with mesh detailing and sporty, no-sew overlays to help keep you looking and feeling fresh. Plus, tried-and-tested Flywire lacing and classic full-length Air cushioning provide lasting comfort and support.",
       "size": [
         40,
@@ -3566,7 +3566,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a4ca0cdc-6d51-4d6d-93d8-43a74ff848d8/air-max-2013-shoes-f1zqsx.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/fe09b20d-cdbb-43f6-ae5a-25b834c9a866/air-max-2013-shoes-f1zqsx.png",
         "https://static.nike.com/a/images/t_default/ded8333f-e1c7-4a51-aec1-059ae1d5471c/air-max-2013-shoes-f1zqsx.png",
         "https://static.nike.com/a/images/t_default/0849ed78-f60d-478b-a867-aa16b0228646/air-max-2013-shoes-f1zqsx.png",
@@ -3583,7 +3583,7 @@
       "id": 66,
       "Name": "Nike Offcourt",
       "Type": "Men's Slides",
-      "Price": "1,019,000",
+      "Price": 1019000,
       "describe": "These slides are designed to help you relax and recharge. Innovative dual-layered foam underfoot pairs with a plush strap to bring the comfort, while the iconic AF-1 pivot circle pattern on the outsole and block-letter branding casually nod to heritage hoops. What are you waiting for? Get lounging.",
       "size": [
         40,
@@ -3596,7 +3596,7 @@
       ],
       "benefit": [],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8636f9b6-6557-4065-8ebd-59e6d1673573/offcourt-slides-ZBxx9j.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/1513eb06-b0d6-4956-a6bd-a8150ee300de/offcourt-slides-ZBxx9j.png",
         "https://static.nike.com/a/images/t_default/0429b97e-98ce-4434-867e-5b48a50b998e/offcourt-slides-ZBxx9j.png",
         "https://static.nike.com/a/images/t_default/3d04eed5-ee48-44be-8146-78aafdb41a1f/offcourt-slides-ZBxx9j.png",
@@ -3609,7 +3609,7 @@
       "id": 67,
       "Name": "NikeCourt Vapor Lite 2",
       "Type": "Men's Hard Court Tennis Shoes",
-      "Price": "2,349,000",
+      "Price": 2349000,
       "describe": "Simple, but sleek. Subtle yet studded out with playability, speed and support. The Vapor Lite 2 is ready for the court right out of the box and offers comfort for the players who like to do it all. With a familiar, super-comfortable underfoot feeling, they can help you hammer that volley at the net and stay mobile during a long rally with optimal traction. Once your session is complete, they are comfortable enough to wear off the court walking to wherever your day leads next.",
       "size": [
         40,
@@ -3632,7 +3632,7 @@
         "Country/Region of Origin: Indonesia"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7941ab99-6eca-48b4-bdb6-002d8c862a41/nikecourt-vapor-lite-2-hard-court-tennis-shoes-8dGHWK.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/e88eedee-9724-47b2-aa25-3340f1138cdb/nikecourt-vapor-lite-2-hard-court-tennis-shoes-8dGHWK.png",
         "https://static.nike.com/a/videos/so_3.45/d1c99053-38fd-4bc8-aa9b-746e5bdac5e9/nikecourt-vapor-lite-2-hard-court-tennis-shoes-8dGHWK.jpg','https://static.nike.com/a/images/t_default/2f8e2458-7e5f-4fc8-898c-dd4ad82c94c4/nikecourt-vapor-lite-2-hard-court-tennis-shoes-8dGHWK.png",
         "https://static.nike.com/a/images/t_default/0068630a-6e90-4d2f-ad30-983ebde73fa0/nikecourt-vapor-lite-2-hard-court-tennis-shoes-8dGHWK.png",
@@ -3647,7 +3647,7 @@
       "id": 68,
       "Name": "NikeCourt Lite 4",
       "Type": "Men's Tennis Shoes",
-      "Price": "2,189,000",
+      "Price": 2189000,
       "describe": "Whether you're digging, dinking or trying to barrel a ball down the line after scrambling out of a split set, the NikeCourt Lite 4 can help you hold serve. It's durable yet mobile when in the middle of a long rally, ideal for getting to seemingly untouchable shots both near and far.",
       "size": [
         40,
@@ -3666,7 +3666,7 @@
       ],
       "benefit": [],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/cf304853-7303-4bc7-9231-78d184cc740f/nikecourt-lite-4-tennis-shoes-5B5NWb.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/ceabe604-e072-44ab-b294-b9db5ab2c09a/nikecourt-lite-4-tennis-shoes-5B5NWb.png",
         "https://static.nike.com/a/images/t_default/6bf92a60-635a-4587-b3ce-5cda1990f5d0/nikecourt-lite-4-tennis-shoes-5B5NWb.png",
         "https://static.nike.com/a/images/t_default/03b58c09-4a2f-45ee-ae57-a50e160e377c/nikecourt-lite-4-tennis-shoes-5B5NWb.png",
@@ -3681,7 +3681,7 @@
       "id": 69,
       "Name": "Nike P-6000",
       "Type": "Shoes",
-      "Price": "2,929,000",
+      "Price": 2929000,
       "describe": "The Nike P-6000 draws on the 2006 Nike Air Pegasus, bringing you a mash-up of iconic style that's breathable, comfortable and evocative of that early-2000s vibe.",
       "size": [
         40,
@@ -3705,7 +3705,7 @@
         "Country/Region of Origin: Vietnam"
       ],
       "main_img_src": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/147a3038-1da0-4578-94e0-3216414a6cdd/p-6000-shoes-QcQbpx.png",
-      "img-src": [
+      "img_src": [
         "https://static.nike.com/a/images/t_default/24677ace-081d-4ae4-9ec7-6887c682a40e/p-6000-shoes-QcQbpx.png",
         "https://static.nike.com/a/videos/so_0/8af580bc-9954-4326-aa1f-2115e1180ace/p-6000-shoes-QcQbpx.jpg','https://static.nike.com/a/images/t_default/34600968-88f8-4d18-a7be-dbf5f38be811/p-6000-shoes-QcQbpx.png",
         "https://static.nike.com/a/images/t_default/d39c8a5e-f9c7-4363-a343-f5a5c81fe63a/p-6000-shoes-QcQbpx.png",
@@ -3717,10 +3717,10 @@
       ]
     },
     {
-      "id": "70",
+      "id": 70,
       "Name": "Nike Phantom Luna 2 Academy",
       "Type": "TF High-Top Football Shoes",
-      "Price": "2,779,000",
+      "Price": 2779000,
       "describe": "Looking to take your game to the next level? The Phantom Luna 2 Academy helps put you in prime position in front of the net, whether you're the organiser, assister or finisher. The rest is up to you. Created with goals in mind, NikeSkin covers the striking area of the shoe, while Nike Cyclone 360 traction helps guide your unscripted agility.",
       "size": [
         40,
@@ -3762,10 +3762,10 @@
       ]
     },
     {
-      "id": "71",
+      "id": 71,
       "Name": "Nike Phantom GX 2 Academy",
       "Type": "MG Low-Top Football Boot",
-      "Price": "2,479,000",
+      "Price": 2479000,
       "describe": "Looking to take your game to the next level? The Phantom GX 2 Academy helps put you in prime position of the goal, whether you're the playmaker, assister or finisher. The rest is up to you. Created with goals in mind, NikeSkin covers the striking area of the boot, while Nike Cyclone 360 traction helps guide your unscripted agility.",
       "size": [
         40,
@@ -3817,10 +3817,10 @@
       ]
     },
     {
-      "id": "72",
+      "id": 72,
       "Name": "Nike SB Zoom Pogo Plus",
       "Type": "Skate Shoes",
-      "Price": "2,499,000",
+      "Price": 2499000,
       "describe": "These shoes bring a serious boost to any skate session. With a broken-in fit straight out of the box and mixed materials that age to perfection, they bring comfort you have to feel to believe. Oh, and the raised taping increases control for the perfect flick, while Zoom Air cushioning delivers the ultimate boardfeel.",
       "size": [
         36.5,
@@ -3855,10 +3855,10 @@
       ]
     },
     {
-      "id": "73",
+      "id": 73,
       "Name": "Nike Phantom Luna 2 Elite",
       "Type": "FG High-Top Football Boot",
-      "Price": "8,059,000",
+      "Price": 8059000,
       "describe": "Obsessed with perfecting your craft? We made this for you. In the middle of the storm, with chaos swirling all around you, you've calmly found the final third of the pitch, thanks to your uncanny mix of on-ball guile and grace. Go and finish the job in the Phantom Luna 2 Elite. Revolutionary Nike Gripknit covers the striking area of the boot while Nike Cyclone 360 traction helps guide your unscripted agility. We design Elite boots for you and the world's biggest stars to give you high-level quality, because you demand greatness from yourself and your footwear.",
       "size": "[]",
       "benefit": [
@@ -3883,10 +3883,10 @@
       ]
     },
     {
-      "id": "74",
+      "id": 74,
       "Name": "JA 1 EP",
       "Type": "Basketball Shoes",
-      "Price": "3,239,000",
+      "Price": 3239000,
       "describe": "Ja Morant became the superstar he is today by repeatedly sinking jumpers on crooked rims, jumping on tractor tyres and dribbling through traffic cones in steamy South Carolina summers. The JA 1 is a testament to his rise. With Zoom Air, it supports bunny hops and hyper speed without sacrificing comfort so that you can control your own destiny on the court. This special design nods to a tasty snack that led to Ja's discovery and the fire that burns in his stomach to keep proving the haters wrong.",
       "size": [
         40,
@@ -3936,10 +3936,10 @@
       ]
     },
     {
-      "id": "75",
+      "id": 75,
       "Name": "Nike Tiempo Legend 10 Elite",
       "Type": "FG Low-Top Football Boot",
-      "Price": "6,739,000",
+      "Price": 6739000,
       "describe": "We make Elite football boots for those obsessed with the game. This special-edition Legend 10 is no exception. Its Pastel Pink and special textured Swoosh design will be on the feet of the best players as they take to the pitch of the world's biggest tournaments. Add in FlyTouch Plus for exceptional touch and you have a championship-level boot ready for personal brilliance.",
       "size": [
         40,
@@ -3975,10 +3975,10 @@
       ]
     },
     {
-      "id": "76",
+      "id": 76,
       "Name": "Nike Mercurial Superfly 9 Academy",
       "Type": "Turf High-Top Football Shoes",
-      "Price": "2,779,000",
+      "Price": 2779000,
       "describe": "Instantly tilt the pitch in the bold design of the Superfly 9 Academy TF. It's loaded with a Zoom Air unit and flexible NikeSkin at the top for exceptional touch, so you can dominate in the waning minutes of a match—when it matters most. Fast is in the Air.",
       "size": [
         40,
@@ -4011,10 +4011,10 @@
       ]
     },
     {
-      "id": "77",
+      "id": 77,
       "Name": "Nike Mercurial Vapor 15 Academy",
       "Type": "TF Low-Top Football Shoes",
-      "Price": "2,479,000",
+      "Price": 2479000,
       "describe": "We make Academy shoes for those looking to take their game to the next level. Injected with pastel pinks and crowned with a metallic Swoosh design, this special edition of the Vapor 15 is inspired by what the pros wear for the world's biggest tournaments, where their brilliance takes centre stage. Add in an Air Zoom unit for speed, and you have a shoe ready for your moments of greatness.",
       "size": [
         40,
@@ -4056,10 +4056,10 @@
       ]
     },
     {
-      "id": "78",
+      "id": 78,
       "Name": "Nike Mercurial Superfly 9 Elite",
       "Type": "FG High-Top Football Boot",
-      "Price": "8,059,000",
+      "Price": 8059000,
       "describe": "We make Elite football boots for those obsessed with the game. This special edition Superfly 9 is no exception. Its Pastel Pink design will be on the feet of the best players as they take to the pitch of the world's biggest tournaments. Add in a specially designed Air Zoom unit for speed and you have a championship-level boot ready for personal brilliance.",
       "size": [
         40,
@@ -4095,10 +4095,10 @@
       ]
     },
     {
-      "id": "79",
+      "id": 79,
       "Name": "Nike ACG Moc",
       "Type": "Men's Shoes",
-      "Price": "2,649,000",
+      "Price": 2649000,
       "describe": "Find the comfort of home after your next adventure. Bringing a relaxed feel to even the most rugged of campsites, the ACG Moc's slip-on design and plush foam midsole pair perfectly with a hot drink and wild vistas. It features an adjustable cord on the heel, but what you don't see is how that cord laces through loops inside the shoe. When you pull it tight, it creates a secure fit around your foot. Insulated canvas helps keep your feet warm, while the tread pattern delivers durable traction—just in case that evening stroll calls your name.",
       "size": [
         36.5,
@@ -4144,10 +4144,10 @@
       ]
     },
     {
-      "id": "80",
+      "id": 80,
       "Name": "KD17 x Alchemist EP",
       "Type": "Basketball Shoes",
-      "Price": "4,699,000",
+      "Price": 4699000,
       "describe": "While Kevin Durant's all-timer status is already cemented, his hooper soul can't be soothed unless he's on the court, perfecting his craft. Put in the work to be great in the KD17, a shoe for gym rats and those who insist on running it back. A forefoot Air Zoom unit enhances your first step. We combined it with Nike Air cushioning to fuel full-court sprints and defensive stops that can decide games. With its extra-durable rubber outsole, this version gives you traction for outdoor courts.",
       "size": [
         41,
@@ -4174,10 +4174,10 @@
       ]
     },
     {
-      "id": "81",
+      "id": 81,
       "Name": "Nike Tiempo Legend 10 Academy",
       "Type": "IC Low-Top Football Shoes",
-      "Price": "2,349,000",
+      "Price": 2349000,
       "describe": "We make Academy shoes for those looking to take their game to the next level. Injected with pastel pinks and crowned with a metallic Swoosh design, this special edition of the Legend 10 is inspired by what the pros wear for the world's biggest tournaments, where their brilliance takes centre stage. Add in FlyTouch Lite for amplified touch, and you have a shoe ready for personal brilliance.",
       "size": [
         40,
@@ -4222,10 +4222,10 @@
       ]
     },
     {
-      "id": "82",
+      "id": 82,
       "Name": "Nike Air Zoom Infinity Tour NRG",
       "Type": "Golf Shoes (Wide)",
-      "Price": "5,589,000",
+      "Price": 5589000,
       "describe": "We know the struggle can be real. This special-edition Infinity Tour is with you through every botched tee shot and double bogey. The breathable textile on the upper helps you stay cool and comfortable when you're wading through the tall grass. The tongue and collar lining have a super-soft terry cloth to give your foot a calming hug when you're in the bunker. And to top it off, the Sky Blue colour can soothe you while finding a way for success.",
       "size": [
         40,
@@ -4263,10 +4263,10 @@
       ]
     },
     {
-      "id": "83",
+      "id": 83,
       "Name": "Nike Zoom Bella 6 Premium",
       "Type": "Women's Workout Shoes",
-      "Price": "2,119,199",
+      "Price": 2119199,
       "describe": "Unleash your innermost strength and spirit in the Nike Zoom Bella 6. This design supports heavy lifts, explosive movements and primal post-set screams as you strut your hard-earned progress on the gym floor. A newly implemented Air Zoom unit gives you pop, and an updated forefoot ensures all sorts of foot shapes can flex through their workouts in true style. To top it off, we gave this look gold accents that are sure to help your gains steal the spotlight.",
       "size": [
         36,
@@ -4294,10 +4294,10 @@
       "img_src": "'20% off','https://static.nike.com/a/images/t_default/9f36e2b3-1df1-48a1-84df-fe3f16ef6000/zoom-bella-6-workout-shoes-0vt6H7.png','20% off','https://static.nike.com/a/images/t_default/8bcb5dd6-bdf6-4634-8a7a-d74eca9decf5/zoom-bella-6-workout-shoes-0vt6H7.png','20% off','https://static.nike.com/a/images/t_default/5b8af72f-44a4-4668-97b3-58411d70a98a/zoom-bella-6-workout-shoes-0vt6H7.png','20% off','https://static.nike.com/a/images/t_default/16d72e2a-218a-4c5c-945b-877f3b01dac4/zoom-bella-6-workout-shoes-0vt6H7.png','20% off','https://static.nike.com/a/images/t_default/10952313-03de-42fe-86f3-686f2e0e90fd/zoom-bella-6-workout-shoes-0vt6H7.png','20% off','https://static.nike.com/a/images/t_default/e8dc2b2c-7df6-4b06-b328-8b1e5ad7f291/zoom-bella-6-workout-shoes-0vt6H7.png','20% off','https://static.nike.com/a/images/t_default/f41fe0fb-4aee-46d9-956a-4b5bba42bfc6/zoom-bella-6-workout-shoes-0vt6H7.png','20% off','https://static.nike.com/a/images/t_default/32d1e0ae-8282-4095-97f2-3b04a675c921/zoom-bella-6-workout-shoes-0vt6H7.png"
     },
     {
-      "id": "84",
+      "id": 84,
       "Name": "Air Jordan I High G",
       "Type": "Men's Golf Shoes",
-      "Price": "5,279,000",
+      "Price": 5279000,
       "describe": "Feel unbeatable, from the tee box to the final putt. Inspired by one of the most iconic sneakers of all time, the Air Jordan 1 G is an instant classic on the course. With Air cushioning underfoot, a Wings logo on the heel and an integrated traction pattern to help you power through your swing, it delivers all the clubhouse cool of the original AJ1—plus everything you need to play 18 holes in comfort.",
       "size": [
         40,
@@ -4334,10 +4334,10 @@
       ]
     },
     {
-      "id": "85",
+      "id": 85,
       "Name": "Sabrina 2 'Colour Vision' EP",
       "Type": "Basketball Shoes",
-      "Price": "3,829,000",
+      "Price": 3829000,
       "describe": "Sabrina Ionescu's success is no secret. Her game is based on living in the gym, getting in rep after rep to perfect her craft. The Sabrina 2 sets you up to do more, so you're ready to go when it's game time. Plush foam helps keep you fresh, Air Zoom cushioning adds the pop and sticky traction helps you create that next-level distance. Sabrina's handed you the tools. Time to go to work. With its extra-durable rubber outsole, this version gives you traction for outdoor courts.",
       "size": "[]",
       "benefit": "[]",
@@ -4356,10 +4356,10 @@
       ]
     },
     {
-      "id": "86",
+      "id": 86,
       "Name": "Nike Streakfly",
       "Type": "Road Racing Shoes",
-      "Price": "4,699,000",
+      "Price": 4699000,
       "describe": "Our lightest racing shoe, the Nike Streakfly is all about the speed you need to take on the competition in a mile, 5K or 10K race. Low profile with sleek details, it feels like it disappears on your foot to help you better connect with the road on the way to your personal best.",
       "size": [
         40,
@@ -4398,10 +4398,10 @@
       ]
     },
     {
-      "id": "87",
+      "id": 87,
       "Name": "LeBron XXI EP",
       "Type": "Basketball Shoes",
-      "Price": "6,179,000",
+      "Price": 6179000,
       "describe": "Last time around, LeBron flipped the script on his shoe game as only the King can. The encore is even better. The LeBron XXI has a cabling system that works with Air Zoom cushioning and a light, low-to-the-ground design, giving you agile fluidity and explosiveness without excess weight. Created for your ascent and the next generation of hoopers, it's ideal for Bron-like open-floor attacks and rising towards the rim when the game's pace turns up. With its extra-durable rubber outsole, this version gives you traction for outdoor courts.",
       "size": [
         40,
@@ -4433,10 +4433,10 @@
       ]
     },
     {
-      "id": "88",
+      "id": 88,
       "Name": "Jordan Sophia",
       "Type": "Women's Slides",
-      "Price": "2,499,000",
+      "Price": 2499000,
       "describe": "What does stepping into luxury feel like? Well, a little like slipping on the Jordan Sophia. Premium leather, embroidered accents, plush foam and comfortable Air cushioning elevate these slides to a whole new level.",
       "size": [
         35.5,
@@ -4466,10 +4466,10 @@
       ]
     },
     {
-      "id": "89",
+      "id": 89,
       "Name": "Nike Pegasus 41 By You",
       "Type": "Custom Road Running Shoes",
-      "Price": "4,699,000",
+      "Price": 4699000,
       "describe": "Responsive cushioning in the Pegasus provides an energised ride for everyday road running. Experience lighter-weight energy return with dual Air Zoom units and a ReactX foam midsole. Plus, improved engineered mesh on the upper decreases weight and increases breathability. With bold and bright colours to choose from and a trio of performance alternatives, this shoe is prepared for your special touch.",
       "size": "[]",
       "benefit": "[]",
@@ -4519,10 +4519,10 @@
       ]
     },
     {
-      "id": "91",
+      "id": 91,
       "Name": "Nike Air Footscape Woven",
       "Type": "Women's Shoes",
-      "Price": "4,699,000",
+      "Price": 4699000,
       "describe": "The comfy classic is back. With a wide toe box and lateral lacing, the Air Footscape Woven delivers an alternative fit for natural motion. Inside, you'll find a foam midsole and Nike Air cushioning in the heel for a plush feel. This version is done up in denim for a classic look that's as comfortable as your favourite pair of blue jeans.",
       "size": [
         36,
@@ -4563,10 +4563,10 @@
       ]
     },
     {
-      "id": "92",
+      "id": 92,
       "Name": "Nike InfinityRN 4",
       "Type": "Women's Road Running Shoes (Extra Wide)",
-      "Price": "4,699,000",
+      "Price": 4699000,
       "describe": "Maximum cushioning provides elevated comfort for everyday runs. Experience a soft, rocker-shaped platform made with new ReactX foam underfoot, and an ultra-comfortable collar and tongue for a snug feel. Plus, a water-resistant membrane was added to this version to help keep you dry.",
       "size": [
         36.5,
@@ -4617,10 +4617,10 @@
       ]
     },
     {
-      "id": "93",
+      "id": 93,
       "Name": "Nike Alphafly 3",
       "Type": "Women's Road Racing Shoes",
-      "Price": "8,059,000",
+      "Price": 8059000,
       "describe": "Fine-tuned for marathon speed, the Alphafly 3 helps push you beyond what you thought possible. Three innovative technologies power your run: a double dose of Air Zoom units helps launch you into your next step; a full-length carbon-fibre plate helps propel you forwards with ease; and a heel-to-toe ZoomX foam midsole helps keep you fresh from start to 26.2. Time to leave your old personal records in the dust.",
       "size": "[]",
       "benefit": [
@@ -4649,10 +4649,10 @@
       ]
     },
     {
-      "id": "94",
+      "id": 94,
       "Name": "Nike Air Max 90 LV8",
       "Type": "Women's Shoes",
-      "Price": "4,109,000",
+      "Price": 4109000,
       "describe": "The Air Max 90 LV8 takes your favourite silhouette to the next level with stacked Nike Air units. Not only do you get extra cushioning, but you get extra height, creating the perfect platform that's easy to style. Layers of mixed materials add texture and dimension, creating an elevated look you'll be reaching for again and again.",
       "size": "[]",
       "benefit": [
@@ -4681,10 +4681,10 @@
       ]
     },
     {
-      "id": "95",
+      "id": 95,
       "Name": "Jordan Post",
       "Type": "Women's Slides",
-      "Price": "1,089,000",
+      "Price": 1089000,
       "describe": "Quick, comfy, cool. Made from robust and flexible foam, these slides are designed to stay secure as you rack up those steps. A wide foot covering holds your foot in place, while an asymmetrical design gives you a distinct look.",
       "size": [
         35.5,
@@ -4712,10 +4712,10 @@
       ]
     },
     {
-      "id": "96",
+      "id": 96,
       "Name": "Nike ACG Watercat+",
       "Type": "Shoes",
-      "Price": "3,669,000",
+      "Price": 3669000,
       "describe": "These cats aren't afraid to get wet. Preferring to spend more time splashing than not, the quick-drying Watercat+ takes you to the water's edge and across to the other side. Born out of our long history of woven shoes, the minimalist upper is crafted from moisture-wicking cords for lightweight breathability. We kept the easy toggle lacing from the original while improving the shoe's overall fit and structure to help you stay comfortable on those long river days. And because slippery rocks and mucky trails are basically nature's water park, the mixed-rubber outsole with undulating lugs delivers more grip than a sucker fish. When we say all conditions, we mean all conditions. So step into the current—these shoes are built to handle the flow.",
       "size": [
         37.5,
@@ -4760,10 +4760,10 @@
       ]
     },
     {
-      "id": "97",
+      "id": 97,
       "Name": "Nike Vomero 17",
       "Type": "Women's Road Running Shoes",
-      "Price": "4,699,000",
+      "Price": 4699000,
       "describe": "Maximum cushioning provides a comfortable ride for everyday runs. Experience enhanced comfort in this latest version, with a dual-density midsole made with a combination of ZoomX underfoot and Cushlon 3.0 foam throughout. Plus, a new engineered mesh upper offers more breathability.",
       "size": [
         36.5,
@@ -4809,10 +4809,10 @@
       ]
     },
     {
-      "id": "98",
+      "id": 98,
       "Name": "Nike Vista",
       "Type": "Women's Sandals",
-      "Price": "1,609,000",
+      "Price": 1609000,
       "describe": "With all the elements you need for a day outdoors, these sandals deliver big—without weighing you down. They're light and airy, with a tough tread and responsive cushioning. And thanks to the adjustable strap, you can personalise the fit when you're on the go.",
       "size": [
         35.5,
@@ -4841,10 +4841,10 @@
       ]
     },
     {
-      "id": "99",
+      "id": 99,
       "Name": "Nike Air Max INTRLK Lite",
       "Type": "Women's Shoes",
-      "Price": "2,349,000",
+      "Price": 2349000,
       "describe": "You've got to feel the sensation to be the sensation. Enter the Air Max INTRLK. Rethought cushioning turns the page in comfort with increased responsiveness and the perfect amount of bounce. Lightweight, easy-to-style materials stand up to wear and tear. Finishing it off, the Waffle-inspired outsole adds true Nike zest.",
       "size": [
         35.5,
@@ -4883,10 +4883,10 @@
       ]
     },
     {
-      "id": "100",
+      "id": 100,
       "Name": "Nike Winflo 11",
       "Type": "Women's Road Running Shoes",
-      "Price": "2,929,000",
+      "Price": 2929000,
       "describe": "Responsive cushioning provides a balanced ride for everyday runs. Experience energy return with a combination of Cushlon 3.0 foam and a full-length Nike Air unit in the midsole. Plus, an elastic midfoot band and a spacious forefoot provide an accommodating, comfortable fit.",
       "size": [
         36.5,
@@ -4931,10 +4931,10 @@
       ]
     },
     {
-      "id": "101",
+      "id": 101,
       "Name": "Nike Air Max Flyknit Venture",
       "Type": "Women's Shoes",
-      "Price": "5,279,000",
+      "Price": 5279000,
       "describe": "Say hello to Venture—an outdoor-inspired shoe with utility style. The functional details and a chunky look bring a rugged vibe, while customisable lacing enhances your experience so you can hit city pavements and urban trails with ease. You're ready for limitless possibilities.",
       "size": [
         35.5,
@@ -4972,10 +4972,10 @@
       ]
     },
     {
-      "id": "102",
+      "id": 102,
       "Name": "Nike Air Max Koko",
       "Type": "Women's Sandals (22–29cm)",
-      "Price": "2,929,000",
+      "Price": 2929000,
       "describe": "Heat up the streets in the Nike Air Max Koko Sandal. Designed for women, this pinnacle platform height sandal adds a splash of colourful Air in the heel. The thick, layered foam midsole provides a smooth and flexible ride. Premium details on the upper add texture and dimension to elevate your look.",
       "size": [
         35.5,
@@ -5015,10 +5015,10 @@
       ]
     },
     {
-      "id": "103",
+      "id": 103,
       "Name": "Air Jordan Legacy 312 Low",
       "Type": "Women's Shoes",
-      "Price": "4,109,000",
+      "Price": 4109000,
       "describe": "Who doesn't love a good mash-up? Taking elements from the AJ1, AJ3 and the Nike Air Alpha Force, these kicks encompass the best of the best. Iconic details (check out that elephant print and midfoot strap) honour MJ's time in Chicago's 312 area code. With premium materials and Nike Air cushioning, this is the beginning of a whole new legacy.",
       "size": [
         36,
@@ -5053,10 +5053,10 @@
       ]
     },
     {
-      "id": "104",
+      "id": 104,
       "Name": "Nike Shox TL",
       "Type": "Women's Shoes",
-      "Price": "4,999,000",
+      "Price": 4999000,
       "describe": "The Nike Shox TL takes mechanical cushioning to the next level.A recrafted version of the 2003 icon, it features breathable mesh in the upper, with full-length Nike Shox technology for optimal impact absorption and a bold look on the streets.",
       "size": [
         36,
@@ -5093,10 +5093,10 @@
       ]
     },
     {
-      "id": "105",
+      "id": 105,
       "Name": "Nike Flyknit Haven",
       "Type": "Women's Shoes",
-      "Price": "3,519,000",
+      "Price": 3519000,
       "describe": "Say hello to Haven—a cosy shoe all about relaxing and recharging. This new silhouette features an adjustable and collapsible collar, so you can easily slip on and go. From chilling at home to brunching with friends, its pillowy Flyknit material serves both versatile style and premium comfort. Who said you have to sacrifice being stylish for being cosy? Not us.",
       "size": [
         35.5,
@@ -5132,10 +5132,10 @@
       ]
     },
     {
-      "id": "106",
+      "id": 106,
       "Name": "Nike Air Max Pulse",
       "Type": "Women's Shoes",
-      "Price": "4,409,000",
+      "Price": 4409000,
       "describe": "Keeping it real, the Air Max Pulse pulls inspiration from the London music scene, bringing an underground touch to the iconic Air Max line. Its textile-wrapped midsole and vacuum-sealed accents keep 'em looking fresh and clean, while colours inspired by the London music scene give your look the edge. Point-loaded Air cushioning—revamped from the incredibly plush Air Max 270—delivers better bounce, helping you push past your limits.",
       "size": [
         36,
@@ -5177,10 +5177,10 @@
       ]
     },
     {
-      "id": "107",
+      "id": 107,
       "Name": "Nike Interact Run",
       "Type": "Women's Road Running Shoes",
-      "Price": "2,349,000",
+      "Price": 2349000,
       "describe": "Can you see the future? Fast-forward your footsteps in the cutting-edge Nike Interact Run. It's set up with all the running goodness you need: a lightweight Flyknit upper, soft foam midsole and comfort where it counts. Scan the QR code on the tongue with your phone, and check out our online introduction to the Nike Interact Run's ins and outs.",
       "size": [
         36.5,
@@ -5212,10 +5212,10 @@
       ]
     },
     {
-      "id": "108",
+      "id": 108,
       "Name": "Nike ACG Air Deschutz+",
       "Type": "Sandals",
-      "Price": "2,189,000",
+      "Price": 2189000,
       "describe": "From city hikes to canyon trails and long walks on the beach, the ACG Air Deschutz+ is built to get you places. The rugged, outdoor-inspired design pairs a classic '90s look with modern comfort and cushioning. With adjustable straps and quick-drying materials, it's got everything you need for your next adventure. Strap in and let your journey begin.",
       "size": [
         37.5,
@@ -5251,10 +5251,10 @@
       ]
     },
     {
-      "id": "109",
+      "id": 109,
       "Name": "Nike SB Force 58",
       "Type": "Skate Shoes",
-      "Price": "2,189,000",
+      "Price": 2189000,
       "describe": "The latest and greatest innovation to hit the streets, the Force 58 gives you the durability of a cupsole with the flexibility of vulcanised shoes. Made from canvas and suede and finished with perforations on the toe, the whole look is infused with heritage basketball DNA.",
       "size": [
         40,
@@ -5295,10 +5295,10 @@
       ]
     },
     {
-      "id": "110",
+      "id": 110,
       "Name": "Jordan Deja",
       "Type": "Women's Sandals",
-      "Price": "2,649,000",
+      "Price": 2649000,
       "describe": "Office days, beach days—every day begins with footwear and the versatile Deja sandal works for pretty much all of them. Thick leather straps keep you sophisticated and secure, while a chunky rubber sole (check the AJ13 vibes) keeps you ready to get those steps in. The metallic hardware and branding shines bright for a look that's simultaneously statement-making and subtle. Yes, you can have both.",
       "size": [
         35.5,
@@ -5328,10 +5328,10 @@
       ]
     },
     {
-      "id": "111",
+      "id": 111,
       "Name": "Nike Air Force 1 '07 Next Nature",
       "Type": "Women's Shoes",
-      "Price": "3,239,000",
+      "Price": 3239000,
       "describe": "This hoops original gives \"\"fresh air\"\" a whole new meaning. The breezy canvas, embroidered details and a bouquet of spring colours bring summertime vibes to what you already know and love: Nike Air cushioning, classic construction and style for days.",
       "size": [
         35.5,
@@ -5370,10 +5370,10 @@
       ]
     },
     {
-      "id": "112",
+      "id": 112,
       "Name": "Nike Ryz 365 2",
       "Type": "Women's Shoe",
-      "Price": "2,499,000",
+      "Price": 2499000,
       "describe": "The Nike RYZ 365 2 brings you a futuristic take to classic '90s sneakers. The eye-catching midsole with stylised cut-outs modernises the chunky style with an airy aesthetic. A rich mixture of materials on the upper adds texture and style versatility. To top it off, the DIY lacing lets you personalise your style—wrap under the midsole or through webbing on the side and heel for a delicate touch to your bold look.",
       "size": [
         35.5,
@@ -5414,10 +5414,10 @@
       ]
     },
     {
-      "id": "113",
+      "id": 113,
       "Name": "Nike Air Max 90",
       "Type": "Men's Shoes",
-      "Price": "3,519,000",
+      "Price": 3519000,
       "describe": "Lace up and feel the legacy. Produced at the cross section of art, music and culture, this champion running shoe helped define the '90s. Worn by presidents, revolutionised through collabs and celebrated through rare colourways, its striking visuals, Waffle outsole and exposed Air cushioning keep it alive and well.",
       "size": [
         36,
@@ -5471,10 +5471,10 @@
       ]
     },
     {
-      "id": "114",
+      "id": 114,
       "Name": "Nike Invincible 3",
       "Type": "Women's Road Running Shoes",
-      "Price": "5,279,000",
+      "Price": 5279000,
       "describe": "Maximum cushioning provides our most comfortable ride for everyday runs. Experience a breathable Flyknit upper and the robust platform of lightweight ZoomX foam that softens impact. Plus, the midsole of this model is wider and taller than the last for even more cushioned comfort.",
       "size": [
         36.5,
@@ -5517,10 +5517,10 @@
       ]
     },
     {
-      "id": "115",
+      "id": 115,
       "Name": "Nike Journey Run",
       "Type": "Women's Road Running Shoes",
-      "Price": "2,649,000",
+      "Price": 2649000,
       "describe": "Enjoy every step, route and jaunt in the Nike Journey Run. It'll have you striding and smiling on punishing pavements, thanks to extra-high foam stacks and super-soft cushioning. It's so comfy that you'll already be looking forward to lacing 'em up again.",
       "size": [
         36.5,
@@ -5560,10 +5560,10 @@
       ]
     },
     {
-      "id": "116",
+      "id": 116,
       "Name": "Nike Air Max Solo",
       "Type": "Women's Shoes",
-      "Price": "2,929,000",
+      "Price": 2929000,
       "describe": "This modern interpretation of classic elements is perfect for the Air Max super-fan. Layer up in breathable mesh and plush synthetic leathers, with a heel cup inspired by the AM90. The AM180 influences the textured Air unit, which delivers just the right amount of cushioning. Go ahead—Max out your look.",
       "size": [
         36,
@@ -5599,10 +5599,10 @@
       ]
     },
     {
-      "id": "117",
+      "id": 117,
       "Name": "Nike SB Zoom Pogo Plus Premium",
       "Type": "Skate Shoes",
-      "Price": "2,649,000",
+      "Price": 2649000,
       "describe": "The Zoom Pogo delivers a serious boost to any skate session. With a broken-in fit straight out of the box and mixed materials that age to perfection, they bring comfort you have to feel to believe. Oh, and the raised taping increases control for the perfect flick, while Zoom Air cushioning delivers the ultimate boardfeel.",
       "size": [
         35.5,
@@ -5642,10 +5642,10 @@
       ]
     },
     {
-      "id": "118",
+      "id": 118,
       "Name": "Nike Structure 25",
       "Type": "Women's Road Running Shoes",
-      "Price": "3,829,000",
+      "Price": 3829000,
       "describe": "The supportive cushioning provides steadiness for everyday runs. Experience a stable platform without sacrificing performance with a combination of Cushlon 3.0 foam and a Zoom Air unit. Plus, a higher stack height makes it more comfortable, stable and supportive than ever.",
       "size": [
         36.5,
@@ -5693,10 +5693,10 @@
       ]
     },
     {
-      "id": "119",
+      "id": 119,
       "Name": "Nike Air Max Excee",
       "Type": "Women's Shoes",
-      "Price": "2,649,000",
+      "Price": 2649000,
       "describe": "Inspired by the Nike Air Max 90, the Nike Air Max Excee celebrates a classic through a new lens. Elongated design lines and distorted proportions on the upper elevate an icon into a modern space.",
       "size": [
         36,
@@ -5736,10 +5736,10 @@
       ]
     },
     {
-      "id": "120",
+      "id": 120,
       "Name": "Nike Blazer Low '77",
       "Type": "Women's Shoes",
-      "Price": "2,499,000",
+      "Price": 2499000,
       "describe": "Praised by the streets for its simplicity and comfort, the Blazer returns with its classic hoops style. Featuring crisp leather, a low-cut collar and an exposed tongue, it's a must-have wardrobe staple.",
       "size": [
         35.5,
@@ -5777,10 +5777,10 @@
       ]
     },
     {
-      "id": "121",
+      "id": 121,
       "Name": "Nike MC Trainer 3",
       "Type": "Women's Workout Shoes",
-      "Price": "2,069,000",
+      "Price": 2069000,
       "describe": "Rep out that last set and stay steady through the heaves and holds in the MC Trainer 3. A sturdy, flat base brings a reliable level of stability to the motions you love most. Its contouring upper helps keep you contained during lateral movements. And the comfortable underfoot feel is great for all-day wear, in and out of the gym.",
       "size": [
         36,
@@ -5813,10 +5813,10 @@
       ]
     },
     {
-      "id": "122",
+      "id": 122,
       "Name": "Nike Air Max SC",
       "Type": "Women's Shoes",
-      "Price": "2,223,199",
+      "Price": 2223199,
       "describe": "With its heritage athletics aesthetic and Max Air cushioning, the Air Max SC is the perfect way to finish off any outfit. Smooth leather and airy textiles add depth and durability, while iridescent accents celebrate Air Max Day.",
       "size": [
         35.5,
@@ -5844,10 +5844,10 @@
       "img_src": "'20% off','https://static.nike.com/a/images/t_default/579b87e1-5f70-4a31-ac1d-5e190bb8a97a/air-max-sc-shoes-PtXRH1.png','20% off','https://static.nike.com/a/videos/so_0.12/9a9296cd-a5d5-4235-977f-837eb980f4af/air-max-sc-shoes-PtXRH1.jpg','20% off','https://static.nike.com/a/images/t_default/a45ccb94-b0b9-41da-a347-df4711111d8a/air-max-sc-shoes-PtXRH1.png','20% off','https://static.nike.com/a/images/t_default/c25afd60-cb2f-4af2-8dce-ec87fb66552b/air-max-sc-shoes-PtXRH1.png','20% off','https://static.nike.com/a/images/t_default/52e57fa8-b81e-4fcf-8352-59be2ee5dff1/air-max-sc-shoes-PtXRH1.png','20% off','https://static.nike.com/a/images/t_default/4852cd7d-cef8-425a-8d79-b79a35fc9fe8/air-max-sc-shoes-PtXRH1.png','20% off','https://static.nike.com/a/images/t_default/20dcf3e7-a60a-480e-ba30-9b473dc8a7bc/air-max-sc-shoes-PtXRH1.png','20% off','https://static.nike.com/a/images/t_default/48d5667c-2e3f-4528-b299-5470e58d0bc3/air-max-sc-shoes-PtXRH1.png','20% off','https://static.nike.com/a/images/t_default/7bb5a497-bb26-4781-8e49-f3a70e24201e/air-max-sc-shoes-PtXRH1.png','20% off','https://static.nike.com/a/images/t_default/4a592204-7866-45b1-85ea-71f58da5d865/air-max-sc-shoes-PtXRH1.png','20% off','https://static.nike.com/a/images/t_default/f453b860-28f9-4c42-8640-c572457cf0c9/air-max-sc-shoes-PtXRH1.png"
     },
     {
-      "id": "123",
+      "id": 123,
       "Name": "Nike Court Legacy Lift",
       "Type": "Women's Shoes",
-      "Price": "2,499,000",
+      "Price": 2499000,
       "describe": "Elevate your style with the Court Legacy Lift. Its platform midsole delivers a bold statement on top of the clean, easy-to-wear design. And don't worry, we've kept the classic Court fit you know and love.",
       "size": [
         35.5,
@@ -5883,10 +5883,10 @@
       ]
     },
     {
-      "id": "124",
+      "id": 124,
       "Name": "Nike Air Force 1 Wild",
       "Type": "Women's Shoes",
-      "Price": "4,109,000",
+      "Price": 4109000,
       "describe": "The outdoors is for everyone—and this shoe is too. The classic AF-1 gets an adventurous refresh with utility lacing, durable materials and sturdy stitching. The textile-wrapped midsole is light and more flexible, while an added heel pillow creates extra comfort. Embroidered accents contrast with boot-like details for a look that's versatile and functional.",
       "size": [
         35.5,
@@ -5923,10 +5923,10 @@
       ]
     },
     {
-      "id": "125",
+      "id": 125,
       "Name": "Nike Air Max 1",
       "Type": "Women's shoes",
-      "Price": "4,109,000",
+      "Price": 4109000,
       "describe": "Meet the leader of the pack. Walking on clouds above the noise, the Air Max 1 blends timeless design with cushioned comfort. Sporting a fast-paced look, wavy mudguard and Nike Air, this classic icon hit the scene in '87 and continues to be the soul of the franchise today.",
       "size": [
         36,
@@ -5962,10 +5962,10 @@
       ]
     },
     {
-      "id": "126",
+      "id": 126,
       "Name": "Nike Gamma Force",
       "Type": "Women's Shoes",
-      "Price": "2,649,000",
+      "Price": 2649000,
       "describe": "Layers upon layers of dimensional style—that's a force to be reckoned with. Offering both comfort and versatility, these kicks are rooted in heritage basketball culture. Collar materials pay homage to vintage sport while the subtle platform elevates your look, literally. The Gamma Force is forging its own legacy: court style that can be worn all day, wherever you go.",
       "size": [
         35.5,
@@ -6002,10 +6002,10 @@
       ]
     },
     {
-      "id": "127",
+      "id": 127,
       "Name": "Nike TC 7900",
       "Type": "Women's shoes",
-      "Price": "3,519,000",
+      "Price": 3519000,
       "describe": "We've taken the look of early-2000s running and made it tough enough for everyday wear. By combining durable materials with soft cushioning, the TC 7900 is ready for your journey.",
       "size": [
         35.5,
@@ -6044,10 +6044,10 @@
       ]
     },
     {
-      "id": "128",
+      "id": 128,
       "Name": "Nike Court Vision Alta",
       "Type": "Women's Shoes",
-      "Price": "2,349,000",
+      "Price": 2349000,
       "describe": "Street fashion meets hoops authenticity in the distinctly modern Nike Court Vision Alta. The detailed upper features an angled heel, crisp leather and sparkly gold glitter Swoosh logos to help you live out loud. So go ahead, embrace your flashy side.",
       "size": [
         35.5,
@@ -6087,7 +6087,7 @@
       "id": 129,
       "Name": "Nike Waffle Debut",
       "Type": "Women's Shoes",
-      "Price": "2,069,000",
+      "Price": 2069000,
       "describe": "Retro gets modernised with these sleek sneakers inspired by the Nike Daybreak. Era-echoing suede and nylon are paired in complementary colours, and the updated wedge midsole gives you an extra lift. Style, comfort, that iconic Waffle outsole—this is a perfect new addition to your daily rotation.",
       "size": [
         35.5,
@@ -6133,7 +6133,7 @@
       "id": 130,
       "Name": "Nike Pegasus 41",
       "Type": "Women's Road Running Shoes",
-      "Price": "3,829,000",
+      "Price": 3829000,
       "describe": "Responsive cushioning in the Pegasus provides an energised ride for everyday road running. Experience lighter-weight energy return with dual Air Zoom units and a ReactX foam midsole. Plus, improved engineered mesh on the upper decreases weight and increases breathability.",
       "size": [
         36,
