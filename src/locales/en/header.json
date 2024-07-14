@@ -9,7 +9,8 @@
             "collection": "Collection",
             "news": "News",
             "search": "Search",
-            "login": "LogIn"
+            "login": "LogIn",
+            "contact": "Contact"
       }
 
 }

@@ -9,10 +9,6 @@ const Banner = () => {
 
     return (
     <>
-        <div className="banner-top">
-            <span>2handtroical</span>
-            <p>{t('ex')} <span> @instagram.2handtropical</span></p>
-        </div>
         <div className="banner">
             <div className="banner-content">
                 <p className="brand"> 2handtropical </p>

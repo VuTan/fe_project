@@ -1,6 +1,6 @@
-import {createSlice, PayloadAction} from "@reduxjs/toolkit";
-import {buyProduct} from "../models/Product.modal";
-import {toast} from "react-toastify";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { buyProduct } from "../models/Product.modal";
+import { toast } from "react-toastify";
 
 export interface CartState {
     cartArr: buyProduct[],
@@ -13,7 +13,6 @@ const initialState: CartState = {
     cartTotalQuantity: 0,
     cartTotalAmount: 0,
 };
-
 
 const cartSlice = createSlice({
     name: "product",
@@ -79,10 +78,9 @@ const cartSlice = createSlice({
             localStorage.setItem("cartProduct", JSON.stringify(state.cartArr));
         },
         getTotals: (state) => {
-            let {total, quantity} = state.cartArr.reduce((cartTotal, cartProduct) => {
-                const {Price, quantity} = cartProduct;
-                const parsePrice = Price.replace(/,/g, "")
-                const productTotal = +parsePrice * quantity;
+            let { total, quantity } = state.cartArr.reduce((cartTotal, cartProduct) => {
+                const { Price, quantity } = cartProduct;
+                const productTotal = +Price * quantity;
 
                 cartTotal.total += productTotal;
                 cartTotal.quantity += quantity;
@@ -96,10 +94,19 @@ const cartSlice = createSlice({
             state.cartTotalAmount = total;
 
             localStorage.setItem("cartProduct", JSON.stringify(state.cartArr));
+        },
+        clearCart: (state) => {
+            state.cartArr = [];
+            state.cartTotalAmount = 0;
+            state.cartTotalQuantity = 0;
+            localStorage.setItem("cartProduct", JSON.stringify(state.cartArr));
+            toast.success("Cart cleared successfully!", {
+                position: "bottom-left"
+            });
         }
     }
-})
+});
 
-const cartReducer = cartSlice.reducer
-export const {addProduct, deleteProduct, decrementQuantity, incrementQuantity, getTotals} = cartSlice.actions
+const cartReducer = cartSlice.reducer;
+export const { addProduct, deleteProduct, decrementQuantity, incrementQuantity, getTotals, clearCart } = cartSlice.actions;
 export default cartReducer;
