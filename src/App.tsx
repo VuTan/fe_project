@@ -14,6 +14,7 @@ import FavouriteProduct from "./component/Product/FavouriteProduct";
 import Cart from "./component/Cart/Cart";
 import New from "./component/News/New";
 import NewsDetail from "./component/News/NewsDetail";
+import Profile from "./component/Profile/Profile";
 import ContactForm from "./component/Home/ContactForm";
 
 
@@ -63,6 +64,9 @@ const appRouters: RouteObject[] = [
                 element: <New/>
             },
             {
+                path: "/profile",
+                element: <Profile/>
+             },
                 path: "/contact",
                 element: <ContactForm/>
             }
