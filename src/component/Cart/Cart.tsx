@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import './Cart.scss';
+
 import {IoIosHeart, IoIosHeartEmpty} from "react-icons/io";
 import {AiOutlineDelete} from "react-icons/ai";
 import Button from "../Button/Button";
@@ -10,6 +11,12 @@ import {clearCart, decrementQuantity, deleteProduct, getTotals, incrementQuantit
 import {buyProduct, convertToProduct, formatPriceVND} from "../../models/Product.modal";
 import CheckoutPopup from './CheckoutPopup';
 import {addFavorite, removeFavorite} from "../../redux/favorite.reducers";
+import {decrementQuantity, deleteProduct, getTotals, incrementQuantity, clearCart} from "../../redux/cart.reducers";
+import {buyProduct} from "../../models/Product.modal";
+import CheckoutPopup from './CheckoutPopup';
+import Popup from "../Product/PopupDetailProduct";
+import {useParams} from "react-router-dom";
+import {useGetProductByIdQuery} from "../../service/ProductService";
 
 const Cart = () => {
     const cart = useSelector((state: RootState) => state.cart);
@@ -45,26 +52,21 @@ const Cart = () => {
 
     const handleClosePopup = () => {
         setShowPopup(false);
+        document.body.style.overflow = 'auto';
+    };
+
+    const handleOpenPopup = () => {
+        setShowPopup(true);
+        document.body.style.overflow = 'hidden';
+        window.scrollTo({top: 0, behavior: 'smooth'})
     };
 
     const handleSubmit = () => {
-        // Xử lý logic thanh toán ở đây
+       
         console.log('Thông tin khách hàng:', customerInfo);
-        dispatch(clearCart()); // Gọi action clearCart để xóa giỏ hàng
+        dispatch(clearCart());
         setShowPopup(false);
     };
-
-    // const handleAddToFavorite = (event: React.MouseEvent<HTMLButtonElement>) => {
-    //     if (data)
-    //         dispath(addFavorite(data))
-    //     setIsFavorite(true)
-    // }
-    // const handleRemoveFavorite = (event: React.MouseEvent<HTMLButtonElement>) => {
-    //     if (data)
-    //         dispath(removeFavorite(data))
-    //     setIsFavorite(false)
-    // }
-
     return (
         <>
             <div className="cart-container">
@@ -72,7 +74,21 @@ const Cart = () => {
                     <div className="bag">
                         <div className="free-delivery">
                             <span>Free Delivery</span>
-                            <p>Applies to orders of $ 14 000.00 or more. <a href="#">View details</a></p>
+                            <p>Applies to orders of $ 14 000.00 or more.
+                                <h6 className="details-show" onClick={handleOpenPopup}>More Detail</h6>
+                                {showPopup && (
+                                    <>
+                                        <div onClick={(e) => {
+                                            e.stopPropagation()
+                                        }} className="popup">
+                                            <div className="popup-content">
+                                                <p className="close-button" onClick={handleClosePopup}>&times;</p>
+                                                <Popup product={data}/>
+                                            </div>
+                                        </div>
+                                    </>
+                                )}
+                            </p>
                         </div>
                         <h2>Bag</h2>
                         {cart.cartArr.length === 0 ? (
@@ -80,10 +96,12 @@ const Cart = () => {
                         ) : (
                             cart.cartArr.map((product) => (
                                 <div className="cart-item" key={product.id}>
-                                    <img
-                                        src={product.main_img_src}
-                                        alt={product.Name}
-                                    />
+                                    <div>
+                                        <img
+                                            src={product.main_img_src}
+                                            alt={product.Name}
+                                        />
+                                    </div>
                                     <div className="item-details">
                                         <h3>{product.Name}</h3>
                                         <p>{product.Type}</p>
@@ -97,7 +115,6 @@ const Cart = () => {
                                     </div>
                                     <div className="item-actions">
                                         <button className="favorite" onClick={() => {
-                                            // Logic to handle favoriting the product
                                             const isFavorite = favorite.favArr.some(index => index.id === product.id); // Use === for strict comparison
                                             if (isFavorite) {
                                                 dispatch(removeFavorite(convertToProduct(product)))

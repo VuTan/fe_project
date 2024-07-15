@@ -42,8 +42,8 @@ const CheckoutPopup: React.FC<CustomerInfoPopupProps> = ({ customerInfo, setCust
     }
 
     return (
-        <div className="popup-overlay" onClick={handleClosePopup}>
-            <div className="popup-content" onClick={(e) => e.stopPropagation()}>
+        <div className="popup-cart-overlay" onClick={handleClosePopup}>
+            <div className="popup-cart-content" onClick={(e) => e.stopPropagation()}>
                 <span className="close-button" onClick={handleClosePopup}>&times;</span>
                 <h2>Billing Information</h2>
                 <form onSubmit={(e) => {
@@ -52,7 +52,7 @@ const CheckoutPopup: React.FC<CustomerInfoPopupProps> = ({ customerInfo, setCust
                 }}>
                     <div>
                         <label>Full Name</label>
-                        <input
+                        <input className={"cart-input"}
                             type="text"
                             name="name"
                             value={customerInfo.name}
@@ -62,7 +62,7 @@ const CheckoutPopup: React.FC<CustomerInfoPopupProps> = ({ customerInfo, setCust
                     </div>
                     <div>
                         <label>Phone Number</label>
-                        <input
+                        <input className={"cart-input"}
                             type="text"
                             name="phone"
                             value={customerInfo.phone}
@@ -72,7 +72,7 @@ const CheckoutPopup: React.FC<CustomerInfoPopupProps> = ({ customerInfo, setCust
                     </div>
                     <div>
                         <label>Email</label>
-                        <input
+                        <input className={"cart-input"}
                             type="email"
                             name="email"
                             value={customerInfo.email}
@@ -82,7 +82,7 @@ const CheckoutPopup: React.FC<CustomerInfoPopupProps> = ({ customerInfo, setCust
                     </div>
                     <div>
                         <label>Address</label>
-                        <input
+                        <input className={"cart-input"}
                             type="text"
                             name="address"
                             value={customerInfo.address}

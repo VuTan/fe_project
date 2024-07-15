@@ -1,5 +1,24 @@
 @import "../../base";
 
+.light-mode .free-delivery {
+  background: $bg-light-gray;
+  color: $bg-gray;
+}
+
+.dark-mode .free-delivery {
+  background: $bg-gray;
+  color: $color_black;
+
+  .dark-mode .item-details, .dark-mode .favourites {
+    color: $color_black;
+  }
+
+}
+
+.dark-mode .favorite, .dark-mode .delete {
+  color: $bg-light-gray;
+}
+
 .cart-container {
   padding: 15px 48px;
   max-width: 1200px;
@@ -21,7 +40,6 @@
       .free-delivery {
         margin-bottom: 20px;
         padding: 10px;
-        background-color: #f8f8f8;
         border-radius: 5px;
         font-size: 14px;
 
@@ -31,7 +49,6 @@
         }
 
         a {
-          color: #0521d7;
           text-decoration: underline;
           margin-left: 5px;
         }
@@ -61,7 +78,6 @@
 
           p {
             margin: 2px 0;
-            color: #555;
             font-size: 14px;
           }
 
@@ -101,14 +117,6 @@
             font-size: 20px;
             margin-bottom: 10px;
           }
-
-          .favorite {
-            color: red;
-          }
-
-          .delete {
-            color: gray;
-          }
         }
       }
     }
@@ -140,17 +148,16 @@
 
   .favourites {
     margin-top: 40px;
+
     h2 {
       margin-bottom: 10px;
       font-size: 24px;
-    }
-    p {
-      color: #555;
     }
   }
 
   .suggestions {
     margin-top: 40px;
+
     h2 {
       margin-bottom: 20px;
       font-size: 24px;
@@ -173,6 +180,7 @@
           font-size: 18px;
           margin-bottom: 5px;
         }
+
         p {
           margin: 2px 0;
           color: #555;

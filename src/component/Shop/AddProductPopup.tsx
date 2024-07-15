@@ -1,5 +1,4 @@
-// src/AddProductPopup.tsx
-import React, {useEffect, useState} from 'react';
+import React, { useEffect } from 'react';
 import './AddProductPopup.scss';
 import {IoMdCloudUpload} from "react-icons/io";
 import {Multiselect} from "multiselect-react-dropdown";
@@ -30,12 +29,16 @@ const AddProductPopup: React.FC<AddProductPopupProps> = ({show, onClose}) => {
     useEffect(() => {
         if (show) {
             document.body.style.overflow = 'hidden';
+            document.body.classList.add('no-scroll');
         } else {
             document.body.style.overflow = 'auto';
+            document.body.classList.remove('no-scroll');
         }
         return () => {
+            document.body.classList.remove('no-scroll');
             document.body.style.overflow = 'auto';
         };
+
     }, [show]);
     useEffect(() => {
         console.log(formProduct)

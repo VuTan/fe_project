@@ -40,7 +40,7 @@ const ShopPage: React.FC = () => {
     const [selectedSort, setSelectedSort] = useState<boolean>(true);
 
     useEffect(() => {
-        window.scrollTo(0 , 0)
+        window.scrollTo(0, 0)
     }, []);
 
     const {data: sortedData, isFetching: isSortingFetching} = useGetProductSortByQuery({
@@ -56,15 +56,6 @@ const ShopPage: React.FC = () => {
 
     const handleChangePage = (event: { selected: number }) => {
         setCurrentPage(event.selected + 1);
-    };
-    const [showPopup, setShowPopup] = useState(false);
-
-    const handleAddProductClick = () => {
-        setShowPopup(true);
-    };
-
-    const handleClosePopup = () => {
-        setShowPopup(false);
     };
 
     const handleSortBy = (event: React.MouseEvent<HTMLUListElement>) => {
@@ -105,19 +96,17 @@ const ShopPage: React.FC = () => {
                     <div className="filter-sort">
                         <span>{t('shoppage.fast filter')}</span>
                         <div className={"filter-sort-right"}>
-                        <p className={"sort-by"}>
-                            {t('shoppage.rank')}
+                            <p className={"sort-by"}>
+                                {t('shoppage.rank')}
 
-                            <ul className="dropdown-sort-by" onClick={handleSortBy}>
-                                <li id={"high-low"}>Giá cao - thấp</li>
-                                <li id={"low-high"}>Giá thấp - cao</li>
-                                <li id={"a-z"}>Tên A - Z</li>
-                                <li id={"z-a"}>Tên Z - A</li>
-                            </ul>
+                                <ul className="dropdown-sort-by" onClick={handleSortBy}>
+                                    <li id={"high-low"}>Giá cao - thấp</li>
+                                    <li id={"low-high"}>Giá thấp - cao</li>
+                                    <li id={"a-z"}>Tên A - Z</li>
+                                    <li id={"z-a"}>Tên Z - A</li>
+                                </ul>
 
-                        </p>
-                            <p className={"sort-by"} onClick={handleAddProductClick}>Add</p>
-                            <AddProductPopup show={showPopup} onClose={handleClosePopup}/>
+                            </p>
                         </div>
                     </div>
                     <div className="products">
