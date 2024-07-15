@@ -1,11 +1,16 @@
 import React, {useEffect, useState} from 'react';
 import './Cart.scss';
-import {IoIosHeartEmpty} from "react-icons/io";
+
+import {IoIosHeart, IoIosHeartEmpty} from "react-icons/io";
 import {AiOutlineDelete} from "react-icons/ai";
 import Button from "../Button/Button";
 import SliderNew from "../Home/SliderNew";
 import {useDispatch, useSelector} from "react-redux";
 import {RootState} from "../../redux/store";
+import {clearCart, decrementQuantity, deleteProduct, getTotals, incrementQuantity} from "../../redux/cart.reducers";
+import {buyProduct, convertToProduct, formatPriceVND} from "../../models/Product.modal";
+import CheckoutPopup from './CheckoutPopup';
+import {addFavorite, removeFavorite} from "../../redux/favorite.reducers";
 import {decrementQuantity, deleteProduct, getTotals, incrementQuantity, clearCart} from "../../redux/cart.reducers";
 import {buyProduct} from "../../models/Product.modal";
 import CheckoutPopup from './CheckoutPopup';
@@ -15,12 +20,8 @@ import {useGetProductByIdQuery} from "../../service/ProductService";
 
 const Cart = () => {
     const cart = useSelector((state: RootState) => state.cart);
-    const dispatch = useDispatch();
-    const {id} = useParams()
-
-    const {data} = useGetProductByIdQuery({id: id})
-
-
+    const favorite = useSelector((state: RootState) => state.favorite)
+    const dispatch = useDispatch()
     const [showPopup, setShowPopup] = useState(false);
     const [customerInfo, setCustomerInfo] = useState({
         name: '',
@@ -45,16 +46,6 @@ const Cart = () => {
         dispatch(getTotals());
     }, [cart, dispatch]);
 
-    const formatterVND = new Intl.NumberFormat('vi-VN', {
-        style: 'decimal',
-        minimumFractionDigits: 0,
-        maximumFractionDigits: 0,
-    });
-
-    const formatterVNDSymbol = (price: number) => {
-        return formatterVND.format(price) + " đ";
-    };
-
     const handleCheckout = () => {
         setShowPopup(true);
     };
@@ -71,12 +62,11 @@ const Cart = () => {
     };
 
     const handleSubmit = () => {
-        // Xử lý logic thanh toán ở đây
+       
         console.log('Thông tin khách hàng:', customerInfo);
-        dispatch(clearCart()); // Gọi action clearCart để xóa giỏ hàng
+        dispatch(clearCart());
         setShowPopup(false);
     };
-
     return (
         <>
             <div className="cart-container">
@@ -121,10 +111,20 @@ const Cart = () => {
                                             <span>{product.quantity}</span>
                                             <button onClick={() => increment(product)}>+</button>
                                         </div>
-                                        <p>MRP: {product.Price}</p>
+                                        <p>MRP: {formatPriceVND(product.Price)}</p>
                                     </div>
                                     <div className="item-actions">
-                                        <button className="favorite"><IoIosHeartEmpty/></button>
+                                        <button className="favorite" onClick={() => {
+                                            const isFavorite = favorite.favArr.some(index => index.id === product.id); // Use === for strict comparison
+                                            if (isFavorite) {
+                                                dispatch(removeFavorite(convertToProduct(product)))
+                                            } else {
+                                                dispatch(addFavorite(convertToProduct(product)))
+                                            }
+                                        }}>
+                                            {favorite.favArr.some(item => item.id === product.id) ? (<IoIosHeart/>) : (
+                                                <IoIosHeartEmpty/>)}
+                                        </button>
                                         <button className="delete" onClick={() => handleDelete(product)}>
                                             <AiOutlineDelete/>
                                         </button>
@@ -138,7 +138,7 @@ const Cart = () => {
                         <div className="summary-details">
                             <div className="subtotal">
                                 <span>Subtotal</span>
-                                <span>{formatterVNDSymbol(cart.cartTotalAmount)}</span>
+                                <span>{formatPriceVND(cart.cartTotalAmount)}</span>
                             </div>
                             <div className="delivery">
                                 <span>Estimated Delivery & Handling</span>
@@ -146,7 +146,7 @@ const Cart = () => {
                             </div>
                             <div className="total">
                                 <span>Total</span>
-                                <span>{formatterVNDSymbol(cart.cartTotalAmount)}</span>
+                                <span>{formatPriceVND(cart.cartTotalAmount)}</span>
                             </div>
                             <Button title={"Member Checkout"} isBlack onClick={handleCheckout}/>
                         </div>
