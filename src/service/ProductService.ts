@@ -47,10 +47,6 @@ export const productApi = createApi({
     })
 })
 
-const fetchProductSortByPrice = (lowToHigh: boolean) => {
-    return axios.get(`/product?product?_sort=Price&_order=${lowToHigh ? "asc" : "desc"}`);
-}
-
 export const {
     useGetProductPerPageQuery,
     useGetProductSortByQuery,
