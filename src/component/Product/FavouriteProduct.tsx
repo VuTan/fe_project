@@ -8,8 +8,6 @@ import {removeFavorite} from "../../redux/favorite.reducers";
 import {useNavigate} from "react-router-dom";
 
 const FavouriteProduct: React.FC = () => {
-    const [isEditMode, setIsEditMode] = useState(false);
-    const [favourites, setFavourites] = useState([true, true]); // Mảng giữ trạng thái yêu thích của mỗi sản phẩm
     const favorite = useSelector((state: RootState) => state.favorite)
     const dispath = useDispatch();
     const navigate = useNavigate()
@@ -24,10 +22,10 @@ const FavouriteProduct: React.FC = () => {
                 <h1>Favourites</h1>
                 <div className="favorite-items">
                     {favorite.favArr.map((product) => (
-                        <div className="favorite-item" key={product.id} onClick={() => {
-                            navigate(`/shop/product/${product.id}`)
-                        }}>
-                            <img src={product.main_img_src} alt={product.Name}/>
+                        <div className="favorite-item" key={product.id} >
+                            <img src={product.main_img_src} alt={product.Name} onClick={() => {
+                                navigate(`/shop/product/${product.id}`)
+                            }}/>
                             <div className="item-details">
                                 <h2>{product.Name}</h2>
                                 <p>{product.Type}</p>
