@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React,{useEffect, useState} from 'react';
 import './Cart.scss';
 
 import {IoIosHeart, IoIosHeartEmpty} from "react-icons/io";
@@ -7,21 +7,21 @@ import Button from "../Button/Button";
 import SliderNew from "../Home/SliderNew";
 import {useDispatch, useSelector} from "react-redux";
 import {RootState} from "../../redux/store";
-import {clearCart, decrementQuantity, deleteProduct, getTotals, incrementQuantity} from "../../redux/cart.reducers";
+import {decrementQuantity, deleteProduct, getTotals, incrementQuantity, clearCart} from "../../redux/cart.reducers";
 import {buyProduct, convertToProduct, formatPriceVND} from "../../models/Product.modal";
 import CheckoutPopup from './CheckoutPopup';
 import {addFavorite, removeFavorite} from "../../redux/favorite.reducers";
-import {decrementQuantity, deleteProduct, getTotals, incrementQuantity, clearCart} from "../../redux/cart.reducers";
-import {buyProduct} from "../../models/Product.modal";
-import CheckoutPopup from './CheckoutPopup';
 import Popup from "../Product/PopupDetailProduct";
-import {useParams} from "react-router-dom";
 import {useGetProductByIdQuery} from "../../service/ProductService";
+import {useParams} from "react-router-dom";
 
 const Cart = () => {
     const cart = useSelector((state: RootState) => state.cart);
     const favorite = useSelector((state: RootState) => state.favorite)
     const dispatch = useDispatch()
+    const {id} = useParams()
+
+    const {data} = useGetProductByIdQuery({id: id})
     const [showPopup, setShowPopup] = useState(false);
     const [customerInfo, setCustomerInfo] = useState({
         name: '',
@@ -46,6 +46,16 @@ const Cart = () => {
         dispatch(getTotals());
     }, [cart, dispatch]);
 
+    const formatterVND = new Intl.NumberFormat('vi-VN', {
+        style: 'decimal',
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0,
+    });
+
+    const formatterVNDSymbol = (price: number) => {
+        return formatterVND.format(price) + " đ";
+    };
+
     const handleCheckout = () => {
         setShowPopup(true);
     };
@@ -62,7 +72,7 @@ const Cart = () => {
     };
 
     const handleSubmit = () => {
-       
+
         console.log('Thông tin khách hàng:', customerInfo);
         dispatch(clearCart());
         setShowPopup(false);
@@ -111,7 +121,7 @@ const Cart = () => {
                                             <span>{product.quantity}</span>
                                             <button onClick={() => increment(product)}>+</button>
                                         </div>
-                                        <p>MRP: {formatPriceVND(product.Price)}</p>
+                                        <p>MRP: {formatterVNDSymbol(product.Price)}</p>
                                     </div>
                                     <div className="item-actions">
                                         <button className="favorite" onClick={() => {

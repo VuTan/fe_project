@@ -2,8 +2,6 @@ import "./CardProduct.scss";
 import React, { useState } from "react";
 import {formatPriceVND, Product} from "../../models/Product.modal";
 import {useNavigate} from "react-router-dom";
-import { Product } from "../../models/Product.modal";
-import { useNavigate } from "react-router-dom";
 import { FaRegEdit  } from 'react-icons/fa';
 import { AiOutlineDelete } from "react-icons/ai";
 import AddProductPopup from "../Shop/AddProductPopup";
@@ -35,8 +33,8 @@ const CardProduct = (props: CardProductProps) => {
             <div className={`card-img-${props.sizeCard}`}>
                 <img src={props.product.main_img_src} alt="img" />
                 <div className="icons">
-                    <FaRegEdit  size={"23px"} className="edit-icon" onClick={handleAddProduct}/>
-                    <AiOutlineDelete size={"27px"} className="delete-icon" />
+                    <FaRegEdit  size={"25px"} className="edit-icon" onClick={handleAddProduct}/>
+                    <AiOutlineDelete size={"30px"} className="delete-icon" />
                 </div>
             {showPopup && <AddProductPopup show={showPopup} onClose={handleClose} />}
             </div>
