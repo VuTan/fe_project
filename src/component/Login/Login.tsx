@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import './Login.scss';
-import {NavLink} from "react-router-dom";
+import {NavLink, useNavigate} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import {useGetUserQuery} from "../../service/UserService";
 import {toast} from "react-toastify";
@@ -15,6 +15,7 @@ const Login = () => {
     const {t} = useTranslation('sigin')
     const dispath = useDispatch()
     const {data} = useGetUserQuery("admin@123")
+    const navigate = useNavigate();
 
     useEffect(() => {
         let result: boolean = true;
@@ -41,7 +42,7 @@ const Login = () => {
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         checkLogin(email, password)
-
+        navigate('/');
     };
 
     return (
@@ -78,6 +79,7 @@ const Login = () => {
                         <p className={"note"}>{t('sign-in.t1')}
                             <NavLink to={"#"} className={"user-policy"}> {t('sign-in.li')}</NavLink>
                         </p>
+
                         <button type="submit"
                                 className={`login-button${showLogin ? "" : "-disable"}`}>{t('sign-in.submit')}</button>
                         <p className={"note"}> {t('sign-in.no account')}
