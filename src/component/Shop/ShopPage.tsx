@@ -1,4 +1,4 @@
-import React, {Fragment, useState} from 'react';
+import React, {Fragment, useEffect, useState} from 'react';
 import './ShopPage.scss';
 import {useGetProductPerPageQuery, useGetProductSortByQuery} from "../../service/ProductService";
 import CardProduct from "../Product/CardProduct";
@@ -40,16 +40,16 @@ const ShopPage: React.FC = () => {
     const [selectedSort, setSelectedSort] = useState<boolean>(true);
 
     useEffect(() => {
-        window.scrollTo(0 , 0)
+        window.scrollTo(0, 0)
     }, []);
 
-    const {data: sortedData, isLoading: isSortingLoading} = useGetProductSortByQuery({
+    const {data: sortedData, isFetching: isSortingFetching} = useGetProductSortByQuery({
         sort: sort,
         lowToHigh: selectedSort,
         page: currentPage,
         perPage: productPerPage,
     });
-    const {data: paginatedData, isLoading: isPaginatingLoading} = useGetProductPerPageQuery({
+    const {data: paginatedData, isFetching: isPaginatingFetching} = useGetProductPerPageQuery({
         page: currentPage,
         perPage: productPerPage
     });
@@ -105,17 +105,17 @@ const ShopPage: React.FC = () => {
                     <div className="filter-sort">
                         <span>{t('shoppage.fast filter')}</span>
                         <div className={"filter-sort-right"}>
-                        <p className={"sort-by"}>
-                            {t('shoppage.rank')}
+                            <p className={"sort-by"}>
+                                {t('shoppage.rank')}
 
-                            <ul className="dropdown-sort-by" onClick={handleSortBy}>
-                                <li id={"high-low"}>Giá cao - thấp</li>
-                                <li id={"low-high"}>Giá thấp - cao</li>
-                                <li id={"a-z"}>Tên A - Z</li>
-                                <li id={"z-a"}>Tên Z - A</li>
-                            </ul>
+                                <ul className="dropdown-sort-by" onClick={handleSortBy}>
+                                    <li id={"high-low"}>Giá cao - thấp</li>
+                                    <li id={"low-high"}>Giá thấp - cao</li>
+                                    <li id={"a-z"}>Tên A - Z</li>
+                                    <li id={"z-a"}>Tên Z - A</li>
+                                </ul>
 
-                        </p>
+                            </p>
                             <p className={"sort-by"} onClick={handleAddProductClick}>Add</p>
                             <AddProductPopup show={showPopup} onClose={handleClosePopup}/>
                         </div>

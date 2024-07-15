@@ -2,7 +2,7 @@
 
 .dark-mode .search-results-open {
   border-radius: 5px;
-  background: $color_black;
+  background: $bg-gray;
 
   .search-result-item {
     display: flex;
@@ -46,7 +46,6 @@
     color: $bg-gray;
   }
 }
-
 
 .search-results {
   position: absolute;
@@ -106,7 +105,3 @@
     width: 260px;
   }
 }
-
-@media (max-width: 1090px) {}
-
-@media (max-width: 790px) {}
