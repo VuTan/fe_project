@@ -53,11 +53,11 @@ const appRouters: RouteObject[] = [
             },
             {
                 path: "/favouriteProduct",
-                element: <FavouriteProduct />
+                element: <FavouriteProduct/>
             },
             {
                 path: "/Cart",
-                element: <Cart />
+                element: <Cart/>
             },
             {
                 path: "/news",
@@ -66,7 +66,8 @@ const appRouters: RouteObject[] = [
             {
                 path: "/profile",
                 element: <Profile/>
-             },
+            },
+            {
                 path: "/contact",
                 element: <ContactForm/>
             }

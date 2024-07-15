@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import './Login.scss';
 import {NavLink} from "react-router-dom";
 import {useTranslation} from "react-i18next";
-import {getUserByEmail} from "../../service/UserService";
+import {useGetUserQuery} from "../../service/UserService";
 import {toast} from "react-toastify";
 import {useDispatch} from "react-redux";
 import {login} from "../../redux/user.reducer";
@@ -14,6 +14,8 @@ const Login = () => {
     const [showLogin, setShowLogin] = useState(false);
     const {t} = useTranslation('sigin')
     const dispath = useDispatch()
+    const {data} = useGetUserQuery("admin@123")
+
     useEffect(() => {
         let result: boolean = true;
         if (email === "" || email === null) {
@@ -23,22 +25,17 @@ const Login = () => {
             result = false;
         }
         setShowLogin(result)
-        console.log(showLogin)
     }, [email, password]);
 
 
-    const checkLogin = async (email: string, password: string) => {
-        let userAPI;
-        let res = await getUserByEmail(email);
-        if (res && res.data.length > 0)
-            userAPI = res.data[0]
-        if (userAPI === undefined) {
+    const checkLogin = (email: string, password: string) => {
+        if (data === undefined) {
             toast.warning("Email không tồn tại", {position: "bottom-left"})
-        } else if (userAPI.password !== password) {
+        } else if (data.password !== password) {
             toast.warning("Sai mật khẩu", {position: "bottom-left"})
-        } else if (userAPI.email === email && userAPI.password === password) {
+        } else if (data.email === email && data.password === password) {
             toast.success("Đăng nhập thành công", {position: "bottom-left"})
-            dispath(login(userAPI))
+            dispath(login(data))
         }
     }
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
@@ -78,13 +75,13 @@ const Login = () => {
                             </label>
                             <NavLink to="#" className="forgot-password">{t('sign-in.forgot')}</NavLink>
                         </div>
-                        <p className={"note"}>{t('sign-in.t1')} <NavLink to={"#"}
-                                                                         className={"user-policy"}> {t('sign-in.li')}</NavLink>
+                        <p className={"note"}>{t('sign-in.t1')}
+                            <NavLink to={"#"} className={"user-policy"}> {t('sign-in.li')}</NavLink>
                         </p>
                         <button type="submit"
                                 className={`login-button${showLogin ? "" : "-disable"}`}>{t('sign-in.submit')}</button>
-                        <p className={"note"}>
-                            {t('sign-in.no account')} <NavLink to="/SigUp" className="Sigup">2handmembers.</NavLink>
+                        <p className={"note"}> {t('sign-in.no account')}
+                            <NavLink to="/SigUp" className="Sigup">2handmembers.</NavLink>
                         </p>
                     </form>
                 </div>

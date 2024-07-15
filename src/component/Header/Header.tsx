@@ -9,9 +9,10 @@ import {MdDarkMode} from "react-icons/md";
 import {NavLink} from "react-router-dom";
 import "../../i18n/i18n"
 import {useTranslation} from 'react-i18next'
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {RootState} from "../../redux/store";
 import Search from "./Search";
+import {logout} from "../../redux/user.reducer";
 
 const Header = () => {
     const {i18n} = useTranslation()
@@ -24,6 +25,7 @@ const Header = () => {
     const userStorage = useSelector((state: RootState) => state.user);
     const [showHeader, setShowHeader] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
+    const dispatch = useDispatch()
 
     useEffect(() => {
         const savedLanguage = localStorage.getItem('language') || 'vi';
@@ -122,7 +124,7 @@ const Header = () => {
             </div>
             <nav>
                 <div className="logo">
-                    <NavLink to="/"><img src= "/logo.png" alt="2handtropical"/></NavLink>
+                    <NavLink to="/"><img src="/logo.png" alt="2handtropical"/></NavLink>
                 </div>
                 <div className="hamburger" onClick={toggleMenu}>
                     <GiHamburgerMenu/>
@@ -166,7 +168,9 @@ const Header = () => {
                                             <NavLink
                                                 to={"#"}>Hello {userStorage.user.firstName + ' ' + userStorage.user.lastName}</NavLink>
                                             <NavLink to={"/profile"}>Profile</NavLink>
-                                            <NavLink to={"#"}>Log Out</NavLink>
+                                            <NavLink to={"#"} onClick={() => {
+                                                dispatch(logout())
+                                            }}>Log Out</NavLink>
                                         </div>
 
                                     </p>) :

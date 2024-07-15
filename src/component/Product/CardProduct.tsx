@@ -1,6 +1,6 @@
 import "./CardProduct.scss"
 import React from "react";
-import {Product} from "../../models/Product.modal";
+import {formatPriceVND, Product} from "../../models/Product.modal";
 import {useNavigate} from "react-router-dom";
 
 
@@ -20,7 +20,7 @@ const CardProduct = (props: CardProductProps) => {
                 <p className=" type">{props.product.Type}</p>
             </div>
             <div className="right">
-                <p className=" price">{props.product.Price}</p>
+                <p className=" price">{formatPriceVND(props.product.Price)}</p>
             </div>
         </div>
     </div>)
