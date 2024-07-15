@@ -19,9 +19,7 @@ const Header = () => {
     const {t} = useTranslation('header')
     const [selectedLanguage, setSelectedLanguage] = useState('vi');
     const [menuOpen, setMenuOpen] = useState(false);
-    const [searchTerm, setSearchTerm] = useState('');
     const [isDarkMode, setIsDarkMode] = useState(false);
-    const [isSticky, setIsSticky] = useState(false);
     const userStorage = useSelector((state: RootState) => state.user);
     const [showHeader, setShowHeader] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
@@ -43,17 +41,6 @@ const Header = () => {
 
     const closeMenu = () => {
         setMenuOpen(false);
-    };
-
-    const handleSearch = () => {
-        // hien thi phan tim kiem co hoat dong hay khong
-        console.log('Search term:', searchTerm);
-    };
-
-    const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
-        if (event.key === 'Enter') {
-            handleSearch();
-        }
     };
 
     const changeLanguage = (lng: 'vi' | 'en') => {
@@ -136,30 +123,14 @@ const Header = () => {
                     <ul className="menu">
                         <li><NavLink to="/">{t('header-show.home')}</NavLink></li>
                         <li><NavLink to="/shop">{t('header-show.men')}</NavLink></li>
-                        <li><NavLink to="#">{t('header-show.promotion')}</NavLink></li>
-                        <li><NavLink to="#">{t('header-show.collection')}</NavLink></li>
                         <li><NavLink to="/news">{t('header-show.news')}</NavLink></li>
                         <li><NavLink to="/contact">{t('header-show.contact')}</NavLink></li>
                     </ul>
-                    {/*<div className="search">*/}
-                    {/*    <input className={"search-input"}*/}
-                    {/*           type="text"*/}
-                    {/*           placeholder={t('header-show.search')}*/}
-                    {/*           value={searchTerm}*/}
-                    {/*           onChange={(event) => setSearchTerm(event.target.value)}*/}
-                    {/*           onKeyDown={handleKeyDown}/>*/}
-                    {/*    <button onClick={handleSearch}><FiSearch/></button>*/}
-                    {/*</div>*/}
                     <div className="search-icons">
                         <Search/>
                         <div className="icons">
                             <NavLink to="/favouriteProduct"><IoIosHeartEmpty size={25}/></NavLink>
                             <NavLink to="/Cart"><IoCartOutline size={25}/></NavLink>
-                            {/*thêm css của thẻ p ở dưới
-                                đăng nhập vào
-                                tk:admin@123
-                                pass: admin
-                                để xem chi tiết*/}
                             {userStorage.user ?
                                 (
                                     <p className="accset">{userStorage.user.firstName + ' ' + userStorage.user.lastName}
