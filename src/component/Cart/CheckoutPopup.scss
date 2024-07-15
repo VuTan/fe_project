@@ -1,5 +1,5 @@
 @import "../../base";
-.popup-overlay {
+.popup-cart-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -11,7 +11,7 @@
   align-items: center;
 }
 
-.popup-content {
+.popup-cart-content {
   background: white;
   padding: 20px;
   border-radius: 10px;
@@ -39,11 +39,21 @@ form {
       margin-bottom: 5px;
     }
 
-    input {
+    .cart-input {
       width: 100%;
       padding: 8px;
       border: 1px solid #ccc;
       border-radius: 5px;
     }
   }
+}
+
+.light-mode .popup-cart-content{
+  background: $bg-light-gray;
+  color: $color_black;
+}
+
+.dark-mode .popup-cart-content{
+  background: $color_black;
+  color: $bg-light-gray;
 }

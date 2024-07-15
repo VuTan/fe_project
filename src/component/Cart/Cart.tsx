@@ -1,18 +1,25 @@
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import './Cart.scss';
-import { IoIosHeartEmpty } from "react-icons/io";
-import { AiOutlineDelete } from "react-icons/ai";
+import {IoIosHeartEmpty} from "react-icons/io";
+import {AiOutlineDelete} from "react-icons/ai";
 import Button from "../Button/Button";
 import SliderNew from "../Home/SliderNew";
-import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "../../redux/store";
-import { decrementQuantity, deleteProduct, getTotals, incrementQuantity, clearCart } from "../../redux/cart.reducers";
-import { buyProduct } from "../../models/Product.modal";
+import {useDispatch, useSelector} from "react-redux";
+import {RootState} from "../../redux/store";
+import {decrementQuantity, deleteProduct, getTotals, incrementQuantity, clearCart} from "../../redux/cart.reducers";
+import {buyProduct} from "../../models/Product.modal";
 import CheckoutPopup from './CheckoutPopup';
+import Popup from "../Product/PopupDetailProduct";
+import {useParams} from "react-router-dom";
+import {useGetProductByIdQuery} from "../../service/ProductService";
 
 const Cart = () => {
     const cart = useSelector((state: RootState) => state.cart);
     const dispatch = useDispatch();
+    const {id} = useParams()
+
+    const {data} = useGetProductByIdQuery({id: id})
+
 
     const [showPopup, setShowPopup] = useState(false);
     const [customerInfo, setCustomerInfo] = useState({
@@ -54,6 +61,13 @@ const Cart = () => {
 
     const handleClosePopup = () => {
         setShowPopup(false);
+        document.body.style.overflow = 'auto';
+    };
+
+    const handleOpenPopup = () => {
+        setShowPopup(true);
+        document.body.style.overflow = 'hidden';
+        window.scrollTo({top: 0, behavior: 'smooth'})
     };
 
     const handleSubmit = () => {
@@ -70,7 +84,21 @@ const Cart = () => {
                     <div className="bag">
                         <div className="free-delivery">
                             <span>Free Delivery</span>
-                            <p>Applies to orders of $ 14 000.00 or more. <a href="#">View details</a></p>
+                            <p>Applies to orders of $ 14 000.00 or more.
+                                <h6 className="details-show" onClick={handleOpenPopup}>More Detail</h6>
+                                {showPopup && (
+                                    <>
+                                        <div onClick={(e) => {
+                                            e.stopPropagation()
+                                        }} className="popup">
+                                            <div className="popup-content">
+                                                <p className="close-button" onClick={handleClosePopup}>&times;</p>
+                                                <Popup product={data}/>
+                                            </div>
+                                        </div>
+                                    </>
+                                )}
+                            </p>
                         </div>
                         <h2>Bag</h2>
                         {cart.cartArr.length === 0 ? (
@@ -78,10 +106,12 @@ const Cart = () => {
                         ) : (
                             cart.cartArr.map((product) => (
                                 <div className="cart-item" key={product.id}>
-                                    <img
-                                        src={product.main_img_src}
-                                        alt={product.Name}
-                                    />
+                                    <div>
+                                        <img
+                                            src={product.main_img_src}
+                                            alt={product.Name}
+                                        />
+                                    </div>
                                     <div className="item-details">
                                         <h3>{product.Name}</h3>
                                         <p>{product.Type}</p>
@@ -94,9 +124,9 @@ const Cart = () => {
                                         <p>MRP: {product.Price}</p>
                                     </div>
                                     <div className="item-actions">
-                                        <button className="favorite"><IoIosHeartEmpty /></button>
+                                        <button className="favorite"><IoIosHeartEmpty/></button>
                                         <button className="delete" onClick={() => handleDelete(product)}>
-                                            <AiOutlineDelete />
+                                            <AiOutlineDelete/>
                                         </button>
                                     </div>
                                 </div>
@@ -118,7 +148,7 @@ const Cart = () => {
                                 <span>Total</span>
                                 <span>{formatterVNDSymbol(cart.cartTotalAmount)}</span>
                             </div>
-                            <Button title={"Member Checkout"} isBlack onClick={handleCheckout} />
+                            <Button title={"Member Checkout"} isBlack onClick={handleCheckout}/>
                         </div>
                     </div>
                 </div>
@@ -128,7 +158,7 @@ const Cart = () => {
                 </div>
             </div>
 
-            <SliderNew />
+            <SliderNew/>
 
             {showPopup && (
                 <CheckoutPopup
