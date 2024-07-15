@@ -30,10 +30,6 @@
     justify-content: space-between;
     margin-bottom: 20px;
 
-    .filter-sort-right {
-      display: flex;
-      justify-content: end;
-
       .sort-by {
         margin: 10px 0 15px 10px;
         position: relative;
@@ -55,7 +51,7 @@
         position: absolute;
         z-index: 1;
         width: 100px;
-        //left: -45px;
+        left: -40px;
         border: 1px solid #ccc;
       }
 
@@ -75,7 +71,7 @@
         display: block;
         font-weight: bold;
       }
-    }
+
   }
 
   .products {

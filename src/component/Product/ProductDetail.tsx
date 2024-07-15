@@ -89,8 +89,6 @@ const ProductDetail = () => {
     useEffect(() => {
         const onPopState = () => {
             if (showPopup) {
-                // setShowPopup(false);
-                // window.history.replaceState({}, document.title, window.location.pathname);
             }
         };
 

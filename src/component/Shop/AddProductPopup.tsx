@@ -1,5 +1,4 @@
-// src/AddProductPopup.tsx
-import React, {useEffect, useState} from 'react';
+import React, { useEffect } from 'react';
 import './AddProductPopup.scss';
 
 interface AddProductPopupProps {
@@ -7,17 +6,21 @@ interface AddProductPopupProps {
     onClose: () => void;
 }
 
-const AddProductPopup: React.FC<AddProductPopupProps> = ({ show, onClose }) => {
+const AddProductPopup: React.FC<AddProductPopupProps> = ({show, onClose}) => {
 
     useEffect(() => {
         if (show) {
             document.body.style.overflow = 'hidden';
+            document.body.classList.add('no-scroll');
         } else {
             document.body.style.overflow = 'auto';
+            document.body.classList.remove('no-scroll');
         }
         return () => {
+            document.body.classList.remove('no-scroll');
             document.body.style.overflow = 'auto';
         };
+
     }, [show]);
 
     if (!show) return null;
@@ -26,7 +29,7 @@ const AddProductPopup: React.FC<AddProductPopupProps> = ({ show, onClose }) => {
         <div className="popup-overlayy" onClick={onClose}>
             <div className="popup-contentt" onClick={(e) => e.stopPropagation()}>
                 <form className="popup-form">
-                <h4 className="popup-title">Add Product</h4>
+                    <h4 className="popup-title">Add Product</h4>
                     <label className="popup-label">
                         Title
                         <input className="popup-input" type="text" placeholder="Title"/>

@@ -32,12 +32,15 @@ const Search: React.FC = () => {
                 render={attrs => (
                     <div className={`search-results-open`}>
                         {!!searchTerm && data && data.length > 0 ? (
-                            <div>
+                            <>
                                 {data.slice(0, 4).map((result) => (
                                     <div className="search-result-item" key={result.id}
-                                         onClick={() => navigate(`/shop/product/${result.id}`)}>
-                                        <img src={result.main_img_src} alt=""/>
-                                        <div>
+                                         onClick={() => {
+                                             navigate(`/shop/product/${result.id}`)
+                                             setShowResult(false)
+                                         }}>
+                                        <div><img src={result.main_img_src} alt=""/></div>
+                                        <div className={"item-text"}>
                                             <h3>{result.Name}</h3>
                                             <p>{result.Type}</p>
                                             <p>{result.Price}</p>
@@ -45,11 +48,13 @@ const Search: React.FC = () => {
                                     </div>
                                 ))}
                                 {4 < data.length && (
+                                    <div className={"search-results-open-more"}>
                                     <a>
                                         Load More
                                     </a>
+                                    </div>
                                 )}
-                            </div>
+                            </>
                         ) : (
                             <div className="no-results">No results found.</div>
                         )}

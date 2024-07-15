@@ -57,15 +57,6 @@ const ShopPage: React.FC = () => {
     const handleChangePage = (event: { selected: number }) => {
         setCurrentPage(event.selected + 1);
     };
-    const [showPopup, setShowPopup] = useState(false);
-
-    const handleAddProductClick = () => {
-        setShowPopup(true);
-    };
-
-    const handleClosePopup = () => {
-        setShowPopup(false);
-    };
 
     const handleSortBy = (event: React.MouseEvent<HTMLUListElement>) => {
         const clickedElement = event.target as HTMLLIElement; // Cast to HTMLLIElement for type safety
@@ -116,8 +107,6 @@ const ShopPage: React.FC = () => {
                                 </ul>
 
                             </p>
-                            <p className={"sort-by"} onClick={handleAddProductClick}>Add</p>
-                            <AddProductPopup show={showPopup} onClose={handleClosePopup}/>
                         </div>
                     </div>
                     <div className="products">

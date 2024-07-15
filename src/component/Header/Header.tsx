@@ -121,8 +121,6 @@ const Header = () => {
                     <ul className="menu">
                         <li><NavLink to="/">{t('header-show.home')}</NavLink></li>
                         <li><NavLink to="/shop">{t('header-show.men')}</NavLink></li>
-                        <li><NavLink to="#">{t('header-show.promotion')}</NavLink></li>
-                        <li><NavLink to="#">{t('header-show.collection')}</NavLink></li>
                         <li><NavLink to="/news">{t('header-show.news')}</NavLink></li>
                         <li><NavLink to="/contact">{t('header-show.contact')}</NavLink></li>
                     </ul>
