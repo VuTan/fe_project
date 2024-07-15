@@ -1,6 +1,7 @@
 {
   "user": [
     {
+      "id": "admin",
       "email": "admin@123",
       "password": "admin",
       "firstName": "admin",
@@ -8,6 +9,107 @@
       "dateOfBirth": "",
       "country": "",
       "gender": ""
+    },
+    {
+      "email": "21130170@st.hcmuaf.edu.vn",
+      "password": "tan042003",
+      "firstName": "Vu Thien",
+      "lastName": "Tan",
+      "dateOfBirth": "2024-08-01",
+      "country": "UK",
+      "gender": "Male",
+      "id": "l6NH6k0"
+    },
+    {
+      "email": "21130178@st.hcmuaf.edu.vn",
+      "password": "aaaaaaaa",
+      "firstName": "Vu Thien",
+      "lastName": "Tan",
+      "dateOfBirth": "2024-07-03",
+      "country": "UK",
+      "gender": "Male",
+      "id": "PNKTJaq"
+    },
+    {
+      "email": "2118@st.hcmuaf.edu.vn",
+      "password": "aaaaaaaaaa",
+      "firstName": "Vu Thien",
+      "lastName": "Tan",
+      "dateOfBirth": "2024-07-12",
+      "country": "UK",
+      "gender": "Male",
+      "emailUpdates": true,
+      "id": "cyZ7LiO"
+    },
+    {
+      "email": "21130170@st.hcmuaf.edu.vn",
+      "password": "aaaaaaaaaa",
+      "firstName": "Vu Thien",
+      "lastName": "Tan",
+      "dateOfBirth": "2024-07-02",
+      "country": "",
+      "gender": "Male",
+      "id": "aa0qdfY"
+    },
+    {
+      "email": "21130170@st.hcmuaf.edu.vn",
+      "password": "aaaaaaaaaa",
+      "firstName": "Vu Thien",
+      "lastName": "Tan",
+      "dateOfBirth": "2024-07-02",
+      "country": "",
+      "gender": "Male",
+      "id": "D3-2M2y"
+    },
+    {
+      "email": "21130170@st.hcmuaf.edu.vn",
+      "password": "aaaaaaaaaa",
+      "firstName": "Vu Thien",
+      "lastName": "Tan",
+      "dateOfBirth": "2024-07-02",
+      "country": "",
+      "gender": "Male",
+      "id": "5O96LHM"
+    },
+    {
+      "email": "21130170@st.hcmuaf.edu.vn",
+      "password": "aaaaaaaaaa",
+      "firstName": "Vu Thien",
+      "lastName": "Tan",
+      "dateOfBirth": "2024-07-02",
+      "country": "",
+      "gender": "Male",
+      "id": "7GLCjmZ"
+    },
+    {
+      "email": "21130170@st.hcmuaf.edu.vn",
+      "password": "aaaaaaaaaaaaaaaa",
+      "firstName": "Vu Thien",
+      "lastName": "Tan",
+      "dateOfBirth": "2024-07-02",
+      "country": "",
+      "gender": "Male",
+      "id": "XO2r0qu"
+    },
+    {
+      "email": "21130170@st.hcmuaf.edu.vn",
+      "password": "aaaaaaaaaaaaaaaa",
+      "firstName": "Vu Thien",
+      "lastName": "Tan",
+      "dateOfBirth": "2024-07-02",
+      "country": "",
+      "gender": "Male",
+      "id": "B1t3edr"
+    },
+    {
+      "email": "21130170@st.hcmuaf.edu.vn",
+      "password": "aaaaaaaaaaaaaaaaaa",
+      "firstName": "Vu Thien",
+      "lastName": "Tan",
+      "dateOfBirth": "2024-07-11",
+      "country": "",
+      "gender": "Male",
+      "id": "E_lQr3O"
     }
   ],
   "news": [

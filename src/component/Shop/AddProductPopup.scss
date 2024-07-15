@@ -1,6 +1,7 @@
 @import "../../base";
 
-.popup-overlayy {
+.popup-add-overlayy {
+  margin: 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -13,7 +14,7 @@
   z-index: 1000;
 
   .popup-contentt {
-    padding: 15px;
+    padding: 10px 10px 0 10px;
     border-radius: 5px;
     animation: fadeIn 0.5s ease-in-out;
     width: 700px;
@@ -29,8 +30,38 @@
       bottom: 0;
 
       .popup-title {
-        font-size: 20px;
+        font-size: 28px;
         margin: 0;
+        text-align: center;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 8px;
+
+        .left-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border: 2px dashed #1475cf;
+          height: 150px;
+          width: 190px;
+          cursor: pointer;
+          border-radius: 5px;
+          margin-right: 15px;
+
+          .img-result {
+            width: 135px;
+            height: 135px;
+            border-radius: 2px;
+          }
+        }
+
+        .right-content {
+          width: 100%;
+        }
       }
 
       .popup-label {
@@ -41,7 +72,6 @@
         .popup-textarea {
           width: 100%;
           padding: 8px;
-          margin-top: 5px;
           border: 1px solid #ccc;
           border-radius: 4px;
         }
@@ -54,6 +84,7 @@
       .popup-buttons {
         display: flex;
         justify-content: space-between;
+        padding-top: 5px ;
 
         .popup-button {
           padding: 10px 15px;

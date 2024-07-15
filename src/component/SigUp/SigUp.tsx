@@ -1,26 +1,14 @@
 import React, {useState} from 'react';
 import './SigUp.scss';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
-import {NavLink} from 'react-router-dom';
+import {NavLink, useNavigate} from 'react-router-dom';
 import {useTranslation} from "react-i18next";
-
-interface FormData {
-    email: string;
-    password: string;
-    firstName: string;
-    lastName: string;
-    dateOfBirth: string;
-    country: string;
-    gender: string;
-    emailUpdates: boolean;
-}
+import {useGetUserQuery, useRegisterUserMutation} from "../../service/UserService";
+import {User} from "../../models/User.modal";
+import {toast} from "react-toastify";
+import Cookies from "js-cookie";
 
 const SignUp = () => {
-
-    const { t } = useTranslation('sigup')
-
-    const [formData, setFormData] = useState<FormData>({
+    const [formData, setFormData] = useState<User>({
         email: '',
         password: '',
         firstName: '',
@@ -28,8 +16,12 @@ const SignUp = () => {
         dateOfBirth: '',
         country: '',
         gender: '',
-        emailUpdates: false,
     });
+
+    const navigate = useNavigate();
+    const [addUser] = useRegisterUserMutation()
+    const {t} = useTranslation('sigup')
+    const {data} = useGetUserQuery(formData.email)
 
     const handleChange = (
         event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
@@ -38,7 +30,7 @@ const SignUp = () => {
         if (type === 'checkbox') {
             setFormData((prevFormData) => ({
                 ...prevFormData,
-                [name]: !prevFormData[name as keyof FormData],
+                [name]: !prevFormData[name as keyof User],
             }));
         } else {
             setFormData((prevFormData) => ({
@@ -55,10 +47,23 @@ const SignUp = () => {
         }));
     };
 
-    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = (event: React.FormEvent<HTMLFormElement>, data?: User) => {
         event.preventDefault();
-        console.log(formData);
+
+        if (data && data.email === formData.email) {
+            console.log(data);
+            toast.error("Email đăng ký đã tồn tại", {position: "bottom-center"});
+        } else {
+            addUser(formData);
+            const userToStore = JSON.stringify(formData);
+            Cookies.set('user', userToStore, {
+                maxAge: 10 * 60,
+                path: '/',
+            });
+            navigate('/');
+        }
     };
+
 
     return (<>
             <div className="align-SignUp">
@@ -140,7 +145,6 @@ const SignUp = () => {
                         <input
                             type="checkbox"
                             name="emailUpdates"
-                            checked={formData.emailUpdates}
                             onChange={handleChange}
                         />
                         {t('sign-up.t3')}
@@ -151,7 +155,7 @@ const SignUp = () => {
                     </p>
                 </form>
             </div>
-    </>
+        </>
     );
 };
 

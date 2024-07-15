@@ -1,5 +1,7 @@
 import "./CardProduct.scss";
 import React, { useState } from "react";
+import {formatPriceVND, Product} from "../../models/Product.modal";
+import {useNavigate} from "react-router-dom";
 import { Product } from "../../models/Product.modal";
 import { useNavigate } from "react-router-dom";
 import { FaRegEdit  } from 'react-icons/fa';
@@ -43,8 +45,8 @@ const CardProduct = (props: CardProductProps) => {
                     <p className="title">{props.product.Name}</p>
                     <p className="type">{props.product.Type}</p>
                 </div>
-                <div className="right">
-                    <p className="price">{props.product.Price}</p>
+            <div className="right">
+                <p className=" price">{formatPriceVND(props.product.Price)}</p>
                 </div>
             </div>
         </div>
