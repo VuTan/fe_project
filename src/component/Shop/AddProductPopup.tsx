@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, {useEffect, useState} from 'react';
 import './AddProductPopup.scss';
 import {IoMdCloudUpload} from "react-icons/io";
 import {Multiselect} from "multiselect-react-dropdown";
