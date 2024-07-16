@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import './Login.scss';
-import {NavLink} from "react-router-dom";
+import {NavLink, useNavigate} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import {useGetUserQuery} from "../../service/UserService";
 import {toast} from "react-toastify";
@@ -14,6 +14,7 @@ const Login = () => {
     const [showLogin, setShowLogin] = useState(false);
     const {t} = useTranslation('sigin')
     const dispath = useDispatch()
+    const navigate =  useNavigate();
     const {data} = useGetUserQuery("admin@123")
 
     useEffect(() => {
@@ -39,9 +40,8 @@ const Login = () => {
         }
     }
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-        event.preventDefault();
         checkLogin(email, password)
-
+        navigate('/')
     };
 
     return (

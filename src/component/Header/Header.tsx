@@ -25,11 +25,11 @@ const Header = () => {
     const [lastScrollY, setLastScrollY] = useState(0);
     const dispatch = useDispatch()
 
+
     useEffect(() => {
         const savedLanguage = localStorage.getItem('language') || 'vi';
         setSelectedLanguage(savedLanguage as 'vi' | 'en');
         i18n.changeLanguage(savedLanguage);
-
         const savedTheme = localStorage.getItem('theme') || 'light-mode';
         document.body.classList.add(savedTheme);
         setIsDarkMode(savedTheme === 'dark-mode');
@@ -61,13 +61,11 @@ const Header = () => {
     useEffect(() => {
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
-
             if (currentScrollY < lastScrollY) {
                 setShowHeader(true);
             } else {
                 setShowHeader(false);
             }
-
             setLastScrollY(currentScrollY);
         };
 

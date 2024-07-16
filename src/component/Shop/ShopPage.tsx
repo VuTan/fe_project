@@ -1,12 +1,14 @@
-import React, {Fragment, useState, useEffect} from 'react';
+import React, {Fragment, useEffect, useState} from 'react';
 import './ShopPage.scss';
-import {useGetProductPerPageQuery, useGetProductSortByQuery} from "../../service/ProductService";
 import CardProduct from "../Product/CardProduct";
 import ReactPaginate from "react-paginate";
 import ProductFilter from "./Filter/ProductFilter";
 import SkeletonProduct from "../Product/SkeletonProduct";
 import {useTranslation} from "react-i18next";
 import AddProductPopup from "./AddProductPopup";
+import {useSelector} from "react-redux";
+import {RootState} from "../../redux/store";
+import {useGetProductQuery, useGetProductsQuery} from "../../service/ProductService";
 
 interface Filter {
 
@@ -15,83 +17,91 @@ interface Filter {
 
 const ShopPage: React.FC = () => {
 
-    const categories = [
-        "Shoes",
-        "Sports Bras",
-        "Tops & T-Shirts",
-        "Hoodies & Sweatshirts",
-        "Jackets",
-        "Trousers & Tights",
-        "Shorts",
-        "Tracksuits",
-        "Jumpsuits & Rompers",
-        "Skirts & Dresses",
-        "Socks",
-        "Accessories & Equipment"
-    ];
     const {t} = useTranslation('shoppage')
 
     const productPerPage = 18;
-    const [totalPage, setTotalPage] = useState(8);
     const [currentPage, setCurrentPage] = useState(1);
     const [sort, setSort] = useState("");
     const [totalProduct, setTotalProduct] = useState();
     const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-    const [selectedSort, setSelectedSort] = useState<boolean>(true);
+    const [selectedSort, setSelectedSort] = useState("");
+    const [showPopup, setShowPopup] = useState(false);
+    const userStorage = useSelector((state: RootState) => state.user);
+    const [isAdmin, setIsAdmin] = useState(false)
+
+    const [sortQuery, setSortQuery] = useState<string>("");
+    const [filterQuery, setFilterQuery] = useState<string>("");
+    const [query, setQuery] = useState<string>("")
 
     useEffect(() => {
         window.scrollTo(0, 0)
+        checkAdmin()
     }, []);
 
-    const {data: sortedData, isFetching: isSortingFetching} = useGetProductSortByQuery({
-        sort: sort,
-        lowToHigh: selectedSort,
-        page: currentPage,
-        perPage: productPerPage,
-    });
-    const {data: paginatedData, isFetching: isPaginatingFetching} = useGetProductPerPageQuery({
-        page: currentPage,
-        perPage: productPerPage
-    });
+    useEffect(() => {
+        if (sortQuery !== '') {
+            setQuery(`${filterQuery}${sortQuery}`);
+        } else {
+            setQuery(filterQuery);
+        }
+    }, [sortQuery, filterQuery]);
+
+    const { data:products, isLoading, isFetching } = useGetProductsQuery(currentPage + 1);
+
+    const checkAdmin = () => {
+        if (userStorage.user && userStorage.user.email == "admin@123") {
+            setIsAdmin(true);
+        }
+    }
+    const handleQueryChange = (newQuery: string) => {
+        setFilterQuery(newQuery);
+    }
+
 
     const handleChangePage = (event: { selected: number }) => {
         setCurrentPage(event.selected + 1);
     };
 
+    const handleAddProductClick = () => {
+        setShowPopup(true);
+    };
+
+    const handleClosePopup = () => {
+        setShowPopup(false);
+    };
+
     const handleSortBy = (event: React.MouseEvent<HTMLUListElement>) => {
         const clickedElement = event.target as HTMLLIElement; // Cast to HTMLLIElement for type safety
         const id = clickedElement.id;
-
         switch (id) {
             case 'low-high':
-                setSelectedSort(true);
+                setSelectedSort("asc");
                 setSort("Price");
                 setCurrentPage(1)
                 break;
             case 'high-low':
-                setSelectedSort(false);
+                setSelectedSort("desc");
                 setSort("Price");
                 setCurrentPage(1)
                 break;
             case 'a-z':
-                setSelectedSort(true);
+                setSelectedSort("asc");
                 setSort("Name");
                 setCurrentPage(1)
                 break;
             case 'z-a':
-                setSelectedSort(false);
+                setSelectedSort("desc");
                 setSort("Name");
                 setCurrentPage(1)
                 break;
-            default:
-                break; // Handle invalid IDs (optional)
         }
+        setSortQuery(`&_sort=${sort}&_order=${selectedSort}`)
     };
 
     return (
         <>
             <div className="shop-page">
-                <ProductFilter/>
+                <ProductFilter onQueryChange={handleQueryChange}/>
                 <div className="product-list">
                     <div className="filter-sort">
                         <span>{t('shoppage.fast filter')}</span>
@@ -107,17 +117,19 @@ const ShopPage: React.FC = () => {
                                 </ul>
 
                             </p>
+                            <p className={"sort-by"} onClick={handleAddProductClick}>Add</p>
+                            <AddProductPopup show={showPopup} onClose={handleClosePopup}/>
                         </div>
                     </div>
                     <div className="products">
-                        {isSortingFetching || isPaginatingFetching && (
+                        {isFetching && (
                             <Fragment>
                                 <SkeletonProduct/>
                                 <SkeletonProduct/>
                                 <SkeletonProduct/>
                             </Fragment>)
                         }
-                        {(sortedData || paginatedData)?.map((product) => {
+                        {(products)?.map((product) => {
                             return (<CardProduct key={product.id} product={product} sizeCard={"medium"}/>);
                         })}
                     </div>
@@ -127,7 +139,7 @@ const ShopPage: React.FC = () => {
                             onPageChange={handleChangePage}
                             pageRangeDisplayed={3}
                             marginPagesDisplayed={2}
-                            pageCount={totalPage}
+                            pageCount={products ? Math.ceil(products.length / productPerPage) : 0}
                             previousLabel="< previous"
                             pageClassName="page-item"
                             pageLinkClassName="page-link"

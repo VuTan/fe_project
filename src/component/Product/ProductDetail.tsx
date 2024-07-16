@@ -24,8 +24,8 @@ const ProductDetail = () => {
     const favorite = useSelector((state: RootState) => state.favorite)
 
     const {id} = useParams()
-
-    const {data} = useGetProductByIdQuery({id: id})
+    const validId = id || '';
+    const {data} = useGetProductByIdQuery(validId, {skip: !id})
 
     useEffect(() => {
         window.scrollTo(0, 0)

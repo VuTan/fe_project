@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './SigUp.scss';
 import {NavLink, useNavigate} from 'react-router-dom';
 import {useTranslation} from "react-i18next";
@@ -47,19 +47,18 @@ const SignUp = () => {
         }));
     };
 
-    const handleSubmit = (event: React.FormEvent<HTMLFormElement>, data?: User) => {
+    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-
         if (data && data.email === formData.email) {
             console.log(data);
-            toast.error("Email đăng ký đã tồn tại", {position: "bottom-center"});
+            toast.error("Email đăng ký đã tồn tại", { position: "bottom-center" });
         } else {
             addUser(formData);
-            const userToStore = JSON.stringify(formData);
-            Cookies.set('user', userToStore, {
-                maxAge: 10 * 60,
-                path: '/',
-            });
+            const userJSON = JSON.stringify(data);
+
+            const expiresAt = new Date();
+            expiresAt.setMinutes(expiresAt.getMinutes() + 10);
+            Cookies.set("user", userJSON, {expires: expiresAt, path: "/"});
             navigate('/');
         }
     };

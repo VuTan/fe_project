@@ -15,7 +15,7 @@ const Search: React.FC = () => {
 
     const inputRef = useRef<HTMLInputElement>(null);
 
-    const {data, isLoading} = useSearchProductQuery({search: searchTerm});
+    const {data, isLoading} = useSearchProductQuery(searchTerm, {skip: !searchTerm});
 
     const navigate = useNavigate();
     const handleHideResult = () => {
@@ -49,9 +49,9 @@ const Search: React.FC = () => {
                                 ))}
                                 {4 < data.length && (
                                     <div className={"search-results-open-more"}>
-                                    <a>
-                                        Load More
-                                    </a>
+                                        <a>
+                                            Load More
+                                        </a>
                                     </div>
                                 )}
                             </>

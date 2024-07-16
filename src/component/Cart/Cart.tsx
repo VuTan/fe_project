@@ -1,4 +1,4 @@
-import React,{useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './Cart.scss';
 
 import {IoIosHeart, IoIosHeartEmpty} from "react-icons/io";
@@ -7,7 +7,7 @@ import Button from "../Button/Button";
 import SliderNew from "../Home/SliderNew";
 import {useDispatch, useSelector} from "react-redux";
 import {RootState} from "../../redux/store";
-import {decrementQuantity, deleteProduct, getTotals, incrementQuantity, clearCart} from "../../redux/cart.reducers";
+import {clearCart, decrementQuantity, deleteProduct, getTotals, incrementQuantity} from "../../redux/cart.reducers";
 import {buyProduct, convertToProduct, formatPriceVND} from "../../models/Product.modal";
 import CheckoutPopup from './CheckoutPopup';
 import {addFavorite, removeFavorite} from "../../redux/favorite.reducers";
@@ -20,8 +20,9 @@ const Cart = () => {
     const favorite = useSelector((state: RootState) => state.favorite)
     const dispatch = useDispatch()
     const {id} = useParams()
+    const validId = id || '';
 
-    const {data} = useGetProductByIdQuery({id: id})
+    const {data} = useGetProductByIdQuery(validId, {skip: !id})
     const [showPopup, setShowPopup] = useState(false);
     const [customerInfo, setCustomerInfo] = useState({
         name: '',

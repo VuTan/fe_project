@@ -3,17 +3,20 @@ import './AddProductPopup.scss';
 import {IoMdCloudUpload} from "react-icons/io";
 import {Multiselect} from "multiselect-react-dropdown";
 import {Product} from "../../models/Product.modal";
+import {useAddProductMutation} from "../../service/ProductService";
+import {toast} from "react-toastify";
 
 interface AddProductPopupProps {
     show: boolean;
     onClose: () => void;
 }
 
-const initialState: Omit<Product, "id" | "benefit"> = {
+const initialState: Omit<Product, "id"> = {
     Name: "",
     Type: "",
     describe: "",
     Price: 0,
+    benefit: [],
     size: [],
     main_img_src: "",
     img_src: [],
@@ -23,9 +26,25 @@ const AddProductPopup: React.FC<AddProductPopupProps> = ({show, onClose}) => {
     const options = [{size: 36}, {size: 36.5}, {size: 37}, {size: 37.5}, {size: 38}, {size: 38.5}, {size: 39}, {size: 39.5}, {size: 40}, {size: 41},]
     const [image, setImage] = useState("")
     const [filename, setFileName] = useState("No selected file")
-    const [formProduct, setFormProduct] = useState<Omit<Product, "id" | "benefit">>(initialState)
+    const [formProduct, setFormProduct] = useState<Omit<Product, "id">>(initialState)
     const [selectedGender, setSelectedGender] = useState("")
     const [selectedCategory, setSelectedCategory] = useState("")
+    const [addProduct] = useAddProductMutation()
+
+    useEffect(() => {
+        let newType = "";
+        if (selectedGender === "Both") {
+            newType = selectedCategory;
+        } else {
+            newType = selectedGender + " " + selectedCategory;
+        }
+        // Update formProduct.Type based on the newType
+        setFormProduct(prev => ({
+            ...prev,
+            Type: newType
+        }));
+    }, [selectedCategory, selectedGender]);
+
     useEffect(() => {
         if (show) {
             document.body.style.overflow = 'hidden';
@@ -40,23 +59,35 @@ const AddProductPopup: React.FC<AddProductPopupProps> = ({show, onClose}) => {
         };
 
     }, [show]);
-    useEffect(() => {
-        console.log(formProduct)
-
-    },);
-
     if (!show) return null;
 
     const handleChangeImg = (event: React.ChangeEvent<HTMLInputElement>) => {
         const files = event.target.files;
         if (files) {
             setFileName(files[0].name);
-            setFormProduct((prev) => ({...prev, main_img_src: image}));
             convertBase64(files[0])
                 .then((base64) => {
                     setImage(base64);
+                    setFormProduct((prev) => ({...prev, main_img_src: base64}));
                 })
         }
+    };
+
+    const handleDetailImageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        if (!event.target.files) return;
+        const files = Array.from(event.target.files);
+        const urls: string[] = [];
+        files.forEach(file => {
+            convertBase64(file)
+                .then((base64) => {
+                    setImage(base64);
+                    urls.push(base64);
+                })
+        });
+        setFormProduct((prev) => ({
+            ...prev,
+            img_src: urls
+        }));
     };
 
     const convertBase64 = (file: File): Promise<string> => {
@@ -71,6 +102,13 @@ const AddProductPopup: React.FC<AddProductPopupProps> = ({show, onClose}) => {
             };
         });
     };
+
+    const handleSubmit = () => {
+        addProduct(formProduct)
+        toast.success("Add product success", {position: "bottom-center"})
+        setFormProduct(initialState)
+    };
+
     return (
         <div className="popup-add-overlayy" onClick={onClose}>
             <div className="popup-contentt" onClick={(e) => e.stopPropagation()}>
@@ -79,7 +117,7 @@ const AddProductPopup: React.FC<AddProductPopupProps> = ({show, onClose}) => {
                     <div className="content">
                         <div className="left-content"
                              onClick={() => (document.querySelector('.input-img') as HTMLElement)?.click()}>
-                            <input className="input-img" type={"file"} accept={"image/*"} hidden
+                            <input required className="input-img" type={"file"} accept={"image/*"} hidden
                                    onChange={handleChangeImg}/>
                             {image ? <img src={image} className={'img-result'} alt={filename}/> :
                                 <IoMdCloudUpload size={60}/>}
@@ -87,7 +125,7 @@ const AddProductPopup: React.FC<AddProductPopupProps> = ({show, onClose}) => {
                         <div className={"right-content"}>
                             <label className="popup-label">
                                 Name
-                                <input className="popup-input" type="text" placeholder="Title"
+                                <input required className="popup-input" type="text" placeholder="Title"
                                        value={formProduct.Name}
                                        onChange={(event) => setFormProduct((prev) => ({
                                            ...prev,
@@ -96,7 +134,7 @@ const AddProductPopup: React.FC<AddProductPopupProps> = ({show, onClose}) => {
                             </label>
                             <label className="popup-label">
                                 Category
-                                <select className="popup-select" value={selectedCategory}
+                                <select required className="popup-select" value={selectedCategory}
                                         onChange={(event) => setSelectedCategory(event.target.value)}>
                                     <option value="">All Category</option>
                                     <option value="Electronics">Electronics</option>
@@ -109,7 +147,8 @@ const AddProductPopup: React.FC<AddProductPopupProps> = ({show, onClose}) => {
                     </div>
                     <label className="popup-label">
                         Description
-                        <textarea className="popup-textarea" placeholder="Description ..." value={formProduct.describe}
+                        <textarea required className="popup-textarea" placeholder="Description ..."
+                                  value={formProduct.describe}
                                   onChange={(event) => setFormProduct((prev) => ({
                                       ...prev,
                                       describe: event.target.value
@@ -117,7 +156,7 @@ const AddProductPopup: React.FC<AddProductPopupProps> = ({show, onClose}) => {
                     </label>
                     <label className="popup-label">
                         Price
-                        <input className="popup-input" type="number" placeholder="Price"
+                        <input required className="popup-input" type="number" placeholder="Price"
                                value={formProduct.Price}
                                onChange={(event) => setFormProduct((prev) => ({
                                    ...prev,
@@ -126,7 +165,7 @@ const AddProductPopup: React.FC<AddProductPopupProps> = ({show, onClose}) => {
                     </label>
                     <label className="popup-label">
                         For this product
-                        <select className="popup-select" value={selectedGender}
+                        <select required className="popup-select" value={selectedGender}
                                 onChange={(event) => setSelectedGender(event.target.value)}>
                             <option value="">-- Gender --</option>
                             <option value="Men's">Men's</option>
@@ -141,7 +180,7 @@ const AddProductPopup: React.FC<AddProductPopupProps> = ({show, onClose}) => {
                             displayValue="size"
                             hidePlaceholder
                             placeholder="Select size"
-                            selectedValues={formProduct.size.map(size => Object.assign({},{size}))}
+                            selectedValues={formProduct.size.map(size => Object.assign({}, {size}))}
                             optionValueDecorator={(option) => option + " EU"}
                             onSelect={(selectedList) => {
                                 setFormProduct((prev) => ({
@@ -153,11 +192,13 @@ const AddProductPopup: React.FC<AddProductPopupProps> = ({show, onClose}) => {
                     </label>
                     <label className="popup-label">
                         Detailed image
-                        <input className="popup-input" type="file" placeholder="Images..." multiple/>
+                        <input className="popup-input" type="file" placeholder="Images..." multiple
+                               onChange={handleDetailImageChange}/>
                     </label>
                     <div className="popup-buttons">
                         <button type="button" className="popup-button add-btn">Add Product</button>
-                        <button type="button" className="popup-button save-btn">Save Product</button>
+                        <button type="button" className="popup-button save-btn" onClick={handleSubmit}>Save Product
+                        </button>
                     </div>
                 </form>
             </div>

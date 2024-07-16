@@ -4,7 +4,7 @@
   left: 0;
   transition: top 0.3s ease-in-out;
   width: 300px;
-  padding: 20px;
+  padding: 15px;
   height: calc(160vh - 80px);
   position: sticky;
   top: 0;
@@ -17,11 +17,11 @@
 
   .sidebar-h4 {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .check {
-    font-size: 20px;
+    font-size: 18px;
     cursor: pointer;
   }
 
@@ -38,11 +38,11 @@
       cursor: pointer;
       text-align: left;
       border-bottom: 1px solid transparent;
-      font-size: 16px;
+      font-size: 14px;
       color: #000;
 
       &:hover {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 600;
       }
 
@@ -50,6 +50,14 @@
         text-decoration: underline;
         font-weight: 700;
       }
+    }
+  }
+  .price-slider{
+    display: flex;
+    justify-content: space-between; /* Để các phần tử con nằm ở hai đầu của container */
+    align-items: center;
+    p {
+      font-size: 16px;
     }
   }
 }

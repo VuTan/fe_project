@@ -24,6 +24,7 @@
     "json-server": "github:notPlancha/json-server#v0",
     "multiselect-react-dropdown": "^2.0.25",
     "querystring-es3": "^0.2.1",
+    "rc-slider": "^10.6.2",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.4",
     "react-dom": "^18.3.1",

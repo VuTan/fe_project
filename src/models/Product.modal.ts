@@ -7,7 +7,7 @@ export interface Product {
     size: number[]
     benefit: string[]
     main_img_src: string
-    img_src: []
+    img_src: string[]
 }
 
 export interface buyProduct {
