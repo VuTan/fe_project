@@ -51,7 +51,7 @@ const ProductFilter: React.FC<ChildProps> = ({onQueryChange}) => {
 
     return (
         <div className="sidebar">
-            <h3 className={"sidebar-h3"}>{t('product filter.existing products')} ()</h3>
+            <h3 className={"sidebar-h3"}>{t('product filter.existing products')}</h3>
             <div className="category-buttons">
                 <h4 className="sidebar-h4">Loại</h4>
                 {categories.map((category) => (

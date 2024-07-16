@@ -15,6 +15,7 @@ interface Filter {
 
 
 const ShopPage: React.FC = () => {
+    const userStorage = useSelector((state: RootState) => state.user);
 
     const {t} = useTranslation('shoppage')
 
@@ -25,7 +26,6 @@ const ShopPage: React.FC = () => {
     const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
     const [selectedSort, setSelectedSort] = useState<string>("");
     const [showPopup, setShowPopup] = useState(false);
-    const userStorage = useSelector((state: RootState) => state.user);
     const [isAdmin, setIsAdmin] = useState(false)
 
     const [sortQuery, setSortQuery] = useState<string>("");

@@ -1,16 +1,14 @@
 import Banner from "./banner";
 import VideoSection from "./VideoSection";
 import NewCollection from "./NewCollection";
-import Slider from "react-slick";
 import SliderNew from "./SliderNew";
-import SliderType from "./SliderType";
+import {useGetRandomProductsQuery} from "../../service/ProductService";
 
 const HomeLayout = () => {
+    const {data} = useGetRandomProductsQuery(8)
     return (<>
         <Banner/>
-        <SliderNew/>
         <VideoSection/>
-        <SliderType/>
         <NewCollection/>
     </>)
 };

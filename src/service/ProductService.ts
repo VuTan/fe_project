@@ -84,5 +84,6 @@ export const {
     useGetProductByIdQuery,
     useSearchProductQuery,
     useAddProductMutation,
-    useGetProductFilterPerPageQuery
+    useGetProductFilterPerPageQuery,
+    useGetRandomProductsQuery
 } = productApi

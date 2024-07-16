@@ -14,8 +14,8 @@ const Login = () => {
     const [showLogin, setShowLogin] = useState(false);
     const {t} = useTranslation('sigin')
     const dispath = useDispatch()
-    const navigate =  useNavigate();
-    const {data} = useGetUserQuery("admin@123")
+    const navigate = useNavigate();
+    const {data} = useGetUserQuery(email)
 
     useEffect(() => {
         let result: boolean = true;
@@ -30,6 +30,7 @@ const Login = () => {
 
 
     const checkLogin = (email: string, password: string) => {
+        console.log(data)
         if (data === undefined) {
             toast.warning("Email không tồn tại", {position: "bottom-left"})
         } else if (data.password !== password) {
@@ -37,12 +38,13 @@ const Login = () => {
         } else if (data.email === email && data.password === password) {
             toast.success("Đăng nhập thành công", {position: "bottom-left"})
             dispath(login(data))
+            navigate('/');
         }
     }
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         checkLogin(email, password)
-        navigate('/');
+
     };
 
     return (
