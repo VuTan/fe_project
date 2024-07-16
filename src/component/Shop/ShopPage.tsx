@@ -8,10 +8,9 @@ import {useTranslation} from "react-i18next";
 import AddProductPopup from "./AddProductPopup";
 import {useSelector} from "react-redux";
 import {RootState} from "../../redux/store";
-import {useGetProductQuery, useGetProductsQuery} from "../../service/ProductService";
+import {useGetProductFilterPerPageQuery, useGetProductFilterQuery} from "../../service/ProductService";
 
 interface Filter {
-
 }
 
 
@@ -19,12 +18,12 @@ const ShopPage: React.FC = () => {
 
     const {t} = useTranslation('shoppage')
 
-    const productPerPage = 18;
+    const productPerPage = 15;
     const [currentPage, setCurrentPage] = useState(1);
     const [sort, setSort] = useState("");
-    const [totalProduct, setTotalProduct] = useState();
+    const [totalProduct, setTotalProduct] = useState(0);
     const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-    const [selectedSort, setSelectedSort] = useState("");
+    const [selectedSort, setSelectedSort] = useState<string>("");
     const [showPopup, setShowPopup] = useState(false);
     const userStorage = useSelector((state: RootState) => state.user);
     const [isAdmin, setIsAdmin] = useState(false)
@@ -32,6 +31,13 @@ const ShopPage: React.FC = () => {
     const [sortQuery, setSortQuery] = useState<string>("");
     const [filterQuery, setFilterQuery] = useState<string>("");
     const [query, setQuery] = useState<string>("")
+
+    const {data: dataProductPerPage, isFetching} = useGetProductFilterPerPageQuery({
+        query: query,
+        page: currentPage,
+        limit: productPerPage
+    });
+    const {data: productsLength} = useGetProductFilterQuery(query);
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -46,7 +52,12 @@ const ShopPage: React.FC = () => {
         }
     }, [sortQuery, filterQuery]);
 
-    const { data:products, isLoading, isFetching } = useGetProductsQuery(currentPage + 1);
+    useEffect(() => {
+        console.log(productsLength)
+        if (productsLength) {
+            setTotalProduct(productsLength.length);
+        }
+    }, [productsLength]);
 
     const checkAdmin = () => {
         if (userStorage.user && userStorage.user.email == "admin@123") {
@@ -77,22 +88,22 @@ const ShopPage: React.FC = () => {
             case 'low-high':
                 setSelectedSort("asc");
                 setSort("Price");
-                setCurrentPage(1)
+                setCurrentPage(1);
                 break;
             case 'high-low':
                 setSelectedSort("desc");
                 setSort("Price");
-                setCurrentPage(1)
+                setCurrentPage(1);
                 break;
             case 'a-z':
                 setSelectedSort("asc");
                 setSort("Name");
-                setCurrentPage(1)
+                setCurrentPage(1);
                 break;
             case 'z-a':
                 setSelectedSort("desc");
                 setSort("Name");
-                setCurrentPage(1)
+                setCurrentPage(1);
                 break;
         }
         setSortQuery(`&_sort=${sort}&_order=${selectedSort}`)
@@ -115,9 +126,10 @@ const ShopPage: React.FC = () => {
                                     <li id={"a-z"}>Tên A - Z</li>
                                     <li id={"z-a"}>Tên Z - A</li>
                                 </ul>
-
                             </p>
-                            <p className={"sort-by"} onClick={handleAddProductClick}>Add</p>
+                            {isAdmin && (
+                                <p className={"sort-by"} onClick={handleAddProductClick}>Add</p>
+                            )}
                             <AddProductPopup show={showPopup} onClose={handleClosePopup}/>
                         </div>
                     </div>
@@ -129,7 +141,7 @@ const ShopPage: React.FC = () => {
                                 <SkeletonProduct/>
                             </Fragment>)
                         }
-                        {(products)?.map((product) => {
+                        {(dataProductPerPage)?.map((product) => {
                             return (<CardProduct key={product.id} product={product} sizeCard={"medium"}/>);
                         })}
                     </div>
@@ -139,7 +151,7 @@ const ShopPage: React.FC = () => {
                             onPageChange={handleChangePage}
                             pageRangeDisplayed={3}
                             marginPagesDisplayed={2}
-                            pageCount={products ? Math.ceil(products.length / productPerPage) : 0}
+                            pageCount={Math.ceil(totalProduct / productPerPage)}
                             previousLabel="< previous"
                             pageClassName="page-item"
                             pageLinkClassName="page-link"

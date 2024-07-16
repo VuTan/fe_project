@@ -6,6 +6,8 @@ import {useGetUserQuery, useRegisterUserMutation} from "../../service/UserServic
 import {User} from "../../models/User.modal";
 import {toast} from "react-toastify";
 import Cookies from "js-cookie";
+import {useDispatch} from "react-redux";
+import {login} from "../../redux/user.reducer";
 
 const SignUp = () => {
     const [formData, setFormData] = useState<User>({
@@ -21,8 +23,11 @@ const SignUp = () => {
     const navigate = useNavigate();
     const [addUser] = useRegisterUserMutation()
     const {t} = useTranslation('sigup')
-    const {data} = useGetUserQuery(formData.email)
-
+    const {data} = useGetUserQuery(formData.email, {skip: !formData.email})
+    const dispatch = useDispatch()
+    useEffect(() => {
+        console.log(data)
+    },);
     const handleChange = (
         event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
     ) => {
@@ -47,13 +52,14 @@ const SignUp = () => {
         }));
     };
 
-    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-        event.preventDefault();
+    const handleSubmit = () => {
         if (data && data.email === formData.email) {
             console.log(data);
-            toast.error("Email đăng ký đã tồn tại", { position: "bottom-center" });
+            toast.error("Email đăng ký đã tồn tại", {position: "bottom-center"});
         } else {
+            dispatch(login(formData))
             addUser(formData);
+            toast.success("Đăng nhập thành công", {position: "bottom-center"});
             const userJSON = JSON.stringify(data);
 
             const expiresAt = new Date();
@@ -66,7 +72,7 @@ const SignUp = () => {
 
     return (<>
             <div className="align-SignUp">
-                <form onSubmit={handleSubmit} className="signup-form">
+                <form className="signup-form">
                     <h3 className={"name-login"}>{t('sign-up.hello')}</h3>
                     <p>
                         {t('sign-up.t1')}
@@ -148,7 +154,7 @@ const SignUp = () => {
                         />
                         {t('sign-up.t3')}
                     </label>
-                    <button type="submit">{t('sign-up.come')}</button>
+                    <button type="submit" onClick={handleSubmit}>{t('sign-up.come')}</button>
                     <p>
                         {t('sign-up.have a mem')} <NavLink to="/Login">{t('sign-up.sigin')}</NavLink>.
                     </p>

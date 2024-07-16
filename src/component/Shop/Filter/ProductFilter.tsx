@@ -37,6 +37,9 @@ const ProductFilter: React.FC<ChildProps> = ({onQueryChange}) => {
         onQueryChange(reusult);
     }, [range, selectGender, selectCategory]);
     const handleCategoryChange = (category: string) => {
+        if (category == selectCategory) {
+            return setSelectCategory("")
+        }
         setSelectCategory(category)
     }
     const handleGenderChange = (gender: string) => {

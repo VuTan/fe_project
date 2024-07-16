@@ -11,7 +11,6 @@ import {clearCart, decrementQuantity, deleteProduct, getTotals, incrementQuantit
 import {buyProduct, convertToProduct, formatPriceVND} from "../../models/Product.modal";
 import CheckoutPopup from './CheckoutPopup';
 import {addFavorite, removeFavorite} from "../../redux/favorite.reducers";
-import Popup from "../Product/PopupDetailProduct";
 import {useGetProductByIdQuery} from "../../service/ProductService";
 import {useParams} from "react-router-dom";
 
@@ -66,12 +65,6 @@ const Cart = () => {
         document.body.style.overflow = 'auto';
     };
 
-    const handleOpenPopup = () => {
-        setShowPopup(true);
-        document.body.style.overflow = 'hidden';
-        window.scrollTo({top: 0, behavior: 'smooth'})
-    };
-
     const handleSubmit = () => {
 
         console.log('Thông tin khách hàng:', customerInfo);
@@ -85,20 +78,7 @@ const Cart = () => {
                     <div className="bag">
                         <div className="free-delivery">
                             <span>Free Delivery</span>
-                            <p>Applies to orders of $ 14 000.00 or more.
-                                <h6 className="details-show" onClick={handleOpenPopup}>More Detail</h6>
-                                {showPopup && (
-                                    <>
-                                        <div onClick={(e) => {
-                                            e.stopPropagation()
-                                        }} className="popup">
-                                            <div className="popup-content">
-                                                <p className="close-button" onClick={handleClosePopup}>&times;</p>
-                                                <Popup product={data}/>
-                                            </div>
-                                        </div>
-                                    </>
-                                )}
+                            <p>Applies to orders of $14.000
                             </p>
                         </div>
                         <h2>Bag</h2>

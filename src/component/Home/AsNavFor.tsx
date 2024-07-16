@@ -42,9 +42,9 @@ const AsNavFor = (prop: Props) => {
             {/*    <div className={"css-17xce2z"}></div>*/}
             {/*</div>*/}
             <div className="right">
-                <Slider asNavFor={nav2} ref={sliderRef1} arrows={false} vertical={true}>
+                <Slider asNavFor={nav2} ref={sliderRef1} arrows={false} vertical={true} slidesPerRow={1}>
                     {product && product.img_src?.map((img, index) => {
-                        return (<img src={img} alt=""/>);
+                        return (<img className={"main-img-slider"} src={img} alt=""/>);
                     })}
                 </Slider>
             </div>

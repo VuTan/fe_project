@@ -40,8 +40,9 @@ const Login = () => {
         }
     }
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
         checkLogin(email, password)
-        navigate('/')
+        navigate('/');
     };
 
     return (

@@ -5,10 +5,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {useRef} from "react";
 import CardProduct from "../Product/CardProduct";
+import {Product} from "../../models/Product.modal";
 
 type CardSliderProps = {
     sizeCard?: string;
     slideShow?: number;
+    products: Product[];
 }
 
 const CardSlider = (props: CardSliderProps) => {
@@ -29,7 +31,7 @@ const CardSlider = (props: CardSliderProps) => {
         slidesToShow: props.slideShow,
         slidesToScroll: 1,
     };
-    const slides = [1, 2, 3, 4, 5, 6, 7, 8];
+
     return (
         <div className="card-slider">
             <div className="top">
@@ -43,8 +45,8 @@ const CardSlider = (props: CardSliderProps) => {
                 </div>
             </div>
             <Slider {...settings} ref={sliderRef} >
-                {slides.map((slider, index) => {
-                    return (<></>);
+                {props.products.map((product) => {
+                    return (<CardProduct product={product}/>);
                 })}
             </Slider>
 

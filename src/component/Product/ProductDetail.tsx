@@ -173,7 +173,7 @@ const ProductDetail = () => {
             </div>
             <h3 className={"name-style"}>Hidden lacing system was a first of its kind and delivers a streamlined
                 look.</h3>
-            <CardSlider sizeCard={"large"} slideShow={3}></CardSlider>
+            {/*<CardSlider sizeCard={"large"} slideShow={3}></CardSlider>*/}
         </>
     )
 }

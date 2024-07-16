@@ -31,6 +31,7 @@ const AddProductPopup: React.FC<AddProductPopupProps> = ({show, onClose}) => {
     const [selectedCategory, setSelectedCategory] = useState("")
     const [addProduct] = useAddProductMutation()
 
+    const map = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
     useEffect(() => {
         let newType = "";
         if (selectedGender === "Both") {
@@ -109,6 +110,12 @@ const AddProductPopup: React.FC<AddProductPopupProps> = ({show, onClose}) => {
         setFormProduct(initialState)
     };
 
+    const handleRemoveDetailImg = (indexToRemove: number) => {
+        setFormProduct(prev => ({
+            ...prev,
+            img_src: prev.img_src.filter((image, index) => index !== indexToRemove)
+        }));
+    };
     return (
         <div className="popup-add-overlayy" onClick={onClose}>
             <div className="popup-contentt" onClick={(e) => e.stopPropagation()}>
@@ -192,13 +199,21 @@ const AddProductPopup: React.FC<AddProductPopupProps> = ({show, onClose}) => {
                     </label>
                     <label className="popup-label">
                         Detailed image
-                        <input className="popup-input" type="file" placeholder="Images..." multiple
+                        <input className="popup-input-detail" type="file" placeholder="Images..." multiple
                                onChange={handleDetailImageChange}/>
                     </label>
+                    <div className={"container-image"}>
+                        {formProduct.img_src.map((img, index) => {
+                            return (<div className={"add-image"}>
+                                <p className={"delete-image"} onClick={() => handleRemoveDetailImg(index)}>&times;</p>
+                                <img src={img}
+                                     alt={"image"}></img>
+                            </div>)
+                        })}
+                    </div>
                     <div className="popup-buttons">
-                        <button type="button" className="popup-button add-btn">Add Product</button>
-                        <button type="button" className="popup-button save-btn" onClick={handleSubmit}>Save Product
-                        </button>
+                        <button type="button" className="popup-button add-btn" onClick={handleSubmit}>Add Product</button>
+                        {/*<button type="button" className="popup-button save-btn" onClick={handleSubmit}>Save Product</button>*/}
                     </div>
                 </form>
             </div>

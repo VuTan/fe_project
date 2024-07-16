@@ -6,7 +6,7 @@ import {GiHamburgerMenu} from "react-icons/gi";
 import {IoCartOutline, IoCloseOutline} from "react-icons/io5";
 import {CiLight} from "react-icons/ci";
 import {MdDarkMode} from "react-icons/md";
-import {NavLink} from "react-router-dom";
+import {NavLink, useNavigate} from "react-router-dom";
 import "../../i18n/i18n"
 import {useTranslation} from 'react-i18next'
 import {useDispatch, useSelector} from "react-redux";
@@ -24,6 +24,7 @@ const Header = () => {
     const [showHeader, setShowHeader] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
     const dispatch = useDispatch()
+    const navigate = useNavigate();
 
 
     useEffect(() => {
@@ -61,7 +62,7 @@ const Header = () => {
     useEffect(() => {
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
-            if (currentScrollY < lastScrollY) {
+            if (currentScrollY > 500 && currentScrollY < lastScrollY) {
                 setShowHeader(true);
             } else {
                 setShowHeader(false);
@@ -77,7 +78,7 @@ const Header = () => {
     }, [lastScrollY]);
 
     return (
-        <header className={`container-header${showHeader ? "-fix" : ""}`}>
+        <header className={`container-header${showHeader ? "-fix" : " "}`}>
             <div className="top-bar">
                 <div className="top-left">
                     <SiNike/>
@@ -139,6 +140,7 @@ const Header = () => {
                                             <NavLink to={"/profile"}>Profile</NavLink>
                                             <NavLink to={"#"} onClick={() => {
                                                 dispatch(logout())
+                                                navigate('/');
                                             }}>Log Out</NavLink>
                                         </div>
 

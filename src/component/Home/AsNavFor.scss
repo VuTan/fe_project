@@ -6,10 +6,11 @@
   top: 40px;
   padding-left: 48px;
   margin-left: 8px;
-  max-height: 669px;
+  max-height: 400px;
   min-height: 455px;
 
   .left1 {
+    overflow: hidden;
     width: 25%;
     padding: 10px;
 
@@ -27,11 +28,11 @@
     margin-top: 30px;
     border-radius: 8px;
     overflow: hidden;
-    position: relative;
+    //position: relative;
     -webkit-box-flex: 1;
     flex-grow: 1;
 
-    img{
+    .main-img-slider {
       height: 373px;
       max-height: 373px;
     }
