@@ -155,9 +155,15 @@ const AddProductPopup: React.FC<AddProductPopupProps> = ({show, onClose}) => {
                         Detailed image
                         <input className="popup-input" type="file" placeholder="Images..." multiple/>
                     </label>
+                        <div className={"container-image"}>
+                            <div className={"add-image"}>
+                                <span className={"delete-image"}>&times;</span>
+                                <img src={"#"}  alt={"image"}></img>
+                            </div>
+                        </div>
                     <div className="popup-buttons">
                         <button type="button" className="popup-button add-btn">Add Product</button>
-                        <button type="button" className="popup-button save-btn">Save Product</button>
+                        {/*<button type="button" className="popup-button save-btn">Save Product</button>*/}
                     </div>
                 </form>
             </div>

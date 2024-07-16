@@ -7,14 +7,12 @@ import ProductFilter from "./Filter/ProductFilter";
 import SkeletonProduct from "../Product/SkeletonProduct";
 import {useTranslation} from "react-i18next";
 import AddProductPopup from "./AddProductPopup";
+import {RootState} from "../../redux/store";
+import {useSelector} from "react-redux";
 
-interface Filter {
-
-}
-
+interface Filter {}
 
 const ShopPage: React.FC = () => {
-
     const categories = [
         "Shoes",
         "Sports Bras",
@@ -29,7 +27,7 @@ const ShopPage: React.FC = () => {
         "Socks",
         "Accessories & Equipment"
     ];
-    const {t} = useTranslation('shoppage')
+    const {t} = useTranslation('shoppage');
 
     const productPerPage = 18;
     const [totalPage, setTotalPage] = useState(8);
@@ -38,9 +36,24 @@ const ShopPage: React.FC = () => {
     const [totalProduct, setTotalProduct] = useState();
     const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
     const [selectedSort, setSelectedSort] = useState<boolean>(true);
+    const [showPopup, setShowPopup] = useState(false);
 
     useEffect(() => {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 0);
+    }, []);
+
+    const userStorage = useSelector((state: RootState) => state.user);
+    const [isAdmin, setIsAdmin] = useState(false);
+
+    const checkAdmin = () => {
+        if (userStorage.user && userStorage.user.email === "admin@123") {
+            setIsAdmin(true);
+        }
+    };
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        checkAdmin();
     }, []);
 
     const {data: sortedData, isFetching: isSortingFetching} = useGetProductSortByQuery({
@@ -66,26 +79,34 @@ const ShopPage: React.FC = () => {
             case 'low-high':
                 setSelectedSort(true);
                 setSort("Price");
-                setCurrentPage(1)
+                setCurrentPage(1);
                 break;
             case 'high-low':
                 setSelectedSort(false);
                 setSort("Price");
-                setCurrentPage(1)
+                setCurrentPage(1);
                 break;
             case 'a-z':
                 setSelectedSort(true);
                 setSort("Name");
-                setCurrentPage(1)
+                setCurrentPage(1);
                 break;
             case 'z-a':
                 setSelectedSort(false);
                 setSort("Name");
-                setCurrentPage(1)
+                setCurrentPage(1);
                 break;
             default:
                 break; // Handle invalid IDs (optional)
         }
+    };
+
+    const handleAddProductClick = () => {
+        setShowPopup(true);
+    };
+
+    const handleClosePopup = () => {
+        setShowPopup(false);
     };
 
     return (
@@ -105,8 +126,11 @@ const ShopPage: React.FC = () => {
                                     <li id={"a-z"}>Tên A - Z</li>
                                     <li id={"z-a"}>Tên Z - A</li>
                                 </ul>
-
                             </p>
+                            {isAdmin && (
+                                <p className={"sort-by"} onClick={handleAddProductClick}>Add</p>
+                            )}
+                            <AddProductPopup show={showPopup} onClose={handleClosePopup}/>
                         </div>
                     </div>
                     <div className="products">
@@ -148,4 +172,5 @@ const ShopPage: React.FC = () => {
         </>
     );
 };
+
 export default ShopPage;
